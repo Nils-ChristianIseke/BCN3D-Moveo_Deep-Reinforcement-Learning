@@ -1,0 +1,813 @@
+Start Agent init....
+Entered InverseKinematics Env
+Entered Moveo Env
+[ INFO] [1627363447.424041447]: Loading robot model 'moveo_description'...
+[ INFO] [1627363447.428989052]: No root/virtual joint specified in SRDF. Assuming fixed joint
+###### Setting Group Moveit with 30 seconds wait...
+[ INFO] [1627363448.652118520, 1914.862000000]: Ready to take commands for planning group arm.
+<class 'moveo_commander.MoveoCommander'>
+launch the init function of the Parent Class robot_gazebo_env_goal.RobotGazeboEnv.....
+Entered Gazebo Env
+False
+launch the init function of the Parent Class robot_gazebo_env_goal.RobotGazeboEnv.....END
+Entered Moveo Env END
+START Actor init
+END Actor init....
+NUMBER OF WORKERS=CPUs available for this training=1
+END Agent init....
+Entered InverseKinematics Env
+Entered Moveo Env
+[31m[ERROR] [1627363448.675299, 1914.886000]: NOT Initialising Simulation Physics Parameters
+[33m[WARN] [1627363448.691428, 1914.899000]: Start Init ControllersConnection
+[33m[WARN] [1627363448.696053, 1914.899000]: END Init ControllersConnection
+/home/nils/anaconda3/envs/moveo_training/lib/python3.9/site-packages/gym/logger.py:30: UserWarning: [33mWARN: Box bound precision lowered by casting to float32
+  warnings.warn(colorize('%s: %s'%('WARN', msg % args), 'yellow'))
+2021-07-27 07:24:08.879431: I tensorflow/compiler/jit/xla_cpu_device.cc:41] Not creating XLA devices, tf_xla_enable_xla_devices not set
+2021-07-27 07:24:08.879691: I tensorflow/core/platform/cpu_feature_guard.cc:142] This TensorFlow binary is optimized with oneAPI Deep Neural Network Library (oneDNN) to use the following CPU instructions in performance-critical operations:  SSE4.1 SSE4.2 AVX AVX2 FMA
+To enable them in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2021-07-27 07:24:08.880710: I tensorflow/core/common_runtime/process_util.cc:146] Creating new thread pool with default inter op setting: 2. Tune using inter_op_parallelism_threads for best performance.
+###### Setting Group Moveit with 30 seconds wait...
+[ INFO] [1627363449.211879595, 1915.371000000]: Ready to take commands for planning group arm.
+<class 'moveo_commander.MoveoCommander'>
+launch the init function of the Parent Class robot_gazebo_env_goal.RobotGazeboEnv.....
+Entered Gazebo Env
+False
+launch the init function of the Parent Class robot_gazebo_env_goal.RobotGazeboEnv.....END
+Entered Moveo Env END
+Start Worker Agent init....
+START Actor init
+END Actor init....
+END Worker Agent init....
+####################### START Train
+####################### START AC3
+EP0 EpisodeReward=0
+Entered reset
+0.0
+0.0
+0.0
+0.0
+0.0
+Entered step
+Unpause sim
+Set action
+Action:
+[ 1.58445231  0.47131062  2.16000009 -0.1134207  -0.18322141]
+1.5844523143209504
+0.4713106176532683
+2.1600000858306885
+-0.11342069868756142
+-0.1832214073962672
+Error setting joint target. Is the target within bounds?
+Get Obs
+Is done
+>>>>>>>>>>>>>>>>done_fail=True,done_sucess=False
+Original Shape==(5,)
+Morfed Shape==(1, 5)
+EP0 EpisodeReward=-100
+####################### START AC3
+EP1 EpisodeReward=0
+Entered reset
+0.0
+0.0
+0.0
+0.0
+0.0
+[31m[ERROR] [1627363449.233937, 1915.387000]: NOT Initialising Simulation Physics Parameters
+[33m[WARN] [1627363449.248778, 1915.400000]: Start Init ControllersConnection
+[33m[WARN] [1627363449.250395, 1915.400000]: END Init ControllersConnection
+2021-07-27 07:24:10.087332: I tensorflow/compiler/mlir/mlir_graph_optimization_pass.cc:116] None of the MLIR optimization passes are enabled (registered 2)
+2021-07-27 07:24:10.107091: I tensorflow/core/platform/profile_utils/cpu_utils.cc:112] CPU Frequency: 3192790000 Hz
+Entered step
+Unpause sim
+Set action
+Action:
+[ 0.50928187 -0.25439129  0.35696892 -0.50791639 -1.00444159]
+0.5092818651152421
+-0.25439128702792546
+0.3569689190924525
+-0.5079163923263912
+-1.0044415932886392
+[ INFO] [1627363462.110189299, 1927.691000000]: ABORTED: Solution found but controller failed during execution
+Get Obs
+Is done
+>>>>>>>>>>>>>>>>done_fail=False,done_sucess=False
+EP1 EpisodeReward=1.7918026036079227
+Entered step
+Unpause sim
+Set action
+Action:
+[ 1.7796457  -0.63714915  0.23126218 -0.12561799 -0.27248315]
+1.7796456987690763
+-0.6371491470322224
+0.23126218346755212
+-0.12561799365314016
+-0.2724831496860808
+Error setting joint target. Is the target within bounds?
+Get Obs
+Is done
+>>>>>>>>>>>>>>>>done_fail=True,done_sucess=False
+Original Shape==(10,)
+Morfed Shape==(2, 5)
+EP1 EpisodeReward=-98.20819739639208
+####################### START AC3
+EP2 EpisodeReward=0
+Entered reset
+0.0
+0.0
+0.0
+0.0
+0.0
+[ INFO] [1627363473.043574354, 1938.431000000]: ABORTED: Solution found but controller failed during execution
+Entered step
+Unpause sim
+Set action
+Action:
+[ 0.17788947 -0.61370431  0.47140236 -2.04743668 -0.19423124]
+0.1778894677663398
+-0.6137043079627774
+0.47140235899901484
+-2.0474366770863925
+-0.19423123923925195
+Error setting joint target. Is the target within bounds?
+Get Obs
+Is done
+>>>>>>>>>>>>>>>>done_fail=True,done_sucess=False
+Original Shape==(5,)
+Morfed Shape==(1, 5)
+EP2 EpisodeReward=-100
+####################### START AC3
+EP3 EpisodeReward=0
+Entered reset
+0.0
+0.0
+0.0
+0.0
+0.0
+Entered step
+Unpause sim
+Set action
+Action:
+[ 0.77202711 -0.71683849  0.06121352 -0.55323719 -1.23497576]
+0.7720271079940519
+-0.7168384903909816
+0.06121351864116409
+-0.5532371897288555
+-1.2349757556686067
+[ INFO] [1627363486.712816649, 1951.956000000]: ABORTED: Solution found but controller failed during execution
+Get Obs
+Is done
+>>>>>>>>>>>>>>>>done_fail=False,done_sucess=False
+EP3 EpisodeReward=2.773021842049313
+Entered step
+Unpause sim
+Set action
+Action:
+[ 0.51165943 -0.93759232  0.75745102 -1.36488963  0.76320749]
+0.5116594327705072
+-0.9375923195031663
+0.7574510241646326
+-1.3648896345942743
+0.7632074888037418
+[ INFO] [1627363507.296614679, 1972.301000000]: ABORTED: Solution found but controller failed during execution
+Get Obs
+Is done
+>>>>>>>>>>>>>>>>done_fail=False,done_sucess=False
+EP3 EpisodeReward=5.326087652654145
+Entered step
+Unpause sim
+Set action
+Action:
+[-1.7813467   1.01841296 -0.05813467 -0.68904912 -0.01279617]
+-1.7813467028694019
+1.0184129627885903
+-0.05813466534039436
+-0.6890491164740034
+-0.012796167054048367
+Error setting joint target. Is the target within bounds?
+Get Obs
+Is done
+>>>>>>>>>>>>>>>>done_fail=True,done_sucess=False
+Original Shape==(15,)
+Morfed Shape==(3, 5)
+EP3 EpisodeReward=-94.67391234734586
+####################### START AC3
+EP4 EpisodeReward=0
+Entered reset
+0.0
+0.0
+0.0
+0.0
+0.0
+[ INFO] [1627363521.688812105, 1986.451000000]: ABORTED: Solution found but controller failed during execution
+Entered step
+Unpause sim
+Set action
+Action:
+[ 0.32148239 -0.19037185 -0.82794665  0.41620803 -0.52334026]
+0.32148238610960983
+-0.1903718493355692
+-0.8279466464357986
+0.4162080296004368
+-0.5233402576158792
+[ INFO] [1627363530.150677603, 1994.810000000]: ABORTED: Solution found but controller failed during execution
+Get Obs
+Is done
+>>>>>>>>>>>>>>>>done_fail=False,done_sucess=False
+EP4 EpisodeReward=3.081935796685606
+Entered step
+Unpause sim
+Set action
+Action:
+[ 0.75200273 -0.26417433 -0.71528096 -0.44396773 -1.03467052]
+0.7520027336410049
+-0.26417433469929774
+-0.7152809626608411
+-0.44396772621908787
+-1.0346705230679785
+[ INFO] [1627363539.166813268, 2003.723000000]: ABORTED: Solution found but controller failed during execution
+Get Obs
+Is done
+>>>>>>>>>>>>>>>>done_fail=False,done_sucess=False
+EP4 EpisodeReward=5.937915160576281
+Entered step
+Unpause sim
+Set action
+Action:
+[ 0.84391446  0.02055081 -0.15500686 -0.93599847 -0.2889971 ]
+0.8439144645621324
+0.020550807653313075
+-0.1550068551708655
+-0.9359984709044602
+-0.2889971030483305
+[ INFO] [1627363547.040526858, 2011.483000000]: ABORTED: Solution found but controller failed during execution
+Get Obs
+Is done
+>>>>>>>>>>>>>>>>done_fail=False,done_sucess=False
+EP4 EpisodeReward=7.739938844111235
+Entered step
+Unpause sim
+Set action
+Action:
+[ 2.06874833 -0.05456541  0.52541761 -0.13744193  0.2175294 ]
+2.0687483297095075
+-0.054565411546178166
+0.5254176070740098
+-0.13744193223374712
+0.21752939594291415
+Error setting joint target. Is the target within bounds?
+Get Obs
+Is done
+>>>>>>>>>>>>>>>>done_fail=True,done_sucess=False
+Original Shape==(20,)
+Morfed Shape==(4, 5)
+EP4 EpisodeReward=-92.26006115588876
+####################### START AC3
+EP5 EpisodeReward=0
+Entered reset
+0.0
+0.0
+0.0
+0.0
+0.0
+[ INFO] [1627363557.133546397, 2021.466000000]: ABORTED: Solution found but controller failed during execution
+Entered step
+Unpause sim
+Set action
+Action:
+[ 1.100625    1.19937134  0.86300878 -0.56759969  0.87033593]
+1.1006250043775045
+1.199371344807703
+0.8630087802496313
+-0.567599691521619
+0.8703359326241188
+[ INFO] [1627363569.837976783, 2034.036000000]: ABORTED: Solution found but controller failed during execution
+Get Obs
+Is done
+>>>>>>>>>>>>>>>>done_fail=False,done_sucess=False
+EP5 EpisodeReward=1.2334974330717399
+Entered step
+Unpause sim
+Set action
+Action:
+[ 0.37413297 -0.22836078 -0.47182184  0.14184984  0.86493986]
+0.3741329743454359
+-0.22836078427381665
+-0.4718218444622478
+0.14184984261409178
+0.8649398588714916
+[ INFO] [1627363585.126242377, 2049.146000000]: ABORTED: Solution found but controller failed during execution
+Get Obs
+Is done
+>>>>>>>>>>>>>>>>done_fail=False,done_sucess=False
+EP5 EpisodeReward=3.8303689009725908
+Entered step
+Unpause sim
+Set action
+Action:
+[ 1.01824582 -1.13692896 -0.25465545  0.93253701  0.35418423]
+1.0182458245092847
+-1.136928963083268
+-0.2546554450255006
+0.9325370069778935
+0.354184225306969
+[ INFO] [1627363585.495600773, 2049.499000000]: ABORTED: No motion plan found. No execution attempted.
+Get Obs
+Is done
+>>>>>>>>>>>>>>>>done_fail=False,done_sucess=False
+EP5 EpisodeReward=6.497568626934803
+Entered step
+Unpause sim
+Set action
+Action:
+[-0.04248923 -0.82846882  0.99882789  0.82116347 -1.1976451 ]
+-0.04248923390704651
+-0.8284688215096108
+0.9988278945371851
+0.8211634731711743
+-1.197645100999667
+[33m[ WARN] [1627363585.360707306, 2049.375000000]: Fail: ABORTED: No motion plan found. No execution attempted.
+[ INFO] [1627363606.419134552, 2070.230000000]: ABORTED: Solution found but controller failed during execution
+Get Obs
+Is done
+>>>>>>>>>>>>>>>>done_fail=False,done_sucess=False
+EP5 EpisodeReward=8.552663170660676
+Entered step
+Unpause sim
+Set action
+Action:
+[ 0.99744671 -1.10590836  1.53760487 -0.6992573   0.94561678]
+0.9974467054520922
+-1.1059083566799992
+1.5376048742414812
+-0.6992573007739281
+0.9456167802677037
+[ INFO] [1627363628.508070959, 2092.038000000]: ABORTED: Solution found but controller failed during execution
+Get Obs
+Is done
+>>>>>>>>>>>>>>>>done_fail=False,done_sucess=False
+Original Shape==(25,)
+Morfed Shape==(5, 5)
+EP5 EpisodeReward=10.620503849432225
+Entered step
+Unpause sim
+Set action
+Action:
+[ 0.3036257  -0.4118823   0.40058981 -0.48281288 -0.13854346]
+0.3036257017534777
+-0.41188229991686115
+0.40058981285227574
+-0.4828128807686558
+-0.138543455244878
+[ INFO] [1627363640.407572286, 2103.792000000]: ABORTED: Solution found but controller failed during execution
+Get Obs
+Is done
+>>>>>>>>>>>>>>>>done_fail=False,done_sucess=False
+EP5 EpisodeReward=12.574220143946107
+Entered step
+Unpause sim
+Set action
+Action:
+[ 0.19510446  0.07710321  0.92810828 -0.22630392 -0.36982011]
+0.1951044580798646
+0.07710320855061636
+0.9281082833277587
+-0.2263039204035033
+-0.369820105715206
+[ INFO] [1627363646.286610057, 2109.601000000]: ABORTED: Solution found but controller failed during execution
+Get Obs
+Is done
+>>>>>>>>>>>>>>>>done_fail=False,done_sucess=False
+EP5 EpisodeReward=13.958693795877698
+Entered step
+Unpause sim
+Set action
+Action:
+[ 0.06364096 -0.41066309  0.65825741 -1.54013205  0.35749841]
+0.06364096271485703
+-0.4106630924941172
+0.6582574142149497
+-1.5401320511783358
+0.35749841388709924
+[ INFO] [1627363659.927415448, 2123.050000000]: ABORTED: Solution found but controller failed during execution
+Get Obs
+Is done
+>>>>>>>>>>>>>>>>done_fail=False,done_sucess=False
+EP5 EpisodeReward=15.737063657171973
+Entered step
+Unpause sim
+Set action
+Action:
+[ 1.1236923   0.17917536 -0.50696306 -1.14921454  0.40383679]
+1.1236923007431263
+0.179175362828634
+-0.5069630607881501
+-1.1492145356576562
+0.4038367914603769
+[ INFO] [1627363671.720546512, 2134.736000000]: ABORTED: Solution found but controller failed during execution
+Get Obs
+Is done
+>>>>>>>>>>>>>>>>done_fail=False,done_sucess=False
+EP5 EpisodeReward=17.545800704659218
+Entered step
+Unpause sim
+Set action
+Action:
+[-0.17100988 -0.69769162  0.509901    0.21636547  0.19138159]
+-0.17100988392387828
+-0.6976916174206454
+0.509901000798756
+0.2163654745616759
+0.19138159380981085
+[ INFO] [1627363685.737386102, 2148.607000000]: ABORTED: Solution found but controller failed during execution
+Get Obs
+Is done
+>>>>>>>>>>>>>>>>done_fail=False,done_sucess=False
+Original Shape==(25,)
+Morfed Shape==(5, 5)
+EP5 EpisodeReward=19.704805076654065
+Entered step
+Unpause sim
+Set action
+Action:
+[ 0.46417506  0.19858575 -0.08287617  0.59960362 -0.19946903]
+0.4641750572653443
+0.19858575419990532
+-0.08287616794779393
+0.5996036236230422
+-0.19946902987097886
+[ INFO] [1627363695.517666745, 2158.285000000]: ABORTED: Solution found but controller failed during execution
+Get Obs
+Is done
+>>>>>>>>>>>>>>>>done_fail=False,done_sucess=False
+EP5 EpisodeReward=21.34721940405435
+Entered step
+Unpause sim
+Set action
+Action:
+[ 1.37781453e+00 -6.13541853e-02  7.60377501e-04  1.00000032e+00
+  5.63260028e-01]
+1.377814534627716
+-0.061354185264071964
+0.0007603775012065342
+1.000000324626629
+0.5632600280957594
+[ INFO] [1627363705.074727220, 2167.753000000]: ABORTED: Solution found but controller failed during execution
+Get Obs
+Is done
+>>>>>>>>>>>>>>>>done_fail=False,done_sucess=False
+EP5 EpisodeReward=22.970040930019067
+Entered step
+Unpause sim
+Set action
+Action:
+[ 0.85169328  0.58358354 -1.1700827   0.11496928 -0.0473621 ]
+0.851693278051167
+0.5835835445712944
+-1.1700826969745346
+0.11496928181778773
+-0.04736209986176139
+[ INFO] [1627363716.958834423, 2179.511000000]: ABORTED: Solution found but controller failed during execution
+Get Obs
+Is done
+>>>>>>>>>>>>>>>>done_fail=False,done_sucess=False
+EP5 EpisodeReward=25.02492917452436
+Entered step
+Unpause sim
+Set action
+Action:
+[-0.19831897 -0.43273542 -0.4629932   0.41975569 -0.64647633]
+-0.19831896669962512
+-0.4327354154826329
+-0.46299319654129795
+0.4197556892202354
+-0.6464763314282452
+[ INFO] [1627363727.760479631, 2190.183000000]: ABORTED: Solution found but controller failed during execution
+Get Obs
+Is done
+>>>>>>>>>>>>>>>>done_fail=False,done_sucess=False
+EP5 EpisodeReward=27.76457392223865
+Entered step
+Unpause sim
+Set action
+Action:
+[-0.06947648 -0.53406169 -0.61177011 -0.12066836  1.30968849]
+-0.0694764783783055
+-0.5340616932378393
+-0.6117701077117861
+-0.12066835869327075
+1.309688493263658
+[ INFO] [1627363747.922862238, 2210.098000000]: ABORTED: Solution found but controller failed during execution
+Get Obs
+Is done
+>>>>>>>>>>>>>>>>done_fail=False,done_sucess=False
+Original Shape==(25,)
+Morfed Shape==(5, 5)
+EP5 EpisodeReward=31.28655191263772
+Entered step
+Unpause sim
+Set action
+Action:
+[-1.30255699  0.21889035  0.55939403 -0.66398199  1.13248135]
+-1.302556988905251
+0.2188903528099491
+0.5593940347778903
+-0.6639819887631108
+1.1324813491760364
+[ INFO] [1627363760.815972693, 2222.879000000]: ABORTED: Solution found but controller failed during execution
+Get Obs
+Is done
+>>>>>>>>>>>>>>>>done_fail=False,done_sucess=False
+EP5 EpisodeReward=32.56231063113045
+Entered step
+Unpause sim
+Set action
+Action:
+[ 1.24138822 -0.14506161  0.09446717 -0.27104033  0.19888263]
+1.2413882229125797
+-0.14506160820323322
+0.09446716772872729
+-0.2710403286209604
+0.1988826253268687
+[ INFO] [1627363787.018972786, 2248.656000000]: ABORTED: Solution found but controller failed during execution
+Get Obs
+Is done
+>>>>>>>>>>>>>>>>done_fail=False,done_sucess=False
+EP5 EpisodeReward=34.239416044578604
+Entered step
+Unpause sim
+Set action
+Action:
+[ 0.28092396 -0.82316637  0.61356499 -0.71899568  1.03393193]
+0.28092396283295246
+-0.8231663691963382
+0.6135649909659172
+-0.7189956756865733
+1.0339319258306718
+[ INFO] [1627363797.217736011, 2258.703000000]: ABORTED: Solution found but controller failed during execution
+Get Obs
+Is done
+>>>>>>>>>>>>>>>>done_fail=False,done_sucess=False
+EP5 EpisodeReward=36.70672677511756
+Entered step
+Unpause sim
+Set action
+Action:
+[-0.63618247 -0.74754896  1.21739331  0.12898375  0.04756433]
+-0.6361824693591049
+-0.7475489586040593
+1.21739330922168
+0.12898374569201337
+0.04756432640657421
+[ INFO] [1627363807.573699959, 2268.919000000]: ABORTED: Solution found but controller failed during execution
+Get Obs
+Is done
+>>>>>>>>>>>>>>>>done_fail=False,done_sucess=False
+EP5 EpisodeReward=38.37336891692268
+Entered step
+Unpause sim
+Set action
+Action:
+[ 0.89860104 -1.1261469   0.22051205  0.58713693  0.7239877 ]
+0.8986010431388012
+-1.1261468991285137
+0.22051204908226535
+0.5871369290877129
+0.7239876995187048
+[ INFO] [1627363823.445809066, 2284.610000000]: ABORTED: Solution found but controller failed during execution
+Get Obs
+Is done
+>>>>>>>>>>>>>>>>done_fail=False,done_sucess=False
+Original Shape==(25,)
+Morfed Shape==(5, 5)
+EP5 EpisodeReward=42.13629894217237
+Entered step
+Unpause sim
+Set action
+Action:
+[ 0.15463748  0.30088181 -0.8361011   0.17365508  0.5770155 ]
+0.15463747976746628
+0.3008818089831348
+-0.8361011046274666
+0.17365507641071354
+0.5770155022636483
+[ INFO] [1627363838.778277668, 2299.725000000]: ABORTED: Solution found but controller failed during execution
+Get Obs
+Is done
+>>>>>>>>>>>>>>>>done_fail=False,done_sucess=False
+EP5 EpisodeReward=44.23511850342793
+Entered step
+Unpause sim
+Set action
+Action:
+[-0.34837667 -0.29622469  0.48199934  0.49013038  0.13718075]
+-0.3483766678062642
+-0.2962246896460027
+0.4819993377506796
+0.4901303781922636
+0.13718075224215515
+[ INFO] [1627363852.565568223, 2313.373000000]: ABORTED: Solution found but controller failed during execution
+Get Obs
+Is done
+>>>>>>>>>>>>>>>>done_fail=False,done_sucess=False
+EP5 EpisodeReward=45.902153422837465
+Entered step
+Unpause sim
+Set action
+Action:
+[-0.06494558  1.18867852 -0.06735495 -1.65106739 -1.1839965 ]
+-0.0649455808541986
+1.1886785207883421
+-0.06735495466855848
+-1.6510673879116684
+-1.1839964994502683
+Error setting joint target. Is the target within bounds?
+Get Obs
+Is done
+>>>>>>>>>>>>>>>>done_fail=True,done_sucess=False
+Original Shape==(15,)
+Morfed Shape==(3, 5)
+EP5 EpisodeReward=-54.097846577162535
+####################### START AC3
+EP6 EpisodeReward=0
+Entered reset
+0.0
+0.0
+0.0
+0.0
+0.0
+[ INFO] [1627363858.082790326, 2318.810000000]: ABORTED: Solution found but controller failed during execution
+Entered step
+Unpause sim
+Set action
+Action:
+[ 1.41073828 -0.20072989  2.04868305  0.6116286  -0.13528597]
+1.4107382817095404
+-0.20072989231820776
+2.0486830475139315
+0.6116285957887951
+-0.1352859664349054
+Error setting joint target. Is the target within bounds?
+Get Obs
+Is done
+>>>>>>>>>>>>>>>>done_fail=True,done_sucess=False
+Original Shape==(5,)
+Morfed Shape==(1, 5)
+EP6 EpisodeReward=-100
+####################### START AC3
+EP7 EpisodeReward=0
+Entered reset
+0.0
+0.0
+0.0
+0.0
+0.0
+[ INFO] [1627363858.950383578, 2319.667000000]: ABORTED: Solution found but controller failed during execution
+Entered step
+Unpause sim
+Set action
+Action:
+[ 0.67621179 -0.10379061  0.31674697 -0.88713236 -0.12592755]
+0.6762117882500916
+-0.10379061154398492
+0.31674697187674605
+-0.8871323629239186
+-0.12592755350146165
+[ INFO] [1627363868.289522095, 2328.784000000]: ABORTED: Solution found but controller failed during execution
+Get Obs
+Is done
+>>>>>>>>>>>>>>>>done_fail=False,done_sucess=False
+EP7 EpisodeReward=1.6628072945029122
+Entered step
+Unpause sim
+Set action
+Action:
+[-0.33806072  0.43447057  0.62937949  0.88587424 -0.07425396]
+-0.3380607194464287
+0.4344705749149126
+0.6293794923387014
+0.8858742424393776
+-0.07425395731084328
+[ INFO] [1627363886.727947834, 2346.883000000]: ABORTED: Solution found but controller failed during execution
+Get Obs
+Is done
+>>>>>>>>>>>>>>>>done_fail=False,done_sucess=False
+EP7 EpisodeReward=2.955370780456066
+Entered step
+Unpause sim
+Set action
+Action:
+[ 0.8422234  -0.07854543  0.6055137  -0.38074157  1.30294229]
+0.8422234017044387
+-0.07854543421383739
+0.6055136992840047
+-0.380741572943434
+1.3029422939157007
+[ INFO] [1627363900.894570854, 2360.892000000]: ABORTED: Solution found but controller failed during execution
+Get Obs
+Is done
+>>>>>>>>>>>>>>>>done_fail=False,done_sucess=False
+EP7 EpisodeReward=4.473849299681948
+Entered step
+Unpause sim
+Set action
+Action:
+[ 1.2488708   0.28808145  0.85814052 -0.59756138 -1.20191778]
+1.2488708032858313
+0.28808144511517786
+0.8581405246838898
+-0.5975613790102157
+-1.201917776336664
+[ INFO] [1627363926.482018273, 2386.257000000]: ABORTED: Solution found but controller failed during execution
+Get Obs
+Is done
+>>>>>>>>>>>>>>>>done_fail=False,done_sucess=False
+EP7 EpisodeReward=5.7738224178111555
+Entered step
+Unpause sim
+Set action
+Action:
+[ 1.31934866  0.91655218  0.98733029 -0.00858272  0.01303808]
+1.31934866193305
+0.9165521783396964
+0.987330287553934
+-0.008582721153140765
+0.013038079151249021
+[ INFO] [1627363939.181088751, 2398.786000000]: ABORTED: Solution found but controller failed during execution
+Get Obs
+Is done
+>>>>>>>>>>>>>>>>done_fail=False,done_sucess=False
+Original Shape==(25,)
+Morfed Shape==(5, 5)
+EP7 EpisodeReward=7.021148577035019
+Entered step
+Unpause sim
+Set action
+Action:
+[ 1.28549787 -0.70967444  1.41495761 -1.16860962  0.8122112 ]
+1.2854978650849473
+-0.7096744391773622
+1.4149576091509035
+-1.1686096185708033
+0.8122111976876347
+[ INFO] [1627363956.445679707, 2415.829000000]: ABORTED: Solution found but controller failed during execution
+Get Obs
+Is done
+>>>>>>>>>>>>>>>>done_fail=False,done_sucess=False
+EP7 EpisodeReward=8.659150421675147
+Entered step
+Unpause sim
+Set action
+Action:
+[ 0.19878302 -0.86597276  0.04266796 -1.83068256  0.80944526]
+0.19878301898642992
+-0.86597276183733
+0.042667957803624916
+-1.8306825612237514
+0.8094452573404437
+Error setting joint target. Is the target within bounds?
+Get Obs
+Is done
+>>>>>>>>>>>>>>>>done_fail=True,done_sucess=False
+Original Shape==(10,)
+Morfed Shape==(2, 5)
+EP7 EpisodeReward=-91.34084957832485
+####################### START AC3
+EP8 EpisodeReward=0
+Entered reset
+0.0
+0.0
+0.0
+0.0
+0.0
+[ INFO] [1627363971.134994432, 2430.366000000]: ABORTED: Solution found but controller failed during execution
+Entered step
+Unpause sim
+Set action
+Action:
+[ 1.56424083  0.53427446 -0.06050222  0.47638565  0.62210489]
+1.5642408337822833
+0.5342744577811585
+-0.060502218423304124
+0.4763856501134208
+0.6221048859807807
+[ INFO] [1627363987.224301890, 2446.294000000]: ABORTED: Solution found but controller failed during execution
+Get Obs
+Exception in thread Thread-23:
+Traceback (most recent call last):
+  File "/home/nils/anaconda3/envs/moveo_training/lib/python3.9/threading.py", line 954, in _bootstrap_inner
+    self.run()
+  File "/home/nils/Documents/Studium/Bachelorarbeit/moveo_RL/src/moveo_training/scripts/A3C_moveo_ik.py", line 256, in run
+    self.train()
+  File "/home/nils/Documents/Studium/Bachelorarbeit/moveo_RL/src/moveo_training/scripts/A3C_moveo_ik.py", line 209, in train
+    next_state, reward, done, _ = self.env.step(action)
+  File "/home/nils/anaconda3/envs/moveo_training/lib/python3.9/site-packages/gym/wrappers/time_limit.py", line 16, in step
+    observation, reward, done, info = self.env.step(action)
+  File "/home/nils/Documents/Studium/Bachelorarbeit/moveo_RL/src/openai_ros/openai_ros/src/openai_ros/robot_gazebo_env_goal.py", line 51, in step
+    obs = self._get_obs()
+  File "/home/nils/Documents/Studium/Bachelorarbeit/moveo_RL/src/moveo_training/scripts/moveo_inverse_kinematic.py", line 132, in _get_obs
+    self.gazebo.unpauseSim()
+  File "/home/nils/Documents/Studium/Bachelorarbeit/moveo_RL/src/openai_ros/openai_ros/src/openai_ros/gazebo_connection.py", line 58, in unpauseSim
+    rospy.wait_for_service('/gazebo/unpause_physics')
+  File "/opt/ros/noetic/lib/python3/dist-packages/rospy/impl/tcpros_service.py", line 166, in wait_for_service
+    raise ROSInterruptException("rospy shutdown")
+rospy.exceptions.ROSInterruptException: rospy shutdown

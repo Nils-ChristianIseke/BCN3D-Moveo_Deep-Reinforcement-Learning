@@ -1,0 +1,111 @@
+Start Agent init....
+Entered Push Env
+Entered Moveo Env
+[ INFO] [1627907420.218286985]: Loading robot model 'moveo_description'...
+[ INFO] [1627907420.219252916]: No root/virtual joint specified in SRDF. Assuming fixed joint
+###### Setting Group Moveit with 30 seconds wait...
+[ INFO] [1627907421.500084760, 566.777000000]: Ready to take commands for planning group arm.
+<class 'moveo_commander.MoveoCommander'>
+launch the init function of the Parent Class robot_gazebo_env_goal.RobotGazeboEnv.....
+Entered Gazebo Env
+False
+launch the init function of the Parent Class robot_gazebo_env_goal.RobotGazeboEnv.....END
+Entered Moveo Env END
+START Actor init
+END Actor init....
+NUMBER OF WORKERS=CPUs available for this training=1
+END Agent init....
+[31m[ERROR] [1627907421.518129, 566.792000]: NOT Initialising Simulation Physics Parameters
+[33m[WARN] [1627907421.535792, 566.807000]: Start Init ControllersConnection
+[33m[WARN] [1627907421.537474, 566.807000]: END Init ControllersConnection
+/home/nils/anaconda3/envs/moveo_training/lib/python3.9/site-packages/gym/logger.py:30: UserWarning: [33mWARN: Box bound precision lowered by casting to float32
+  warnings.warn(colorize('%s: %s'%('WARN', msg % args), 'yellow'))
+2021-08-02 14:30:21.723000: I tensorflow/compiler/jit/xla_cpu_device.cc:41] Not creating XLA devices, tf_xla_enable_xla_devices not set
+Entered Push Env
+Entered Moveo Env
+###### Setting Group Moveit with 30 seconds wait...
+[ INFO] [1627907422.008910118, 567.245000000]: Ready to take commands for planning group arm.
+<class 'moveo_commander.MoveoCommander'>
+launch the init function of the Parent Class robot_gazebo_env_goal.RobotGazeboEnv.....
+Entered Gazebo Env
+False
+launch the init function of the Parent Class robot_gazebo_env_goal.RobotGazeboEnv.....END
+Entered Moveo Env END
+Entered reset
+0.0
+0.0
+0.0
+0.0
+0.0
+2021-08-02 14:30:21.723211: I tensorflow/core/platform/cpu_feature_guard.cc:142] This TensorFlow binary is optimized with oneAPI Deep Neural Network Library (oneDNN) to use the following CPU instructions in performance-critical operations:  SSE4.1 SSE4.2 AVX AVX2 FMA
+To enable them in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2021-08-02 14:30:21.724516: I tensorflow/core/common_runtime/process_util.cc:146] Creating new thread pool with default inter op setting: 2. Tune using inter_op_parallelism_threads for best performance.
+[31m[ERROR] [1627907422.028096, 567.258000]: NOT Initialising Simulation Physics Parameters
+[33m[WARN] [1627907422.032998, 567.263000]: Start Init ControllersConnection
+[33m[WARN] [1627907422.034372, 567.263000]: END Init ControllersConnection
+[ INFO] [1627907438.007251856, 583.060000000]: ABORTED: Solution found but controller failed during execution
+Entered step
+Unpause sim
+Set action
+Action:
+[-0.38982297 -0.05446799 -1.43843894  1.35556187 -1.05477304]
+-0.38982296842608566
+-0.05446799124126267
+-1.4384389421588422
+1.3555618683321078
+-1.0547730377112827
+[ INFO] [1627907452.593995362, 597.496000000]: ABORTED: Solution found but controller failed during execution
+Get Obs
+Is done
+>>>>>>>>>>>>>>>>done_fail=False,done_sucess=False
+Punish, ee z too low or high...0.27746403181202134
+Entered step
+Unpause sim
+Set action
+Action:
+[-1.05516101 -1.39783776  0.7255749  -1.82621867 -0.17337694]
+-1.055161010647168
+-1.397837758724457
+0.725574900022345
+-1.8262186746927704
+-0.1733769417413662
+Error setting joint target. Is the target within bounds?
+Get Obs
+Is done
+>>>>>>>>>>>>>>>>done_fail=True,done_sucess=False
+Entered reset
+0.0
+0.0
+0.0
+0.0
+0.0
+2021-08-02 14:30:52.671097: I tensorflow/compiler/mlir/mlir_graph_optimization_pass.cc:116] None of the MLIR optimization passes are enabled (registered 2)
+2021-08-02 14:30:52.690351: I tensorflow/core/platform/profile_utils/cpu_utils.cc:112] CPU Frequency: 3192450000 Hz
+[ INFO] [1627907467.762986604, 612.505000000]: ABORTED: Solution found but controller failed during execution
+Entered step
+Unpause sim
+Set action
+Action:
+[ 1.92384932  1.21664183  0.63780665 -0.39415487 -1.57991867]
+1.923849317938302
+1.216641828335855
+0.6378066523100143
+-0.3941548711114864
+-1.5799186684141646
+Error setting joint target. Is the target within bounds?
+Get Obs
+Is done
+>>>>>>>>>>>>>>>>done_fail=True,done_sucess=False
+Entered reset
+0.0
+0.0
+0.0
+0.0
+0.0
+final_time_step TimeStep(
+{'discount': <tf.Tensor: shape=(1,), dtype=float32, numpy=array([1.], dtype=float32)>,
+ 'observation': <tf.Tensor: shape=(1, 3), dtype=float32, numpy=array([[0.57386804, 0.        , 0.554375  ]], dtype=float32)>,
+ 'reward': <tf.Tensor: shape=(1,), dtype=float32, numpy=array([0.], dtype=float32)>,
+ 'step_type': <tf.Tensor: shape=(1,), dtype=int32, numpy=array([0], dtype=int32)>})
+Number of Steps:  3
+Number of Episodes:  2

@@ -1,0 +1,152 @@
+Start Agent init....
+Entered InverseKinematics Env
+Entered Moveo Env
+[ INFO] [1627364178.348680604]: Loading robot model 'moveo_description'...
+[ INFO] [1627364178.351939445]: No root/virtual joint specified in SRDF. Assuming fixed joint
+###### Setting Group Moveit with 30 seconds wait...
+[ INFO] [1627364179.672405521, 2633.034000000]: Ready to take commands for planning group arm.
+<class 'moveo_commander.MoveoCommander'>
+launch the init function of the Parent Class robot_gazebo_env_goal.RobotGazeboEnv.....
+Entered Gazebo Env
+False
+launch the init function of the Parent Class robot_gazebo_env_goal.RobotGazeboEnv.....END
+Entered Moveo Env END
+START Actor init
+END Actor init....
+NUMBER OF WORKERS=CPUs available for this training=1
+END Agent init....
+Entered InverseKinematics Env
+Entered Moveo Env
+###### Setting Group Moveit with 30 seconds wait...
+[ INFO] [1627364180.259443514, 2633.572000000]: Ready to take commands for planning group arm.
+<class 'moveo_commander.MoveoCommander'>
+launch the init function of the Parent Class robot_gazebo_env_goal.RobotGazeboEnv.....
+Entered Gazebo Env
+False
+launch the init function of the Parent Class robot_gazebo_env_goal.RobotGazeboEnv.....END
+Entered Moveo Env END
+Start Worker Agent init....
+START Actor init
+END Actor init....
+END Worker Agent init....
+####################### START Train
+####################### START AC3
+EP0 EpisodeReward=0
+Entered reset
+0.0
+0.0
+0.0
+0.0
+0.0
+[31m[ERROR] [1627364179.705856, 2633.061000]: NOT Initialising Simulation Physics Parameters
+[33m[WARN] [1627364179.723901, 2633.075000]: Start Init ControllersConnection
+[33m[WARN] [1627364179.726050, 2633.075000]: END Init ControllersConnection
+/home/nils/anaconda3/envs/moveo_training/lib/python3.9/site-packages/gym/logger.py:30: UserWarning: [33mWARN: Box bound precision lowered by casting to float32
+  warnings.warn(colorize('%s: %s'%('WARN', msg % args), 'yellow'))
+2021-07-27 07:36:19.925863: I tensorflow/compiler/jit/xla_cpu_device.cc:41] Not creating XLA devices, tf_xla_enable_xla_devices not set
+2021-07-27 07:36:19.926059: I tensorflow/core/platform/cpu_feature_guard.cc:142] This TensorFlow binary is optimized with oneAPI Deep Neural Network Library (oneDNN) to use the following CPU instructions in performance-critical operations:  SSE4.1 SSE4.2 AVX AVX2 FMA
+To enable them in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2021-07-27 07:36:19.926997: I tensorflow/core/common_runtime/process_util.cc:146] Creating new thread pool with default inter op setting: 2. Tune using inter_op_parallelism_threads for best performance.
+[31m[ERROR] [1627364180.284371, 2633.584000]: NOT Initialising Simulation Physics Parameters
+[33m[WARN] [1627364180.306137, 2633.601000]: Start Init ControllersConnection
+[33m[WARN] [1627364180.308010, 2633.601000]: END Init ControllersConnection
+[ INFO] [1627364193.507437363, 2646.245000000]: ABORTED: Solution found but controller failed during execution
+2021-07-27 07:36:33.634644: I tensorflow/compiler/mlir/mlir_graph_optimization_pass.cc:116] None of the MLIR optimization passes are enabled (registered 2)
+2021-07-27 07:36:33.655299: I tensorflow/core/platform/profile_utils/cpu_utils.cc:112] CPU Frequency: 3192790000 Hz
+Entered step
+Unpause sim
+Set action
+Action:
+[-0.39979196  0.6109799  -1.38818078 -0.75961795  0.6214001 ]
+-0.39979196484367463
+0.6109798957548764
+-1.3881807832355277
+-0.7596179546599664
+0.6214000973798098
+[ INFO] [1627364208.020038704, 2660.511000000]: ABORTED: Solution found but controller failed during execution
+Get Obs
+Is done
+>>>>>>>>>>>>>>>>done_fail=False,done_sucess=True
+Original Shape==(5,)
+Morfed Shape==(1, 5)
+EP0 EpisodeReward=100
+####################### START AC3
+EP1 EpisodeReward=0
+Entered reset
+0.0
+0.0
+0.0
+0.0
+0.0
+[ INFO] [1627364222.808014921, 2675.110000000]: ABORTED: Solution found but controller failed during execution
+Entered step
+Unpause sim
+Set action
+Action:
+[0.31658649 0.48206434 0.85879411 0.59711946 0.76174452]
+0.3165864913482965
+0.4820643399599778
+0.8587941099384124
+0.5971194603949069
+0.7617445193900172
+[ INFO] [1627364232.034211999, 2684.211000000]: ABORTED: Solution found but controller failed during execution
+Get Obs
+Is done
+>>>>>>>>>>>>>>>>done_fail=False,done_sucess=True
+Original Shape==(5,)
+Morfed Shape==(1, 5)
+EP1 EpisodeReward=100
+####################### START AC3
+EP2 EpisodeReward=0
+Entered reset
+0.0
+0.0
+0.0
+0.0
+0.0
+[ INFO] [1627364241.642438334, 2693.563000000]: ABORTED: Solution found but controller failed during execution
+Entered step
+Unpause sim
+Set action
+Action:
+[-0.11410428 -0.2583551  -1.29623578  1.34927656 -1.23470287]
+-0.11410427835618467
+-0.2583551004111142
+-1.296235779789964
+1.3492765594485674
+-1.234702867355837
+[ INFO] [1627364255.741371612, 2707.397000000]: ABORTED: Solution found but controller failed during execution
+Get Obs
+Is done
+>>>>>>>>>>>>>>>>done_fail=False,done_sucess=True
+Original Shape==(5,)
+Morfed Shape==(1, 5)
+EP2 EpisodeReward=100
+####################### START AC3
+EP3 EpisodeReward=0
+Entered reset
+0.0
+0.0
+0.0
+0.0
+0.0
+Exception in thread Thread-23:
+Traceback (most recent call last):
+  File "/home/nils/anaconda3/envs/moveo_training/lib/python3.9/threading.py", line 954, in _bootstrap_inner
+    self.run()
+  File "/home/nils/Documents/Studium/Bachelorarbeit/moveo_RL/src/moveo_training/scripts/A3C_moveo_ik.py", line 256, in run
+    self.train()
+  File "/home/nils/Documents/Studium/Bachelorarbeit/moveo_RL/src/moveo_training/scripts/A3C_moveo_ik.py", line 201, in train
+    state = self.env.reset()
+  File "/home/nils/anaconda3/envs/moveo_training/lib/python3.9/site-packages/gym/wrappers/time_limit.py", line 25, in reset
+    return self.env.reset(**kwargs)
+  File "/home/nils/Documents/Studium/Bachelorarbeit/moveo_RL/src/openai_ros/openai_ros/src/openai_ros/robot_gazebo_env_goal.py", line 63, in reset
+    self._reset_sim()
+  File "/home/nils/Documents/Studium/Bachelorarbeit/moveo_RL/src/openai_ros/openai_ros/src/openai_ros/robot_gazebo_env_goal.py", line 121, in _reset_sim
+    self.gazebo.resetWorld()
+  File "/home/nils/Documents/Studium/Bachelorarbeit/moveo_RL/src/openai_ros/openai_ros/src/openai_ros/gazebo_connection.py", line 106, in resetWorld
+    rospy.wait_for_service('/gazebo/reset_world')
+  File "/opt/ros/noetic/lib/python3/dist-packages/rospy/impl/tcpros_service.py", line 166, in wait_for_service
+    raise ROSInterruptException("rospy shutdown")
+rospy.exceptions.ROSInterruptException: rospy shutdown
+[ INFO] [1627364270.052982974, 2721.460000000]: ABORTED: Solution found but controller failed during execution

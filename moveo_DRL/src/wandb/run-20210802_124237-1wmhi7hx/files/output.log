@@ -1,0 +1,22 @@
+Entered Push Env
+Entered Moveo Env
+[ INFO] [1627900962.626134355]: Loading robot model 'moveo_description'...
+[ INFO] [1627900962.626886369]: No root/virtual joint specified in SRDF. Assuming fixed joint
+###### Setting Group Moveit with 30 seconds wait...
+[ INFO] [1627900964.059898398, 373.441000000]: Ready to take commands for planning group arm.
+<class 'moveo_commander.MoveoCommander'>
+launch the init function of the Parent Class robot_gazebo_env_goal.RobotGazeboEnv.....
+Entered Gazebo Env
+False
+launch the init function of the Parent Class robot_gazebo_env_goal.RobotGazeboEnv.....END
+Entered Moveo Env END
+action_spec: BoundedArraySpec(shape=(5,), dtype=dtype('float64'), name='action', minimum=-2.16, maximum=2.16)
+time_step_spec.observation: BoundedArraySpec(shape=(3,), dtype=dtype('float32'), name='observation', minimum=[0.  0.  0.3], maximum=[3. 1. 1.])
+time_step_spec.step_type: ArraySpec(shape=(), dtype=dtype('int32'), name='step_type')
+time_step_spec.discount: BoundedArraySpec(shape=(), dtype=dtype('float32'), name='discount', minimum=0.0, maximum=1.0)
+time_step_spec.reward: ArraySpec(shape=(), dtype=dtype('float32'), name='reward')
+[31m[ERROR] [1627900964.102051, 373.481000]: NOT Initialising Simulation Physics Parameters
+[33m[WARN] [1627900964.116189, 373.495000]: Start Init ControllersConnection
+[33m[WARN] [1627900964.117463, 373.495000]: END Init ControllersConnection
+/home/nils/anaconda3/envs/moveo_training/lib/python3.9/site-packages/gym/logger.py:30: UserWarning: [33mWARN: Box bound precision lowered by casting to float32
+  warnings.warn(colorize('%s: %s'%('WARN', msg % args), 'yellow'))

@@ -1,0 +1,2488 @@
+Entered Push Env
+Entered Moveo Env
+[ INFO] [1627901195.207657745]: Loading robot model 'moveo_description'...
+[ INFO] [1627901195.208816813]: No root/virtual joint specified in SRDF. Assuming fixed joint
+[31m[ERROR] [1627901196.604821, 602.703000]: NOT Initialising Simulation Physics Parameters
+[33m[WARN] [1627901196.617420, 602.713000]: Start Init ControllersConnection
+[33m[WARN] [1627901196.618677, 602.716000]: END Init ControllersConnection
+/home/nils/anaconda3/envs/moveo_training/lib/python3.9/site-packages/gym/logger.py:30: UserWarning: [33mWARN: Box bound precision lowered by casting to float32
+  warnings.warn(colorize('%s: %s'%('WARN', msg % args), 'yellow'))
+###### Setting Group Moveit with 30 seconds wait...
+[ INFO] [1627901196.585475977, 602.684000000]: Ready to take commands for planning group arm.
+<class 'moveo_commander.MoveoCommander'>
+launch the init function of the Parent Class robot_gazebo_env_goal.RobotGazeboEnv.....
+Entered Gazebo Env
+False
+launch the init function of the Parent Class robot_gazebo_env_goal.RobotGazeboEnv.....END
+Entered Moveo Env END
+action_spec: BoundedArraySpec(shape=(5,), dtype=dtype('float64'), name='action', minimum=-2.16, maximum=2.16)
+time_step_spec.observation: BoundedArraySpec(shape=(3,), dtype=dtype('float32'), name='observation', minimum=[0.  0.  0.3], maximum=[3. 1. 1.])
+time_step_spec.step_type: ArraySpec(shape=(), dtype=dtype('int32'), name='step_type')
+time_step_spec.discount: BoundedArraySpec(shape=(), dtype=dtype('float32'), name='discount', minimum=0.0, maximum=1.0)
+time_step_spec.reward: ArraySpec(shape=(), dtype=dtype('float32'), name='reward')
+Entered reset
+0.0
+0.0
+0.0
+0.0
+0.0
+[ INFO] [1627901197.367365248, 603.442000000]: ABORTED: Solution found but controller failed during execution
+TimeStep(
+{'discount': array(1., dtype=float32),
+ 'observation': array([0.5725832 , 0.        , 0.55295485], dtype=float32),
+ 'reward': array(0., dtype=float32),
+ 'step_type': array(0, dtype=int32)})
+Entered step
+Unpause sim
+Set action
+Action:
+[0, 0, 0, 0, 1]
+0
+0
+0
+0
+1
+[ INFO] [1627901207.795587564, 613.745000000]: ABORTED: Solution found but controller failed during execution
+Get Obs
+Is done
+>>>>>>>>>>>>>>>>done_fail=False,done_sucess=False
+Reward for getting closser
+TimeStep(
+{'discount': array(1., dtype=float32),
+ 'observation': array([0.57392985, 0.        , 0.554551  ], dtype=float32),
+ 'reward': array(1.7423732, dtype=float32),
+ 'step_type': array(1, dtype=int32)})
+Entered step
+Unpause sim
+Set action
+Action:
+[0, 0, 0, 0, 1]
+0
+0
+0
+0
+1
+[ INFO] [1627901208.271584748, 614.225000000]: ABORTED: Solution found but controller failed during execution
+Get Obs
+Is done
+>>>>>>>>>>>>>>>>done_fail=False,done_sucess=False
+Reward for getting closser
+TimeStep(
+{'discount': array(1., dtype=float32),
+ 'observation': array([0.57899386, 0.        , 0.56082314], dtype=float32),
+ 'reward': array(1.7271341, dtype=float32),
+ 'step_type': array(1, dtype=int32)})
+Entered step
+Unpause sim
+Set action
+Action:
+[0, 0, 0, 0, 1]
+0
+0
+0
+0
+1
+[ INFO] [1627901208.622648738, 614.574000000]: ABORTED: Solution found but controller failed during execution
+Get Obs
+Is done
+>>>>>>>>>>>>>>>>done_fail=False,done_sucess=False
+Reward for getting closser
+TimeStep(
+{'discount': array(1., dtype=float32),
+ 'observation': array([0.57910395, 0.        , 0.56066734], dtype=float32),
+ 'reward': array(1.7268057, dtype=float32),
+ 'step_type': array(1, dtype=int32)})
+Entered step
+Unpause sim
+Set action
+Action:
+[0, 0, 0, 0, 1]
+0
+0
+0
+0
+1
+[ INFO] [1627901209.014195803, 614.950000000]: ABORTED: Solution found but controller failed during execution
+Get Obs
+Is done
+>>>>>>>>>>>>>>>>done_fail=False,done_sucess=False
+Reward for getting closser
+TimeStep(
+{'discount': array(1., dtype=float32),
+ 'observation': array([0.5762267 , 0.        , 0.55700415], dtype=float32),
+ 'reward': array(1.735428, dtype=float32),
+ 'step_type': array(1, dtype=int32)})
+Entered step
+Unpause sim
+Set action
+Action:
+[0, 0, 0, 0, 1]
+0
+0
+0
+0
+1
+[ INFO] [1627901209.549728186, 615.480000000]: ABORTED: Solution found but controller failed during execution
+Get Obs
+Is done
+>>>>>>>>>>>>>>>>done_fail=False,done_sucess=False
+Reward for getting closser
+TimeStep(
+{'discount': array(1., dtype=float32),
+ 'observation': array([0.57104063, 0.        , 0.55085516], dtype=float32),
+ 'reward': array(1.7511889, dtype=float32),
+ 'step_type': array(1, dtype=int32)})
+Entered step
+Unpause sim
+Set action
+Action:
+[0, 0, 0, 0, 1]
+0
+0
+0
+0
+1
+[ INFO] [1627901210.133211102, 616.044000000]: ABORTED: Solution found but controller failed during execution
+Get Obs
+Is done
+>>>>>>>>>>>>>>>>done_fail=False,done_sucess=False
+Reward for getting closser
+TimeStep(
+{'discount': array(1., dtype=float32),
+ 'observation': array([0.56626457, 0.        , 0.5452901 ], dtype=float32),
+ 'reward': array(1.7659589, dtype=float32),
+ 'step_type': array(1, dtype=int32)})
+Entered step
+Unpause sim
+Set action
+Action:
+[0, 0, 0, 0, 1]
+0
+0
+0
+0
+1
+[ INFO] [1627901210.825015786, 616.732000000]: ABORTED: Solution found but controller failed during execution
+Get Obs
+Is done
+>>>>>>>>>>>>>>>>done_fail=False,done_sucess=False
+Reward for getting closser
+TimeStep(
+{'discount': array(1., dtype=float32),
+ 'observation': array([0.56812435, 0.        , 0.5476618 ], dtype=float32),
+ 'reward': array(1.760178, dtype=float32),
+ 'step_type': array(1, dtype=int32)})
+Entered step
+Unpause sim
+Set action
+Action:
+[0, 0, 0, 0, 1]
+0
+0
+0
+0
+1
+[ INFO] [1627901211.464442038, 617.359000000]: ABORTED: Solution found but controller failed during execution
+Get Obs
+Is done
+>>>>>>>>>>>>>>>>done_fail=False,done_sucess=False
+Reward for getting closser
+TimeStep(
+{'discount': array(1., dtype=float32),
+ 'observation': array([0.571588 , 0.       , 0.5516419], dtype=float32),
+ 'reward': array(1.749512, dtype=float32),
+ 'step_type': array(1, dtype=int32)})
+Entered step
+Unpause sim
+Set action
+Action:
+[0, 0, 0, 0, 1]
+0
+0
+0
+0
+1
+Get Obs
+Is done
+>>>>>>>>>>>>>>>>done_fail=False,done_sucess=False
+Reward for getting closser
+TimeStep(
+{'discount': array(1., dtype=float32),
+ 'observation': array([0.5752068 , 0.        , 0.55588293], dtype=float32),
+ 'reward': array(1.7385051, dtype=float32),
+ 'step_type': array(1, dtype=int32)})
+Entered step
+Unpause sim
+Set action
+Action:
+[0, 0, 0, 0, 1]
+0
+0
+0
+0
+1
+Get Obs
+Is done
+>>>>>>>>>>>>>>>>done_fail=False,done_sucess=False
+Reward for getting closser
+TimeStep(
+{'discount': array(1., dtype=float32),
+ 'observation': array([0.57582134, 0.        , 0.55666816], dtype=float32),
+ 'reward': array(1.7366499, dtype=float32),
+ 'step_type': array(1, dtype=int32)})
+Entered step
+Unpause sim
+Set action
+Action:
+[0, 0, 0, 0, 1]
+0
+0
+0
+0
+1
+Get Obs
+Is done
+>>>>>>>>>>>>>>>>done_fail=False,done_sucess=False
+Reward for getting closser
+TimeStep(
+{'discount': array(1., dtype=float32),
+ 'observation': array([0.5741273, 0.       , 0.5547083], dtype=float32),
+ 'reward': array(1.7417741, dtype=float32),
+ 'step_type': array(1, dtype=int32)})
+Entered step
+Unpause sim
+Set action
+Action:
+[0, 0, 0, 0, 1]
+0
+0
+0
+0
+1
+Get Obs
+Is done
+>>>>>>>>>>>>>>>>done_fail=False,done_sucess=False
+Reward for getting closser
+TimeStep(
+{'discount': array(1., dtype=float32),
+ 'observation': array([0.5720593 , 0.        , 0.55221236], dtype=float32),
+ 'reward': array(1.7480706, dtype=float32),
+ 'step_type': array(1, dtype=int32)})
+Entered step
+Unpause sim
+Set action
+Action:
+[0, 0, 0, 0, 1]
+0
+0
+0
+0
+1
+Get Obs
+Is done
+>>>>>>>>>>>>>>>>done_fail=False,done_sucess=False
+Reward for getting closser
+TimeStep(
+{'discount': array(1., dtype=float32),
+ 'observation': array([0.57191634, 0.        , 0.55200773], dtype=float32),
+ 'reward': array(1.7485074, dtype=float32),
+ 'step_type': array(1, dtype=int32)})
+Entered step
+Unpause sim
+Set action
+Action:
+[0, 0, 0, 0, 1]
+0
+0
+0
+0
+1
+Get Obs
+Is done
+>>>>>>>>>>>>>>>>done_fail=False,done_sucess=False
+Reward for getting closser
+TimeStep(
+{'discount': array(1., dtype=float32),
+ 'observation': array([0.5732893, 0.       , 0.5536657], dtype=float32),
+ 'reward': array(1.74432, dtype=float32),
+ 'step_type': array(1, dtype=int32)})
+Entered step
+Unpause sim
+Set action
+Action:
+[0, 0, 0, 0, 1]
+0
+0
+0
+0
+1
+Get Obs
+Is done
+>>>>>>>>>>>>>>>>done_fail=False,done_sucess=False
+Reward for getting closser
+TimeStep(
+{'discount': array(1., dtype=float32),
+ 'observation': array([0.57442284, 0.        , 0.5550387 ], dtype=float32),
+ 'reward': array(1.7408777, dtype=float32),
+ 'step_type': array(1, dtype=int32)})
+Entered step
+Unpause sim
+Set action
+Action:
+[0, 0, 0, 0, 1]
+0
+0
+0
+0
+1
+Get Obs
+Is done
+>>>>>>>>>>>>>>>>done_fail=False,done_sucess=False
+Reward for getting closser
+TimeStep(
+{'discount': array(1., dtype=float32),
+ 'observation': array([0.5743814, 0.       , 0.5549754], dtype=float32),
+ 'reward': array(1.7410035, dtype=float32),
+ 'step_type': array(1, dtype=int32)})
+Entered step
+Unpause sim
+Set action
+Action:
+[0, 0, 0, 0, 1]
+0
+0
+0
+0
+1
+Get Obs
+Is done
+>>>>>>>>>>>>>>>>done_fail=False,done_sucess=False
+Reward for getting closser
+TimeStep(
+{'discount': array(1., dtype=float32),
+ 'observation': array([0.5732821, 0.       , 0.5536513], dtype=float32),
+ 'reward': array(1.7443419, dtype=float32),
+ 'step_type': array(1, dtype=int32)})
+Entered step
+Unpause sim
+Set action
+Action:
+[0, 0, 0, 0, 1]
+0
+0
+0
+0
+1
+Get Obs
+Is done
+>>>>>>>>>>>>>>>>done_fail=False,done_sucess=False
+Reward for getting closser
+TimeStep(
+{'discount': array(1., dtype=float32),
+ 'observation': array([0.5725375, 0.       , 0.5527594], dtype=float32),
+ 'reward': array(1.7466105, dtype=float32),
+ 'step_type': array(1, dtype=int32)})
+Entered step
+Unpause sim
+Set action
+Action:
+[0, 0, 0, 0, 1]
+0
+0
+0
+0
+1
+Get Obs
+Is done
+>>>>>>>>>>>>>>>>done_fail=False,done_sucess=False
+Reward for getting closser
+TimeStep(
+{'discount': array(1., dtype=float32),
+ 'observation': array([0.5729676, 0.       , 0.5532959], dtype=float32),
+ 'reward': array(1.7452995, dtype=float32),
+ 'step_type': array(1, dtype=int32)})
+Entered step
+Unpause sim
+Set action
+Action:
+[0, 0, 0, 0, 1]
+0
+0
+0
+0
+1
+Get Obs
+Is done
+>>>>>>>>>>>>>>>>done_fail=False,done_sucess=False
+Reward for getting closser
+TimeStep(
+{'discount': array(1., dtype=float32),
+ 'observation': array([0.57378983, 0.        , 0.55426526], dtype=float32),
+ 'reward': array(1.7427984, dtype=float32),
+ 'step_type': array(1, dtype=int32)})
+Entered step
+Unpause sim
+Set action
+Action:
+[0, 0, 0, 0, 1]
+0
+0
+0
+0
+1
+Get Obs
+Is done
+>>>>>>>>>>>>>>>>done_fail=False,done_sucess=False
+Reward for getting closser
+TimeStep(
+{'discount': array(1., dtype=float32),
+ 'observation': array([0.5740663, 0.       , 0.5545855], dtype=float32),
+ 'reward': array(1.7419591, dtype=float32),
+ 'step_type': array(1, dtype=int32)})
+Entered step
+Unpause sim
+Set action
+Action:
+[0, 0, 0, 0, 1]
+0
+0
+0
+0
+1
+Get Obs
+Is done
+>>>>>>>>>>>>>>>>done_fail=False,done_sucess=False
+Reward for getting closser
+TimeStep(
+{'discount': array(1., dtype=float32),
+ 'observation': array([0.5735043, 0.       , 0.5539282], dtype=float32),
+ 'reward': array(1.743666, dtype=float32),
+ 'step_type': array(1, dtype=int32)})
+Entered step
+Unpause sim
+Set action
+Action:
+[0, 0, 0, 0, 1]
+0
+0
+0
+0
+1
+Get Obs
+Is done
+>>>>>>>>>>>>>>>>done_fail=False,done_sucess=False
+Reward for getting closser
+TimeStep(
+{'discount': array(1., dtype=float32),
+ 'observation': array([0.5729861 , 0.        , 0.55331546], dtype=float32),
+ 'reward': array(1.745243, dtype=float32),
+ 'step_type': array(1, dtype=int32)})
+Entered step
+Unpause sim
+Set action
+Action:
+[0, 0, 0, 0, 1]
+0
+0
+0
+0
+1
+Get Obs
+Is done
+>>>>>>>>>>>>>>>>done_fail=False,done_sucess=False
+Reward for getting closser
+TimeStep(
+{'discount': array(1., dtype=float32),
+ 'observation': array([0.5730484, 0.       , 0.5533741], dtype=float32),
+ 'reward': array(1.7450533, dtype=float32),
+ 'step_type': array(1, dtype=int32)})
+Entered step
+Unpause sim
+Set action
+Action:
+[0, 0, 0, 0, 1]
+0
+0
+0
+0
+1
+Get Obs
+Is done
+>>>>>>>>>>>>>>>>done_fail=False,done_sucess=False
+Reward for getting closser
+TimeStep(
+{'discount': array(1., dtype=float32),
+ 'observation': array([0.5734898, 0.       , 0.5539134], dtype=float32),
+ 'reward': array(1.7437103, dtype=float32),
+ 'step_type': array(1, dtype=int32)})
+Entered step
+Unpause sim
+Set action
+Action:
+[0, 0, 0, 0, 1]
+0
+0
+0
+0
+1
+Get Obs
+Is done
+>>>>>>>>>>>>>>>>done_fail=False,done_sucess=False
+Reward for getting closser
+TimeStep(
+{'discount': array(1., dtype=float32),
+ 'observation': array([0.5737423 , 0.        , 0.55421656], dtype=float32),
+ 'reward': array(1.7429428, dtype=float32),
+ 'step_type': array(1, dtype=int32)})
+Entered step
+Unpause sim
+Set action
+Action:
+[0, 0, 0, 0, 1]
+0
+0
+0
+0
+1
+Get Obs
+Is done
+>>>>>>>>>>>>>>>>done_fail=False,done_sucess=False
+Reward for getting closser
+TimeStep(
+{'discount': array(1., dtype=float32),
+ 'observation': array([0.57360023, 0.        , 0.5540306 ], dtype=float32),
+ 'reward': array(1.7433745, dtype=float32),
+ 'step_type': array(1, dtype=int32)})
+Entered step
+Unpause sim
+Set action
+Action:
+[0, 0, 0, 0, 1]
+0
+0
+0
+0
+1
+Get Obs
+Is done
+>>>>>>>>>>>>>>>>done_fail=False,done_sucess=False
+Reward for getting closser
+TimeStep(
+{'discount': array(1., dtype=float32),
+ 'observation': array([0.5732507 , 0.        , 0.55362415], dtype=float32),
+ 'reward': array(1.7444375, dtype=float32),
+ 'step_type': array(1, dtype=int32)})
+Entered step
+Unpause sim
+Set action
+Action:
+[0, 0, 0, 0, 1]
+0
+0
+0
+0
+1
+Get Obs
+Is done
+>>>>>>>>>>>>>>>>done_fail=False,done_sucess=False
+Reward for getting closser
+TimeStep(
+{'discount': array(1., dtype=float32),
+ 'observation': array([0.5731113 , 0.        , 0.55346406], dtype=float32),
+ 'reward': array(1.7448618, dtype=float32),
+ 'step_type': array(1, dtype=int32)})
+Entered step
+Unpause sim
+Set action
+Action:
+[0, 0, 0, 0, 1]
+0
+0
+0
+0
+1
+Get Obs
+Is done
+>>>>>>>>>>>>>>>>done_fail=False,done_sucess=False
+Reward for getting closser
+TimeStep(
+{'discount': array(1., dtype=float32),
+ 'observation': array([0.5733223, 0.       , 0.5537037], dtype=float32),
+ 'reward': array(1.7442197, dtype=float32),
+ 'step_type': array(1, dtype=int32)})
+Entered step
+Unpause sim
+Set action
+Action:
+[0, 0, 0, 0, 1]
+0
+0
+0
+0
+1
+Get Obs
+Is done
+>>>>>>>>>>>>>>>>done_fail=False,done_sucess=False
+Reward for getting closser
+TimeStep(
+{'discount': array(1., dtype=float32),
+ 'observation': array([0.5735306 , 0.        , 0.55396223], dtype=float32),
+ 'reward': array(1.7435861, dtype=float32),
+ 'step_type': array(1, dtype=int32)})
+Entered step
+Unpause sim
+Set action
+Action:
+[0, 0, 0, 0, 1]
+0
+0
+0
+0
+1
+Get Obs
+Is done
+>>>>>>>>>>>>>>>>done_fail=False,done_sucess=False
+Reward for getting closser
+TimeStep(
+{'discount': array(1., dtype=float32),
+ 'observation': array([0.57353747, 0.        , 0.5539621 ], dtype=float32),
+ 'reward': array(1.7435652, dtype=float32),
+ 'step_type': array(1, dtype=int32)})
+Entered step
+Unpause sim
+Set action
+Action:
+[0, 0, 0, 0, 1]
+0
+0
+0
+0
+1
+Get Obs
+Is done
+>>>>>>>>>>>>>>>>done_fail=False,done_sucess=False
+Reward for getting closser
+TimeStep(
+{'discount': array(1., dtype=float32),
+ 'observation': array([0.5734092, 0.       , 0.5538104], dtype=float32),
+ 'reward': array(1.7439554, dtype=float32),
+ 'step_type': array(1, dtype=int32)})
+Entered step
+Unpause sim
+Set action
+Action:
+[0, 0, 0, 0, 1]
+0
+0
+0
+0
+1
+Get Obs
+Is done
+>>>>>>>>>>>>>>>>done_fail=False,done_sucess=False
+Reward for getting closser
+TimeStep(
+{'discount': array(1., dtype=float32),
+ 'observation': array([0.5732851, 0.       , 0.5536686], dtype=float32),
+ 'reward': array(1.7443329, dtype=float32),
+ 'step_type': array(1, dtype=int32)})
+Entered step
+Unpause sim
+Set action
+Action:
+[0, 0, 0, 0, 1]
+0
+0
+0
+0
+1
+Get Obs
+Is done
+>>>>>>>>>>>>>>>>done_fail=False,done_sucess=False
+Reward for getting closser
+TimeStep(
+{'discount': array(1., dtype=float32),
+ 'observation': array([0.57331204, 0.        , 0.55370367], dtype=float32),
+ 'reward': array(1.7442509, dtype=float32),
+ 'step_type': array(1, dtype=int32)})
+Entered step
+Unpause sim
+Set action
+Action:
+[0, 0, 0, 0, 1]
+0
+0
+0
+0
+1
+Get Obs
+Is done
+>>>>>>>>>>>>>>>>done_fail=False,done_sucess=False
+Reward for getting closser
+TimeStep(
+{'discount': array(1., dtype=float32),
+ 'observation': array([0.57339853, 0.        , 0.5537949 ], dtype=float32),
+ 'reward': array(1.7439878, dtype=float32),
+ 'step_type': array(1, dtype=int32)})
+Entered step
+Unpause sim
+Set action
+Action:
+[0, 0, 0, 0, 1]
+0
+0
+0
+0
+1
+Get Obs
+Is done
+>>>>>>>>>>>>>>>>done_fail=False,done_sucess=False
+Reward for getting closser
+TimeStep(
+{'discount': array(1., dtype=float32),
+ 'observation': array([0.5734551, 0.       , 0.553864 ], dtype=float32),
+ 'reward': array(1.7438157, dtype=float32),
+ 'step_type': array(1, dtype=int32)})
+Entered step
+Unpause sim
+Set action
+Action:
+[0, 0, 0, 0, 1]
+0
+0
+0
+0
+1
+Get Obs
+Is done
+>>>>>>>>>>>>>>>>done_fail=False,done_sucess=False
+Reward for getting closser
+TimeStep(
+{'discount': array(1., dtype=float32),
+ 'observation': array([0.5734414 , 0.        , 0.55385107], dtype=float32),
+ 'reward': array(1.7438574, dtype=float32),
+ 'step_type': array(1, dtype=int32)})
+Entered step
+Unpause sim
+Set action
+Action:
+[0, 0, 0, 0, 1]
+0
+0
+0
+0
+1
+Get Obs
+Is done
+>>>>>>>>>>>>>>>>done_fail=False,done_sucess=False
+Reward for getting closser
+TimeStep(
+{'discount': array(1., dtype=float32),
+ 'observation': array([0.57342905, 0.        , 0.5538427 ], dtype=float32),
+ 'reward': array(1.743895, dtype=float32),
+ 'step_type': array(1, dtype=int32)})
+Entered step
+Unpause sim
+Set action
+Action:
+[0, 0, 0, 0, 1]
+0
+0
+0
+0
+1
+Get Obs
+Is done
+>>>>>>>>>>>>>>>>done_fail=False,done_sucess=False
+Reward for getting closser
+TimeStep(
+{'discount': array(1., dtype=float32),
+ 'observation': array([0.5734332 , 0.        , 0.55385077], dtype=float32),
+ 'reward': array(1.7438822, dtype=float32),
+ 'step_type': array(1, dtype=int32)})
+Entered step
+Unpause sim
+Set action
+Action:
+[0, 0, 0, 0, 1]
+0
+0
+0
+0
+1
+Get Obs
+Is done
+>>>>>>>>>>>>>>>>done_fail=False,done_sucess=False
+Reward for getting closser
+TimeStep(
+{'discount': array(1., dtype=float32),
+ 'observation': array([0.5734252 , 0.        , 0.55382663], dtype=float32),
+ 'reward': array(1.7439066, dtype=float32),
+ 'step_type': array(1, dtype=int32)})
+Entered step
+Unpause sim
+Set action
+Action:
+[0, 0, 0, 0, 1]
+0
+0
+0
+0
+1
+Get Obs
+Is done
+>>>>>>>>>>>>>>>>done_fail=False,done_sucess=False
+Reward for getting closser
+TimeStep(
+{'discount': array(1., dtype=float32),
+ 'observation': array([0.57342356, 0.        , 0.55382323], dtype=float32),
+ 'reward': array(1.7439116, dtype=float32),
+ 'step_type': array(1, dtype=int32)})
+Entered step
+Unpause sim
+Set action
+Action:
+[0, 0, 0, 0, 1]
+0
+0
+0
+0
+1
+Get Obs
+Is done
+>>>>>>>>>>>>>>>>done_fail=False,done_sucess=False
+Reward for getting closser
+TimeStep(
+{'discount': array(1., dtype=float32),
+ 'observation': array([0.57341784, 0.        , 0.55382025], dtype=float32),
+ 'reward': array(1.7439289, dtype=float32),
+ 'step_type': array(1, dtype=int32)})
+Entered step
+Unpause sim
+Set action
+Action:
+[0, 0, 0, 0, 1]
+0
+0
+0
+0
+1
+Get Obs
+Is done
+>>>>>>>>>>>>>>>>done_fail=False,done_sucess=False
+Reward for getting closser
+TimeStep(
+{'discount': array(1., dtype=float32),
+ 'observation': array([0.5734044 , 0.        , 0.55380434], dtype=float32),
+ 'reward': array(1.7439699, dtype=float32),
+ 'step_type': array(1, dtype=int32)})
+Entered step
+Unpause sim
+Set action
+Action:
+[0, 0, 0, 0, 1]
+0
+0
+0
+0
+1
+Get Obs
+Is done
+>>>>>>>>>>>>>>>>done_fail=False,done_sucess=False
+Reward for getting closser
+TimeStep(
+{'discount': array(1., dtype=float32),
+ 'observation': array([0.5734268, 0.       , 0.5538351], dtype=float32),
+ 'reward': array(1.7439018, dtype=float32),
+ 'step_type': array(1, dtype=int32)})
+Entered step
+Unpause sim
+Set action
+Action:
+[0, 0, 0, 0, 1]
+0
+0
+0
+0
+1
+Get Obs
+Is done
+>>>>>>>>>>>>>>>>done_fail=False,done_sucess=False
+Reward for getting closser
+TimeStep(
+{'discount': array(1., dtype=float32),
+ 'observation': array([0.5734318 , 0.        , 0.55383784], dtype=float32),
+ 'reward': array(1.7438866, dtype=float32),
+ 'step_type': array(1, dtype=int32)})
+Entered step
+Unpause sim
+Set action
+Action:
+[0, 0, 0, 0, 1]
+0
+0
+0
+0
+1
+Get Obs
+Is done
+>>>>>>>>>>>>>>>>done_fail=False,done_sucess=False
+Reward for getting closser
+TimeStep(
+{'discount': array(1., dtype=float32),
+ 'observation': array([0.5734336, 0.       , 0.553846 ], dtype=float32),
+ 'reward': array(1.7438811, dtype=float32),
+ 'step_type': array(1, dtype=int32)})
+Entered step
+Unpause sim
+Set action
+Action:
+[0, 0, 0, 0, 1]
+0
+0
+0
+0
+1
+Get Obs
+Is done
+>>>>>>>>>>>>>>>>done_fail=False,done_sucess=False
+Reward for getting closser
+TimeStep(
+{'discount': array(1., dtype=float32),
+ 'observation': array([0.5733873 , 0.        , 0.55379206], dtype=float32),
+ 'reward': array(1.7440218, dtype=float32),
+ 'step_type': array(1, dtype=int32)})
+Entered step
+Unpause sim
+Set action
+Action:
+[0, 0, 0, 0, 1]
+0
+0
+0
+0
+1
+Get Obs
+Is done
+>>>>>>>>>>>>>>>>done_fail=False,done_sucess=False
+Reward for getting closser
+TimeStep(
+{'discount': array(1., dtype=float32),
+ 'observation': array([0.57335174, 0.        , 0.5537499 ], dtype=float32),
+ 'reward': array(1.74413, dtype=float32),
+ 'step_type': array(1, dtype=int32)})
+Entered step
+Unpause sim
+Set action
+Action:
+[0, 0, 0, 0, 1]
+0
+0
+0
+0
+1
+Get Obs
+Is done
+>>>>>>>>>>>>>>>>done_fail=False,done_sucess=False
+Reward for getting closser
+TimeStep(
+{'discount': array(1., dtype=float32),
+ 'observation': array([0.5734027, 0.       , 0.5538134], dtype=float32),
+ 'reward': array(1.743975, dtype=float32),
+ 'step_type': array(1, dtype=int32)})
+Entered step
+Unpause sim
+Set action
+Action:
+[0, 0, 0, 0, 1]
+0
+0
+0
+0
+1
+Get Obs
+Is done
+>>>>>>>>>>>>>>>>done_fail=False,done_sucess=False
+Reward for getting closser
+TimeStep(
+{'discount': array(1., dtype=float32),
+ 'observation': array([0.57337844, 0.        , 0.55377275], dtype=float32),
+ 'reward': array(1.7440487, dtype=float32),
+ 'step_type': array(1, dtype=int32)})
+Entered step
+Unpause sim
+Set action
+Action:
+[0, 0, 0, 0, 1]
+0
+0
+0
+0
+1
+Get Obs
+Is done
+>>>>>>>>>>>>>>>>done_fail=False,done_sucess=False
+Reward for getting closser
+TimeStep(
+{'discount': array(1., dtype=float32),
+ 'observation': array([0.57343334, 0.        , 0.55383795], dtype=float32),
+ 'reward': array(1.743882, dtype=float32),
+ 'step_type': array(1, dtype=int32)})
+Entered step
+Unpause sim
+Set action
+Action:
+[0, 0, 0, 0, 1]
+0
+0
+0
+0
+1
+Get Obs
+Is done
+>>>>>>>>>>>>>>>>done_fail=False,done_sucess=False
+Reward for getting closser
+TimeStep(
+{'discount': array(1., dtype=float32),
+ 'observation': array([0.5733946 , 0.        , 0.55378705], dtype=float32),
+ 'reward': array(1.7439997, dtype=float32),
+ 'step_type': array(1, dtype=int32)})
+Entered step
+Unpause sim
+Set action
+Action:
+[0, 0, 0, 0, 1]
+0
+0
+0
+0
+1
+Get Obs
+Is done
+>>>>>>>>>>>>>>>>done_fail=False,done_sucess=False
+Reward for getting closser
+TimeStep(
+{'discount': array(1., dtype=float32),
+ 'observation': array([0.57341766, 0.        , 0.5538245 ], dtype=float32),
+ 'reward': array(1.7439296, dtype=float32),
+ 'step_type': array(1, dtype=int32)})
+Entered step
+Unpause sim
+Set action
+Action:
+[0, 0, 0, 0, 1]
+0
+0
+0
+0
+1
+Get Obs
+Is done
+>>>>>>>>>>>>>>>>done_fail=False,done_sucess=False
+Reward for getting closser
+TimeStep(
+{'discount': array(1., dtype=float32),
+ 'observation': array([0.5733671 , 0.        , 0.55376434], dtype=float32),
+ 'reward': array(1.7440833, dtype=float32),
+ 'step_type': array(1, dtype=int32)})
+Entered step
+Unpause sim
+Set action
+Action:
+[0, 0, 0, 0, 1]
+0
+0
+0
+0
+1
+Get Obs
+Is done
+>>>>>>>>>>>>>>>>done_fail=False,done_sucess=False
+Reward for getting closser
+TimeStep(
+{'discount': array(1., dtype=float32),
+ 'observation': array([0.57335556, 0.        , 0.55373836], dtype=float32),
+ 'reward': array(1.7441183, dtype=float32),
+ 'step_type': array(1, dtype=int32)})
+Entered step
+Unpause sim
+Set action
+Action:
+[0, 0, 0, 0, 1]
+0
+0
+0
+0
+1
+Get Obs
+Is done
+>>>>>>>>>>>>>>>>done_fail=False,done_sucess=False
+Reward for getting closser
+TimeStep(
+{'discount': array(1., dtype=float32),
+ 'observation': array([0.57337236, 0.        , 0.5537624 ], dtype=float32),
+ 'reward': array(1.7440673, dtype=float32),
+ 'step_type': array(1, dtype=int32)})
+Entered step
+Unpause sim
+Set action
+Action:
+[0, 0, 0, 0, 1]
+0
+0
+0
+0
+1
+Get Obs
+Is done
+>>>>>>>>>>>>>>>>done_fail=False,done_sucess=False
+Reward for getting closser
+TimeStep(
+{'discount': array(1., dtype=float32),
+ 'observation': array([0.5733915, 0.       , 0.5537892], dtype=float32),
+ 'reward': array(1.7440093, dtype=float32),
+ 'step_type': array(1, dtype=int32)})
+Entered step
+Unpause sim
+Set action
+Action:
+[0, 0, 0, 0, 1]
+0
+0
+0
+0
+1
+Get Obs
+Is done
+>>>>>>>>>>>>>>>>done_fail=False,done_sucess=False
+Reward for getting closser
+TimeStep(
+{'discount': array(1., dtype=float32),
+ 'observation': array([0.5733866 , 0.        , 0.55378276], dtype=float32),
+ 'reward': array(1.744024, dtype=float32),
+ 'step_type': array(1, dtype=int32)})
+Entered step
+Unpause sim
+Set action
+Action:
+[0, 0, 0, 0, 1]
+0
+0
+0
+0
+1
+Get Obs
+Is done
+>>>>>>>>>>>>>>>>done_fail=False,done_sucess=False
+Reward for getting closser
+TimeStep(
+{'discount': array(1., dtype=float32),
+ 'observation': array([0.573391, 0.      , 0.553787], dtype=float32),
+ 'reward': array(1.7440107, dtype=float32),
+ 'step_type': array(1, dtype=int32)})
+Entered step
+Unpause sim
+Set action
+Action:
+[0, 0, 0, 0, 1]
+0
+0
+0
+0
+1
+Get Obs
+Is done
+>>>>>>>>>>>>>>>>done_fail=False,done_sucess=False
+Reward for getting closser
+TimeStep(
+{'discount': array(1., dtype=float32),
+ 'observation': array([0.573391 , 0.       , 0.5537933], dtype=float32),
+ 'reward': array(1.7440106, dtype=float32),
+ 'step_type': array(1, dtype=int32)})
+Entered step
+Unpause sim
+Set action
+Action:
+[0, 0, 0, 0, 1]
+0
+0
+0
+0
+1
+Get Obs
+Is done
+>>>>>>>>>>>>>>>>done_fail=False,done_sucess=False
+Reward for getting closser
+TimeStep(
+{'discount': array(1., dtype=float32),
+ 'observation': array([0.57340014, 0.        , 0.5538079 ], dtype=float32),
+ 'reward': array(1.7439829, dtype=float32),
+ 'step_type': array(1, dtype=int32)})
+Entered step
+Unpause sim
+Set action
+Action:
+[0, 0, 0, 0, 1]
+0
+0
+0
+0
+1
+Get Obs
+Is done
+>>>>>>>>>>>>>>>>done_fail=False,done_sucess=False
+Reward for getting closser
+TimeStep(
+{'discount': array(1., dtype=float32),
+ 'observation': array([0.57345027, 0.        , 0.553858  ], dtype=float32),
+ 'reward': array(1.7438303, dtype=float32),
+ 'step_type': array(1, dtype=int32)})
+Entered step
+Unpause sim
+Set action
+Action:
+[0, 0, 0, 0, 1]
+0
+0
+0
+0
+1
+Get Obs
+Is done
+>>>>>>>>>>>>>>>>done_fail=False,done_sucess=False
+Reward for getting closser
+TimeStep(
+{'discount': array(1., dtype=float32),
+ 'observation': array([0.57342297, 0.        , 0.5538382 ], dtype=float32),
+ 'reward': array(1.7439134, dtype=float32),
+ 'step_type': array(1, dtype=int32)})
+Entered step
+Unpause sim
+Set action
+Action:
+[0, 0, 0, 0, 1]
+0
+0
+0
+0
+1
+Get Obs
+Is done
+>>>>>>>>>>>>>>>>done_fail=False,done_sucess=False
+Reward for getting closser
+TimeStep(
+{'discount': array(1., dtype=float32),
+ 'observation': array([0.5734154, 0.       , 0.5538201], dtype=float32),
+ 'reward': array(1.7439364, dtype=float32),
+ 'step_type': array(1, dtype=int32)})
+Entered step
+Unpause sim
+Set action
+Action:
+[0, 0, 0, 0, 1]
+0
+0
+0
+0
+1
+Get Obs
+Is done
+>>>>>>>>>>>>>>>>done_fail=False,done_sucess=False
+Reward for getting closser
+TimeStep(
+{'discount': array(1., dtype=float32),
+ 'observation': array([0.57342637, 0.        , 0.5538259 ], dtype=float32),
+ 'reward': array(1.743903, dtype=float32),
+ 'step_type': array(1, dtype=int32)})
+Entered step
+Unpause sim
+Set action
+Action:
+[0, 0, 0, 0, 1]
+0
+0
+0
+0
+1
+Get Obs
+Is done
+>>>>>>>>>>>>>>>>done_fail=False,done_sucess=False
+Reward for getting closser
+TimeStep(
+{'discount': array(1., dtype=float32),
+ 'observation': array([0.5733785, 0.       , 0.5537801], dtype=float32),
+ 'reward': array(1.7440487, dtype=float32),
+ 'step_type': array(1, dtype=int32)})
+Entered step
+Unpause sim
+Set action
+Action:
+[0, 0, 0, 0, 1]
+0
+0
+0
+0
+1
+Get Obs
+Is done
+>>>>>>>>>>>>>>>>done_fail=False,done_sucess=False
+Reward for getting closser
+TimeStep(
+{'discount': array(1., dtype=float32),
+ 'observation': array([0.5734017, 0.       , 0.5537996], dtype=float32),
+ 'reward': array(1.7439781, dtype=float32),
+ 'step_type': array(1, dtype=int32)})
+Entered step
+Unpause sim
+Set action
+Action:
+[0, 0, 0, 0, 1]
+0
+0
+0
+0
+1
+Get Obs
+Is done
+>>>>>>>>>>>>>>>>done_fail=False,done_sucess=False
+Reward for getting closser
+TimeStep(
+{'discount': array(1., dtype=float32),
+ 'observation': array([0.57340693, 0.        , 0.5538059 ], dtype=float32),
+ 'reward': array(1.7439622, dtype=float32),
+ 'step_type': array(1, dtype=int32)})
+Entered step
+Unpause sim
+Set action
+Action:
+[0, 0, 0, 0, 1]
+0
+0
+0
+0
+1
+Get Obs
+Is done
+>>>>>>>>>>>>>>>>done_fail=False,done_sucess=False
+Reward for getting closser
+TimeStep(
+{'discount': array(1., dtype=float32),
+ 'observation': array([0.5734074, 0.       , 0.5538076], dtype=float32),
+ 'reward': array(1.7439607, dtype=float32),
+ 'step_type': array(1, dtype=int32)})
+Entered step
+Unpause sim
+Set action
+Action:
+[0, 0, 0, 0, 1]
+0
+0
+0
+0
+1
+Get Obs
+Is done
+>>>>>>>>>>>>>>>>done_fail=False,done_sucess=False
+Reward for getting closser
+TimeStep(
+{'discount': array(1., dtype=float32),
+ 'observation': array([0.5734248, 0.       , 0.5538316], dtype=float32),
+ 'reward': array(1.7439078, dtype=float32),
+ 'step_type': array(1, dtype=int32)})
+Entered step
+Unpause sim
+Set action
+Action:
+[0, 0, 0, 0, 1]
+0
+0
+0
+0
+1
+Get Obs
+Is done
+>>>>>>>>>>>>>>>>done_fail=False,done_sucess=False
+Reward for getting closser
+TimeStep(
+{'discount': array(1., dtype=float32),
+ 'observation': array([0.5734318, 0.       , 0.5538367], dtype=float32),
+ 'reward': array(1.7438866, dtype=float32),
+ 'step_type': array(1, dtype=int32)})
+Entered step
+Unpause sim
+Set action
+Action:
+[0, 0, 0, 0, 1]
+0
+0
+0
+0
+1
+Get Obs
+Is done
+>>>>>>>>>>>>>>>>done_fail=False,done_sucess=False
+Reward for getting closser
+TimeStep(
+{'discount': array(1., dtype=float32),
+ 'observation': array([0.57344085, 0.        , 0.55385196], dtype=float32),
+ 'reward': array(1.743859, dtype=float32),
+ 'step_type': array(1, dtype=int32)})
+Entered step
+Unpause sim
+Set action
+Action:
+[0, 0, 0, 0, 1]
+0
+0
+0
+0
+1
+Get Obs
+Is done
+>>>>>>>>>>>>>>>>done_fail=False,done_sucess=False
+Reward for getting closser
+TimeStep(
+{'discount': array(1., dtype=float32),
+ 'observation': array([0.5734006 , 0.        , 0.55380523], dtype=float32),
+ 'reward': array(1.7439814, dtype=float32),
+ 'step_type': array(1, dtype=int32)})
+Entered step
+Unpause sim
+Set action
+Action:
+[0, 0, 0, 0, 1]
+0
+0
+0
+0
+1
+Get Obs
+Is done
+>>>>>>>>>>>>>>>>done_fail=False,done_sucess=False
+Reward for getting closser
+TimeStep(
+{'discount': array(1., dtype=float32),
+ 'observation': array([0.5733996, 0.       , 0.5537974], dtype=float32),
+ 'reward': array(1.7439845, dtype=float32),
+ 'step_type': array(1, dtype=int32)})
+Entered step
+Unpause sim
+Set action
+Action:
+[0, 0, 0, 0, 1]
+0
+0
+0
+0
+1
+Get Obs
+Is done
+>>>>>>>>>>>>>>>>done_fail=False,done_sucess=False
+Reward for getting closser
+TimeStep(
+{'discount': array(1., dtype=float32),
+ 'observation': array([0.57341826, 0.        , 0.5538269 ], dtype=float32),
+ 'reward': array(1.7439278, dtype=float32),
+ 'step_type': array(1, dtype=int32)})
+Entered step
+Unpause sim
+Set action
+Action:
+[0, 0, 0, 0, 1]
+0
+0
+0
+0
+1
+Get Obs
+Is done
+>>>>>>>>>>>>>>>>done_fail=False,done_sucess=False
+Reward for getting closser
+TimeStep(
+{'discount': array(1., dtype=float32),
+ 'observation': array([0.5734047, 0.       , 0.5538118], dtype=float32),
+ 'reward': array(1.7439688, dtype=float32),
+ 'step_type': array(1, dtype=int32)})
+Entered step
+Unpause sim
+Set action
+Action:
+[0, 0, 0, 0, 1]
+0
+0
+0
+0
+1
+Get Obs
+Is done
+>>>>>>>>>>>>>>>>done_fail=False,done_sucess=False
+Reward for getting closser
+TimeStep(
+{'discount': array(1., dtype=float32),
+ 'observation': array([0.5734482, 0.       , 0.5538525], dtype=float32),
+ 'reward': array(1.7438368, dtype=float32),
+ 'step_type': array(1, dtype=int32)})
+Entered step
+Unpause sim
+Set action
+Action:
+[0, 0, 0, 0, 1]
+0
+0
+0
+0
+1
+Get Obs
+Is done
+>>>>>>>>>>>>>>>>done_fail=False,done_sucess=False
+Reward for getting closser
+TimeStep(
+{'discount': array(1., dtype=float32),
+ 'observation': array([0.5734025 , 0.        , 0.55380714], dtype=float32),
+ 'reward': array(1.7439755, dtype=float32),
+ 'step_type': array(1, dtype=int32)})
+Entered step
+Unpause sim
+Set action
+Action:
+[0, 0, 0, 0, 1]
+0
+0
+0
+0
+1
+Get Obs
+Is done
+>>>>>>>>>>>>>>>>done_fail=False,done_sucess=False
+Reward for getting closser
+TimeStep(
+{'discount': array(1., dtype=float32),
+ 'observation': array([0.5733634 , 0.        , 0.55376637], dtype=float32),
+ 'reward': array(1.7440944, dtype=float32),
+ 'step_type': array(1, dtype=int32)})
+Entered step
+Unpause sim
+Set action
+Action:
+[0, 0, 0, 0, 1]
+0
+0
+0
+0
+1
+Get Obs
+Is done
+>>>>>>>>>>>>>>>>done_fail=False,done_sucess=False
+Reward for getting closser
+TimeStep(
+{'discount': array(1., dtype=float32),
+ 'observation': array([0.5734095 , 0.        , 0.55381477], dtype=float32),
+ 'reward': array(1.7439544, dtype=float32),
+ 'step_type': array(1, dtype=int32)})
+Entered step
+Unpause sim
+Set action
+Action:
+[0, 0, 0, 0, 1]
+0
+0
+0
+0
+1
+Get Obs
+Is done
+>>>>>>>>>>>>>>>>done_fail=False,done_sucess=False
+Reward for getting closser
+TimeStep(
+{'discount': array(1., dtype=float32),
+ 'observation': array([0.57345486, 0.        , 0.553868  ], dtype=float32),
+ 'reward': array(1.7438164, dtype=float32),
+ 'step_type': array(1, dtype=int32)})
+Entered step
+Unpause sim
+Set action
+Action:
+[0, 0, 0, 0, 1]
+0
+0
+0
+0
+1
+Get Obs
+Is done
+>>>>>>>>>>>>>>>>done_fail=False,done_sucess=False
+Reward for getting closser
+TimeStep(
+{'discount': array(1., dtype=float32),
+ 'observation': array([0.5734539, 0.       , 0.5538612], dtype=float32),
+ 'reward': array(1.7438194, dtype=float32),
+ 'step_type': array(1, dtype=int32)})
+Entered step
+Unpause sim
+Set action
+Action:
+[0, 0, 0, 0, 1]
+0
+0
+0
+0
+1
+Get Obs
+Is done
+>>>>>>>>>>>>>>>>done_fail=False,done_sucess=False
+Reward for getting closser
+TimeStep(
+{'discount': array(1., dtype=float32),
+ 'observation': array([0.57343805, 0.        , 0.55384314], dtype=float32),
+ 'reward': array(1.7438675, dtype=float32),
+ 'step_type': array(1, dtype=int32)})
+Entered step
+Unpause sim
+Set action
+Action:
+[0, 0, 0, 0, 1]
+0
+0
+0
+0
+1
+Get Obs
+Is done
+>>>>>>>>>>>>>>>>done_fail=False,done_sucess=False
+Reward for getting closser
+TimeStep(
+{'discount': array(1., dtype=float32),
+ 'observation': array([0.57340246, 0.        , 0.5538051 ], dtype=float32),
+ 'reward': array(1.7439758, dtype=float32),
+ 'step_type': array(1, dtype=int32)})
+Entered step
+Unpause sim
+Set action
+Action:
+[0, 0, 0, 0, 1]
+0
+0
+0
+0
+1
+Get Obs
+Is done
+>>>>>>>>>>>>>>>>done_fail=False,done_sucess=False
+Reward for getting closser
+TimeStep(
+{'discount': array(1., dtype=float32),
+ 'observation': array([0.573326  , 0.        , 0.55371654], dtype=float32),
+ 'reward': array(1.7442083, dtype=float32),
+ 'step_type': array(1, dtype=int32)})
+Entered step
+Unpause sim
+Set action
+Action:
+[0, 0, 0, 0, 1]
+0
+0
+0
+0
+1
+Get Obs
+Is done
+>>>>>>>>>>>>>>>>done_fail=False,done_sucess=False
+Reward for getting closser
+TimeStep(
+{'discount': array(1., dtype=float32),
+ 'observation': array([0.5733639, 0.       , 0.5537588], dtype=float32),
+ 'reward': array(1.7440931, dtype=float32),
+ 'step_type': array(1, dtype=int32)})
+Entered step
+Unpause sim
+Set action
+Action:
+[0, 0, 0, 0, 1]
+0
+0
+0
+0
+1
+Get Obs
+Is done
+>>>>>>>>>>>>>>>>done_fail=False,done_sucess=False
+Reward for getting closser
+TimeStep(
+{'discount': array(1., dtype=float32),
+ 'observation': array([0.5734156 , 0.        , 0.55381894], dtype=float32),
+ 'reward': array(1.743936, dtype=float32),
+ 'step_type': array(1, dtype=int32)})
+Entered step
+Unpause sim
+Set action
+Action:
+[0, 0, 0, 0, 1]
+0
+0
+0
+0
+1
+Get Obs
+Is done
+>>>>>>>>>>>>>>>>done_fail=False,done_sucess=False
+Reward for getting closser
+TimeStep(
+{'discount': array(1., dtype=float32),
+ 'observation': array([0.5734622, 0.       , 0.5538777], dtype=float32),
+ 'reward': array(1.7437942, dtype=float32),
+ 'step_type': array(1, dtype=int32)})
+Entered step
+Unpause sim
+Set action
+Action:
+[0, 0, 0, 0, 1]
+0
+0
+0
+0
+1
+Get Obs
+Is done
+>>>>>>>>>>>>>>>>done_fail=False,done_sucess=False
+Reward for getting closser
+TimeStep(
+{'discount': array(1., dtype=float32),
+ 'observation': array([0.57343376, 0.        , 0.553835  ], dtype=float32),
+ 'reward': array(1.7438806, dtype=float32),
+ 'step_type': array(1, dtype=int32)})
+Entered step
+Unpause sim
+Set action
+Action:
+[0, 0, 0, 0, 1]
+0
+0
+0
+0
+1
+Get Obs
+Is done
+>>>>>>>>>>>>>>>>done_fail=False,done_sucess=False
+Reward for getting closser
+TimeStep(
+{'discount': array(1., dtype=float32),
+ 'observation': array([0.57338434, 0.        , 0.553778  ], dtype=float32),
+ 'reward': array(1.7440308, dtype=float32),
+ 'step_type': array(1, dtype=int32)})
+Entered step
+Unpause sim
+Set action
+Action:
+[0, 0, 0, 0, 1]
+0
+0
+0
+0
+1
+Get Obs
+Is done
+>>>>>>>>>>>>>>>>done_fail=False,done_sucess=False
+Reward for getting closser
+TimeStep(
+{'discount': array(1., dtype=float32),
+ 'observation': array([0.57335496, 0.        , 0.5537497 ], dtype=float32),
+ 'reward': array(1.7441202, dtype=float32),
+ 'step_type': array(1, dtype=int32)})
+Entered step
+Unpause sim
+Set action
+Action:
+[0, 0, 0, 0, 1]
+0
+0
+0
+0
+1
+Get Obs
+Is done
+>>>>>>>>>>>>>>>>done_fail=False,done_sucess=False
+Reward for getting closser
+TimeStep(
+{'discount': array(1., dtype=float32),
+ 'observation': array([0.57333285, 0.        , 0.55372953], dtype=float32),
+ 'reward': array(1.7441876, dtype=float32),
+ 'step_type': array(1, dtype=int32)})
+Entered step
+Unpause sim
+Set action
+Action:
+[0, 0, 0, 0, 1]
+0
+0
+0
+0
+1
+Get Obs
+Is done
+>>>>>>>>>>>>>>>>done_fail=False,done_sucess=False
+Reward for getting closser
+TimeStep(
+{'discount': array(1., dtype=float32),
+ 'observation': array([0.57341945, 0.        , 0.5538289 ], dtype=float32),
+ 'reward': array(1.743924, dtype=float32),
+ 'step_type': array(1, dtype=int32)})
+Entered step
+Unpause sim
+Set action
+Action:
+[0, 0, 0, 0, 1]
+0
+0
+0
+0
+1
+Get Obs
+Is done
+>>>>>>>>>>>>>>>>done_fail=False,done_sucess=False
+Reward for getting closser
+TimeStep(
+{'discount': array(1., dtype=float32),
+ 'observation': array([0.5734273, 0.       , 0.5538255], dtype=float32),
+ 'reward': array(1.7439002, dtype=float32),
+ 'step_type': array(1, dtype=int32)})
+Entered step
+Unpause sim
+Set action
+Action:
+[0, 0, 0, 0, 1]
+0
+0
+0
+0
+1
+Get Obs
+Is done
+>>>>>>>>>>>>>>>>done_fail=False,done_sucess=False
+Reward for getting closser
+TimeStep(
+{'discount': array(1., dtype=float32),
+ 'observation': array([0.5734061, 0.       , 0.5538061], dtype=float32),
+ 'reward': array(1.7439647, dtype=float32),
+ 'step_type': array(1, dtype=int32)})
+Entered step
+Unpause sim
+Set action
+Action:
+[0, 0, 0, 0, 1]
+0
+0
+0
+0
+1
+Get Obs
+Is done
+>>>>>>>>>>>>>>>>done_fail=False,done_sucess=False
+Reward for getting closser
+TimeStep(
+{'discount': array(1., dtype=float32),
+ 'observation': array([0.5733576, 0.       , 0.5537584], dtype=float32),
+ 'reward': array(1.7441123, dtype=float32),
+ 'step_type': array(1, dtype=int32)})
+Entered step
+Unpause sim
+Set action
+Action:
+[0, 0, 0, 0, 1]
+0
+0
+0
+0
+1
+Get Obs
+Is done
+>>>>>>>>>>>>>>>>done_fail=False,done_sucess=False
+Reward for getting closser
+TimeStep(
+{'discount': array(1., dtype=float32),
+ 'observation': array([0.5734282 , 0.        , 0.55383754], dtype=float32),
+ 'reward': array(1.7438974, dtype=float32),
+ 'step_type': array(1, dtype=int32)})
+Entered step
+Unpause sim
+Set action
+Action:
+[0, 0, 0, 0, 1]
+0
+0
+0
+0
+1
+Get Obs
+Is done
+>>>>>>>>>>>>>>>>done_fail=False,done_sucess=False
+Reward for getting closser
+TimeStep(
+{'discount': array(1., dtype=float32),
+ 'observation': array([0.5734576, 0.       , 0.5538629], dtype=float32),
+ 'reward': array(1.7438082, dtype=float32),
+ 'step_type': array(1, dtype=int32)})
+Entered step
+Unpause sim
+Set action
+Action:
+[0, 0, 0, 0, 1]
+0
+0
+0
+0
+1
+Get Obs
+Is done
+>>>>>>>>>>>>>>>>done_fail=False,done_sucess=False
+Reward for getting closser
+TimeStep(
+{'discount': array(1., dtype=float32),
+ 'observation': array([0.57347566, 0.        , 0.55389315], dtype=float32),
+ 'reward': array(1.7437532, dtype=float32),
+ 'step_type': array(1, dtype=int32)})
+Entered step
+Unpause sim
+Set action
+Action:
+[0, 0, 0, 0, 1]
+0
+0
+0
+0
+1
+Get Obs
+Is done
+>>>>>>>>>>>>>>>>done_fail=False,done_sucess=False
+Reward for getting closser
+TimeStep(
+{'discount': array(1., dtype=float32),
+ 'observation': array([0.57339174, 0.        , 0.55378836], dtype=float32),
+ 'reward': array(1.7440084, dtype=float32),
+ 'step_type': array(1, dtype=int32)})
+Entered step
+Unpause sim
+Set action
+Action:
+[0, 0, 0, 0, 1]
+0
+0
+0
+0
+1
+Get Obs
+Is done
+>>>>>>>>>>>>>>>>done_fail=False,done_sucess=False
+Reward for getting closser
+TimeStep(
+{'discount': array(1., dtype=float32),
+ 'observation': array([0.57335407, 0.        , 0.5537497 ], dtype=float32),
+ 'reward': array(1.7441231, dtype=float32),
+ 'step_type': array(1, dtype=int32)})
+Entered step
+Unpause sim
+Set action
+Action:
+[0, 0, 0, 0, 1]
+0
+0
+0
+0
+1
+Get Obs
+Is done
+>>>>>>>>>>>>>>>>done_fail=False,done_sucess=False
+Reward for getting closser
+TimeStep(
+{'discount': array(1., dtype=float32),
+ 'observation': array([0.57334614, 0.        , 0.553736  ], dtype=float32),
+ 'reward': array(1.7441472, dtype=float32),
+ 'step_type': array(1, dtype=int32)})
+Entered step
+Unpause sim
+Set action
+Action:
+[0, 0, 0, 0, 1]
+0
+0
+0
+0
+1
+Get Obs
+Is done
+>>>>>>>>>>>>>>>>done_fail=False,done_sucess=False
+Reward for getting closser
+TimeStep(
+{'discount': array(1., dtype=float32),
+ 'observation': array([0.573416 , 0.       , 0.5538206], dtype=float32),
+ 'reward': array(1.7439346, dtype=float32),
+ 'step_type': array(1, dtype=int32)})
+Entered step
+Unpause sim
+Set action
+Action:
+[0, 0, 0, 0, 1]
+0
+0
+0
+0
+1
+Get Obs
+Is done
+>>>>>>>>>>>>>>>>done_fail=False,done_sucess=False
+Reward for getting closser
+TimeStep(
+{'discount': array(1., dtype=float32),
+ 'observation': array([0.5734465, 0.       , 0.5538645], dtype=float32),
+ 'reward': array(1.7438418, dtype=float32),
+ 'step_type': array(1, dtype=int32)})
+Entered step
+Unpause sim
+Set action
+Action:
+[0, 0, 0, 0, 1]
+0
+0
+0
+0
+1
+Get Obs
+Is done
+>>>>>>>>>>>>>>>>done_fail=False,done_sucess=False
+Reward for getting closser
+TimeStep(
+{'discount': array(1., dtype=float32),
+ 'observation': array([0.57342106, 0.        , 0.5538308 ], dtype=float32),
+ 'reward': array(1.7439191, dtype=float32),
+ 'step_type': array(1, dtype=int32)})
+Entered step
+Unpause sim
+Set action
+Action:
+[0, 0, 0, 0, 1]
+0
+0
+0
+0
+1
+Get Obs
+Is done
+>>>>>>>>>>>>>>>>done_fail=False,done_sucess=False
+Reward for getting closser
+TimeStep(
+{'discount': array(1., dtype=float32),
+ 'observation': array([0.5733843, 0.       , 0.553781 ], dtype=float32),
+ 'reward': array(1.744031, dtype=float32),
+ 'step_type': array(1, dtype=int32)})
+Entered step
+Unpause sim
+Set action
+Action:
+[0, 0, 0, 0, 1]
+0
+0
+0
+0
+1
+Get Obs
+Is done
+>>>>>>>>>>>>>>>>done_fail=False,done_sucess=False
+Reward for getting closser
+TimeStep(
+{'discount': array(1., dtype=float32),
+ 'observation': array([0.57336307, 0.        , 0.5537637 ], dtype=float32),
+ 'reward': array(1.7440956, dtype=float32),
+ 'step_type': array(1, dtype=int32)})
+Entered step
+Unpause sim
+Set action
+Action:
+[0, 0, 0, 0, 1]
+0
+0
+0
+0
+1
+Get Obs
+Is done
+>>>>>>>>>>>>>>>>done_fail=False,done_sucess=False
+Reward for getting closser
+TimeStep(
+{'discount': array(1., dtype=float32),
+ 'observation': array([0.57335746, 0.        , 0.55375546], dtype=float32),
+ 'reward': array(1.7441126, dtype=float32),
+ 'step_type': array(1, dtype=int32)})
+Entered step
+Unpause sim
+Set action
+Action:
+[0, 0, 0, 0, 1]
+0
+0
+0
+0
+1
+Get Obs
+Is done
+>>>>>>>>>>>>>>>>done_fail=False,done_sucess=False
+Reward for getting closser
+TimeStep(
+{'discount': array(1., dtype=float32),
+ 'observation': array([0.5734527 , 0.        , 0.55386645], dtype=float32),
+ 'reward': array(1.7438229, dtype=float32),
+ 'step_type': array(1, dtype=int32)})
+Entered step
+Unpause sim
+Set action
+Action:
+[0, 0, 0, 0, 1]
+0
+0
+0
+0
+1
+Get Obs
+Is done
+>>>>>>>>>>>>>>>>done_fail=False,done_sucess=False
+Reward for getting closser
+TimeStep(
+{'discount': array(1., dtype=float32),
+ 'observation': array([0.57347953, 0.        , 0.5538979 ], dtype=float32),
+ 'reward': array(1.7437414, dtype=float32),
+ 'step_type': array(1, dtype=int32)})
+Entered step
+Unpause sim
+Set action
+Action:
+[0, 0, 0, 0, 1]
+0
+0
+0
+0
+1
+Get Obs
+Is done
+>>>>>>>>>>>>>>>>done_fail=False,done_sucess=False
+Reward for getting closser
+TimeStep(
+{'discount': array(1., dtype=float32),
+ 'observation': array([0.5734054, 0.       , 0.5538128], dtype=float32),
+ 'reward': array(1.7439668, dtype=float32),
+ 'step_type': array(1, dtype=int32)})
+Entered step
+Unpause sim
+Set action
+Action:
+[0, 0, 0, 0, 1]
+0
+0
+0
+0
+1
+Get Obs
+Is done
+>>>>>>>>>>>>>>>>done_fail=False,done_sucess=False
+Reward for getting closser
+TimeStep(
+{'discount': array(1., dtype=float32),
+ 'observation': array([0.5733612, 0.       , 0.5537609], dtype=float32),
+ 'reward': array(1.7441012, dtype=float32),
+ 'step_type': array(1, dtype=int32)})
+Entered step
+Unpause sim
+Set action
+Action:
+[0, 0, 0, 0, 1]
+0
+0
+0
+0
+1
+Get Obs
+Is done
+>>>>>>>>>>>>>>>>done_fail=False,done_sucess=False
+Reward for getting closser
+TimeStep(
+{'discount': array(1., dtype=float32),
+ 'observation': array([0.5733468, 0.       , 0.5537324], dtype=float32),
+ 'reward': array(1.7441452, dtype=float32),
+ 'step_type': array(1, dtype=int32)})
+Entered step
+Unpause sim
+Set action
+Action:
+[0, 0, 0, 0, 1]
+0
+0
+0
+0
+1
+Get Obs
+Is done
+>>>>>>>>>>>>>>>>done_fail=False,done_sucess=False
+Reward for getting closser
+TimeStep(
+{'discount': array(1., dtype=float32),
+ 'observation': array([0.5734265 , 0.        , 0.55382895], dtype=float32),
+ 'reward': array(1.7439027, dtype=float32),
+ 'step_type': array(1, dtype=int32)})
+Entered step
+Unpause sim
+Set action
+Action:
+[0, 0, 0, 0, 1]
+0
+0
+0
+0
+1
+Get Obs
+Is done
+>>>>>>>>>>>>>>>>done_fail=False,done_sucess=False
+Reward for getting closser
+TimeStep(
+{'discount': array(1., dtype=float32),
+ 'observation': array([0.5734832, 0.       , 0.5539065], dtype=float32),
+ 'reward': array(1.7437302, dtype=float32),
+ 'step_type': array(1, dtype=int32)})
+Entered step
+Unpause sim
+Set action
+Action:
+[0, 0, 0, 0, 1]
+0
+0
+0
+0
+1
+Get Obs
+Is done
+>>>>>>>>>>>>>>>>done_fail=False,done_sucess=False
+Reward for getting closser
+TimeStep(
+{'discount': array(1., dtype=float32),
+ 'observation': array([0.5734624, 0.       , 0.5538805], dtype=float32),
+ 'reward': array(1.7437935, dtype=float32),
+ 'step_type': array(1, dtype=int32)})
+Entered step
+Unpause sim
+Set action
+Action:
+[0, 0, 0, 0, 1]
+0
+0
+0
+0
+1
+Get Obs
+Is done
+>>>>>>>>>>>>>>>>done_fail=False,done_sucess=False
+Reward for getting closser
+TimeStep(
+{'discount': array(1., dtype=float32),
+ 'observation': array([0.57339114, 0.        , 0.5537905 ], dtype=float32),
+ 'reward': array(1.7440101, dtype=float32),
+ 'step_type': array(1, dtype=int32)})
+Entered step
+Unpause sim
+Set action
+Action:
+[0, 0, 0, 0, 1]
+0
+0
+0
+0
+1
+Get Obs
+Is done
+>>>>>>>>>>>>>>>>done_fail=False,done_sucess=False
+Reward for getting closser
+TimeStep(
+{'discount': array(1., dtype=float32),
+ 'observation': array([0.5733267, 0.       , 0.553716 ], dtype=float32),
+ 'reward': array(1.7442062, dtype=float32),
+ 'step_type': array(1, dtype=int32)})
+Entered step
+Unpause sim
+Set action
+Action:
+[0, 0, 0, 0, 1]
+0
+0
+0
+0
+1
+Get Obs
+Is done
+>>>>>>>>>>>>>>>>done_fail=False,done_sucess=False
+Reward for getting closser
+TimeStep(
+{'discount': array(1., dtype=float32),
+ 'observation': array([0.57332844, 0.        , 0.55371225], dtype=float32),
+ 'reward': array(1.7442011, dtype=float32),
+ 'step_type': array(1, dtype=int32)})
+Entered step
+Unpause sim
+Set action
+Action:
+[0, 0, 0, 0, 1]
+0
+0
+0
+0
+1
+Get Obs
+Is done
+>>>>>>>>>>>>>>>>done_fail=False,done_sucess=False
+Reward for getting closser
+TimeStep(
+{'discount': array(1., dtype=float32),
+ 'observation': array([0.5733743, 0.       , 0.5537682], dtype=float32),
+ 'reward': array(1.7440615, dtype=float32),
+ 'step_type': array(1, dtype=int32)})
+Entered step
+Unpause sim
+Set action
+Action:
+[0, 0, 0, 0, 1]
+0
+0
+0
+0
+1
+Get Obs
+Is done
+>>>>>>>>>>>>>>>>done_fail=False,done_sucess=False
+Reward for getting closser
+TimeStep(
+{'discount': array(1., dtype=float32),
+ 'observation': array([0.57346636, 0.        , 0.55388206], dtype=float32),
+ 'reward': array(1.7437814, dtype=float32),
+ 'step_type': array(1, dtype=int32)})
+Entered step
+Unpause sim
+Set action
+Action:
+[0, 0, 0, 0, 1]
+0
+0
+0
+0
+1
+Get Obs
+Is done
+>>>>>>>>>>>>>>>>done_fail=False,done_sucess=False
+Reward for getting closser
+TimeStep(
+{'discount': array(1., dtype=float32),
+ 'observation': array([0.57345515, 0.        , 0.5538716 ], dtype=float32),
+ 'reward': array(1.7438154, dtype=float32),
+ 'step_type': array(1, dtype=int32)})
+Entered step
+Unpause sim
+Set action
+Action:
+[0, 0, 0, 0, 1]
+0
+0
+0
+0
+1
+Get Obs
+Is done
+>>>>>>>>>>>>>>>>done_fail=False,done_sucess=False
+Reward for getting closser
+TimeStep(
+{'discount': array(1., dtype=float32),
+ 'observation': array([0.5734123 , 0.        , 0.55381125], dtype=float32),
+ 'reward': array(1.7439458, dtype=float32),
+ 'step_type': array(1, dtype=int32)})
+Entered step
+Unpause sim
+Set action
+Action:
+[0, 0, 0, 0, 1]
+0
+0
+0
+0
+1
+Get Obs
+Is done
+>>>>>>>>>>>>>>>>done_fail=False,done_sucess=False
+Reward for getting closser
+TimeStep(
+{'discount': array(1., dtype=float32),
+ 'observation': array([0.573385  , 0.        , 0.55378747], dtype=float32),
+ 'reward': array(1.7440289, dtype=float32),
+ 'step_type': array(1, dtype=int32)})
+Entered step
+Unpause sim
+Set action
+Action:
+[0, 0, 0, 0, 1]
+0
+0
+0
+0
+1
+Get Obs
+Is done
+>>>>>>>>>>>>>>>>done_fail=False,done_sucess=False
+Reward for getting closser
+TimeStep(
+{'discount': array(1., dtype=float32),
+ 'observation': array([0.5733733, 0.       , 0.5537806], dtype=float32),
+ 'reward': array(1.7440645, dtype=float32),
+ 'step_type': array(1, dtype=int32)})
+Entered step
+Unpause sim
+Set action
+Action:
+[0, 0, 0, 0, 1]
+0
+0
+0
+0
+1
+Get Obs
+Is done
+>>>>>>>>>>>>>>>>done_fail=False,done_sucess=False
+Reward for getting closser
+TimeStep(
+{'discount': array(1., dtype=float32),
+ 'observation': array([0.5734554 , 0.        , 0.55387264], dtype=float32),
+ 'reward': array(1.7438148, dtype=float32),
+ 'step_type': array(1, dtype=int32)})
+Entered step
+Unpause sim
+Set action
+Action:
+[0, 0, 0, 0, 1]
+0
+0
+0
+0
+1
+Get Obs
+Traceback (most recent call last):
+  File "/home/nils/Documents/Studium/Bachelorarbeit/moveo_RL/src/moveo_training/scripts/A3C_Continuous_moveo.py", line 300, in <module>
+    main()
+  File "/home/nils/Documents/Studium/Bachelorarbeit/moveo_RL/src/moveo_training/scripts/A3C_Continuous_moveo.py", line 295, in main
+    time_step = environment.step(action)
+  File "/home/nils/anaconda3/envs/moveo_training/lib/python3.9/site-packages/tf_agents/environments/py_environment.py", line 203, in step
+    self._current_time_step = self._step(action)
+  File "/home/nils/anaconda3/envs/moveo_training/lib/python3.9/site-packages/tf_agents/environments/wrappers.py", line 117, in _step
+    time_step = self._env.step(action)
+  File "/home/nils/anaconda3/envs/moveo_training/lib/python3.9/site-packages/tf_agents/environments/py_environment.py", line 203, in step
+    self._current_time_step = self._step(action)
+  File "/home/nils/anaconda3/envs/moveo_training/lib/python3.9/site-packages/tf_agents/environments/gym_wrapper.py", line 217, in _step
+    observation, reward, self._done, self._info = self._gym_env.step(action)
+  File "/home/nils/Documents/Studium/Bachelorarbeit/moveo_RL/src/openai_ros/openai_ros/src/openai_ros/robot_gazebo_env_goal.py", line 51, in step
+    obs = self._get_obs()
+  File "/home/nils/Documents/Studium/Bachelorarbeit/moveo_RL/src/moveo_training/scripts/moveo_push.py", line 132, in _get_obs
+    self.gazebo.unpauseSim()
+  File "/home/nils/Documents/Studium/Bachelorarbeit/moveo_RL/src/openai_ros/openai_ros/src/openai_ros/gazebo_connection.py", line 58, in unpauseSim
+    rospy.wait_for_service('/gazebo/unpause_physics')
+  File "/opt/ros/noetic/lib/python3/dist-packages/rospy/impl/tcpros_service.py", line 166, in wait_for_service
+    raise ROSInterruptException("rospy shutdown")
+rospy.exceptions.ROSInterruptException: rospy shutdown

@@ -1,0 +1,6 @@
+Traceback (most recent call last):
+  File "/home/nils/Documents/Studium/Bachelorarbeit/moveo_RL/src/moveo_training/scripts/A3C_Continuous_moveo.py", line 315, in <module>
+    main()
+  File "/home/nils/Documents/Studium/Bachelorarbeit/moveo_RL/src/moveo_training/scripts/A3C_Continuous_moveo.py", line 291, in main
+    train_checkpointer = common.Checkpointer(
+NameError: name 'common' is not defined

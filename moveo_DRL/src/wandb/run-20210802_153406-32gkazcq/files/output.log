@@ -1,0 +1,1324 @@
+Start Agent init....
+Entered Push Env
+Entered Moveo Env
+[ INFO] [1627911252.464722120]: Loading robot model 'moveo_description'...
+[ INFO] [1627911252.465686332]: No root/virtual joint specified in SRDF. Assuming fixed joint
+###### Setting Group Moveit with 30 seconds wait...
+[ INFO] [1627911253.702251892, 41.635000000]: Ready to take commands for planning group arm.
+<class 'moveo_commander.MoveoCommander'>
+[31m[ERROR] [1627911253.719871, 41.651000]: NOT Initialising Simulation Physics Parameters
+[33m[WARN] [1627911253.728572, 41.658000]: Start Init ControllersConnection
+[33m[WARN] [1627911253.734239, 41.658000]: END Init ControllersConnection
+/home/nils/anaconda3/envs/moveo_training/lib/python3.9/site-packages/gym/logger.py:30: UserWarning: [33mWARN: Box bound precision lowered by casting to float32
+  warnings.warn(colorize('%s: %s'%('WARN', msg % args), 'yellow'))
+2021-08-02 15:34:13.947163: I tensorflow/compiler/jit/xla_cpu_device.cc:41] Not creating XLA devices, tf_xla_enable_xla_devices not set
+2021-08-02 15:34:13.948476: I tensorflow/core/platform/cpu_feature_guard.cc:142] This TensorFlow binary is optimized with oneAPI Deep Neural Network Library (oneDNN) to use the following CPU instructions in performance-critical operations:  SSE4.1 SSE4.2 AVX AVX2 FMA
+To enable them in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2021-08-02 15:34:13.956960: I tensorflow/core/common_runtime/process_util.cc:146] Creating new thread pool with default inter op setting: 2. Tune using inter_op_parallelism_threads for best performance.
+launch the init function of the Parent Class robot_gazebo_env_goal.RobotGazeboEnv.....
+Entered Gazebo Env
+False
+launch the init function of the Parent Class robot_gazebo_env_goal.RobotGazeboEnv.....END
+Entered Moveo Env END
+START Actor init
+END Actor init....
+NUMBER OF WORKERS=CPUs available for this training=1
+END Agent init....
+Entered Push Env
+Entered Moveo Env
+###### Setting Group Moveit with 30 seconds wait...
+[ INFO] [1627911254.505748593, 42.407000000]: Ready to take commands for planning group arm.
+<class 'moveo_commander.MoveoCommander'>
+launch the init function of the Parent Class robot_gazebo_env_goal.RobotGazeboEnv.....
+Entered Gazebo Env
+False
+launch the init function of the Parent Class robot_gazebo_env_goal.RobotGazeboEnv.....END
+Entered Moveo Env END
+Entered reset
+0.0
+0.0
+0.0
+0.0
+0.0
+[ INFO] [1627911255.242943090, 43.110000000]: ABORTED: Solution found but controller failed during execution
+Entered step
+Unpause sim
+Set action
+Action:
+[ 1.44944074 -0.42524487 -1.87803417 -1.99510399  1.42466903]
+1.4494407405667826
+-0.4252448683716039
+-1.87803417057119
+-1.995103994221208
+1.4246690298249418
+Error setting joint target. Is the target within bounds?
+Get Obs
+Is done
+>>>>>>>>>>>>>>>>done_fail=True,done_sucess=False
+Entered reset
+0.0
+0.0
+0.0
+0.0
+0.0
+[31m[ERROR] [1627911254.529940, 42.429000]: NOT Initialising Simulation Physics Parameters
+[33m[WARN] [1627911254.535409, 42.433000]: Start Init ControllersConnection
+[33m[WARN] [1627911254.538128, 42.434000]: END Init ControllersConnection
+2021-08-02 15:34:15.469392: I tensorflow/compiler/mlir/mlir_graph_optimization_pass.cc:116] None of the MLIR optimization passes are enabled (registered 2)
+2021-08-02 15:34:15.503111: I tensorflow/core/platform/profile_utils/cpu_utils.cc:112] CPU Frequency: 3192455000 Hz
+[ INFO] [1627911256.203191435, 44.037000000]: ABORTED: Solution found but controller failed during execution
+Entered step
+Unpause sim
+Set action
+Action:
+[ 1.55681803  0.04484605 -0.27929428  1.7821758   1.40937009]
+1.5568180276587689
+0.04484605194485569
+-0.2792942772204441
+1.7821757991590164
+1.4093700872745427
+Error setting joint target. Is the target within bounds?
+Get Obs
+Is done
+>>>>>>>>>>>>>>>>done_fail=True,done_sucess=False
+Entered reset
+0.0
+0.0
+0.0
+0.0
+0.0
+Entered step
+Unpause sim
+Set action
+Action:
+[-1.45723785 -0.60114897 -1.97309708 -0.81812163  1.25424669]
+-1.457237846253594
+-0.6011489688716942
+-1.9730970792670761
+-0.8181216319460243
+1.254246687902588
+Error setting joint target. Is the target within bounds?
+Get Obs
+Is done
+>>>>>>>>>>>>>>>>done_fail=True,done_sucess=False
+Entered reset
+0.0
+0.0
+0.0
+0.0
+0.0
+Entered step
+Unpause sim
+Set action
+Action:
+[ 1.06073111 -1.49653418 -1.14646508 -1.25859625  1.7212984 ]
+1.060731113037689
+-1.4965341807583596
+-1.146465079826712
+-1.2585962525628438
+1.7212983976572813
+Error setting joint target. Is the target within bounds?
+Get Obs
+Is done
+>>>>>>>>>>>>>>>>done_fail=True,done_sucess=False
+Entered reset
+0.0
+0.0
+0.0
+0.0
+0.0
+Entered step
+Unpause sim
+Set action
+Action:
+[-0.70338063  1.61431257 -0.79084071 -0.92057281 -1.24591723]
+-0.7033806315922448
+1.6143125736178883
+-0.7908407143517879
+-0.9205728146741059
+-1.2459172271268173
+Error setting joint target. Is the target within bounds?
+Get Obs
+Is done
+>>>>>>>>>>>>>>>>done_fail=True,done_sucess=False
+Entered reset
+0.0
+0.0
+0.0
+0.0
+0.0
+Entered step
+Unpause sim
+Set action
+Action:
+[-1.19854785 -0.01792043  0.29118375  1.53144904  0.53565389]
+-1.1985478521414417
+-0.017920430262504894
+0.2911837491546483
+1.5314490373783411
+0.5356538875084191
+[ INFO] [1627911274.913596302, 62.498000000]: ABORTED: Solution found but controller failed during execution
+Get Obs
+Is done
+>>>>>>>>>>>>>>>>done_fail=False,done_sucess=False
+Reward for getting closser
+Entered step
+Unpause sim
+Set action
+Action:
+[-2.02915086  0.15613063  1.13410886  1.24334684 -1.79143064]
+-2.02915086240281
+0.15613062930581512
+1.1341088568387074
+1.2433468447831513
+-1.791430636108029
+Error setting joint target. Is the target within bounds?
+Get Obs
+Is done
+>>>>>>>>>>>>>>>>done_fail=True,done_sucess=False
+Entered reset
+0.0
+0.0
+0.0
+0.0
+0.0
+[ INFO] [1627911290.899723238, 78.310000000]: ABORTED: Solution found but controller failed during execution
+Entered step
+Unpause sim
+Set action
+Action:
+[-1.3634428  -1.66149986 -2.09943404 -0.29170468 -0.45938123]
+-1.3634427959951732
+-1.6614998648291357
+-2.0994340401517357
+-0.2917046779752497
+-0.4593812311949943
+Error setting joint target. Is the target within bounds?
+Get Obs
+Is done
+>>>>>>>>>>>>>>>>done_fail=True,done_sucess=False
+Entered reset
+0.0
+0.0
+0.0
+0.0
+0.0
+[ INFO] [1627911291.557266671, 78.961000000]: ABORTED: Solution found but controller failed during execution
+Entered step
+Unpause sim
+Set action
+Action:
+[ 1.20210014 -1.09571166 -0.05772881 -1.77233277 -0.54864294]
+1.2021001356657224
+-1.0957116637569326
+-0.05772881021333243
+-1.772332766428109
+-0.5486429376870479
+Error setting joint target. Is the target within bounds?
+Get Obs
+Is done
+>>>>>>>>>>>>>>>>done_fail=True,done_sucess=False
+Entered reset
+0.0
+0.0
+0.0
+0.0
+0.0
+Entered step
+Unpause sim
+Set action
+Action:
+[ 2.11404284  1.56306146 -0.64196413 -1.29209561  1.30141384]
+2.1140428385632335
+1.5630614614804492
+-0.6419641322757448
+-1.2920956069440122
+1.3014138400828537
+Error setting joint target. Is the target within bounds?
+Get Obs
+Is done
+>>>>>>>>>>>>>>>>done_fail=True,done_sucess=False
+Entered reset
+0.0
+0.0
+0.0
+0.0
+0.0
+Entered step
+Unpause sim
+Set action
+Action:
+[-0.77480661 -0.72978736  1.68962393  0.170006   -0.49197731]
+-0.7748066099957733
+-0.7297873577406406
+1.689623927551131
+0.17000599587256815
+-0.49197731251465915
+Error setting joint target. Is the target within bounds?
+Get Obs
+Is done
+>>>>>>>>>>>>>>>>done_fail=True,done_sucess=False
+Entered reset
+0.0
+0.0
+0.0
+0.0
+0.0
+Entered step
+Unpause sim
+Set action
+Action:
+[ 1.91861814  2.13639687 -0.55353216  0.02870332 -0.84255358]
+1.9186181432095282
+2.136396871387894
+-0.5535321607145327
+0.028703324516335726
+-0.8425535757444222
+Error setting joint target. Is the target within bounds?
+Get Obs
+Is done
+>>>>>>>>>>>>>>>>done_fail=True,done_sucess=False
+Entered reset
+0.0
+0.0
+0.0
+0.0
+0.0
+Entered step
+Unpause sim
+Set action
+Action:
+[ 1.98639947  0.51893218  1.10311098  0.20038497 -1.87868468]
+1.9863994718987348
+0.5189321787914056
+1.1031109836901392
+0.2003849688658983
+-1.8786846849597418
+Error setting joint target. Is the target within bounds?
+Get Obs
+Is done
+>>>>>>>>>>>>>>>>done_fail=True,done_sucess=False
+Entered reset
+0.0
+0.0
+0.0
+0.0
+0.0
+Entered step
+Unpause sim
+Set action
+Action:
+[-1.56722975 -1.89814969 -1.31266736  0.03582768 -1.44999891]
+-1.5672297519542655
+-1.8981496886683296
+-1.3126673643449625
+0.035827677530772206
+-1.4499989057904465
+Error setting joint target. Is the target within bounds?
+Get Obs
+Is done
+>>>>>>>>>>>>>>>>done_fail=True,done_sucess=False
+Entered reset
+0.0
+0.0
+0.0
+0.0
+0.0
+Entered step
+Unpause sim
+Set action
+Action:
+[ 0.36661131 -1.82899487 -1.67823794  0.95003575 -1.02178751]
+0.36661131175445316
+-1.8289948726043859
+-1.678237941242384
+0.9500357547167897
+-1.021787510228119
+Error setting joint target. Is the target within bounds?
+Get Obs
+Is done
+>>>>>>>>>>>>>>>>done_fail=True,done_sucess=False
+Entered reset
+0.0
+0.0
+0.0
+0.0
+0.0
+Entered step
+Unpause sim
+Set action
+Action:
+[-0.26872009  0.8833435   1.20564803  0.2972406   0.80435926]
+-0.26872008505702794
+0.8833434985907576
+1.2056480262140474
+0.2972406037984374
+0.8043592562086439
+[33m[ WARN] [1627911309.502731250, 96.656000000]: Fail: ABORTED: No motion plan found. No execution attempted.
+[ INFO] [1627911309.328703910, 96.508000000]: ABORTED: Solution found but controller failed during execution
+Get Obs
+Is done
+>>>>>>>>>>>>>>>>done_fail=False,done_sucess=False
+Reward for getting closser
+Entered step
+Unpause sim
+Set action
+Action:
+[-1.42240254 -1.5520946  -0.81854653  0.10233841 -0.99511202]
+-1.422402536163628
+-1.5520945972094373
+-0.8185465273439716
+0.1023384108783949
+-0.9951120219294545
+[ INFO] [1627911309.600496929, 96.751000000]: ABORTED: No motion plan found. No execution attempted.
+Get Obs
+Is done
+>>>>>>>>>>>>>>>>done_fail=False,done_sucess=False
+Reward for getting closser
+Entered step
+Unpause sim
+Set action
+Action:
+[ 0.65582638 -2.12259227 -2.0728961  -0.97746139 -0.84973211]
+0.6558263839330403
+-2.122592265512579
+-2.072896102128494
+-0.9774613898723499
+-0.8497321141624186
+Error setting joint target. Is the target within bounds?
+Get Obs
+Is done
+>>>>>>>>>>>>>>>>done_fail=True,done_sucess=False
+Entered reset
+0.0
+0.0
+0.0
+0.0
+0.0
+[ INFO] [1627911322.512215403, 109.549000000]: ABORTED: Solution found but controller failed during execution
+Entered step
+Unpause sim
+Set action
+Action:
+[ 0.20238146  1.88012711 -0.89880787  0.8437991   1.19077735]
+0.20238146211431385
+1.8801271134751856
+-0.8988078703457616
+0.8437990971795686
+1.1907773457544546
+Error setting joint target. Is the target within bounds?
+Get Obs
+Is done
+>>>>>>>>>>>>>>>>done_fail=True,done_sucess=False
+Entered reset
+0.0
+0.0
+0.0
+0.0
+0.0
+[ INFO] [1627911323.166185723, 110.189000000]: ABORTED: Solution found but controller failed during execution
+Entered step
+Unpause sim
+Set action
+Action:
+[-1.15291507  0.86037045 -1.9756435   0.04848677  0.22912917]
+-1.1529150678340612
+0.8603704457805095
+-1.975643500980257
+0.048486774351353734
+0.22912916571526853
+Error setting joint target. Is the target within bounds?
+Get Obs
+Is done
+>>>>>>>>>>>>>>>>done_fail=True,done_sucess=False
+Entered reset
+0.0
+0.0
+0.0
+0.0
+0.0
+Entered step
+Unpause sim
+Set action
+Action:
+[ 0.11375767 -1.37013685  0.81491615  0.32169521 -1.82651715]
+0.1137576686756967
+-1.3701368539780798
+0.8149161529607145
+0.32169520819804376
+-1.8265171457448934
+Error setting joint target. Is the target within bounds?
+Get Obs
+Is done
+>>>>>>>>>>>>>>>>done_fail=True,done_sucess=False
+Entered reset
+0.0
+0.0
+0.0
+0.0
+0.0
+Entered step
+Unpause sim
+Set action
+Action:
+[-0.81668742  2.11655022  1.21601635  0.68765029 -0.73738689]
+-0.8166874191588132
+2.1165502225412487
+1.2160163482023436
+0.6876502940441558
+-0.7373868895849922
+Error setting joint target. Is the target within bounds?
+Get Obs
+Is done
+>>>>>>>>>>>>>>>>done_fail=True,done_sucess=False
+Entered reset
+0.0
+0.0
+0.0
+0.0
+0.0
+Entered step
+Unpause sim
+Set action
+Action:
+[ 1.77875491  2.05120133  2.02993486 -1.37619601  0.92831749]
+1.7787549082309595
+2.0512013306783343
+2.029934856849061
+-1.3761960139281537
+0.928317489543661
+Error setting joint target. Is the target within bounds?
+Get Obs
+Is done
+>>>>>>>>>>>>>>>>done_fail=True,done_sucess=False
+Entered reset
+0.0
+0.0
+0.0
+0.0
+0.0
+Entered step
+Unpause sim
+Set action
+Action:
+[ 0.87956689  1.6468418  -1.894618    0.58182832  0.6962496 ]
+0.8795668893188724
+1.6468417960915964
+-1.8946179961609888
+0.5818283158380289
+0.6962496046467863
+Error setting joint target. Is the target within bounds?
+Get Obs
+Is done
+>>>>>>>>>>>>>>>>done_fail=True,done_sucess=False
+Entered reset
+0.0
+0.0
+0.0
+0.0
+0.0
+Entered step
+Unpause sim
+Set action
+Action:
+[-0.41335532 -1.87853269 -1.33843086 -1.57061565  1.66814702]
+-0.4133553166439139
+-1.8785326858114377
+-1.3384308550577364
+-1.570615651097739
+1.66814701579383
+Error setting joint target. Is the target within bounds?
+Get Obs
+Is done
+>>>>>>>>>>>>>>>>done_fail=True,done_sucess=False
+Entered reset
+0.0
+0.0
+0.0
+0.0
+0.0
+Entered step
+Unpause sim
+Set action
+Action:
+[ 0.48555682  1.47318888  1.08682596  0.51496954 -2.05475776]
+0.4855568195441151
+1.473188877054589
+1.0868259605960584
+0.514969543636882
+-2.0547577617767736
+Error setting joint target. Is the target within bounds?
+Get Obs
+Is done
+>>>>>>>>>>>>>>>>done_fail=True,done_sucess=False
+Entered reset
+0.0
+0.0
+0.0
+0.0
+0.0
+Entered step
+Unpause sim
+Set action
+Action:
+[ 1.20363971  1.78316471  0.65666954 -1.02814186 -1.50083784]
+1.2036397089719362
+1.78316470670257
+0.6566695369484665
+-1.0281418627857348
+-1.5008378413009171
+Error setting joint target. Is the target within bounds?
+Get Obs
+Is done
+>>>>>>>>>>>>>>>>done_fail=True,done_sucess=False
+Entered reset
+0.0
+0.0
+0.0
+0.0
+0.0
+Entered step
+Unpause sim
+Set action
+Action:
+[-0.9171901  -1.60563715 -1.13393995 -0.67826636 -0.7290981 ]
+-0.9171901029860532
+-1.6056371473407962
+-1.13393994514957
+-0.6782663597568526
+-0.7290981016101994
+Error setting joint target. Is the target within bounds?
+Get Obs
+Is done
+>>>>>>>>>>>>>>>>done_fail=True,done_sucess=False
+Entered reset
+0.0
+0.0
+0.0
+0.0
+0.0
+Entered step
+Unpause sim
+Set action
+Action:
+[ 0.90397159  0.38811588 -0.28765    -0.74332402 -1.51100602]
+0.903971588574457
+0.3881158780715457
+-0.28765000125171714
+-0.7433240184726142
+-1.5110060218189776
+[ INFO] [1627911345.027179890, 131.786000000]: ABORTED: Solution found but controller failed during execution
+Get Obs
+Is done
+>>>>>>>>>>>>>>>>done_fail=False,done_sucess=False
+Reward for getting closser
+Entered step
+Unpause sim
+Set action
+Action:
+[2.0326394  0.88499976 1.98591177 1.50579536 1.57106952]
+2.0326393963754184
+0.884999755451978
+1.9859117725203692
+1.505795355404175
+1.5710695206236625
+Error setting joint target. Is the target within bounds?
+Get Obs
+Is done
+>>>>>>>>>>>>>>>>done_fail=True,done_sucess=False
+Entered reset
+0.0
+0.0
+0.0
+0.0
+0.0
+[ INFO] [1627911360.628004547, 147.235000000]: ABORTED: Solution found but controller failed during execution
+Entered step
+Unpause sim
+Set action
+Action:
+[-0.2991129   2.10522426  1.95593801  0.34415899 -1.38920994]
+-0.29911289638867844
+2.1052242621779236
+1.9559380060112215
+0.34415899359880076
+-1.389209941189705
+Error setting joint target. Is the target within bounds?
+Get Obs
+Is done
+>>>>>>>>>>>>>>>>done_fail=True,done_sucess=False
+Entered reset
+0.0
+0.0
+0.0
+0.0
+0.0
+Entered step
+Unpause sim
+Set action
+Action:
+[-1.73879346  1.42797616 -1.8707136  -0.98622397 -1.14936471]
+-1.7387934620009013
+1.4279761600213279
+-1.8707136006820915
+-0.9862239701929507
+-1.1493647062909667
+Error setting joint target. Is the target within bounds?
+Get Obs
+Is done
+>>>>>>>>>>>>>>>>done_fail=True,done_sucess=False
+Entered reset
+0.0
+0.0
+0.0
+0.0
+0.0
+Entered step
+Unpause sim
+Set action
+Action:
+[ 0.58963726 -2.07634399 -0.20275155  0.90634573  0.14614033]
+0.5896372648155617
+-2.0763439856642374
+-0.20275155003402956
+0.906345727155736
+0.14614032913264596
+Error setting joint target. Is the target within bounds?
+Get Obs
+Is done
+>>>>>>>>>>>>>>>>done_fail=True,done_sucess=False
+Entered reset
+0.0
+0.0
+0.0
+0.0
+0.0
+[33m[ WARN] [1627911363.046788759, 149.592000000]: Fail: ABORTED: No motion plan found. No execution attempted.
+Entered step
+Unpause sim
+Set action
+Action:
+[ 0.40364483 -1.33012145 -1.20962629 -0.03149564  1.17736219]
+0.403644826230797
+-1.3301214522434655
+-1.2096262857128868
+-0.03149563850667825
+1.177362190423227
+[ INFO] [1627911363.116108564, 149.656000000]: ABORTED: No motion plan found. No execution attempted.
+Get Obs
+Is done
+>>>>>>>>>>>>>>>>done_fail=False,done_sucess=False
+Reward for getting closser
+Entered step
+Unpause sim
+Set action
+Action:
+[ 0.65271227  1.39319519  2.03791404  0.79444111 -0.53655351]
+0.6527122650352428
+1.3931951935017923
+2.0379140364555033
+0.7944411084847935
+-0.5365535074409655
+Error setting joint target. Is the target within bounds?
+Get Obs
+Is done
+>>>>>>>>>>>>>>>>done_fail=True,done_sucess=False
+Entered reset
+0.0
+0.0
+0.0
+0.0
+0.0
+Entered step
+Unpause sim
+Set action
+Action:
+[ 2.00980104  0.25527708 -1.27405948  0.28136369  0.12438568]
+2.0098010394616193
+0.25527707732276683
+-1.2740594773553586
+0.28136369236724024
+0.12438568454496846
+Error setting joint target. Is the target within bounds?
+Get Obs
+Is done
+>>>>>>>>>>>>>>>>done_fail=True,done_sucess=False
+Entered reset
+0.0
+0.0
+0.0
+0.0
+0.0
+Entered step
+Unpause sim
+Set action
+Action:
+[-1.03597912 -0.28141462 -0.57319203 -1.33051009  2.07354746]
+-1.0359791234369715
+-0.28141462448319166
+-0.5731920306114027
+-1.3305100857921515
+2.0735474645405523
+Error setting joint target. Is the target within bounds?
+Get Obs
+Is done
+>>>>>>>>>>>>>>>>done_fail=True,done_sucess=False
+Entered reset
+0.0
+0.0
+0.0
+0.0
+0.0
+Entered step
+Unpause sim
+Set action
+Action:
+[ 1.97373631  0.16081945  1.17227349 -0.5214989   0.67898451]
+1.97373630646182
+0.16081945107098994
+1.1722734880073244
+-0.5214989008443078
+0.6789845107975898
+Error setting joint target. Is the target within bounds?
+Get Obs
+Is done
+>>>>>>>>>>>>>>>>done_fail=True,done_sucess=False
+Entered reset
+0.0
+0.0
+0.0
+0.0
+0.0
+Entered step
+Unpause sim
+Set action
+Action:
+[ 2.12946868 -1.09216494  1.1849691   0.50846421  0.15230549]
+2.1294686844323465
+-1.0921649359576775
+1.184969097427702
+0.5084642138563069
+0.15230549415397698
+Error setting joint target. Is the target within bounds?
+Get Obs
+Is done
+>>>>>>>>>>>>>>>>done_fail=True,done_sucess=False
+Entered reset
+0.0
+0.0
+0.0
+0.0
+0.0
+Entered step
+Unpause sim
+Set action
+Action:
+[ 1.53952592 -2.03181143 -0.90042092 -0.70867344 -0.31728026]
+1.5395259180536414
+-2.0318114271304215
+-0.9004209247060684
+-0.708673435723524
+-0.31728026168827284
+Error setting joint target. Is the target within bounds?
+Get Obs
+Is done
+>>>>>>>>>>>>>>>>done_fail=True,done_sucess=False
+Entered reset
+0.0
+0.0
+0.0
+0.0
+0.0
+Entered step
+Unpause sim
+Set action
+Action:
+[ 0.34892733 -1.14459441  1.99657903  0.09792547  0.93828746]
+0.34892733292227396
+-1.1445944148556149
+1.9965790298275676
+0.09792546751532116
+0.9382874589271228
+Error setting joint target. Is the target within bounds?
+Get Obs
+Is done
+>>>>>>>>>>>>>>>>done_fail=True,done_sucess=False
+Entered reset
+0.0
+0.0
+0.0
+0.0
+0.0
+Entered step
+Unpause sim
+Set action
+Action:
+[-0.12640513  0.0168717   2.12496425 -1.50573686 -0.61608546]
+-0.12640513408847598
+0.01687169809952449
+2.1249642477646873
+-1.505736859922376
+-0.6160854611484909
+Error setting joint target. Is the target within bounds?
+Get Obs
+Is done
+>>>>>>>>>>>>>>>>done_fail=True,done_sucess=False
+Entered reset
+0.0
+0.0
+0.0
+0.0
+0.0
+Entered step
+Unpause sim
+Set action
+Action:
+[-1.53989411 -0.2928884   1.04015319 -1.44120991  0.33879028]
+-1.539894107102341
+-0.2928884003135739
+1.0401531936026234
+-1.4412099063412658
+0.3387902800559277
+[ INFO] [1627911384.560204263, 170.835000000]: ABORTED: Solution found but controller failed during execution
+Get Obs
+Is done
+>>>>>>>>>>>>>>>>done_fail=False,done_sucess=False
+Reward for getting closser
+Entered step
+Unpause sim
+Set action
+Action:
+[-1.77353947 -2.06214866  1.20878206 -1.47982029  0.28567442]
+-1.7735394674965772
+-2.062148658869571
+1.2087820626148371
+-1.4798202938931915
+0.28567441521299397
+Error setting joint target. Is the target within bounds?
+Get Obs
+Is done
+>>>>>>>>>>>>>>>>done_fail=True,done_sucess=False
+Entered reset
+0.0
+0.0
+0.0
+0.0
+0.0
+[33m[ WARN] [1627911402.077503738, 188.139000000]: Fail: ABORTED: No motion plan found. No execution attempted.
+[ INFO] [1627911400.510394285, 186.620000000]: ABORTED: Solution found but controller failed during execution
+Entered step
+Unpause sim
+Set action
+Action:
+[ 0.53435031 -1.16833288 -0.30270618 -1.21135647  2.03229415]
+0.5343503146879032
+-1.1683328836754787
+-0.30270617855678483
+-1.2113564712459768
+2.0322941540802937
+Error setting joint target. Is the target within bounds?
+Get Obs
+Is done
+>>>>>>>>>>>>>>>>done_fail=True,done_sucess=False
+Entered reset
+0.0
+0.0
+0.0
+0.0
+0.0
+Entered step
+Unpause sim
+Set action
+Action:
+[-1.69473674  0.1355304   0.29439929  0.84930911 -2.15418853]
+-1.6947367428195959
+0.13553040047270182
+0.2943992883937461
+0.8493091079530282
+-2.154188531093488
+Error setting joint target. Is the target within bounds?
+Get Obs
+Is done
+>>>>>>>>>>>>>>>>done_fail=True,done_sucess=False
+Entered reset
+0.0
+0.0
+0.0
+0.0
+0.0
+Entered step
+Unpause sim
+Set action
+Action:
+[ 0.82029548 -1.12909335 -0.85898156 -0.28233296 -1.0720914 ]
+0.8202954788640779
+-1.1290933477504956
+-0.8589815595905785
+-0.28233295661959024
+-1.0720914048593397
+[ INFO] [1627911402.159188237, 188.224000000]: ABORTED: No motion plan found. No execution attempted.
+Get Obs
+Is done
+>>>>>>>>>>>>>>>>done_fail=False,done_sucess=False
+Reward for getting closser
+Entered step
+Unpause sim
+Set action
+Action:
+[ 0.45917018  1.72163684 -1.05709088 -1.30455955  2.12775983]
+0.45917018308953983
+1.7216368364292856
+-1.0570908750617887
+-1.3045595525254994
+2.127759826229272
+Error setting joint target. Is the target within bounds?
+Get Obs
+Is done
+>>>>>>>>>>>>>>>>done_fail=True,done_sucess=False
+Entered reset
+0.0
+0.0
+0.0
+0.0
+0.0
+Entered step
+Unpause sim
+Set action
+Action:
+[-2.06865766 -1.30169841 -1.87134129 -0.42523732  1.14312064]
+-2.0686576588718095
+-1.3016984090941879
+-1.8713412933308942
+-0.4252373205562725
+1.143120641506199
+Error setting joint target. Is the target within bounds?
+Get Obs
+Is done
+>>>>>>>>>>>>>>>>done_fail=True,done_sucess=False
+Entered reset
+0.0
+0.0
+0.0
+0.0
+0.0
+Entered step
+Unpause sim
+Set action
+Action:
+[-0.03121374 -1.56321763  2.05546821 -1.54562993  1.20453428]
+-0.03121373812362327
+-1.5632176266135756
+2.0554682079357383
+-1.545629930339025
+1.204534277635395
+Error setting joint target. Is the target within bounds?
+Get Obs
+Is done
+>>>>>>>>>>>>>>>>done_fail=True,done_sucess=False
+Entered reset
+0.0
+0.0
+0.0
+0.0
+0.0
+Entered step
+Unpause sim
+Set action
+Action:
+[ 0.78503623 -1.93871586  0.61542713  0.66152214  1.85263341]
+0.7850362287726256
+-1.9387158609823998
+0.6154271322174805
+0.6615221367337702
+1.8526334088394352
+Error setting joint target. Is the target within bounds?
+Get Obs
+Is done
+>>>>>>>>>>>>>>>>done_fail=True,done_sucess=False
+Entered reset
+0.0
+0.0
+0.0
+0.0
+0.0
+Entered step
+Unpause sim
+Set action
+Action:
+[ 1.20159537 -1.1568959   0.26882798 -1.31934117  2.05191381]
+1.2015953713054075
+-1.1568958999413128
+0.26882797877292886
+-1.3193411701727333
+2.0519138054257215
+Error setting joint target. Is the target within bounds?
+Get Obs
+Is done
+>>>>>>>>>>>>>>>>done_fail=True,done_sucess=False
+Entered reset
+0.0
+0.0
+0.0
+0.0
+0.0
+Entered step
+Unpause sim
+Set action
+Action:
+[ 1.10869638 -0.01060674 -0.50274092 -0.31883706 -1.06835159]
+1.1086963841817976
+-0.01060674026420294
+-0.5027409244797489
+-0.3188370583170723
+-1.068351592349157
+[ INFO] [1627911417.122502706, 203.004000000]: ABORTED: Solution found but controller failed during execution
+Get Obs
+Is done
+>>>>>>>>>>>>>>>>done_fail=False,done_sucess=False
+Reward for getting closser
+Entered step
+Unpause sim
+Set action
+Action:
+[ 2.01446889 -0.61335951  0.44742076  0.47090115 -0.86928448]
+2.014468885569195
+-0.613359513761579
+0.44742076156798216
+0.47090114996661026
+-0.8692844782123368
+Error setting joint target. Is the target within bounds?
+Get Obs
+Is done
+>>>>>>>>>>>>>>>>done_fail=True,done_sucess=False
+Entered reset
+0.0
+0.0
+0.0
+0.0
+0.0
+[ INFO] [1627911428.850154124, 214.598000000]: ABORTED: Solution found but controller failed during execution
+Entered step
+Unpause sim
+Set action
+Action:
+[-1.28777756  0.26693624 -0.09839285 -0.55076485 -0.34815672]
+-1.28777756316094
+0.2669362380188791
+-0.09839284589434705
+-0.5507648506945044
+-0.3481567180806193
+[ INFO] [1627911442.043143264, 227.661000000]: ABORTED: Solution found but controller failed during execution
+Get Obs
+Is done
+>>>>>>>>>>>>>>>>done_fail=False,done_sucess=False
+Reward for getting closser
+Entered step
+Unpause sim
+Set action
+Action:
+[-1.85542716  0.29879289  0.2073187  -0.70941     0.35459878]
+-1.855427164883269
+0.29879289311037205
+0.20731870110812478
+-0.7094100021746856
+0.35459877806113527
+Error setting joint target. Is the target within bounds?
+Get Obs
+Is done
+>>>>>>>>>>>>>>>>done_fail=True,done_sucess=False
+Entered reset
+0.0
+0.0
+0.0
+0.0
+0.0
+[ INFO] [1627911455.593743709, 241.060000000]: ABORTED: Solution found but controller failed during execution
+Entered step
+Unpause sim
+Set action
+Action:
+[ 1.34537156  1.81038043 -1.64186804 -0.80303357 -1.44777218]
+1.345371559889518
+1.810380428194942
+-1.6418680376748784
+-0.8030335703711462
+-1.447772178974239
+Error setting joint target. Is the target within bounds?
+Get Obs
+Is done
+>>>>>>>>>>>>>>>>done_fail=True,done_sucess=False
+Entered reset
+0.0
+0.0
+0.0
+0.0
+0.0
+[ INFO] [1627911456.312602301, 241.760000000]: ABORTED: Solution found but controller failed during execution
+Entered step
+Unpause sim
+Set action
+Action:
+[ 0.97004629  0.24947196 -1.30928053  1.622446   -1.09768965]
+0.9700462933291703
+0.24947196390053383
+-1.3092805273610075
+1.6224460033394914
+-1.09768965457425
+Error setting joint target. Is the target within bounds?
+Get Obs
+Is done
+>>>>>>>>>>>>>>>>done_fail=True,done_sucess=False
+Entered reset
+0.0
+0.0
+0.0
+0.0
+0.0
+Entered step
+Unpause sim
+Set action
+Action:
+[-1.74599693  0.25363742  2.14683802 -1.10403577 -1.02803943]
+-1.7459969307452314
+0.2536374191481148
+2.146838022192566
+-1.1040357651131185
+-1.0280394261572514
+Error setting joint target. Is the target within bounds?
+Get Obs
+Is done
+>>>>>>>>>>>>>>>>done_fail=True,done_sucess=False
+Entered reset
+0.0
+0.0
+0.0
+0.0
+0.0
+Entered step
+Unpause sim
+Set action
+Action:
+[-1.07656709 -1.74022032 -1.20919249 -1.15908332  1.49422912]
+-1.0765670931149662
+-1.7402203160923064
+-1.209192488761658
+-1.1590833233137927
+1.4942291238049354
+Error setting joint target. Is the target within bounds?
+Get Obs
+Is done
+>>>>>>>>>>>>>>>>done_fail=True,done_sucess=False
+Entered reset
+0.0
+0.0
+0.0
+0.0
+0.0
+Entered step
+Unpause sim
+Set action
+Action:
+[-0.82338421  0.92265689 -1.12626248  1.99924366 -0.89419055]
+-0.8233842132410722
+0.9226568895286666
+-1.1262624779446395
+1.9992436631360944
+-0.8941905455667862
+Error setting joint target. Is the target within bounds?
+Get Obs
+Is done
+>>>>>>>>>>>>>>>>done_fail=True,done_sucess=False
+Entered reset
+0.0
+0.0
+0.0
+0.0
+0.0
+Entered step
+Unpause sim
+Set action
+Action:
+[ 1.27979496 -0.66757456  1.20214238 -1.6450183  -0.19270075]
+1.2797949629969718
+-0.6675745626010421
+1.2021423841291998
+-1.6450183049284621
+-0.1927007508530445
+Error setting joint target. Is the target within bounds?
+Get Obs
+Is done
+>>>>>>>>>>>>>>>>done_fail=True,done_sucess=False
+Entered reset
+0.0
+0.0
+0.0
+0.0
+0.0
+Entered step
+Unpause sim
+Set action
+Action:
+[-0.89113389 -0.52523228 -1.293966   -0.64892273  0.00336485]
+-0.8911338864036469
+-0.5252322797253144
+-1.2939659987995922
+-0.6489227294287083
+0.003364849626458888
+Traceback (most recent call last):
+  File "/home/nils/Documents/Studium/Bachelorarbeit/moveo_RL/src/moveo_training/scripts/A3C_Continuous_moveo.py", line 313, in <module>
+    main()
+  File "/home/nils/Documents/Studium/Bachelorarbeit/moveo_RL/src/moveo_training/scripts/A3C_Continuous_moveo.py", line 304, in main
+    final_time_step, policy_state = driver.run()
+  File "/home/nils/anaconda3/envs/moveo_training/lib/python3.9/site-packages/tf_agents/drivers/dynamic_episode_driver.py", line 211, in run
+    return self._run_fn(
+  File "/home/nils/anaconda3/envs/moveo_training/lib/python3.9/site-packages/tf_agents/utils/common.py", line 186, in with_check_resource_vars
+    return fn(*fn_args, **fn_kwargs)
+  File "/home/nils/anaconda3/envs/moveo_training/lib/python3.9/site-packages/tf_agents/drivers/dynamic_episode_driver.py", line 238, in _run
+    tf.while_loop(
+  File "/home/nils/anaconda3/envs/moveo_training/lib/python3.9/site-packages/tensorflow/python/util/deprecation.py", line 605, in new_func
+    return func(*args, **kwargs)
+  File "/home/nils/anaconda3/envs/moveo_training/lib/python3.9/site-packages/tensorflow/python/ops/control_flow_ops.py", line 2489, in while_loop_v2
+    return while_loop(
+  File "/home/nils/anaconda3/envs/moveo_training/lib/python3.9/site-packages/tensorflow/python/ops/control_flow_ops.py", line 2735, in while_loop
+    loop_vars = body(*loop_vars)
+  File "/home/nils/anaconda3/envs/moveo_training/lib/python3.9/site-packages/tf_agents/drivers/dynamic_episode_driver.py", line 141, in loop_body
+    next_time_step = self.env.step(action_step.action)
+  File "/home/nils/anaconda3/envs/moveo_training/lib/python3.9/site-packages/tf_agents/environments/tf_environment.py", line 241, in step
+    return self._step(action)
+  File "/home/nils/anaconda3/envs/moveo_training/lib/python3.9/site-packages/tf_agents/environments/tf_py_environment.py", line 316, in _step
+    outputs = tf.numpy_function(
+  File "/home/nils/anaconda3/envs/moveo_training/lib/python3.9/site-packages/tensorflow/python/util/dispatch.py", line 201, in wrapper
+    return target(*args, **kwargs)
+  File "/home/nils/anaconda3/envs/moveo_training/lib/python3.9/site-packages/tensorflow/python/ops/script_ops.py", line 686, in numpy_function
+    return py_func_common(func, inp, Tout, stateful=True, name=name)
+  File "/home/nils/anaconda3/envs/moveo_training/lib/python3.9/site-packages/tensorflow/python/ops/script_ops.py", line 573, in py_func_common
+    result = func(*[np.array(x) for x in inp])
+  File "/home/nils/anaconda3/envs/moveo_training/lib/python3.9/site-packages/tf_agents/environments/tf_py_environment.py", line 303, in _isolated_step_py
+    return self._execute(_step_py, *flattened_actions)
+  File "/home/nils/anaconda3/envs/moveo_training/lib/python3.9/site-packages/tf_agents/environments/tf_py_environment.py", line 212, in _execute
+    return fn(*args, **kwargs)
+  File "/home/nils/anaconda3/envs/moveo_training/lib/python3.9/site-packages/tf_agents/environments/tf_py_environment.py", line 299, in _step_py
+    self._time_step = self._env.step(packed)
+  File "/home/nils/anaconda3/envs/moveo_training/lib/python3.9/site-packages/tf_agents/environments/py_environment.py", line 203, in step
+    self._current_time_step = self._step(action)
+  File "/home/nils/anaconda3/envs/moveo_training/lib/python3.9/site-packages/tf_agents/environments/batched_py_environment.py", line 166, in _step
+    time_steps = self._envs[0].step(actions)
+  File "/home/nils/anaconda3/envs/moveo_training/lib/python3.9/site-packages/tf_agents/environments/py_environment.py", line 203, in step
+    self._current_time_step = self._step(action)
+  File "/home/nils/anaconda3/envs/moveo_training/lib/python3.9/site-packages/tf_agents/environments/wrappers.py", line 117, in _step
+    time_step = self._env.step(action)
+  File "/home/nils/anaconda3/envs/moveo_training/lib/python3.9/site-packages/tf_agents/environments/py_environment.py", line 203, in step
+    self._current_time_step = self._step(action)
+  File "/home/nils/anaconda3/envs/moveo_training/lib/python3.9/site-packages/tf_agents/environments/gym_wrapper.py", line 217, in _step
+    observation, reward, self._done, self._info = self._gym_env.step(action)
+  File "/home/nils/Documents/Studium/Bachelorarbeit/moveo_RL/src/openai_ros/openai_ros/src/openai_ros/robot_gazebo_env_goal.py", line 51, in step
+    obs = self._get_obs()
+  File "/home/nils/Documents/Studium/Bachelorarbeit/moveo_RL/src/moveo_training/scripts/moveo_push.py", line 132, in _get_obs
+    self.gazebo.unpauseSim()
+  File "/home/nils/Documents/Studium/Bachelorarbeit/moveo_RL/src/openai_ros/openai_ros/src/openai_ros/gazebo_connection.py", line 58, in unpauseSim
+    rospy.wait_for_service('/gazebo/unpause_physics')
+  File "/opt/ros/noetic/lib/python3/dist-packages/rospy/impl/tcpros_service.py", line 166, in wait_for_service
+    raise ROSInterruptException("rospy shutdown")
+rospy.exceptions.ROSInterruptException: rospy shutdown
+[ INFO] [1627911473.839148253, 259.027000000]: ABORTED: Solution found but controller failed during execution
+Get Obs

@@ -1,0 +1,162 @@
+Replay Buffer:
+Trajectory(
+{'action': array(1),
+ 'discount': array(1., dtype=float32),
+ 'next_step_type': array(1, dtype=int32),
+ 'observation': array([-0.01157833,  0.0052552 , -0.04429024,  0.0244839 ], dtype=float32),
+ 'policy_info': (),
+ 'reward': array(1., dtype=float32),
+ 'step_type': array(0, dtype=int32)})
+Trajectory(
+{'action': array(0),
+ 'discount': array(1., dtype=float32),
+ 'next_step_type': array(1, dtype=int32),
+ 'observation': array([-0.01147322,  0.2009834 , -0.04380056, -0.28183758], dtype=float32),
+ 'policy_info': (),
+ 'reward': array(1., dtype=float32),
+ 'step_type': array(1, dtype=int32)})
+Trajectory(
+{'action': array(0),
+ 'discount': array(1., dtype=float32),
+ 'next_step_type': array(1, dtype=int32),
+ 'observation': array([-0.00745356,  0.00651271, -0.04943731, -0.00328454], dtype=float32),
+ 'policy_info': (),
+ 'reward': array(1., dtype=float32),
+ 'step_type': array(1, dtype=int32)})
+Trajectory(
+{'action': array(0),
+ 'discount': array(1., dtype=float32),
+ 'next_step_type': array(1, dtype=int32),
+ 'observation': array([-0.0073233 , -0.18786666, -0.049503  ,  0.27339962], dtype=float32),
+ 'policy_info': (),
+ 'reward': array(1., dtype=float32),
+ 'step_type': array(1, dtype=int32)})
+Trajectory(
+{'action': array(0),
+ 'discount': array(1., dtype=float32),
+ 'next_step_type': array(1, dtype=int32),
+ 'observation': array([-0.01108064, -0.3822486 , -0.04403501,  0.5500674 ], dtype=float32),
+ 'policy_info': (),
+ 'reward': array(1., dtype=float32),
+ 'step_type': array(1, dtype=int32)})
+Trajectory(
+{'action': array(1),
+ 'discount': array(1., dtype=float32),
+ 'next_step_type': array(1, dtype=int32),
+ 'observation': array([-0.01872561, -0.57672524, -0.03303366,  0.82855755], dtype=float32),
+ 'policy_info': (),
+ 'reward': array(1., dtype=float32),
+ 'step_type': array(1, dtype=int32)})
+Trajectory(
+{'action': array(0),
+ 'discount': array(1., dtype=float32),
+ 'next_step_type': array(1, dtype=int32),
+ 'observation': array([-0.03026011, -0.38116765, -0.01646251,  0.525671  ], dtype=float32),
+ 'policy_info': (),
+ 'reward': array(1., dtype=float32),
+ 'step_type': array(1, dtype=int32)})
+Trajectory(
+{'action': array(1),
+ 'discount': array(1., dtype=float32),
+ 'next_step_type': array(1, dtype=int32),
+ 'observation': array([-0.03788346, -0.5760541 , -0.00594909,  0.8131213 ], dtype=float32),
+ 'policy_info': (),
+ 'reward': array(1., dtype=float32),
+ 'step_type': array(1, dtype=int32)})
+Trajectory(
+{'action': array(0),
+ 'discount': array(1., dtype=float32),
+ 'next_step_type': array(1, dtype=int32),
+ 'observation': array([-0.04940455, -0.38085118,  0.01031334,  0.5185731 ], dtype=float32),
+ 'policy_info': (),
+ 'reward': array(1., dtype=float32),
+ 'step_type': array(1, dtype=int32)})
+Trajectory(
+{'action': array(1),
+ 'discount': array(1., dtype=float32),
+ 'next_step_type': array(1, dtype=int32),
+ 'observation': array([-0.05702157, -0.5761168 ,  0.0206848 ,  0.81448805], dtype=float32),
+ 'policy_info': (),
+ 'reward': array(1., dtype=float32),
+ 'step_type': array(1, dtype=int32)})
+Trajectory(
+{'action': array(1),
+ 'discount': array(1., dtype=float32),
+ 'next_step_type': array(1, dtype=int32),
+ 'observation': array([-0.06854391, -0.38128415,  0.03697456,  0.5283824 ], dtype=float32),
+ 'policy_info': (),
+ 'reward': array(1., dtype=float32),
+ 'step_type': array(1, dtype=int32)})
+Trajectory(
+{'action': array(0),
+ 'discount': array(1., dtype=float32),
+ 'next_step_type': array(1, dtype=int32),
+ 'observation': array([-0.07616959, -0.18670136,  0.04754221,  0.2475758 ], dtype=float32),
+ 'policy_info': (),
+ 'reward': array(1., dtype=float32),
+ 'step_type': array(1, dtype=int32)})
+Trajectory(
+{'action': array(1),
+ 'discount': array(1., dtype=float32),
+ 'next_step_type': array(1, dtype=int32),
+ 'observation': array([-0.07990362, -0.3824689 ,  0.05249372,  0.55486745], dtype=float32),
+ 'policy_info': (),
+ 'reward': array(1., dtype=float32),
+ 'step_type': array(1, dtype=int32)})
+Trajectory(
+{'action': array(1),
+ 'discount': array(1., dtype=float32),
+ 'next_step_type': array(1, dtype=int32),
+ 'observation': array([-0.08755299, -0.18812181,  0.06359108,  0.27917445], dtype=float32),
+ 'policy_info': (),
+ 'reward': array(1., dtype=float32),
+ 'step_type': array(1, dtype=int32)})
+Trajectory(
+{'action': array(1),
+ 'discount': array(1., dtype=float32),
+ 'next_step_type': array(1, dtype=int32),
+ 'observation': array([-0.09131543,  0.00603807,  0.06917457,  0.00720647], dtype=float32),
+ 'policy_info': (),
+ 'reward': array(1., dtype=float32),
+ 'step_type': array(1, dtype=int32)})
+Trajectory(
+{'action': array(0),
+ 'discount': array(1., dtype=float32),
+ 'next_step_type': array(1, dtype=int32),
+ 'observation': array([-0.09119467,  0.20010328,  0.06931869, -0.26287404], dtype=float32),
+ 'policy_info': (),
+ 'reward': array(1., dtype=float32),
+ 'step_type': array(1, dtype=int32)})
+Trajectory(
+{'action': array(1),
+ 'discount': array(1., dtype=float32),
+ 'next_step_type': array(1, dtype=int32),
+ 'observation': array([-0.0871926 ,  0.00406387,  0.06406121,  0.05084225], dtype=float32),
+ 'policy_info': (),
+ 'reward': array(1., dtype=float32),
+ 'step_type': array(1, dtype=int32)})
+Trajectory(
+{'action': array(0),
+ 'discount': array(1., dtype=float32),
+ 'next_step_type': array(1, dtype=int32),
+ 'observation': array([-0.08711133,  0.19821154,  0.06507806, -0.22096078], dtype=float32),
+ 'policy_info': (),
+ 'reward': array(1., dtype=float32),
+ 'step_type': array(1, dtype=int32)})
+Trajectory(
+{'action': array(1),
+ 'discount': array(1., dtype=float32),
+ 'next_step_type': array(1, dtype=int32),
+ 'observation': array([-0.08314709,  0.00222265,  0.06065884,  0.09151968], dtype=float32),
+ 'policy_info': (),
+ 'reward': array(1., dtype=float32),
+ 'step_type': array(1, dtype=int32)})
+Trajectory(
+{'action': array(0),
+ 'discount': array(1., dtype=float32),
+ 'next_step_type': array(1, dtype=int32),
+ 'observation': array([-0.08310264,  0.19642508,  0.06248923, -0.18142544], dtype=float32),
+ 'policy_info': (),
+ 'reward': array(1., dtype=float32),
+ 'step_type': array(1, dtype=int32)})
+Average Return:  0.0

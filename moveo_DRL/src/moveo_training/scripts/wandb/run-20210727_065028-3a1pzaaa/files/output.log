@@ -1,0 +1,126 @@
+Start Agent init....
+Entered Push Env
+Entered Moveo Env
+[ INFO] [1627361433.694352710]: Loading robot model 'moveo_description'...
+[ INFO] [1627361433.695161961]: No root/virtual joint specified in SRDF. Assuming fixed joint
+###### Setting Group Moveit with 30 seconds wait...
+[ INFO] [1627361434.934163130, 33.543000000]: Ready to take commands for planning group arm.
+<class 'moveo_commander.MoveoCommander'>
+launch the init function of the Parent Class robot_gazebo_env_goal.RobotGazeboEnv.....
+Entered Gazebo Env
+False
+launch the init function of the Parent Class robot_gazebo_env_goal.RobotGazeboEnv.....END
+Entered Moveo Env END
+START Actor init
+END Actor init....
+NUMBER OF WORKERS=CPUs available for this training=1
+END Agent init....
+Entered Push Env
+Entered Moveo Env
+###### Setting Group Moveit with 30 seconds wait...
+[ INFO] [1627361435.535283588, 34.104000000]: Ready to take commands for planning group arm.
+<class 'moveo_commander.MoveoCommander'>
+launch the init function of the Parent Class robot_gazebo_env_goal.RobotGazeboEnv.....
+Entered Gazebo Env
+False
+launch the init function of the Parent Class robot_gazebo_env_goal.RobotGazeboEnv.....END
+Entered Moveo Env END
+Start Worker Agent init....
+START Actor init
+END Actor init....
+END Worker Agent init....
+####################### START Train
+####################### START AC3
+EP0 EpisodeReward=0
+Entered reset
+0.0
+0.0
+0.0
+0.0
+0.0
+[ INFO] [1627361436.381315406, 34.883000000]: ABORTED: Solution found but controller failed during execution
+Entered step
+Unpause sim
+Set action
+Action:
+[ 1.30165171 -0.81767098  0.31256559  0.74101708  0.3594451 ]
+1.301651707008545
+-0.8176709803105817
+0.3125655877445363
+0.7410170780323632
+0.35944509726563245
+[31m[ERROR] [1627361434.966455, 33.569000]: NOT Initialising Simulation Physics Parameters
+[33m[WARN] [1627361434.982379, 33.581000]: Start Init ControllersConnection
+[33m[WARN] [1627361434.984787, 33.581000]: END Init ControllersConnection
+/home/nils/anaconda3/envs/moveo_training/lib/python3.9/site-packages/gym/logger.py:30: UserWarning: [33mWARN: Box bound precision lowered by casting to float32
+  warnings.warn(colorize('%s: %s'%('WARN', msg % args), 'yellow'))
+2021-07-27 06:50:35.159348: I tensorflow/compiler/jit/xla_cpu_device.cc:41] Not creating XLA devices, tf_xla_enable_xla_devices not set
+2021-07-27 06:50:35.159544: I tensorflow/core/platform/cpu_feature_guard.cc:142] This TensorFlow binary is optimized with oneAPI Deep Neural Network Library (oneDNN) to use the following CPU instructions in performance-critical operations:  SSE4.1 SSE4.2 AVX AVX2 FMA
+To enable them in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2021-07-27 06:50:35.160911: I tensorflow/core/common_runtime/process_util.cc:146] Creating new thread pool with default inter op setting: 2. Tune using inter_op_parallelism_threads for best performance.
+[31m[ERROR] [1627361435.557336, 34.121000]: NOT Initialising Simulation Physics Parameters
+[33m[WARN] [1627361435.570969, 34.131000]: Start Init ControllersConnection
+[33m[WARN] [1627361435.572472, 34.131000]: END Init ControllersConnection
+2021-07-27 06:50:36.504436: I tensorflow/compiler/mlir/mlir_graph_optimization_pass.cc:116] None of the MLIR optimization passes are enabled (registered 2)
+2021-07-27 06:50:36.523350: I tensorflow/core/platform/profile_utils/cpu_utils.cc:112] CPU Frequency: 3192790000 Hz
+[ INFO] [1627361450.404856700, 48.433000000]: ABORTED: Solution found but controller failed during execution
+Get Obs
+Is done
+>>>>>>>>>>>>>>>>done_fail=False,done_sucess=False
+Punish, ee z too low or high...0.2845760193651025
+EP0 EpisodeReward=-25.0
+Entered step
+Unpause sim
+Set action
+Action:
+[ 1.27179242 -0.80681246 -0.21612866 -0.86460242  0.77297099]
+1.2717924173870885
+-0.8068124617407257
+-0.21612865876392973
+-0.864602418811037
+0.7729709859909023
+[ INFO] [1627361467.168982922, 64.886000000]: ABORTED: Solution found but controller failed during execution
+Get Obs
+Is done
+>>>>>>>>>>>>>>>>done_fail=False,done_sucess=False
+Punish, ee z too low or high...0.1902169674876899
+EP0 EpisodeReward=-50.0
+Entered step
+Unpause sim
+Set action
+Action:
+[-1.05651276 -0.10591341  0.82405251 -0.25572344  0.36452   ]
+-1.056512759156928
+-0.10591340642728166
+0.8240525144320184
+-0.25572344388109025
+0.3645200033214332
+Exception in thread Thread-4:
+Traceback (most recent call last):
+  File "/home/nils/anaconda3/envs/moveo_training/lib/python3.9/threading.py", line 954, in _bootstrap_inner
+    self.run()
+  File "/home/nils/anaconda3/envs/moveo_training/lib/python3.9/threading.py", line 892, in run
+    self._target(*self._args, **self._kwargs)
+  File "/home/nils/anaconda3/envs/moveo_training/lib/python3.9/site-packages/wandb/sdk/wandb_run.py", line 183, in check_network_status
+    status_response = self._interface.communicate_network_status()
+  File "/home/nils/anaconda3/envs/moveo_training/lib/python3.9/site-packages/wandb/sdk/interface/interface.py", line 755, in communicate_network_status
+    resp = self._communicate(req, timeout=timeout, local=True)
+  File "/home/nils/anaconda3/envs/moveo_training/lib/python3.9/site-packages/wandb/sdk/interface/interface.py", line 545, in _communicate
+    return self._communicate_async(rec, local=local).get(timeout=timeout)
+  File "/home/nils/anaconda3/envs/moveo_training/lib/python3.9/site-packages/wandb/sdk/interface/interface.py", line 550, in _communicate_async
+    raise Exception("The wandb backend process has shutdown")
+Exception: The wandb backend process has shutdown
+Exception in thread Thread-3:
+Traceback (most recent call last):
+  File "/home/nils/anaconda3/envs/moveo_training/lib/python3.9/threading.py", line 954, in _bootstrap_inner
+    self.run()
+  File "/home/nils/anaconda3/envs/moveo_training/lib/python3.9/threading.py", line 892, in run
+    self._target(*self._args, **self._kwargs)
+  File "/home/nils/anaconda3/envs/moveo_training/lib/python3.9/site-packages/wandb/sdk/wandb_run.py", line 201, in check_status
+    status_response = self._interface.communicate_stop_status()
+  File "/home/nils/anaconda3/envs/moveo_training/lib/python3.9/site-packages/wandb/sdk/interface/interface.py", line 743, in communicate_stop_status
+    resp = self._communicate(req, timeout=timeout, local=True)
+  File "/home/nils/anaconda3/envs/moveo_training/lib/python3.9/site-packages/wandb/sdk/interface/interface.py", line 545, in _communicate
+    return self._communicate_async(rec, local=local).get(timeout=timeout)
+  File "/home/nils/anaconda3/envs/moveo_training/lib/python3.9/site-packages/wandb/sdk/interface/interface.py", line 550, in _communicate_async
+    raise Exception("The wandb backend process has shutdown")

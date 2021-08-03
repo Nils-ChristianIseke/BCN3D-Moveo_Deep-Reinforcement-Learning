@@ -1,0 +1,26 @@
+Start Agent init....
+Entered Push Env
+Traceback (most recent call last):
+  File "/home/nils/Documents/Studium/Bachelorarbeit/moveo_RL/src/moveo_training/scripts/A3C_Continuous_moveo.py", line 316, in <module>
+    main()
+  File "/home/nils/Documents/Studium/Bachelorarbeit/moveo_RL/src/moveo_training/scripts/A3C_Continuous_moveo.py", line 291, in main
+    agent = Agent(env_name)
+  File "/home/nils/Documents/Studium/Bachelorarbeit/moveo_RL/src/moveo_training/scripts/A3C_Continuous_moveo.py", line 144, in __init__
+    env = gym.make(env_name)
+  File "/home/nils/anaconda3/envs/moveo_training/lib/python3.9/site-packages/gym/envs/registration.py", line 145, in make
+    return registry.make(id, **kwargs)
+  File "/home/nils/anaconda3/envs/moveo_training/lib/python3.9/site-packages/gym/envs/registration.py", line 90, in make
+    env = spec.make(**kwargs)
+  File "/home/nils/anaconda3/envs/moveo_training/lib/python3.9/site-packages/gym/envs/registration.py", line 60, in make
+    env = cls(**_kwargs)
+  File "/home/nils/Documents/Studium/Bachelorarbeit/moveo_RL/src/moveo_training/scripts/moveo_push.py", line 27, in __init__
+    self.get_params()
+  File "/home/nils/Documents/Studium/Bachelorarbeit/moveo_RL/src/moveo_training/scripts/moveo_push.py", line 63, in get_params
+    self.sim_time = rospy.get_time()
+  File "/opt/ros/noetic/lib/python3/dist-packages/rospy/rostime.py", line 207, in get_time
+    return Time.now().to_sec()
+  File "/opt/ros/noetic/lib/python3/dist-packages/rospy/rostime.py", line 155, in now
+    return get_rostime()
+  File "/opt/ros/noetic/lib/python3/dist-packages/rospy/rostime.py", line 190, in get_rostime
+    raise rospy.exceptions.ROSInitException("time is not initialized. Have you called init_node()?")
+rospy.exceptions.ROSInitException: time is not initialized. Have you called init_node()?

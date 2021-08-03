@@ -1,0 +1,63 @@
+Entered Push Env
+Entered Moveo Env
+[ INFO] [1627892690.282066026]: Loading robot model 'moveo_description'...
+[ INFO] [1627892690.282759894]: No root/virtual joint specified in SRDF. Assuming fixed joint
+[31m[ERROR] [1627892691.706878, 927.428000]: NOT Initialising Simulation Physics Parameters
+[33m[WARN] [1627892691.721259, 927.440000]: Start Init ControllersConnection
+[33m[WARN] [1627892691.723339, 927.440000]: END Init ControllersConnection
+/home/nils/anaconda3/envs/moveo_training/lib/python3.9/site-packages/gym/logger.py:30: UserWarning: [33mWARN: Box bound precision lowered by casting to float32
+  warnings.warn(colorize('%s: %s'%('WARN', msg % args), 'yellow'))
+###### Setting Group Moveit with 30 seconds wait...
+[ INFO] [1627892691.666052778, 927.394000000]: Ready to take commands for planning group arm.
+<class 'moveo_commander.MoveoCommander'>
+launch the init function of the Parent Class robot_gazebo_env_goal.RobotGazeboEnv.....
+Entered Gazebo Env
+False
+launch the init function of the Parent Class robot_gazebo_env_goal.RobotGazeboEnv.....END
+Entered Moveo Env END
+Entered reset
+0.0
+0.0
+0.0
+0.0
+0.0
+Entered step
+Unpause sim
+Set action
+Action:
+[-1.6470864   1.2134546  -0.22594818  1.376967    0.8140861 ]
+-1.6470864
+1.2134546
+-0.22594818
+1.376967
+0.8140861
+No registered converter was able to produce a C++ rvalue of type double from this Python object of type numpy.float32
+Get Obs
+Is done
+>>>>>>>>>>>>>>>>done_fail=True,done_sucess=False
+Entered reset
+0.0
+0.0
+0.0
+0.0
+0.0
+Replay Buffer:
+Trajectory(
+{'action': array([-1.6470864 ,  1.2134546 , -0.22594818,  1.376967  ,  0.8140861 ],
+      dtype=float32),
+ 'discount': array(0., dtype=float32),
+ 'next_step_type': array(2, dtype=int32),
+ 'observation': array([0.5737633 , 0.        , 0.55422866], dtype=float32),
+ 'policy_info': (),
+ 'reward': array(-100., dtype=float32),
+ 'step_type': array(0, dtype=int32)})
+Trajectory(
+{'action': array([ 0.07436454, -0.8918434 , -1.3688139 , -1.0402117 ,  0.08644765],
+      dtype=float32),
+ 'discount': array(1., dtype=float32),
+ 'next_step_type': array(0, dtype=int32),
+ 'observation': array([0.5737673, 0.       , 0.5542337], dtype=float32),
+ 'policy_info': (),
+ 'reward': array(0., dtype=float32),
+ 'step_type': array(2, dtype=int32)})
+Average Return:  -100.0

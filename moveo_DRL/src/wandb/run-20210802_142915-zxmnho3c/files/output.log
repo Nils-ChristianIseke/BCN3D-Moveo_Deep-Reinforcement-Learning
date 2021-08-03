@@ -1,0 +1,82 @@
+[31m[ERROR] [1627907361.646879, 508.014000]: NOT Initialising Simulation Physics Parameters
+[33m[WARN] [1627907361.653956, 508.020000]: Start Init ControllersConnection
+[33m[WARN] [1627907361.658952, 508.020000]: END Init ControllersConnection
+/home/nils/anaconda3/envs/moveo_training/lib/python3.9/site-packages/gym/logger.py:30: UserWarning: [33mWARN: Box bound precision lowered by casting to float32
+  warnings.warn(colorize('%s: %s'%('WARN', msg % args), 'yellow'))
+2021-08-02 14:29:21.862127: I tensorflow/compiler/jit/xla_cpu_device.cc:41] Not creating XLA devices, tf_xla_enable_xla_devices not set
+2021-08-02 14:29:21.862374: I tensorflow/core/platform/cpu_feature_guard.cc:142] This TensorFlow binary is optimized with oneAPI Deep Neural Network Library (oneDNN) to use the following CPU instructions in performance-critical operations:  SSE4.1 SSE4.2 AVX AVX2 FMA
+To enable them in other operations, rebuild TensorFlow with the appropriate compiler flags.
+Start Agent init....
+Entered Push Env
+Entered Moveo Env
+[ INFO] [1627907360.403363138]: Loading robot model 'moveo_description'...
+[ INFO] [1627907360.404179000]: No root/virtual joint specified in SRDF. Assuming fixed joint
+###### Setting Group Moveit with 30 seconds wait...
+[ INFO] [1627907361.637462748, 508.013000000]: Ready to take commands for planning group arm.
+<class 'moveo_commander.MoveoCommander'>
+2021-08-02 14:29:21.863249: I tensorflow/core/common_runtime/process_util.cc:146] Creating new thread pool with default inter op setting: 2. Tune using inter_op_parallelism_threads for best performance.
+[31m[ERROR] [1627907362.318088, 508.666000]: NOT Initialising Simulation Physics Parameters
+[33m[WARN] [1627907362.334990, 508.681000]: Start Init ControllersConnection
+[33m[WARN] [1627907362.336318, 508.681000]: END Init ControllersConnection
+launch the init function of the Parent Class robot_gazebo_env_goal.RobotGazeboEnv.....
+Entered Gazebo Env
+False
+launch the init function of the Parent Class robot_gazebo_env_goal.RobotGazeboEnv.....END
+Entered Moveo Env END
+START Actor init
+END Actor init....
+NUMBER OF WORKERS=CPUs available for this training=1
+END Agent init....
+Entered Push Env
+Entered Moveo Env
+###### Setting Group Moveit with 30 seconds wait...
+[ INFO] [1627907362.296992047, 508.645000000]: Ready to take commands for planning group arm.
+<class 'moveo_commander.MoveoCommander'>
+launch the init function of the Parent Class robot_gazebo_env_goal.RobotGazeboEnv.....
+Entered Gazebo Env
+False
+launch the init function of the Parent Class robot_gazebo_env_goal.RobotGazeboEnv.....END
+Entered Moveo Env END
+Entered reset
+0.0
+0.0
+0.0
+0.0
+0.0
+Entered step
+Unpause sim
+Set action
+Action:
+[-0.12414159 -0.48342572 -0.47466834 -1.55652034  0.20238005]
+-0.12414159013558379
+-0.4834257164984217
+-0.4746683416637192
+-1.5565203445488702
+0.20238004609400306
+Traceback (most recent call last):
+  File "/home/nils/Documents/Studium/Bachelorarbeit/moveo_RL/src/moveo_training/scripts/A3C_Continuous_moveo.py", line 313, in <module>
+    main()
+  File "/home/nils/Documents/Studium/Bachelorarbeit/moveo_RL/src/moveo_training/scripts/A3C_Continuous_moveo.py", line 304, in main
+    final_time_step, policy_state = driver.run()
+  File "/home/nils/anaconda3/envs/moveo_training/lib/python3.9/site-packages/tf_agents/drivers/dynamic_episode_driver.py", line 211, in run
+    return self._run_fn(
+  File "/home/nils/anaconda3/envs/moveo_training/lib/python3.9/site-packages/tf_agents/utils/common.py", line 186, in with_check_resource_vars
+    return fn(*fn_args, **fn_kwargs)
+  File "/home/nils/anaconda3/envs/moveo_training/lib/python3.9/site-packages/tf_agents/drivers/dynamic_episode_driver.py", line 238, in _run
+    tf.while_loop(
+  File "/home/nils/anaconda3/envs/moveo_training/lib/python3.9/site-packages/tensorflow/python/util/deprecation.py", line 605, in new_func
+    return func(*args, **kwargs)
+  File "/home/nils/anaconda3/envs/moveo_training/lib/python3.9/site-packages/tensorflow/python/ops/control_flow_ops.py", line 2489, in while_loop_v2
+    return while_loop(
+  File "/home/nils/anaconda3/envs/moveo_training/lib/python3.9/site-packages/tensorflow/python/ops/control_flow_ops.py", line 2735, in while_loop
+    loop_vars = body(*loop_vars)
+  File "/home/nils/anaconda3/envs/moveo_training/lib/python3.9/site-packages/tf_agents/drivers/dynamic_episode_driver.py", line 154, in loop_body
+    observer_ops = [observer(traj) for observer in self._observers]
+  File "/home/nils/anaconda3/envs/moveo_training/lib/python3.9/site-packages/tf_agents/drivers/dynamic_episode_driver.py", line 154, in <listcomp>
+    observer_ops = [observer(traj) for observer in self._observers]
+TypeError: 'int' object is not callable
+[ INFO] [1627907378.921462399, 525.070000000]: ABORTED: Solution found but controller failed during execution
+Get Obs
+Is done
+>>>>>>>>>>>>>>>>done_fail=False,done_sucess=False
+Punish, ee z too low or high...0.27082440252070117

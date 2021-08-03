@@ -1,0 +1,270 @@
+Start Agent init....
+Entered Push Env
+Entered Moveo Env
+[ INFO] [1627907944.971820882]: Loading robot model 'moveo_description'...
+[ INFO] [1627907944.974366157]: No root/virtual joint specified in SRDF. Assuming fixed joint
+###### Setting Group Moveit with 30 seconds wait...
+[ INFO] [1627907946.286083332, 1086.481000000]: Ready to take commands for planning group arm.
+<class 'moveo_commander.MoveoCommander'>
+launch the init function of the Parent Class robot_gazebo_env_goal.RobotGazeboEnv.....
+Entered Gazebo Env
+False
+launch the init function of the Parent Class robot_gazebo_env_goal.RobotGazeboEnv.....END
+Entered Moveo Env END
+START Actor init
+END Actor init....
+NUMBER OF WORKERS=CPUs available for this training=1
+END Agent init....
+Entered Push Env
+Entered Moveo Env
+###### Setting Group Moveit with 30 seconds wait...
+[ INFO] [1627907946.890062066, 1087.045000000]: Ready to take commands for planning group arm.
+<class 'moveo_commander.MoveoCommander'>
+launch the init function of the Parent Class robot_gazebo_env_goal.RobotGazeboEnv.....
+Entered Gazebo Env
+[31m[ERROR] [1627907946.320213, 1086.502000]: NOT Initialising Simulation Physics Parameters
+[33m[WARN] [1627907946.325717, 1086.506000]: Start Init ControllersConnection
+[33m[WARN] [1627907946.327669, 1086.506000]: END Init ControllersConnection
+/home/nils/anaconda3/envs/moveo_training/lib/python3.9/site-packages/gym/logger.py:30: UserWarning: [33mWARN: Box bound precision lowered by casting to float32
+  warnings.warn(colorize('%s: %s'%('WARN', msg % args), 'yellow'))
+2021-08-02 14:39:06.510569: I tensorflow/compiler/jit/xla_cpu_device.cc:41] Not creating XLA devices, tf_xla_enable_xla_devices not set
+2021-08-02 14:39:06.510780: I tensorflow/core/platform/cpu_feature_guard.cc:142] This TensorFlow binary is optimized with oneAPI Deep Neural Network Library (oneDNN) to use the following CPU instructions in performance-critical operations:  SSE4.1 SSE4.2 AVX AVX2 FMA
+To enable them in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2021-08-02 14:39:06.511730: I tensorflow/core/common_runtime/process_util.cc:146] Creating new thread pool with default inter op setting: 2. Tune using inter_op_parallelism_threads for best performance.
+[31m[ERROR] [1627907946.924852, 1087.077000]: NOT Initialising Simulation Physics Parameters
+[33m[WARN] [1627907946.939056, 1087.087000]: Start Init ControllersConnection
+[33m[WARN] [1627907946.940797, 1087.088000]: END Init ControllersConnection
+2021-08-02 14:39:07.722598: I tensorflow/compiler/mlir/mlir_graph_optimization_pass.cc:116] None of the MLIR optimization passes are enabled (registered 2)
+2021-08-02 14:39:07.744271: I tensorflow/core/platform/profile_utils/cpu_utils.cc:112] CPU Frequency: 3192450000 Hz
+False
+launch the init function of the Parent Class robot_gazebo_env_goal.RobotGazeboEnv.....END
+Entered Moveo Env END
+Entered reset
+0.0
+0.0
+0.0
+0.0
+0.0
+Entered step
+Unpause sim
+Set action
+Action:
+[-0.84781528 -1.85344615  1.83289472 -0.0637604   1.51923005]
+-0.8478152769471616
+-1.8534461524497872
+1.8328947200110184
+-0.06376039505351416
+1.5192300543288901
+Error setting joint target. Is the target within bounds?
+Get Obs
+Is done
+>>>>>>>>>>>>>>>>done_fail=True,done_sucess=False
+Entered reset
+0.0
+0.0
+0.0
+0.0
+0.0
+Entered step
+Unpause sim
+Set action
+Action:
+[-0.21442406  1.64541186 -0.37444481  0.75495956  0.40265811]
+-0.21442406234674527
+1.6454118608933235
+-0.37444481146120223
+0.7549595627713117
+0.4026581133356597
+Error setting joint target. Is the target within bounds?
+Get Obs
+Is done
+>>>>>>>>>>>>>>>>done_fail=True,done_sucess=False
+Entered reset
+0.0
+0.0
+0.0
+0.0
+0.0
+Entered step
+Unpause sim
+Set action
+Action:
+[ 1.87852225  0.10304947 -0.89230245  1.34104354  1.08441091]
+1.878522251012824
+0.10304947236949635
+-0.8923024464196492
+1.3410435420977174
+1.0844109127692887
+Error setting joint target. Is the target within bounds?
+Get Obs
+Is done
+>>>>>>>>>>>>>>>>done_fail=True,done_sucess=False
+Entered reset
+0.0
+0.0
+0.0
+0.0
+0.0
+Entered step
+Unpause sim
+Set action
+Action:
+[-0.84698996  1.50235495  1.79844295  0.73861299  1.7466983 ]
+-0.8469899562212637
+1.5023549474517388
+1.7984429547710192
+0.7386129900469678
+1.7466983023259348
+Error setting joint target. Is the target within bounds?
+Get Obs
+Is done
+>>>>>>>>>>>>>>>>done_fail=True,done_sucess=False
+Entered reset
+0.0
+0.0
+0.0
+0.0
+0.0
+Entered step
+Unpause sim
+Set action
+Action:
+[ 1.32110802  1.2856488  -1.81420959 -1.36491305 -0.67967261]
+1.3211080172468925
+1.2856488030011546
+-1.8142095936700662
+-1.3649130491030106
+-0.6796726137100968
+Error setting joint target. Is the target within bounds?
+Get Obs
+Is done
+>>>>>>>>>>>>>>>>done_fail=True,done_sucess=False
+Entered reset
+0.0
+0.0
+0.0
+0.0
+0.0
+Entered step
+Unpause sim
+Set action
+Action:
+[-0.76990169 -0.59401943  1.24051984 -1.10997928 -1.80036074]
+-0.7699016913558236
+-0.5940194260096416
+1.2405198373633146
+-1.1099792838633382
+-1.8003607440451013
+Error setting joint target. Is the target within bounds?
+Get Obs
+Is done
+>>>>>>>>>>>>>>>>done_fail=True,done_sucess=False
+Entered reset
+0.0
+0.0
+0.0
+0.0
+0.0
+Entered step
+Unpause sim
+Set action
+Action:
+[ 1.60020657  1.84693865 -1.79009417 -1.40091907  1.81957686]
+1.600206567620638
+1.846938652222578
+-1.7900941724402601
+-1.4009190680935526
+1.8195768628333329
+Error setting joint target. Is the target within bounds?
+Get Obs
+Is done
+>>>>>>>>>>>>>>>>done_fail=True,done_sucess=False
+Entered reset
+0.0
+0.0
+0.0
+0.0
+0.0
+Entered step
+Unpause sim
+Set action
+Action:
+[ 0.19872213 -0.45437225  1.41754571 -1.12514948  0.43126829]
+0.19872212709891857
+-0.4543722518691702
+1.4175457149617086
+-1.1251494815339886
+0.431268288264834
+[ INFO] [1627907967.424806889, 1107.271000000]: ABORTED: Solution found but controller failed during execution
+Get Obs
+Is done
+>>>>>>>>>>>>>>>>done_fail=False,done_sucess=False
+Reward for getting closser
+Entered step
+Unpause sim
+Set action
+Action:
+[ 1.64269604  2.09427723  0.20453676 -0.72945502  2.04760557]
+1.642696040804572
+2.0942772341862668
+0.20453676347353467
+-0.7294550165293239
+2.0476055738225183
+Error setting joint target. Is the target within bounds?
+Get Obs
+Is done
+>>>>>>>>>>>>>>>>done_fail=True,done_sucess=False
+Entered reset
+0.0
+0.0
+0.0
+0.0
+0.0
+[ INFO] [1627907982.105436259, 1121.810000000]: ABORTED: Solution found but controller failed during execution
+Entered step
+Unpause sim
+Set action
+Action:
+[-0.15884134 -0.15342508  0.40381287 -1.74653671  1.21115475]
+-0.15884133602823303
+-0.15342507680737327
+0.40381286745710554
+-1.7465367080319343
+1.2111547461791181
+Error setting joint target. Is the target within bounds?
+Get Obs
+Is done
+>>>>>>>>>>>>>>>>done_fail=True,done_sucess=False
+Entered reset
+0.0
+0.0
+0.0
+0.0
+0.0
+Entered step
+Unpause sim
+Set action
+Action:
+[-0.81462155  1.59271073 -1.82883861  0.58345675 -1.2055863 ]
+-0.8146215516927438
+1.5927107257890638
+-1.8288386132250887
+0.5834567452901278
+-1.2055863001146006
+Error setting joint target. Is the target within bounds?
+Get Obs
+Is done
+>>>>>>>>>>>>>>>>done_fail=True,done_sucess=False
+Entered reset
+0.0
+0.0
+0.0
+0.0
+0.0
+final_time_step TimeStep(
+{'discount': <tf.Tensor: shape=(1,), dtype=float32, numpy=array([1.], dtype=float32)>,
+ 'observation': <tf.Tensor: shape=(1, 3), dtype=float32, numpy=array([[0.57359433, 0.        , 0.554041  ]], dtype=float32)>,
+ 'reward': <tf.Tensor: shape=(1,), dtype=float32, numpy=array([0.], dtype=float32)>,
+ 'step_type': <tf.Tensor: shape=(1,), dtype=int32, numpy=array([0], dtype=int32)>})
+Number of Steps:  11
+Number of Episodes:  10

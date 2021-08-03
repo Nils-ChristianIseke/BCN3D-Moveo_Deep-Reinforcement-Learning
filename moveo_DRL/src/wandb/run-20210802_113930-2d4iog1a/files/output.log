@@ -1,0 +1,23 @@
+[31m[ERROR] [1627897176.794953, 344.190000]: NOT Initialising Simulation Physics Parameters
+[33m[WARN] [1627897176.800908, 344.192000]: Start Init ControllersConnection
+[33m[WARN] [1627897176.802609, 344.192000]: END Init ControllersConnection
+/home/nils/anaconda3/envs/moveo_training/lib/python3.9/site-packages/gym/logger.py:30: UserWarning: [33mWARN: Box bound precision lowered by casting to float32
+  warnings.warn(colorize('%s: %s'%('WARN', msg % args), 'yellow'))
+Traceback (most recent call last):
+  File "/home/nils/Documents/Studium/Bachelorarbeit/moveo_RL/src/moveo_training/scripts/A3C_Continuous_moveo.py", line 384, in <module>
+    main()
+  File "/home/nils/Documents/Studium/Bachelorarbeit/moveo_RL/src/moveo_training/scripts/A3C_Continuous_moveo.py", line 366, in main
+    action_spec=env.action_space())
+TypeError: 'Box' object is not callable
+Entered Push Env
+Entered Moveo Env
+[ INFO] [1627897175.486846272]: Loading robot model 'moveo_description'...
+[ INFO] [1627897175.487643434]: No root/virtual joint specified in SRDF. Assuming fixed joint
+###### Setting Group Moveit with 30 seconds wait...
+[ INFO] [1627897176.767829369, 344.164000000]: Ready to take commands for planning group arm.
+<class 'moveo_commander.MoveoCommander'>
+launch the init function of the Parent Class robot_gazebo_env_goal.RobotGazeboEnv.....
+Entered Gazebo Env
+False
+launch the init function of the Parent Class robot_gazebo_env_goal.RobotGazeboEnv.....END
+Entered Moveo Env END

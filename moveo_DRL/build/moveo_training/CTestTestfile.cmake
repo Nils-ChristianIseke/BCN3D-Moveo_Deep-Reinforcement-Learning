@@ -1,0 +1,6 @@
+# CMake generated Testfile for 
+# Source directory: /home/nils/Documents/Studium/Bachelorarbeit/praktischer_Teil/moveo_DRL/src/moveo_training
+# Build directory: /home/nils/Documents/Studium/Bachelorarbeit/praktischer_Teil/moveo_DRL/build/moveo_training
+# 
+# This file includes the relevant testing commands required for 
+# testing this directory and lists subdirectories to be tested as well.

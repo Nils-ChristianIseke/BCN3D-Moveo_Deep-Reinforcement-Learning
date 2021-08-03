@@ -1,0 +1,95 @@
+Start Agent init....
+Entered Push Env
+Entered Moveo Env
+[ INFO] [1627907291.509699236]: Loading robot model 'moveo_description'...
+[ INFO] [1627907291.510915729]: No root/virtual joint specified in SRDF. Assuming fixed joint
+###### Setting Group Moveit with 30 seconds wait...
+[ INFO] [1627907292.913063345, 441.363000000]: Ready to take commands for planning group arm.
+<class 'moveo_commander.MoveoCommander'>
+launch the init function of the Parent Class robot_gazebo_env_goal.RobotGazeboEnv.....
+Entered Gazebo Env
+False
+launch the init function of the Parent Class robot_gazebo_env_goal.RobotGazeboEnv.....END
+Entered Moveo Env END
+START Actor init
+END Actor init....
+NUMBER OF WORKERS=CPUs available for this training=1
+END Agent init....
+Entered Push Env
+[31m[ERROR] [1627907292.959830, 441.398000]: NOT Initialising Simulation Physics Parameters
+[33m[WARN] [1627907292.984557, 441.418000]: Start Init ControllersConnection
+[33m[WARN] [1627907292.986359, 441.418000]: END Init ControllersConnection
+/home/nils/anaconda3/envs/moveo_training/lib/python3.9/site-packages/gym/logger.py:30: UserWarning: [33mWARN: Box bound precision lowered by casting to float32
+  warnings.warn(colorize('%s: %s'%('WARN', msg % args), 'yellow'))
+2021-08-02 14:28:13.145004: I tensorflow/compiler/jit/xla_cpu_device.cc:41] Not creating XLA devices, tf_xla_enable_xla_devices not set
+2021-08-02 14:28:13.145230: I tensorflow/core/platform/cpu_feature_guard.cc:142] This TensorFlow binary is optimized with oneAPI Deep Neural Network Library (oneDNN) to use the following CPU instructions in performance-critical operations:  SSE4.1 SSE4.2 AVX AVX2 FMA
+To enable them in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2021-08-02 14:28:13.146164: I tensorflow/core/common_runtime/process_util.cc:146] Creating new thread pool with default inter op setting: 2. Tune using inter_op_parallelism_threads for best performance.
+[31m[ERROR] [1627907293.635174, 442.064000]: NOT Initialising Simulation Physics Parameters
+[33m[WARN] [1627907293.651810, 442.075000]: Start Init ControllersConnection
+[33m[WARN] [1627907293.653445, 442.078000]: END Init ControllersConnection
+2021-08-02 14:28:14.474998: I tensorflow/compiler/mlir/mlir_graph_optimization_pass.cc:116] None of the MLIR optimization passes are enabled (registered 2)
+2021-08-02 14:28:14.492252: I tensorflow/core/platform/profile_utils/cpu_utils.cc:112] CPU Frequency: 3192450000 Hz
+Entered Moveo Env
+###### Setting Group Moveit with 30 seconds wait...
+[ INFO] [1627907293.615394411, 442.044000000]: Ready to take commands for planning group arm.
+<class 'moveo_commander.MoveoCommander'>
+launch the init function of the Parent Class robot_gazebo_env_goal.RobotGazeboEnv.....
+Entered Gazebo Env
+False
+launch the init function of the Parent Class robot_gazebo_env_goal.RobotGazeboEnv.....END
+Entered Moveo Env END
+Entered reset
+0.0
+0.0
+0.0
+0.0
+0.0
+[ INFO] [1627907294.303825571, 442.694000000]: ABORTED: Solution found but controller failed during execution
+Entered step
+Unpause sim
+Set action
+Action:
+[ 1.86594474  1.05794428  2.06823134 -0.9358351  -0.82536931]
+1.865944740355193
+1.057944283714769
+2.0682313442449853
+-0.9358351040383053
+-0.8253693124206698
+Error setting joint target. Is the target within bounds?
+Get Obs
+Is done
+>>>>>>>>>>>>>>>>done_fail=True,done_sucess=False
+Entered reset
+0.0
+0.0
+0.0
+0.0
+0.0
+Entered step
+Unpause sim
+Set action
+Action:
+[-0.88362512  1.47340299 -1.24530818  1.72886728 -1.8982977 ]
+-0.8836251242526272
+1.4734029869638938
+-1.2453081782374413
+1.7288672828572715
+-1.898297697707981
+Error setting joint target. Is the target within bounds?
+Get Obs
+Is done
+>>>>>>>>>>>>>>>>done_fail=True,done_sucess=False
+Entered reset
+0.0
+0.0
+0.0
+0.0
+0.0
+final_time_step TimeStep(
+{'discount': <tf.Tensor: shape=(1,), dtype=float32, numpy=array([1.], dtype=float32)>,
+ 'observation': <tf.Tensor: shape=(1, 3), dtype=float32, numpy=array([[0.5737517 , 0.        , 0.55421907]], dtype=float32)>,
+ 'reward': <tf.Tensor: shape=(1,), dtype=float32, numpy=array([0.], dtype=float32)>,
+ 'step_type': <tf.Tensor: shape=(1,), dtype=int32, numpy=array([0], dtype=int32)>})
+Number of Steps:  2
+Number of Episodes:  2

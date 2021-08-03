@@ -1,0 +1,63 @@
+Entered Push Env
+Entered Moveo Env
+[ INFO] [1627892968.402358403]: Loading robot model 'moveo_description'...
+[ INFO] [1627892968.403767718]: No root/virtual joint specified in SRDF. Assuming fixed joint
+###### Setting Group Moveit with 30 seconds wait...
+[ INFO] [1627892969.845709346, 1201.902000000]: Ready to take commands for planning group arm.
+<class 'moveo_commander.MoveoCommander'>
+launch the init function of the Parent Class robot_gazebo_env_goal.RobotGazeboEnv.....
+Entered Gazebo Env
+False
+launch the init function of the Parent Class robot_gazebo_env_goal.RobotGazeboEnv.....END
+Entered Moveo Env END
+Entered reset
+0.0
+0.0
+0.0
+0.0
+0.0
+Entered step
+Unpause sim
+Set action
+Action:
+[ 0.9348548  0.2629478 -1.0477247 -1.3470457 -1.8240024]
+0.9348548
+0.2629478
+-1.0477247
+-1.3470457
+-1.8240024
+No registered converter was able to produce a C++ rvalue of type double from this Python object of type numpy.float32
+Get Obs
+Is done
+>>>>>>>>>>>>>>>>done_fail=True,done_sucess=False
+Entered reset
+0.0
+0.0
+0.0
+0.0
+0.0
+Replay Buffer:
+Trajectory(
+{'action': array([ 0.9348548,  0.2629478, -1.0477247, -1.3470457, -1.8240024],
+      dtype=float32),
+ 'discount': array(0., dtype=float32),
+ 'next_step_type': array(2, dtype=int32),
+ 'observation': array([0.57372934, 0.        , 0.5541881 ], dtype=float32),
+ 'policy_info': (),
+ 'reward': array(-100., dtype=float32),
+ 'step_type': array(0, dtype=int32)})
+Trajectory(
+{'action': array([ 1.7628795 , -0.01551567, -1.3489329 ,  0.34235647, -0.12105839],
+      dtype=float32),
+ 'discount': array(1., dtype=float32),
+ 'next_step_type': array(0, dtype=int32),
+ 'observation': array([0.5737312, 0.       , 0.5541904], dtype=float32),
+ 'policy_info': (),
+ 'reward': array(0., dtype=float32),
+ 'step_type': array(2, dtype=int32)})
+Average Return:  -100.0
+[31m[ERROR] [1627892969.877032, 1201.922000]: NOT Initialising Simulation Physics Parameters
+[33m[WARN] [1627892969.882580, 1201.925000]: Start Init ControllersConnection
+[33m[WARN] [1627892969.884322, 1201.925000]: END Init ControllersConnection
+/home/nils/anaconda3/envs/moveo_training/lib/python3.9/site-packages/gym/logger.py:30: UserWarning: [33mWARN: Box bound precision lowered by casting to float32
+  warnings.warn(colorize('%s: %s'%('WARN', msg % args), 'yellow'))

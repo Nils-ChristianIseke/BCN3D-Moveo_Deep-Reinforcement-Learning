@@ -1,0 +1,65 @@
+Entered Push Env
+Entered Moveo Env
+[ INFO] [1627897008.436304124]: Loading robot model 'moveo_description'...
+[ INFO] [1627897008.437188684]: No root/virtual joint specified in SRDF. Assuming fixed joint
+###### Setting Group Moveit with 30 seconds wait...
+[ INFO] [1627897009.694576086, 178.316000000]: Ready to take commands for planning group arm.
+<class 'moveo_commander.MoveoCommander'>
+launch the init function of the Parent Class robot_gazebo_env_goal.RobotGazeboEnv.....
+Entered Gazebo Env
+False
+launch the init function of the Parent Class robot_gazebo_env_goal.RobotGazeboEnv.....END
+Entered Moveo Env END
+AtioncSpec:  BoundedArraySpec(shape=(5,), dtype=dtype('float32'), name='action', minimum=-2.1600000858306885, maximum=2.1600000858306885)
+Entered reset
+0.0
+0.0
+0.0
+0.0
+0.0
+[31m[ERROR] [1627897009.707654, 178.329000]: NOT Initialising Simulation Physics Parameters
+[33m[WARN] [1627897009.715648, 178.337000]: Start Init ControllersConnection
+[33m[WARN] [1627897009.717116, 178.337000]: END Init ControllersConnection
+/home/nils/anaconda3/envs/moveo_training/lib/python3.9/site-packages/gym/logger.py:30: UserWarning: [33mWARN: Box bound precision lowered by casting to float32
+  warnings.warn(colorize('%s: %s'%('WARN', msg % args), 'yellow'))
+[ INFO] [1627897010.453616598, 179.050000000]: ABORTED: Solution found but controller failed during execution
+Entered step
+Unpause sim
+Set action
+Action:
+[ 1.7386007  1.8204218 -0.6532917 -2.0593426 -1.3026667]
+1.7386007
+1.8204218
+-0.6532917
+-2.0593426
+-1.3026667
+No registered converter was able to produce a C++ rvalue of type double from this Python object of type numpy.float32
+Get Obs
+Is done
+>>>>>>>>>>>>>>>>done_fail=True,done_sucess=False
+Entered reset
+0.0
+0.0
+0.0
+0.0
+0.0
+Replay Buffer:
+Trajectory(
+{'action': array([ 1.7386007,  1.8204218, -0.6532917, -2.0593426, -1.3026667],
+      dtype=float32),
+ 'discount': array(0., dtype=float32),
+ 'next_step_type': array(2, dtype=int32),
+ 'observation': array([0.57343626, 0.        , 0.5538933 ], dtype=float32),
+ 'policy_info': (),
+ 'reward': array(-100., dtype=float32),
+ 'step_type': array(0, dtype=int32)})
+Trajectory(
+{'action': array([ 1.0772457, -1.1029977, -0.477938 , -2.0261295, -0.6165687],
+      dtype=float32),
+ 'discount': array(1., dtype=float32),
+ 'next_step_type': array(0, dtype=int32),
+ 'observation': array([0.5734217, 0.       , 0.5538709], dtype=float32),
+ 'policy_info': (),
+ 'reward': array(0., dtype=float32),
+ 'step_type': array(2, dtype=int32)})
+Average Return:  -100.0

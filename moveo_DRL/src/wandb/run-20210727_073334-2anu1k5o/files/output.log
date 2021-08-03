@@ -1,0 +1,166 @@
+Start Agent init....
+Entered InverseKinematics Env
+Entered Moveo Env
+[ INFO] [1627364020.325288557]: Loading robot model 'moveo_description'...
+[ INFO] [1627364020.327039764]: No root/virtual joint specified in SRDF. Assuming fixed joint
+[31m[ERROR] [1627364021.690943, 2479.414000]: NOT Initialising Simulation Physics Parameters
+[33m[WARN] [1627364021.713985, 2479.435000]: Start Init ControllersConnection
+[33m[WARN] [1627364021.715626, 2479.435000]: END Init ControllersConnection
+/home/nils/anaconda3/envs/moveo_training/lib/python3.9/site-packages/gym/logger.py:30: UserWarning: [33mWARN: Box bound precision lowered by casting to float32
+  warnings.warn(colorize('%s: %s'%('WARN', msg % args), 'yellow'))
+2021-07-27 07:33:41.906963: I tensorflow/compiler/jit/xla_cpu_device.cc:41] Not creating XLA devices, tf_xla_enable_xla_devices not set
+2021-07-27 07:33:41.907191: I tensorflow/core/platform/cpu_feature_guard.cc:142] This TensorFlow binary is optimized with oneAPI Deep Neural Network Library (oneDNN) to use the following CPU instructions in performance-critical operations:  SSE4.1 SSE4.2 AVX AVX2 FMA
+To enable them in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2021-07-27 07:33:41.908451: I tensorflow/core/common_runtime/process_util.cc:146] Creating new thread pool with default inter op setting: 2. Tune using inter_op_parallelism_threads for best performance.
+###### Setting Group Moveit with 30 seconds wait...
+[ INFO] [1627364021.661927992, 2479.390000000]: Ready to take commands for planning group arm.
+<class 'moveo_commander.MoveoCommander'>
+launch the init function of the Parent Class robot_gazebo_env_goal.RobotGazeboEnv.....
+Entered Gazebo Env
+False
+launch the init function of the Parent Class robot_gazebo_env_goal.RobotGazeboEnv.....END
+Entered Moveo Env END
+START Actor init
+END Actor init....
+NUMBER OF WORKERS=CPUs available for this training=1
+END Agent init....
+Entered InverseKinematics Env
+Entered Moveo Env
+###### Setting Group Moveit with 30 seconds wait...
+[ INFO] [1627364022.288036645, 2479.971000000]: Ready to take commands for planning group arm.
+<class 'moveo_commander.MoveoCommander'>
+launch the init function of the Parent Class robot_gazebo_env_goal.RobotGazeboEnv.....
+Entered Gazebo Env
+False
+launch the init function of the Parent Class robot_gazebo_env_goal.RobotGazeboEnv.....END
+Entered Moveo Env END
+Start Worker Agent init....
+START Actor init
+END Actor init....
+END Worker Agent init....
+####################### START Train
+####################### START AC3
+EP0 EpisodeReward=0
+Entered reset
+0.0
+0.0
+0.0
+0.0
+0.0
+[31m[ERROR] [1627364022.336011, 2480.011000]: NOT Initialising Simulation Physics Parameters
+[33m[WARN] [1627364022.351301, 2480.020000]: Start Init ControllersConnection
+[33m[WARN] [1627364022.353600, 2480.020000]: END Init ControllersConnection
+[ INFO] [1627364038.946417364, 2496.034000000]: ABORTED: Solution found but controller failed during execution
+Entered step
+Unpause sim
+Set action
+Action:
+[-0.54486304  0.41247268 -0.06103712 -0.41392877 -0.25667654]
+-0.5448630415025094
+0.412472679980504
+-0.06103711698479171
+-0.41392876955669894
+-0.2566765378301488
+2021-07-27 07:33:59.046960: I tensorflow/compiler/mlir/mlir_graph_optimization_pass.cc:116] None of the MLIR optimization passes are enabled (registered 2)
+2021-07-27 07:33:59.067109: I tensorflow/core/platform/profile_utils/cpu_utils.cc:112] CPU Frequency: 3192790000 Hz
+[ INFO] [1627364044.893727013, 2501.887000000]: ABORTED: Solution found but controller failed during execution
+Get Obs
+Is done
+>>>>>>>>>>>>>>>>done_fail=False,done_sucess=False
+EP0 EpisodeReward=1.4336748826776928
+Entered step
+Unpause sim
+Set action
+Action:
+[ 0.44015221 -1.77966174 -0.46349928 -0.16795247  0.26390264]
+0.44015220546936495
+-1.779661735455869
+-0.46349928290306175
+-0.16795247439950017
+0.2639026361385685
+Error setting joint target. Is the target within bounds?
+Get Obs
+Is done
+>>>>>>>>>>>>>>>>done_fail=True,done_sucess=False
+Original Shape==(10,)
+Morfed Shape==(2, 5)
+EP0 EpisodeReward=-98.56632511732231
+####################### START AC3
+EP1 EpisodeReward=0
+Entered reset
+0.0
+0.0
+0.0
+0.0
+0.0
+[ INFO] [1627364051.177356204, 2508.066000000]: ABORTED: Solution found but controller failed during execution
+Entered step
+Unpause sim
+Set action
+Action:
+[-0.84377884  0.49000743  0.5987088   0.62787554  0.05871709]
+-0.8437788382356697
+0.4900074307728653
+0.5987088002621945
+0.6278755404932659
+0.0587170893947368
+[ INFO] [1627364060.112890756, 2516.846000000]: ABORTED: Solution found but controller failed during execution
+Get Obs
+Is done
+>>>>>>>>>>>>>>>>done_fail=False,done_sucess=False
+EP1 EpisodeReward=1.269778226551608
+Entered step
+Unpause sim
+Set action
+Action:
+[-0.34652426 -0.69848277 -0.2575169   0.85264052  1.61029479]
+-0.3465242572564087
+-0.6984827726993675
+-0.25751689612944706
+0.8526405234393062
+1.6102947948084445
+Error setting joint target. Is the target within bounds?
+Get Obs
+Is done
+>>>>>>>>>>>>>>>>done_fail=True,done_sucess=False
+Original Shape==(10,)
+Morfed Shape==(2, 5)
+EP1 EpisodeReward=-98.73022177344839
+####################### START AC3
+EP2 EpisodeReward=0
+Entered reset
+0.0
+0.0
+0.0
+0.0
+0.0
+[ INFO] [1627364069.577617735, 2526.200000000]: ABORTED: Solution found but controller failed during execution
+Entered step
+Unpause sim
+Set action
+Action:
+[ 0.0818333   1.20109586  0.86129141 -0.18910267 -0.33701536]
+0.08183330368249633
+1.2010958601526993
+0.8612914088663122
+-0.18910267477835754
+-0.3370153581225645
+Exception in thread Thread-23:
+Traceback (most recent call last):
+  File "/home/nils/anaconda3/envs/moveo_training/lib/python3.9/threading.py", line 954, in _bootstrap_inner
+    self.run()
+  File "/home/nils/Documents/Studium/Bachelorarbeit/moveo_RL/src/moveo_training/scripts/A3C_moveo_ik.py", line 256, in run
+    self.train()
+  File "/home/nils/Documents/Studium/Bachelorarbeit/moveo_RL/src/moveo_training/scripts/A3C_moveo_ik.py", line 209, in train
+    next_state, reward, done, _ = self.env.step(action)
+  File "/home/nils/anaconda3/envs/moveo_training/lib/python3.9/site-packages/gym/wrappers/time_limit.py", line 16, in step
+    observation, reward, done, info = self.env.step(action)
+  File "/home/nils/Documents/Studium/Bachelorarbeit/moveo_RL/src/openai_ros/openai_ros/src/openai_ros/robot_gazebo_env_goal.py", line 51, in step
+    obs = self._get_obs()
+  File "/home/nils/Documents/Studium/Bachelorarbeit/moveo_RL/src/moveo_training/scripts/moveo_inverse_kinematic.py", line 132, in _get_obs
+    self.gazebo.unpauseSim()
+  File "/home/nils/Documents/Studium/Bachelorarbeit/moveo_RL/src/openai_ros/openai_ros/src/openai_ros/gazebo_connection.py", line 58, in unpauseSim
+    rospy.wait_for_service('/gazebo/unpause_physics')
+  File "/opt/ros/noetic/lib/python3/dist-packages/rospy/impl/tcpros_service.py", line 166, in wait_for_service
+    raise ROSInterruptException("rospy shutdown")
+rospy.exceptions.ROSInterruptException: rospy shutdown

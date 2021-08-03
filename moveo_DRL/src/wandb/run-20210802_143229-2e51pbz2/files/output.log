@@ -1,0 +1,110 @@
+Start Agent init....
+Entered Push Env
+Entered Moveo Env
+[ INFO] [1627907554.244213927]: Loading robot model 'moveo_description'...
+[ INFO] [1627907554.246082157]: No root/virtual joint specified in SRDF. Assuming fixed joint
+###### Setting Group Moveit with 30 seconds wait...
+[ INFO] [1627907555.482241222, 699.167000000]: Ready to take commands for planning group arm.
+<class 'moveo_commander.MoveoCommander'>
+launch the init function of the Parent Class robot_gazebo_env_goal.RobotGazeboEnv.....
+Entered Gazebo Env
+False
+launch the init function of the Parent Class robot_gazebo_env_goal.RobotGazeboEnv.....END
+Entered Moveo Env END
+START Actor init
+END Actor init....
+NUMBER OF WORKERS=CPUs available for this training=1
+END Agent init....
+Entered Push Env
+Entered Moveo Env
+###### Setting Group Moveit with 30 seconds wait...
+[ INFO] [1627907556.183735445, 699.844000000]: Ready to take commands for planning group arm.
+[31m[ERROR] [1627907555.502071, 699.185000]: NOT Initialising Simulation Physics Parameters
+[33m[WARN] [1627907555.525498, 699.207000]: Start Init ControllersConnection
+[33m[WARN] [1627907555.528557, 699.207000]: END Init ControllersConnection
+/home/nils/anaconda3/envs/moveo_training/lib/python3.9/site-packages/gym/logger.py:30: UserWarning: [33mWARN: Box bound precision lowered by casting to float32
+  warnings.warn(colorize('%s: %s'%('WARN', msg % args), 'yellow'))
+2021-08-02 14:32:35.707915: I tensorflow/compiler/jit/xla_cpu_device.cc:41] Not creating XLA devices, tf_xla_enable_xla_devices not set
+2021-08-02 14:32:35.708143: I tensorflow/core/platform/cpu_feature_guard.cc:142] This TensorFlow binary is optimized with oneAPI Deep Neural Network Library (oneDNN) to use the following CPU instructions in performance-critical operations:  SSE4.1 SSE4.2 AVX AVX2 FMA
+To enable them in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2021-08-02 14:32:35.709081: I tensorflow/core/common_runtime/process_util.cc:146] Creating new thread pool with default inter op setting: 2. Tune using inter_op_parallelism_threads for best performance.
+[31m[ERROR] [1627907556.219512, 699.877000]: NOT Initialising Simulation Physics Parameters
+[33m[WARN] [1627907556.224804, 699.882000]: Start Init ControllersConnection
+[33m[WARN] [1627907556.225942, 699.882000]: END Init ControllersConnection
+2021-08-02 14:32:37.062798: I tensorflow/compiler/mlir/mlir_graph_optimization_pass.cc:116] None of the MLIR optimization passes are enabled (registered 2)
+2021-08-02 14:32:37.080297: I tensorflow/core/platform/profile_utils/cpu_utils.cc:112] CPU Frequency: 3192450000 Hz
+<class 'moveo_commander.MoveoCommander'>
+launch the init function of the Parent Class robot_gazebo_env_goal.RobotGazeboEnv.....
+Entered Gazebo Env
+False
+launch the init function of the Parent Class robot_gazebo_env_goal.RobotGazeboEnv.....END
+Entered Moveo Env END
+Entered reset
+0.0
+0.0
+0.0
+0.0
+0.0
+Entered step
+Unpause sim
+Set action
+Action:
+[-1.45377729  0.54396593  1.1976053   2.00776375 -0.4686982 ]
+-1.4537772874744612
+0.5439659335141065
+1.1976053030825118
+2.007763745453401
+-0.4686981956066729
+Error setting joint target. Is the target within bounds?
+Get Obs
+Is done
+>>>>>>>>>>>>>>>>done_fail=True,done_sucess=False
+Entered reset
+0.0
+0.0
+0.0
+0.0
+0.0
+Entered step
+Unpause sim
+Set action
+Action:
+[-1.07809088  0.48237951  0.29060635 -0.1234967  -0.91779349]
+-1.0780908824377828
+0.4823795078547568
+0.29060634567465904
+-0.12349669932338125
+-0.9177934905178617
+[ INFO] [1627907568.825032882, 712.289000000]: ABORTED: Solution found but controller failed during execution
+Get Obs
+Is done
+>>>>>>>>>>>>>>>>done_fail=False,done_sucess=False
+Reward for getting closser
+Entered step
+Unpause sim
+Set action
+Action:
+[ 1.95317366  1.09895999  1.17477736  0.75677351 -1.44839186]
+1.953173663194634
+1.098959991049505
+1.174777358676856
+0.756773512754358
+-1.4483918649520195
+Error setting joint target. Is the target within bounds?
+Get Obs
+Is done
+>>>>>>>>>>>>>>>>done_fail=True,done_sucess=False
+Entered reset
+0.0
+0.0
+0.0
+0.0
+0.0
+[ INFO] [1627907580.078696462, 723.416000000]: ABORTED: Solution found but controller failed during execution
+final_time_step TimeStep(
+{'discount': <tf.Tensor: shape=(1,), dtype=float32, numpy=array([1.], dtype=float32)>,
+ 'observation': <tf.Tensor: shape=(1, 3), dtype=float32, numpy=array([[0.5718878, 0.       , 0.5523138]], dtype=float32)>,
+ 'reward': <tf.Tensor: shape=(1,), dtype=float32, numpy=array([0.], dtype=float32)>,
+ 'step_type': <tf.Tensor: shape=(1,), dtype=int32, numpy=array([0], dtype=int32)>})
+Number of Steps:  3
+Number of Episodes:  2

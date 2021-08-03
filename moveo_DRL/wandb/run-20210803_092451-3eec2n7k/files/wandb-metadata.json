@@ -1,0 +1,18 @@
+{
+    "os": "Linux-5.8.0-63-generic-x86_64-with-glibc2.31",
+    "python": "3.9.4",
+    "heartbeatAt": "2021-08-03T07:24:53.853381",
+    "startedAt": "2021-08-03T07:24:51.786494",
+    "docker": null,
+    "gpu": "GeForce GTX 970",
+    "gpu_count": 1,
+    "cpu_count": 4,
+    "cuda": null,
+    "args": [],
+    "state": "running",
+    "program": "/home/nils/Documents/Studium/Bachelorarbeit/praktischer_Teil/moveo_DRL/src/moveo_training/scripts/A3C_moveo_ik.py",
+    "codePath": "src/moveo_training/scripts/A3C_moveo_ik.py",
+    "host": "nils-B85M-HD3",
+    "username": "nils",
+    "executable": "/home/nils/anaconda3/envs/moveo_training/bin/python"
+}

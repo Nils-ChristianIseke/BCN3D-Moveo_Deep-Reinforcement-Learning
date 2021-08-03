@@ -1,0 +1,1215 @@
+Start Agent init....
+Entered InverseKinematics Env
+Entered Moveo Env
+[ INFO] [1627369510.652483163]: Loading robot model 'moveo_description'...
+[ INFO] [1627369510.654569069]: No root/virtual joint specified in SRDF. Assuming fixed joint
+[31m[ERROR] [1627369512.106456, 2229.414000]: NOT Initialising Simulation Physics Parameters
+[33m[WARN] [1627369512.146408, 2229.441000]: Start Init ControllersConnection
+[33m[WARN] [1627369512.149923, 2229.441000]: END Init ControllersConnection
+/home/nils/anaconda3/envs/moveo_training/lib/python3.9/site-packages/gym/logger.py:30: UserWarning: [33mWARN: Box bound precision lowered by casting to float32
+  warnings.warn(colorize('%s: %s'%('WARN', msg % args), 'yellow'))
+2021-07-27 09:05:12.432519: I tensorflow/compiler/jit/xla_cpu_device.cc:41] Not creating XLA devices, tf_xla_enable_xla_devices not set
+2021-07-27 09:05:12.433111: I tensorflow/core/platform/cpu_feature_guard.cc:142] This TensorFlow binary is optimized with oneAPI Deep Neural Network Library (oneDNN) to use the following CPU instructions in performance-critical operations:  SSE4.1 SSE4.2 AVX AVX2 FMA
+To enable them in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2021-07-27 09:05:12.435629: I tensorflow/core/common_runtime/process_util.cc:146] Creating new thread pool with default inter op setting: 2. Tune using inter_op_parallelism_threads for best performance.
+[31m[ERROR] [1627369512.977674, 2230.206000]: NOT Initialising Simulation Physics Parameters
+[33m[WARN] [1627369513.008994, 2230.231000]: Start Init ControllersConnection
+[33m[WARN] [1627369513.010286, 2230.231000]: END Init ControllersConnection
+###### Setting Group Moveit with 30 seconds wait...
+[ INFO] [1627369512.042226814, 2229.365000000]: Ready to take commands for planning group arm.
+<class 'moveo_commander.MoveoCommander'>
+launch the init function of the Parent Class robot_gazebo_env_goal.RobotGazeboEnv.....
+Entered Gazebo Env
+False
+launch the init function of the Parent Class robot_gazebo_env_goal.RobotGazeboEnv.....END
+Entered Moveo Env END
+START Actor init
+END Actor init....
+NUMBER OF WORKERS=CPUs available for this training=1
+END Agent init....
+Entered InverseKinematics Env
+Entered Moveo Env
+###### Setting Group Moveit with 30 seconds wait...
+[ INFO] [1627369512.959311696, 2230.188000000]: Ready to take commands for planning group arm.
+<class 'moveo_commander.MoveoCommander'>
+launch the init function of the Parent Class robot_gazebo_env_goal.RobotGazeboEnv.....
+Entered Gazebo Env
+False
+launch the init function of the Parent Class robot_gazebo_env_goal.RobotGazeboEnv.....END
+Entered Moveo Env END
+Start Worker Agent init....
+START Actor init
+END Actor init....
+END Worker Agent init....
+####################### START Train
+####################### START AC3
+EP0 EpisodeReward=0
+Entered reset
+0.0
+0.0
+0.0
+0.0
+0.0
+2021-07-27 09:05:20.275796: I tensorflow/compiler/mlir/mlir_graph_optimization_pass.cc:116] None of the MLIR optimization passes are enabled (registered 2)
+2021-07-27 09:05:20.299163: I tensorflow/core/platform/profile_utils/cpu_utils.cc:112] CPU Frequency: 3192790000 Hz
+[ INFO] [1627369520.086482222, 2236.836000000]: ABORTED: Solution found but controller failed during execution
+Entered step
+Unpause sim
+Set action
+Action:
+[-1.16527976  0.24528178 -0.93422424 -0.20741998 -0.33366914]
+-1.165279761167211
+0.24528178357218622
+-0.9342242354067877
+-0.207419983534072
+-0.33366914214926846
+[ INFO] [1627369533.008562677, 2249.212000000]: ABORTED: Solution found but controller failed during execution
+Get Obs
+Is done
+>>>>>>>>>>>>>>>>done_fail=False,done_sucess=False
+Distanze zum Ziel= 0.37960331708131073
+EP0 EpisodeReward=2.6343289297069044
+Entered step
+Unpause sim
+Set action
+Action:
+[0.73635553 0.00212964 0.49199492 0.79455183 0.45698253]
+0.7363555349295361
+0.0021296427031346488
+0.49199491825927016
+0.7945518285883177
+0.45698253202414235
+[ INFO] [1627369552.955088335, 2268.761000000]: ABORTED: Solution found but controller failed during execution
+Get Obs
+Is done
+>>>>>>>>>>>>>>>>done_fail=False,done_sucess=False
+Distanze zum Ziel= 0.18466840915206692
+EP0 EpisodeReward=8.049440288447968
+Entered step
+Unpause sim
+Set action
+Action:
+[-0.32811067  0.50356394  0.66868032 -0.20435499 -0.45808346]
+-0.32811067254496573
+0.503563944346028
+0.6686803214879906
+-0.20435498899865323
+-0.4580834573329615
+[ INFO] [1627369564.192349225, 2279.810000000]: ABORTED: Solution found but controller failed during execution
+Get Obs
+Is done
+>>>>>>>>>>>>>>>>done_fail=False,done_sucess=False
+Distanze zum Ziel= 0.3318400139874122
+EP0 EpisodeReward=11.06294064358577
+Entered step
+Unpause sim
+Set action
+Action:
+[-0.02857865  0.55141989  0.35186204 -1.23197219 -0.51752229]
+-0.028578650272018218
+0.5514198860704352
+0.35186203899246477
+-1.2319721888817095
+-0.5175222902284173
+[ INFO] [1627369575.065034285, 2290.413000000]: ABORTED: Solution found but controller failed during execution
+Get Obs
+Is done
+>>>>>>>>>>>>>>>>done_fail=False,done_sucess=False
+Distanze zum Ziel= 0.29379405114879176
+EP0 EpisodeReward=14.466685532530274
+Entered step
+Unpause sim
+Set action
+Action:
+[-0.71560662 -0.3777015   0.09147872  0.15071162  0.65949428]
+-0.7156066209235762
+-0.3777015006508568
+0.0914787219815703
+0.15071162386414413
+0.6594942814536908
+[ INFO] [1627369589.713653195, 2304.756000000]: ABORTED: Solution found but controller failed during execution
+Get Obs
+Is done
+>>>>>>>>>>>>>>>>done_fail=False,done_sucess=False
+Distanze zum Ziel= 0.37625193986227734
+Original Shape==(25,)
+Morfed Shape==(5, 5)
+EP0 EpisodeReward=17.124479138500888
+Entered step
+Unpause sim
+Set action
+Action:
+[-0.21190274  0.57381568 -0.27113719 -0.47162389 -0.15177236]
+-0.2119027365179304
+0.5738156767714497
+-0.2711371886952324
+-0.4716238928883456
+-0.15177235744325276
+[ INFO] [1627369600.376101867, 2315.155000000]: ABORTED: Solution found but controller failed during execution
+Get Obs
+Is done
+>>>>>>>>>>>>>>>>done_fail=False,done_sucess=False
+Distanze zum Ziel= 0.2104450780518583
+EP0 EpisodeReward=21.87631277251716
+Entered step
+Unpause sim
+Set action
+Action:
+[-0.19210117 -0.06969042  0.24237734 -0.51258557 -0.24035383]
+-0.19210116962505208
+-0.06969041584656073
+0.24237734410928885
+-0.5125855680128356
+-0.2403538289548926
+[ INFO] [1627369607.125793697, 2321.750000000]: ABORTED: Solution found but controller failed during execution
+Get Obs
+Is done
+>>>>>>>>>>>>>>>>done_fail=False,done_sucess=False
+Distanze zum Ziel= 0.20493862529320123
+EP0 EpisodeReward=26.75582242361061
+Entered step
+Unpause sim
+Set action
+Action:
+[ 0.8549031   0.76324025  0.76262085 -0.23310572  0.05063129]
+0.8549031026376547
+0.7632402474610708
+0.7626208471431746
+-0.2331057175598209
+0.0506312896558868
+[ INFO] [1627369618.124362335, 2332.510000000]: ABORTED: Solution found but controller failed during execution
+Get Obs
+Is done
+>>>>>>>>>>>>>>>>done_fail=False,done_sucess=False
+Distanze zum Ziel= 0.4150314878347737
+EP0 EpisodeReward=29.165278162058353
+Entered step
+Unpause sim
+Set action
+Action:
+[-0.19993577 -0.11255391  0.53209221  0.40775677 -0.22993121]
+-0.19993576976173394
+-0.11255391454672181
+0.5320922102322835
+0.4077567745476951
+-0.22993121382654635
+[ INFO] [1627369629.426799918, 2343.522000000]: ABORTED: Solution found but controller failed during execution
+Get Obs
+Is done
+>>>>>>>>>>>>>>>>done_fail=False,done_sucess=False
+Distanze zum Ziel= 0.21282291318095892
+EP0 EpisodeReward=33.864020346598046
+Entered step
+Unpause sim
+Set action
+Action:
+[ 0.42406938 -1.32856866  0.88890643 -0.83668705  0.0609028 ]
+0.4240693829069904
+-1.3285686617854842
+0.888906426122705
+-0.8366870515138166
+0.06090279565573058
+[ INFO] [1627369642.605130406, 2356.411000000]: ABORTED: Solution found but controller failed during execution
+Get Obs
+Is done
+>>>>>>>>>>>>>>>>done_fail=False,done_sucess=False
+Distanze zum Ziel= 0.3584695670738037
+Original Shape==(25,)
+Morfed Shape==(5, 5)
+EP0 EpisodeReward=36.65365743675057
+Entered step
+Unpause sim
+Set action
+Action:
+[ 0.26459692  0.0049825   1.39478849  0.71316527 -0.29104608]
+0.26459691977938593
+0.0049825013144366714
+1.3947884889893833
+0.7131652666536858
+-0.2910460788843227
+[ INFO] [1627369659.477536646, 2372.768000000]: ABORTED: Solution found but controller failed during execution
+Get Obs
+Is done
+>>>>>>>>>>>>>>>>done_fail=False,done_sucess=False
+Distanze zum Ziel= 0.2633969916021766
+EP0 EpisodeReward=40.45020801205234
+Entered step
+Unpause sim
+Set action
+Action:
+[-0.10005068  0.51709002  0.79823702 -0.67626836  0.80994594]
+-0.1000506768110159
+0.5170900196415045
+0.7982370230210785
+-0.6762683571718933
+0.8099459372278895
+[ INFO] [1627369674.237893908, 2387.162000000]: ABORTED: Solution found but controller failed during execution
+Get Obs
+Is done
+>>>>>>>>>>>>>>>>done_fail=False,done_sucess=False
+Distanze zum Ziel= 0.35077078141752227
+EP0 EpisodeReward=43.30107260219533
+Entered step
+Unpause sim
+Set action
+Action:
+[-0.32115341 -0.71933879  0.32536971 -0.34851791  1.61707591]
+-0.32115341024284805
+-0.719338792327356
+0.3253697081957661
+-0.34851790832751117
+1.6170759118266291
+Error setting joint target. Is the target within bounds?
+Get Obs
+Is done
+>>>>>>>>>>>>>>>>done_fail=True,done_sucess=False
+Distanze zum Ziel= 0.35188289389947247
+Original Shape==(15,)
+Morfed Shape==(3, 5)
+EP0 EpisodeReward=33.30107260219533
+####################### START AC3
+EP1 EpisodeReward=0
+Entered reset
+0.0
+0.0
+0.0
+0.0
+0.0
+[ INFO] [1627369683.225479916, 2395.903000000]: ABORTED: Solution found but controller failed during execution
+Entered step
+Unpause sim
+Set action
+Action:
+[-0.04452487 -0.21929119 -0.45488071  0.19790346 -0.08200835]
+-0.04452486848884899
+-0.21929118748060494
+-0.45488070769774847
+0.19790346216681387
+-0.08200835133727166
+[ INFO] [1627369687.941929801, 2400.384000000]: ABORTED: Solution found but controller failed during execution
+Get Obs
+Is done
+>>>>>>>>>>>>>>>>done_fail=False,done_sucess=False
+Distanze zum Ziel= 0.21528797951250053
+EP1 EpisodeReward=4.64494117258384
+Entered step
+Unpause sim
+Set action
+Action:
+[ 0.29710574 -0.22850771  0.21011376 -0.23913085 -0.96574226]
+0.29710573855272837
+-0.22850770925268024
+0.2101137621063009
+-0.23913085047289026
+-0.9657422622954569
+[ INFO] [1627369697.400040491, 2409.611000000]: ABORTED: Solution found but controller failed during execution
+Get Obs
+Is done
+>>>>>>>>>>>>>>>>done_fail=False,done_sucess=False
+Distanze zum Ziel= 0.14240100896520694
+EP1 EpisodeReward=11.667363325816838
+Entered step
+Unpause sim
+Set action
+Action:
+[-1.45162532  0.4851756  -0.33758813 -0.58877799  0.39001803]
+-1.451625322672025
+0.48517560310736985
+-0.3375881271308046
+-0.5887779928229682
+0.3900180261521388
+[ INFO] [1627369715.674751688, 2427.419000000]: ABORTED: Solution found but controller failed during execution
+Get Obs
+Is done
+>>>>>>>>>>>>>>>>done_fail=False,done_sucess=False
+Distanze zum Ziel= 0.39781031036412223
+EP1 EpisodeReward=14.181124216238919
+Entered step
+Unpause sim
+Set action
+Action:
+[-0.00466089  0.13263864  0.88356735 -0.55617895  0.0044933 ]
+-0.004660885186116764
+0.13263863996208067
+0.8835673461151661
+-0.5561789453142264
+0.004493297120857718
+[ INFO] [1627369731.024105281, 2442.305000000]: ABORTED: Solution found but controller failed during execution
+Get Obs
+Is done
+>>>>>>>>>>>>>>>>done_fail=False,done_sucess=False
+Distanze zum Ziel= 0.24921408598337666
+EP1 EpisodeReward=18.19373849546029
+Entered step
+Unpause sim
+Set action
+Action:
+[-0.09770658 -0.1301904   0.52257434  0.16142406 -0.62217905]
+-0.09770657618633499
+-0.13019039750845787
+0.5225743408935151
+0.1614240586232879
+-0.6221790475308131
+[33m[ WARN] [1627369739.044775559, 2450.142000000]: Fail: ABORTED: No motion plan found. No execution attempted.
+[ INFO] [1627369738.770269137, 2449.881000000]: ABORTED: Solution found but controller failed during execution
+Get Obs
+Is done
+>>>>>>>>>>>>>>>>done_fail=False,done_sucess=False
+Distanze zum Ziel= 0.19175236721303024
+Original Shape==(25,)
+Morfed Shape==(5, 5)
+EP1 EpisodeReward=23.40879797313044
+Entered step
+Unpause sim
+Set action
+Action:
+[ 0.39701121 -1.06316146 -1.02500424 -0.34155491 -0.44602223]
+0.39701121482423246
+-1.0631614593643939
+-1.0250042366013044
+-0.3415549068520832
+-0.4460222348403681
+[ INFO] [1627369739.105047948, 2450.200000000]: ABORTED: No motion plan found. No execution attempted.
+Get Obs
+Is done
+>>>>>>>>>>>>>>>>done_fail=False,done_sucess=False
+Distanze zum Ziel= 0.1937194157869862
+EP1 EpisodeReward=28.570903154676103
+Entered step
+Unpause sim
+Set action
+Action:
+[ 0.09211954  0.94591115  0.25474247 -0.26306576  0.15407364]
+0.09211954208121154
+0.9459111463909159
+0.2547424667848832
+-0.26306576183059327
+0.15407363846344074
+[ INFO] [1627369751.104142596, 2461.834000000]: ABORTED: Solution found but controller failed during execution
+Get Obs
+Is done
+>>>>>>>>>>>>>>>>done_fail=False,done_sucess=False
+Distanze zum Ziel= 0.39441404259396434
+EP1 EpisodeReward=31.106309839040698
+Entered step
+Unpause sim
+Set action
+Action:
+[-0.30668181  0.21062316 -0.81968867  0.69373431 -0.03271003]
+-0.30668180868313827
+0.21062316214271426
+-0.8196886652152033
+0.6937343106223196
+-0.03271002980632369
+[ INFO] [1627369762.632416355, 2473.060000000]: ABORTED: Solution found but controller failed during execution
+Get Obs
+Is done
+>>>>>>>>>>>>>>>>done_fail=False,done_sucess=False
+Distanze zum Ziel= 0.20127878001330424
+EP1 EpisodeReward=36.0745434498262
+Entered step
+Unpause sim
+Set action
+Action:
+[-2.16000009  0.36959063  0.15333373  1.06495766  0.32268699]
+-2.1600000858306885
+0.3695906328150055
+0.15333373270397782
+1.0649576550478024
+0.32268699352608843
+Error setting joint target. Is the target within bounds?
+Get Obs
+Is done
+>>>>>>>>>>>>>>>>done_fail=True,done_sucess=False
+Distanze zum Ziel= 0.20520516316014364
+Original Shape==(20,)
+Morfed Shape==(4, 5)
+EP1 EpisodeReward=26.0745434498262
+####################### START AC3
+EP2 EpisodeReward=0
+Entered reset
+0.0
+0.0
+0.0
+0.0
+0.0
+[ INFO] [1627369772.077357796, 2482.230000000]: ABORTED: Solution found but controller failed during execution
+Entered step
+Unpause sim
+Set action
+Action:
+[ 0.2048585   0.47791481  0.16264067 -0.30340658 -0.14269271]
+0.20485850036422498
+0.47791481055765317
+0.1626406723429179
+-0.3034065783633276
+-0.14269271073303652
+[ INFO] [1627369777.500912187, 2487.527000000]: ABORTED: Solution found but controller failed during execution
+Get Obs
+Is done
+>>>>>>>>>>>>>>>>done_fail=False,done_sucess=False
+Distanze zum Ziel= 0.2323017332228141
+EP2 EpisodeReward=4.304746185603539
+Entered step
+Unpause sim
+Set action
+Action:
+[-0.60934048  0.01745087 -0.25628192 -0.47024541 -0.83082628]
+-0.6093404762063273
+0.017450874541714095
+-0.256281915670289
+-0.47024541048484314
+-0.8308262809649396
+[ INFO] [1627369786.291191762, 2495.993000000]: ABORTED: Solution found but controller failed during execution
+Get Obs
+Is done
+>>>>>>>>>>>>>>>>done_fail=False,done_sucess=False
+Distanze zum Ziel= 0.2962496507534843
+EP2 EpisodeReward=7.68027759114812
+Entered step
+Unpause sim
+Set action
+Action:
+[-0.21299878 -0.21138407  0.93433193  0.52050534 -0.47060883]
+-0.2129987844463363
+-0.21138407363480044
+0.9343319255719862
+0.5205053434413346
+-0.4706088260736303
+[ INFO] [1627369799.166075887, 2508.586000000]: ABORTED: Solution found but controller failed during execution
+Get Obs
+Is done
+>>>>>>>>>>>>>>>>done_fail=False,done_sucess=False
+Distanze zum Ziel= 0.21439610949211826
+EP2 EpisodeReward=12.344541333474854
+Entered step
+Unpause sim
+Set action
+Action:
+[ 1.06274743 -0.35530899  0.31753095  1.38487492 -0.13084225]
+1.062747432897852
+-0.35530898554929385
+0.31753094929319864
+1.384874922446994
+-0.13084224731598407
+[ INFO] [1627369812.475450064, 2521.553000000]: ABORTED: Solution found but controller failed during execution
+Get Obs
+Is done
+>>>>>>>>>>>>>>>>done_fail=False,done_sucess=False
+Distanze zum Ziel= 0.2672225943391641
+EP2 EpisodeReward=16.086739864527136
+Entered step
+Unpause sim
+Set action
+Action:
+[-0.56201355  0.02448135  0.83883194 -0.78865038 -0.3935104 ]
+-0.5620135534497358
+0.024481349027233285
+0.8388319367461887
+-0.7886503827498477
+-0.3935103965382301
+[ INFO] [1627369835.044515534, 2543.642000000]: ABORTED: Solution found but controller failed during execution
+Get Obs
+Is done
+>>>>>>>>>>>>>>>>done_fail=False,done_sucess=False
+Distanze zum Ziel= 0.28633053205220443
+Original Shape==(25,)
+Morfed Shape==(5, 5)
+EP2 EpisodeReward=19.579207094035436
+Entered step
+Unpause sim
+Set action
+Action:
+[-0.93195657 -0.74859978  0.20330903 -1.80965152  1.67782502]
+-0.931956570776757
+-0.7485997834590143
+0.20330902512757432
+-1.8096515217616693
+1.6778250151858063
+Error setting joint target. Is the target within bounds?
+Get Obs
+Is done
+>>>>>>>>>>>>>>>>done_fail=True,done_sucess=False
+Distanze zum Ziel= 0.2856053305118519
+Original Shape==(5,)
+Morfed Shape==(1, 5)
+EP2 EpisodeReward=9.579207094035436
+####################### START AC3
+EP3 EpisodeReward=0
+Entered reset
+0.0
+0.0
+0.0
+0.0
+0.0
+[ INFO] [1627369844.221176012, 2552.561000000]: ABORTED: Solution found but controller failed during execution
+Entered step
+Unpause sim
+Set action
+Action:
+[-0.94817556 -0.74592712 -0.1871037  -0.9504969  -0.3532728 ]
+-0.9481755616827015
+-0.7459271212183034
+-0.18710369905051588
+-0.9504969033727595
+-0.3532727982357147
+[ INFO] [1627369854.479064266, 2562.447000000]: ABORTED: Solution found but controller failed during execution
+Get Obs
+Is done
+>>>>>>>>>>>>>>>>done_fail=False,done_sucess=False
+Distanze zum Ziel= 0.4979125456947055
+EP3 EpisodeReward=2.0083848230913
+Entered step
+Unpause sim
+Set action
+Action:
+[-0.2288538  -0.78290786  0.68732547  0.46530256  0.11752658]
+-0.22885380132095484
+-0.7829078578183178
+0.6873254680856957
+0.4653025636409562
+0.11752658497288082
+[ INFO] [1627369869.545661804, 2577.052000000]: ABORTED: Solution found but controller failed during execution
+Get Obs
+Is done
+>>>>>>>>>>>>>>>>done_fail=False,done_sucess=False
+Distanze zum Ziel= 0.2957623690037378
+EP3 EpisodeReward=5.389477567812188
+Entered step
+Unpause sim
+Set action
+Action:
+[ 0.04272762  0.23115411  0.23681041 -0.98469573 -0.21424529]
+0.042727619066736694
+0.2311541058323987
+0.23681040746892823
+-0.9846957336354786
+-0.21424529481287186
+[ INFO] [1627369885.031418232, 2592.064000000]: ABORTED: Solution found but controller failed during execution
+Get Obs
+Is done
+>>>>>>>>>>>>>>>>done_fail=False,done_sucess=False
+Distanze zum Ziel= 0.1896139397095278
+EP3 EpisodeReward=10.66335142714929
+Entered step
+Unpause sim
+Set action
+Action:
+[-0.94432262 -0.17270407  0.54832961 -0.46819503  0.28092517]
+-0.9443226221068902
+-0.17270406969719992
+0.5483296126964037
+-0.4681950328280643
+0.28092517260077815
+[ INFO] [1627369895.705284432, 2602.353000000]: ABORTED: Solution found but controller failed during execution
+Get Obs
+Is done
+>>>>>>>>>>>>>>>>done_fail=False,done_sucess=False
+Distanze zum Ziel= 0.374957049472071
+EP3 EpisodeReward=13.330323554778234
+Entered step
+Unpause sim
+Set action
+Action:
+[ 0.3145956  -1.79419313 -1.32634234 -0.00821068  0.29250118]
+0.31459560078370535
+-1.7941931325804563
+-1.3263423413095645
+-0.008210680810980989
+0.29250117799699327
+Error setting joint target. Is the target within bounds?
+Get Obs
+Is done
+>>>>>>>>>>>>>>>>done_fail=True,done_sucess=False
+Distanze zum Ziel= 0.3772795322548594
+Original Shape==(25,)
+Morfed Shape==(5, 5)
+EP3 EpisodeReward=3.330323554778234
+####################### START AC3
+EP4 EpisodeReward=0
+Entered reset
+0.0
+0.0
+0.0
+0.0
+0.0
+[ INFO] [1627369906.186138899, 2612.621000000]: ABORTED: Solution found but controller failed during execution
+Entered step
+Unpause sim
+Set action
+Action:
+[-0.8061917   1.03278229  0.4232481  -0.39706355  1.00411027]
+-0.8061916989181095
+1.032782289380637
+0.42324809602164926
+-0.3970635532367702
+1.004110272586486
+[ INFO] [1627369917.286479302, 2623.503000000]: ABORTED: Solution found but controller failed during execution
+Get Obs
+Is done
+>>>>>>>>>>>>>>>>done_fail=False,done_sucess=False
+Distanze zum Ziel= 0.40183376377594043
+EP4 EpisodeReward=2.4885912786502247
+Entered step
+Unpause sim
+Set action
+Action:
+[ 0.86009046  0.2738095   0.15709594 -0.73297216 -0.10018582]
+0.860090459184772
+0.27380949554692235
+0.1570959404966522
+-0.7329721609206412
+-0.10018582033966231
+[ INFO] [1627369934.642556963, 2640.537000000]: ABORTED: Solution found but controller failed during execution
+Get Obs
+Is done
+>>>>>>>>>>>>>>>>done_fail=False,done_sucess=False
+Distanze zum Ziel= 0.20912794486363126
+EP4 EpisodeReward=7.270352992284828
+Entered step
+Unpause sim
+Set action
+Action:
+[-0.62130342  0.21568449 -0.34795776  1.1078388   0.01878348]
+-0.6213034188888603
+0.21568449238594228
+-0.347957764943559
+1.1078387973510384
+0.018783475017733822
+[ INFO] [1627369953.819894931, 2659.310000000]: ABORTED: Solution found but controller failed during execution
+Get Obs
+Is done
+>>>>>>>>>>>>>>>>done_fail=False,done_sucess=False
+Distanze zum Ziel= 0.27791281605392715
+EP4 EpisodeReward=10.868603746600371
+Entered step
+Unpause sim
+Set action
+Action:
+[ 0.94407584  1.0136592  -0.38116176  0.55153981  0.81852779]
+0.9440758411490552
+1.0136591995220265
+-0.3811617560219737
+0.5515398104925515
+0.818527785658342
+[ INFO] [1627369970.149273339, 2675.351000000]: ABORTED: Solution found but controller failed during execution
+Get Obs
+Is done
+>>>>>>>>>>>>>>>>done_fail=False,done_sucess=False
+Distanze zum Ziel= 0.2890141585416301
+EP4 EpisodeReward=14.32864184662293
+Entered step
+Unpause sim
+Set action
+Action:
+[-0.44164109  0.14478959  1.10968701 -0.99816829  0.50089411]
+-0.4416410892046806
+0.14478959224114785
+1.1096870120381797
+-0.9981682872719451
+0.5008941070614867
+[ INFO] [1627369986.109840021, 2691.060000000]: ABORTED: Solution found but controller failed during execution
+Get Obs
+Is done
+>>>>>>>>>>>>>>>>done_fail=False,done_sucess=False
+Distanze zum Ziel= 0.2981177792251192
+Original Shape==(25,)
+Morfed Shape==(5, 5)
+EP4 EpisodeReward=17.683020785709502
+Entered step
+Unpause sim
+Set action
+Action:
+[-0.64233798 -0.7903247   1.1542245   0.04007468 -0.64338462]
+-0.6423379752119026
+-0.7903247007739177
+1.1542244975637412
+0.04007467670775165
+-0.6433846245522095
+[ INFO] [1627369998.111389379, 2702.860000000]: ABORTED: Solution found but controller failed during execution
+Get Obs
+Is done
+>>>>>>>>>>>>>>>>done_fail=False,done_sucess=False
+Distanze zum Ziel= 0.3377523557780268
+EP4 EpisodeReward=20.643769934879632
+Entered step
+Unpause sim
+Set action
+Action:
+[-0.32541341 -0.25906545 -0.2427799  -0.31816062 -0.74097457]
+-0.3254134119808461
+-0.2590654454566587
+-0.2427799024353869
+-0.3181606159702719
+-0.7409745704020463
+[ INFO] [1627370012.365397533, 2716.814000000]: ABORTED: Solution found but controller failed during execution
+Get Obs
+Is done
+>>>>>>>>>>>>>>>>done_fail=False,done_sucess=False
+Distanze zum Ziel= 0.27411556676875265
+EP4 EpisodeReward=24.291866289960453
+Entered step
+Unpause sim
+Set action
+Action:
+[-0.37204541 -0.94182037  1.32038831  0.05255434  0.12567348]
+-0.3720454120259403
+-0.9418203683838858
+1.3203883100928508
+0.052554344193131264
+0.12567347502277035
+[ INFO] [1627370029.375724232, 2733.030000000]: ABORTED: Solution found but controller failed during execution
+Get Obs
+Is done
+>>>>>>>>>>>>>>>>done_fail=False,done_sucess=False
+Distanze zum Ziel= 0.2750537384309002
+EP4 EpisodeReward=27.92751947433345
+Entered step
+Unpause sim
+Set action
+Action:
+[ 0.19863928 -0.37284689  0.53514436  0.09383639 -1.05763555]
+0.19863928194636135
+-0.372846886046745
+0.5351443579833381
+0.09383639181774488
+-1.0576355508586852
+[ INFO] [1627370041.922835814, 2745.200000000]: ABORTED: Solution found but controller failed during execution
+Get Obs
+Is done
+>>>>>>>>>>>>>>>>done_fail=False,done_sucess=False
+Distanze zum Ziel= 0.15699276557819994
+EP4 EpisodeReward=34.29723973702854
+Entered step
+Unpause sim
+Set action
+Action:
+[ 0.80045318 -0.31554034 -0.44055634 -1.21704712 -0.15338925]
+0.8004531816255865
+-0.31554034094190087
+-0.4405563350858489
+-1.2170471222309382
+-0.15338925456993135
+[ INFO] [1627370055.585890506, 2758.610000000]: ABORTED: Solution found but controller failed during execution
+Get Obs
+Is done
+>>>>>>>>>>>>>>>>done_fail=False,done_sucess=False
+Distanze zum Ziel= 0.250894892187096
+Original Shape==(25,)
+Morfed Shape==(5, 5)
+EP4 EpisodeReward=38.28297253247455
+Entered step
+Unpause sim
+Set action
+Action:
+[ 0.14327425  0.09169963 -0.84024668 -0.00111006 -0.97193378]
+0.14327425488920267
+0.09169962592900362
+-0.8402466817584441
+-0.001110059720589869
+-0.9719337820505144
+[ INFO] [1627370068.482379314, 2771.283000000]: ABORTED: Solution found but controller failed during execution
+Get Obs
+Is done
+>>>>>>>>>>>>>>>>done_fail=False,done_sucess=False
+Distanze zum Ziel= 0.1335552090635865
+EP4 EpisodeReward=45.77051275656191
+Entered step
+Unpause sim
+Set action
+Action:
+[ 0.13098885  0.17844142 -0.0507526  -0.02286648  0.71396738]
+0.13098885236359514
+0.1784414229165269
+-0.050752604936592206
+-0.02286648133209044
+0.7139673767126158
+[ INFO] [1627370085.945100510, 2788.462000000]: ABORTED: Solution found but controller failed during execution
+Get Obs
+Is done
+>>>>>>>>>>>>>>>>done_fail=False,done_sucess=False
+Distanze zum Ziel= 0.1351779141227972
+EP4 EpisodeReward=53.1681709205397
+Entered step
+Unpause sim
+Set action
+Action:
+[ 0.66105537  0.51007847  0.75345287  0.8969259  -1.24202883]
+0.6610553749810307
+0.5100784653540811
+0.7534528688801078
+0.896925901526936
+-1.2420288305846443
+[ INFO] [1627370106.678780543, 2808.363000000]: ABORTED: Solution found but controller failed during execution
+Get Obs
+Is done
+>>>>>>>>>>>>>>>>done_fail=False,done_sucess=False
+Distanze zum Ziel= 0.342022748672941
+EP4 EpisodeReward=56.09195304871694
+Entered step
+Unpause sim
+Set action
+Action:
+[-0.090231    0.06306434  0.94904847 -0.34283328  0.32518074]
+-0.09023100283570071
+0.06306433650461511
+0.9490484745290539
+-0.3428332833473165
+0.325180744293939
+[ INFO] [1627370123.661507812, 2824.584000000]: ABORTED: Solution found but controller failed during execution
+Get Obs
+Is done
+>>>>>>>>>>>>>>>>done_fail=False,done_sucess=False
+Distanze zum Ziel= 0.24430793598155565
+EP4 EpisodeReward=60.18514795858469
+Entered step
+Unpause sim
+Set action
+Action:
+[ 0.06438572 -0.93376524  0.17417088 -0.19205178 -0.8196825 ]
+0.06438571645123115
+-0.9337652414080972
+0.17417088403595893
+-0.1920517755014006
+-0.8196824976784209
+[ INFO] [1627370135.637430503, 2836.360000000]: ABORTED: Solution found but controller failed during execution
+Get Obs
+Is done
+>>>>>>>>>>>>>>>>done_fail=False,done_sucess=False
+Distanze zum Ziel= 0.35407369966418756
+Original Shape==(25,)
+Morfed Shape==(5, 5)
+EP4 EpisodeReward=63.00941872749078
+Entered step
+Unpause sim
+Set action
+Action:
+[ 0.12499906  0.15157066 -0.5357844   1.62064987 -1.12651573]
+0.1249990556256509
+0.15157066415224701
+-0.5357844041088211
+1.620649865022257
+-1.1265157321388066
+Error setting joint target. Is the target within bounds?
+Get Obs
+Is done
+>>>>>>>>>>>>>>>>done_fail=True,done_sucess=False
+Distanze zum Ziel= 0.36807404215965445
+Original Shape==(5,)
+Morfed Shape==(1, 5)
+EP4 EpisodeReward=53.00941872749078
+####################### START AC3
+EP5 EpisodeReward=0
+Entered reset
+0.0
+0.0
+0.0
+0.0
+0.0
+[ INFO] [1627370147.387215115, 2847.900000000]: ABORTED: Solution found but controller failed during execution
+Entered step
+Unpause sim
+Set action
+Action:
+[-0.09384555 -0.65701829 -0.27057756 -0.03006133 -0.17747002]
+-0.09384554762229552
+-0.6570182891705982
+-0.2705775638894674
+-0.030061327780778434
+-0.1774700229416986
+[ INFO] [1627370154.028524433, 2854.452000000]: ABORTED: Solution found but controller failed during execution
+Get Obs
+Is done
+>>>>>>>>>>>>>>>>done_fail=False,done_sucess=False
+Distanze zum Ziel= 0.3387959971725251
+EP5 EpisodeReward=2.9516287333547506
+Entered step
+Unpause sim
+Set action
+Action:
+[ 0.18734405  0.59009115 -0.39197563  0.0683614  -0.07677497]
+0.18734405007100807
+0.5900911483956427
+-0.3919756330966696
+0.06836139979182218
+-0.07677496897018826
+[ INFO] [1627370167.643136006, 2867.811000000]: ABORTED: Solution found but controller failed during execution
+Get Obs
+Is done
+>>>>>>>>>>>>>>>>done_fail=False,done_sucess=False
+Distanze zum Ziel= 0.15404349281621868
+EP5 EpisodeReward=9.44330184279955
+Entered step
+Unpause sim
+Set action
+Action:
+[ 0.1106159  -0.9220784   0.08741433  0.63189518 -0.08626788]
+0.11061590196360858
+-0.9220784026222224
+0.08741432839170188
+0.6318951847376445
+-0.08626787759966759
+[ INFO] [1627370183.307442086, 2883.132000000]: ABORTED: Solution found but controller failed during execution
+Get Obs
+Is done
+>>>>>>>>>>>>>>>>done_fail=False,done_sucess=False
+Distanze zum Ziel= 0.3576229886572583
+EP5 EpisodeReward=12.239542665445288
+Entered step
+Unpause sim
+Set action
+Action:
+[ 0.53691052  1.1396225  -0.06248895 -0.70802954  1.81822362]
+0.5369105192557059
+1.1396225016691237
+-0.06248895499330545
+-0.7080295409233079
+1.818223619642894
+Error setting joint target. Is the target within bounds?
+Get Obs
+Is done
+>>>>>>>>>>>>>>>>done_fail=True,done_sucess=False
+Distanze zum Ziel= 0.3590718612490577
+Original Shape==(20,)
+Morfed Shape==(4, 5)
+EP5 EpisodeReward=2.2395426654452883
+####################### START AC3
+EP6 EpisodeReward=0
+Entered reset
+0.0
+0.0
+0.0
+0.0
+0.0
+[ INFO] [1627370193.903527597, 2893.437000000]: ABORTED: Solution found but controller failed during execution
+Entered step
+Unpause sim
+Set action
+Action:
+[-0.22852152  0.68223684  0.56649662  0.37244521  0.28495985]
+-0.22852151632895243
+0.6822368418667281
+0.5664966209821851
+0.3724452054341627
+0.28495985107711025
+[ INFO] [1627370201.501932758, 2900.861000000]: ABORTED: Solution found but controller failed during execution
+Get Obs
+Is done
+>>>>>>>>>>>>>>>>done_fail=False,done_sucess=False
+Distanze zum Ziel= 0.36653093594382197
+EP6 EpisodeReward=2.728282668487414
+Entered step
+Unpause sim
+Set action
+Action:
+[-0.08832148 -0.30682646  0.51849723  1.01479962 -0.19668924]
+-0.08832148127265982
+-0.3068264609151681
+0.5184972275862768
+1.01479962483707
+-0.19668924118343048
+[ INFO] [1627370212.643941306, 2911.310000000]: ABORTED: Solution found but controller failed during execution
+Get Obs
+Is done
+>>>>>>>>>>>>>>>>done_fail=False,done_sucess=False
+Distanze zum Ziel= 0.1974653941953887
+EP6 EpisodeReward=7.792461149353366
+Entered step
+Unpause sim
+Set action
+Action:
+[ 0.16002275 -1.98825959 -0.09683133 -0.87579613 -0.24429806]
+0.16002275420772147
+-1.9882595908437761
+-0.09683133373369797
+-0.8757961274289852
+-0.24429806079236766
+Error setting joint target. Is the target within bounds?
+Get Obs
+Is done
+>>>>>>>>>>>>>>>>done_fail=True,done_sucess=False
+Distanze zum Ziel= 0.20079556258557785
+Original Shape==(15,)
+Morfed Shape==(3, 5)
+EP6 EpisodeReward=-2.2075388506466336
+####################### START AC3
+EP7 EpisodeReward=0
+Entered reset
+0.0
+0.0
+0.0
+0.0
+0.0
+[ INFO] [1627370224.293283075, 2922.301000000]: ABORTED: Solution found but controller failed during execution
+Entered step
+Unpause sim
+Set action
+Action:
+[ 0.08183289 -0.4527269   0.03742721  1.31080979 -0.02558354]
+0.08183289136758665
+-0.45272689750784184
+0.037427210832024146
+1.3108097877341092
+-0.025583537723002626
+[ INFO] [1627370238.850188124, 2935.785000000]: ABORTED: Solution found but controller failed during execution
+Get Obs
+Is done
+>>>>>>>>>>>>>>>>done_fail=False,done_sucess=False
+Distanze zum Ziel= 0.23135490584412063
+EP7 EpisodeReward=4.322363497551105
+Entered step
+Unpause sim
+Set action
+Action:
+[-0.08817759 -0.98438027  0.34234896  0.06848428 -0.12925592]
+-0.08817759485849198
+-0.9843802661476632
+0.34234896198107384
+0.06848427784555706
+-0.12925592339218017
+[ INFO] [1627370253.028500875, 2948.923000000]: ABORTED: Solution found but controller failed during execution
+Get Obs
+Is done
+>>>>>>>>>>>>>>>>done_fail=False,done_sucess=False
+Distanze zum Ziel= 0.3659824290705243
+EP7 EpisodeReward=7.054735110416983
+Entered step
+Unpause sim
+Set action
+Action:
+[ 0.38604294  0.78155281  0.51618072 -1.74246451  0.14536468]
+0.3860429363861289
+0.7815528120127407
+0.516180723113425
+-1.7424645102603311
+0.1453646813305824
+Error setting joint target. Is the target within bounds?
+Get Obs
+Is done
+>>>>>>>>>>>>>>>>done_fail=True,done_sucess=False
+Distanze zum Ziel= 0.36734108440137153
+Original Shape==(15,)
+Morfed Shape==(3, 5)
+EP7 EpisodeReward=-2.945264889583017
+####################### START AC3
+EP8 EpisodeReward=0
+Entered reset
+0.0
+0.0
+0.0
+0.0
+0.0
+[ INFO] [1627370264.319732210, 2959.864000000]: ABORTED: Solution found but controller failed during execution
+Entered step
+Unpause sim
+Set action
+Action:
+[-0.69810015  0.39608003 -0.79412573  0.07590936  0.92599252]
+-0.6981001533253524
+0.3960800322647391
+-0.7941257292836451
+0.07590936480273369
+0.925992522655147
+[ INFO] [1627370274.092819794, 2969.422000000]: ABORTED: Solution found but controller failed during execution
+Get Obs
+Is done
+>>>>>>>>>>>>>>>>done_fail=False,done_sucess=False
+Distanze zum Ziel= 0.2657460034862488
+EP8 EpisodeReward=3.762991679578525
+Entered step
+Unpause sim
+Set action
+Action:
+[-0.07898127 -0.07473046  0.27031052  0.05496163  0.51108571]
+-0.07898127161073036
+-0.07473046457866968
+0.2703105208834753
+0.054961625553429476
+0.5110857141819564
+[ INFO] [1627370285.498956122, 2980.505000000]: ABORTED: Solution found but controller failed during execution
+Get Obs
+Is done
+>>>>>>>>>>>>>>>>done_fail=False,done_sucess=False
+Distanze zum Ziel= 0.18203139697454848
+EP8 EpisodeReward=9.256549475763649
+Entered step
+Unpause sim
+Set action
+Action:
+[-0.783952   -0.30767224  0.13108342 -0.08256063  0.00088834]
+-0.7839519981268638
+-0.30767224229676615
+0.13108341969719892
+-0.08256063144139776
+0.0008883364075361021
+[ INFO] [1627370293.536198823, 2987.934000000]: ABORTED: Solution found but controller failed during execution
+Get Obs
+Is done
+>>>>>>>>>>>>>>>>done_fail=False,done_sucess=False
+Distanze zum Ziel= 0.37668256300642594
+EP8 EpisodeReward=11.911304694637268
+Entered step
+Unpause sim
+Set action
+Action:
+[ 0.22586423 -0.33448906  0.05317678 -0.83040153  0.52399218]
+0.2258642265295322
+-0.3344890635754862
+0.053176777800643074
+-0.8304015324160116
+0.523992176712887
+[ INFO] [1627370305.129889058, 2998.813000000]: ABORTED: Solution found but controller failed during execution
+Get Obs
+Is done
+>>>>>>>>>>>>>>>>done_fail=False,done_sucess=False
+Distanze zum Ziel= 0.18199991190364853
+EP8 EpisodeReward=17.405812848736836
+Entered step
+Unpause sim
+Set action
+Action:
+[-0.70245383  0.23035144 -0.06415198  1.13614669  0.60759206]
+-0.7024538327354051
+0.23035143529660956
+-0.06415197996372742
+1.1361466948872034
+0.6075920581387889
+[ INFO] [1627370325.522880949, 3018.803000000]: ABORTED: Solution found but controller failed during execution
+Get Obs
+Is done
+>>>>>>>>>>>>>>>>done_fail=False,done_sucess=False
+Distanze zum Ziel= 0.29841579623635206
+Original Shape==(25,)
+Morfed Shape==(5, 5)
+EP8 EpisodeReward=20.756841891475503
+Entered step
+Unpause sim
+Set action
+Action:
+[-0.66742748  0.00401707  0.80135244 -1.32018734  0.72774621]
+-0.6674274752641904
+0.00401707130394989
+0.8013524409870985
+-1.3201873383313294
+0.7277462100285782
+[ INFO] [1627370351.446656337, 3044.012000000]: ABORTED: Solution found but controller failed during execution
+Get Obs
+Exception in thread Thread-23:
+Traceback (most recent call last):
+  File "/home/nils/anaconda3/envs/moveo_training/lib/python3.9/threading.py", line 954, in _bootstrap_inner
+    self.run()
+  File "/home/nils/Documents/Studium/Bachelorarbeit/moveo_RL/src/moveo_training/scripts/A3C_moveo_ik.py", line 256, in run
+    self.train()
+  File "/home/nils/Documents/Studium/Bachelorarbeit/moveo_RL/src/moveo_training/scripts/A3C_moveo_ik.py", line 209, in train
+    next_state, reward, done, _ = self.env.step(action)
+  File "/home/nils/anaconda3/envs/moveo_training/lib/python3.9/site-packages/gym/wrappers/time_limit.py", line 16, in step
+    observation, reward, done, info = self.env.step(action)
+  File "/home/nils/Documents/Studium/Bachelorarbeit/moveo_RL/src/openai_ros/openai_ros/src/openai_ros/robot_gazebo_env_goal.py", line 51, in step
+    obs = self._get_obs()
+  File "/home/nils/Documents/Studium/Bachelorarbeit/moveo_RL/src/moveo_training/scripts/moveo_inverse_kinematic.py", line 133, in _get_obs
+    self.gazebo.unpauseSim()
+  File "/home/nils/Documents/Studium/Bachelorarbeit/moveo_RL/src/openai_ros/openai_ros/src/openai_ros/gazebo_connection.py", line 58, in unpauseSim
+    rospy.wait_for_service('/gazebo/unpause_physics')
+  File "/opt/ros/noetic/lib/python3/dist-packages/rospy/impl/tcpros_service.py", line 166, in wait_for_service
+    raise ROSInterruptException("rospy shutdown")
+rospy.exceptions.ROSInterruptException: rospy shutdown

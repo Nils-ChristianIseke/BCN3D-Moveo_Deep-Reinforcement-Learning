@@ -135,11 +135,11 @@ class MoveoIKEnv(moveo_env.MoveoEnv, utils.EzPickle):
 
     def _set_action(self, action):
 
-        self.new_pos = {"Joint_1": action[0],
-                "Joint_2": action[1],
-                "Joint_3": action[2],
-                "Joint_4": action[3],
-                "Joint_5": action[4]}
+        self.new_pos = {"Joint_1": float(action[0]),
+                "Joint_2": float(action[1]),
+                "Joint_3": float(action[2]),
+                "Joint_4": float(action[3]),
+                "Joint_5": float(action[4])}
 
 
         self.movement_result = self.set_trajectory_joints(self.new_pos)

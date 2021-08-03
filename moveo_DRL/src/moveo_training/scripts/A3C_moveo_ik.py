@@ -1,5 +1,24 @@
 #!/usr/bin/env python
 
+from __future__ import absolute_import
+from __future__ import division
+from __future__ import print_function
+
+import tensorflow as tf
+
+
+from tf_agents.environments import suite_gym
+from tf_agents.environments import tf_py_environment
+from tf_agents.policies import random_py_policy
+from tf_agents.policies import random_tf_policy
+from tf_agents.metrics import py_metrics
+from tf_agents.metrics import tf_metrics
+from tf_agents.drivers import py_driver
+from tf_agents.drivers import dynamic_episode_driver
+
+tf.compat.v1.enable_v2_behavior()
+
+
 import wandb
 import tensorflow as tf
 from tensorflow.keras.layers import Input, Dense, Lambda
@@ -260,7 +279,28 @@ def main():
     rospy.init_node("train_moveo_her")
     env_name = 'MoveoIK-v0'
     agent = Agent(env_name)
-    agent.train()
+    # agent.train()
+    env = suite_gym.load(env_name)
+    tf_env = tf_py_environment.TFPyEnvironment(env)
+
+    tf_policy = random_tf_policy.RandomTFPolicy(action_spec=tf_env.action_spec(),
+                                            time_step_spec=tf_env.time_step_spec())
+
+    print("ActionSpec=",tf_policy.action_spec.dtype)
+    num_episodes = tf_metrics.NumberOfEpisodes()
+    env_steps = tf_metrics.EnvironmentSteps()
+    observers = [num_episodes, env_steps]
+    driver = dynamic_episode_driver.DynamicEpisodeDriver(
+    tf_env, tf_policy, observers, num_episodes=10)
+
+    # Initial driver.run will reset the environment and initialize the policy.
+    final_time_step, policy_state = driver.run()
+
+    print('final_time_step', final_time_step)
+    print('Number of Steps: ', env_steps.result().numpy())
+    print('Number of Episodes: ', num_episodes.result().numpy())
+
+
 
 
 if __name__ == "__main__":

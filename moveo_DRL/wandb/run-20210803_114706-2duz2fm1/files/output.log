@@ -1,0 +1,353 @@
+Start Agent init....
+Entered InverseKinematics Env
+Entered Moveo Env
+[ INFO] [1627984031.577260796]: Loading robot model 'moveo_description'...
+[ INFO] [1627984031.578658636]: No root/virtual joint specified in SRDF. Assuming fixed joint
+###### Setting Group Moveit with 30 seconds wait...
+[ INFO] [1627984033.253702571, 3543.809000000]: Ready to take commands for planning group arm.
+<class 'moveo_commander.MoveoCommander'>
+launch the init function of the Parent Class robot_gazebo_env_goal.RobotGazeboEnv.....
+Entered Gazebo Env
+False
+launch the init function of the Parent Class robot_gazebo_env_goal.RobotGazeboEnv.....END
+Entered Moveo Env END
+START Actor init
+END Actor init....
+NUMBER OF WORKERS=CPUs available for this training=1
+END Agent init....
+Entered InverseKinematics Env
+Entered Moveo Env
+###### Setting Group Moveit with 30 seconds wait...
+[ INFO] [1627984033.959121036, 3544.430000000]: Ready to take commands for planning group arm.
+<class 'moveo_commander.MoveoCommander'>
+launch the init function of the Parent Class robot_gazebo_env_goal.RobotGazeboEnv.....
+Entered Gazebo Env
+False
+launch the init function of the Parent Class robot_gazebo_env_goal.RobotGazeboEnv.....END
+Entered Moveo Env END
+ActionSpec= <dtype: 'float32'>
+Entered reset
+0.0
+0.0
+0.0
+0.0
+0.0
+Entered step
+Unpause sim
+Set action
+Action:
+[-1.4202434  -1.9804702   2.1620011  -2.8296838  -0.19287014]
+-1.4202433824539185
+-1.9804701805114746
+2.162001132965088
+-2.829683780670166
+-0.1928701400756836
+[31m[ERROR] [1627984033.274546, 3543.814000]: NOT Initialising Simulation Physics Parameters
+[33m[WARN] [1627984033.287926, 3543.826000]: Start Init ControllersConnection
+[33m[WARN] [1627984033.289448, 3543.826000]: END Init ControllersConnection
+/home/nils/anaconda3/envs/moveo_training/lib/python3.9/site-packages/gym/logger.py:30: UserWarning: [33mWARN: Box bound precision lowered by casting to float32
+  warnings.warn(colorize('%s: %s'%('WARN', msg % args), 'yellow'))
+2021-08-03 11:47:13.508668: I tensorflow/compiler/jit/xla_cpu_device.cc:41] Not creating XLA devices, tf_xla_enable_xla_devices not set
+2021-08-03 11:47:13.509049: I tensorflow/core/platform/cpu_feature_guard.cc:142] This TensorFlow binary is optimized with oneAPI Deep Neural Network Library (oneDNN) to use the following CPU instructions in performance-critical operations:  SSE4.1 SSE4.2 AVX AVX2 FMA
+To enable them in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2021-08-03 11:47:13.509726: I tensorflow/core/common_runtime/process_util.cc:146] Creating new thread pool with default inter op setting: 2. Tune using inter_op_parallelism_threads for best performance.
+[31m[ERROR] [1627984033.986436, 3544.452000]: NOT Initialising Simulation Physics Parameters
+[33m[WARN] [1627984034.016017, 3544.478000]: Start Init ControllersConnection
+[33m[WARN] [1627984034.018640, 3544.478000]: END Init ControllersConnection
+Get Obs
+Is done
+>>>>>>>>>>>>>>>>done_fail=False,done_sucess=False
+Distanze zum Ziel= 0.31516711757618665
+2021-08-03 11:47:23.491446: I tensorflow/compiler/mlir/mlir_graph_optimization_pass.cc:116] None of the MLIR optimization passes are enabled (registered 2)
+2021-08-03 11:47:23.508074: I tensorflow/core/platform/profile_utils/cpu_utils.cc:112] CPU Frequency: 3192525000 Hz
+Entered step
+Unpause sim
+Set action
+Action:
+[-0.6389234  -1.0970418   1.5006213   3.0968838   0.39490533]
+-0.6389234066009521
+-1.0970418453216553
+1.5006213188171387
+3.096883773803711
+0.39490532875061035
+Get Obs
+Is done
+>>>>>>>>>>>>>>>>done_fail=False,done_sucess=False
+Distanze zum Ziel= 0.39594504288784166
+Entered step
+Unpause sim
+Set action
+Action:
+[-1.3442545   1.5908904   2.0748315   0.46059465 -0.6322856 ]
+-1.344254493713379
+1.5908904075622559
+2.074831485748291
+0.46059465408325195
+-0.6322855949401855
+[33m[ WARN] [1627984050.768765242, 3560.665000000]: Fail: ABORTED: No motion plan found. No execution attempted.
+[ INFO] [1627984053.118379677, 3562.985000000]: ABORTED: No motion plan found. No execution attempted.
+Get Obs
+Is done
+>>>>>>>>>>>>>>>>done_fail=False,done_sucess=False
+Distanze zum Ziel= 0.3959450428878422
+Entered step
+Unpause sim
+Set action
+Action:
+[-1.3349404 -2.3497586  2.9230204 -0.7093787  2.878613 ]
+-1.3349404335021973
+-2.3497586250305176
+2.923020362854004
+-0.709378719329834
+2.878612995147705
+Error setting joint target. Is the target within bounds?
+Get Obs
+Is done
+>>>>>>>>>>>>>>>>done_fail=True,done_sucess=False
+Distanze zum Ziel= 0.39594504288784227
+Entered reset
+0.0
+0.0
+0.0
+0.0
+0.0
+Entered step
+Unpause sim
+Set action
+Action:
+[-2.2461445  0.5283444 -1.6485164  1.6705413 -1.0577996]
+-2.2461445331573486
+0.5283443927764893
+-1.6485164165496826
+1.6705412864685059
+-1.0577995777130127
+Error setting joint target. Is the target within bounds?
+Get Obs
+Is done
+>>>>>>>>>>>>>>>>done_fail=True,done_sucess=False
+Distanze zum Ziel= 0.5669932810545408
+Entered reset
+0.0
+0.0
+0.0
+0.0
+0.0
+Entered step
+Unpause sim
+Set action
+Action:
+[-0.0094974  2.1862116 -2.90358   -0.8445442 -1.3495418]
+-0.009497404098510742
+2.186211585998535
+-2.9035799503326416
+-0.8445441722869873
+-1.3495417833328247
+Error setting joint target. Is the target within bounds?
+Get Obs
+Is done
+>>>>>>>>>>>>>>>>done_fail=True,done_sucess=False
+Distanze zum Ziel= 0.5669932810530092
+Entered reset
+0.0
+0.0
+0.0
+0.0
+0.0
+Entered step
+Unpause sim
+Set action
+Action:
+[ 2.8964334   1.5949974   1.2543726  -0.27531123 -1.3641752 ]
+2.8964333534240723
+1.5949974060058594
+1.2543725967407227
+-0.2753112316131592
+-1.3641752004623413
+Error setting joint target. Is the target within bounds?
+Get Obs
+Is done
+>>>>>>>>>>>>>>>>done_fail=True,done_sucess=False
+Distanze zum Ziel= 0.566993281054519
+Entered reset
+0.0
+0.0
+0.0
+0.0
+0.0
+Entered step
+Unpause sim
+Set action
+Action:
+[ 1.295546    1.55583     0.31793308 -1.6528143  -2.4181473 ]
+1.295546054840088
+1.5558300018310547
+0.3179330825805664
+-1.652814269065857
+-2.418147325515747
+Error setting joint target. Is the target within bounds?
+Get Obs
+Is done
+>>>>>>>>>>>>>>>>done_fail=True,done_sucess=False
+Distanze zum Ziel= 0.566993281055279
+Entered reset
+0.0
+0.0
+0.0
+0.0
+0.0
+Entered step
+Unpause sim
+Set action
+Action:
+[ 3.015431  -2.9513977  2.3085756  2.2360435 -3.030289 ]
+3.0154309272766113
+-2.951397657394409
+2.3085756301879883
+2.2360434532165527
+-3.0302889347076416
+Error setting joint target. Is the target within bounds?
+Get Obs
+Is done
+>>>>>>>>>>>>>>>>done_fail=True,done_sucess=False
+Distanze zum Ziel= 0.566993281054521
+Entered reset
+0.0
+0.0
+0.0
+0.0
+0.0
+Entered step
+Unpause sim
+Set action
+Action:
+[ 2.7371693  -1.4253172   0.59221125 -2.0579824   1.4135666 ]
+2.7371692657470703
+-1.4253171682357788
+0.5922112464904785
+-2.0579824447631836
+1.4135665893554688
+Error setting joint target. Is the target within bounds?
+Get Obs
+Is done
+>>>>>>>>>>>>>>>>done_fail=True,done_sucess=False
+Distanze zum Ziel= 0.5669932810552791
+Entered reset
+0.0
+0.0
+0.0
+0.0
+0.0
+Entered step
+Unpause sim
+Set action
+Action:
+[-2.4924135  -1.7071792  -2.7533262   0.55553126  2.8062515 ]
+-2.4924135208129883
+-1.7071791887283325
+-2.753326177597046
+0.5555312633514404
+2.8062515258789062
+Error setting joint target. Is the target within bounds?
+Get Obs
+Is done
+>>>>>>>>>>>>>>>>done_fail=True,done_sucess=False
+Distanze zum Ziel= 0.5669932810545198
+Entered reset
+0.0
+0.0
+0.0
+0.0
+0.0
+Entered step
+Unpause sim
+Set action
+Action:
+[ 0.7994108   0.4072454  -0.13101292 -0.73866963  0.97668123]
+0.7994108200073242
+0.407245397567749
+-0.1310129165649414
+-0.7386696338653564
+0.9766812324523926
+Get Obs
+Is done
+>>>>>>>>>>>>>>>>done_fail=False,done_sucess=False
+Distanze zum Ziel= 0.5678507460795116
+Entered step
+Unpause sim
+Set action
+Action:
+[ 1.6776791 -1.705983   1.7026777 -0.7325156 -1.2877713]
+1.6776790618896484
+-1.70598304271698
+1.7026777267456055
+-0.7325155735015869
+-1.2877713441848755
+Get Obs
+Is done
+>>>>>>>>>>>>>>>>done_fail=False,done_sucess=False
+Distanze zum Ziel= 0.6238810647588734
+Entered step
+Unpause sim
+Set action
+Action:
+[0.48607373 1.8544884  2.360035   2.9750366  1.5865526 ]
+0.48607373237609863
+1.8544883728027344
+2.360034942626953
+2.97503662109375
+1.586552619934082
+Error setting joint target. Is the target within bounds?
+Get Obs
+Is done
+>>>>>>>>>>>>>>>>done_fail=True,done_sucess=False
+Distanze zum Ziel= 0.6238810629074887
+Entered reset
+0.0
+0.0
+0.0
+0.0
+0.0
+[33m[ WARN] [1627984087.599477003, 3596.848000000]: Fail: ABORTED: No motion plan found. No execution attempted.
+Entered step
+Unpause sim
+Set action
+Action:
+[-1.1215615  -2.3143482   0.31682372 -2.8089938   0.86532116]
+-1.1215615272521973
+-2.3143482208251953
+0.31682372093200684
+-2.8089938163757324
+0.865321159362793
+[ INFO] [1627984087.687852814, 3596.931000000]: ABORTED: No motion plan found. No execution attempted.
+Get Obs
+Is done
+>>>>>>>>>>>>>>>>done_fail=False,done_sucess=False
+Distanze zum Ziel= 0.5669779043094363
+Entered step
+Unpause sim
+Set action
+Action:
+[-2.1155024   2.4774494   0.76705194  0.736042    1.8904262 ]
+-2.11550235748291
+2.477449417114258
+0.7670519351959229
+0.7360420227050781
+1.8904261589050293
+Error setting joint target. Is the target within bounds?
+Get Obs
+Is done
+>>>>>>>>>>>>>>>>done_fail=True,done_sucess=False
+Distanze zum Ziel= 0.5669779043094295
+Entered reset
+0.0
+0.0
+0.0
+0.0
+0.0
+final_time_step TimeStep(
+{'discount': <tf.Tensor: shape=(1,), dtype=float32, numpy=array([1.], dtype=float32)>,
+ 'observation': <tf.Tensor: shape=(1, 1), dtype=float32, numpy=array([[0.5669779]], dtype=float32)>,
+ 'reward': <tf.Tensor: shape=(1,), dtype=float32, numpy=array([0.], dtype=float32)>,
+ 'step_type': <tf.Tensor: shape=(1,), dtype=int32, numpy=array([0], dtype=int32)>})
+Number of Steps:  16
+Number of Episodes:  10

@@ -1,0 +1,86 @@
+Start Agent init....
+Entered InverseKinematics Env
+Entered Moveo Env
+[31m[ERROR] [1627982556.469315, 2126.081000]: NOT Initialising Simulation Physics Parameters
+[33m[WARN] [1627982556.487035, 2126.095000]: Start Init ControllersConnection
+[33m[WARN] [1627982556.488545, 2126.095000]: END Init ControllersConnection
+/home/nils/anaconda3/envs/moveo_training/lib/python3.9/site-packages/gym/logger.py:30: UserWarning: [33mWARN: Box bound precision lowered by casting to float32
+  warnings.warn(colorize('%s: %s'%('WARN', msg % args), 'yellow'))
+2021-08-03 11:22:36.673998: I tensorflow/compiler/jit/xla_cpu_device.cc:41] Not creating XLA devices, tf_xla_enable_xla_devices not set
+2021-08-03 11:22:36.674221: I tensorflow/core/platform/cpu_feature_guard.cc:142] This TensorFlow binary is optimized with oneAPI Deep Neural Network Library (oneDNN) to use the following CPU instructions in performance-critical operations:  SSE4.1 SSE4.2 AVX AVX2 FMA
+To enable them in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2021-08-03 11:22:36.674873: I tensorflow/core/common_runtime/process_util.cc:146] Creating new thread pool with default inter op setting: 2. Tune using inter_op_parallelism_threads for best performance.
+[31m[ERROR] [1627982557.104252, 2126.648000]: NOT Initialising Simulation Physics Parameters
+[33m[WARN] [1627982557.123080, 2126.660000]: Start Init ControllersConnection
+[33m[WARN] [1627982557.124569, 2126.660000]: END Init ControllersConnection
+[ INFO] [1627982554.728278122]: Loading robot model 'moveo_description'...
+[ INFO] [1627982554.731214123]: No root/virtual joint specified in SRDF. Assuming fixed joint
+###### Setting Group Moveit with 30 seconds wait...
+[ INFO] [1627982556.442690801, 2126.064000000]: Ready to take commands for planning group arm.
+<class 'moveo_commander.MoveoCommander'>
+launch the init function of the Parent Class robot_gazebo_env_goal.RobotGazeboEnv.....
+Entered Gazebo Env
+False
+launch the init function of the Parent Class robot_gazebo_env_goal.RobotGazeboEnv.....END
+Entered Moveo Env END
+START Actor init
+END Actor init....
+NUMBER OF WORKERS=CPUs available for this training=1
+END Agent init....
+Entered InverseKinematics Env
+Entered Moveo Env
+###### Setting Group Moveit with 30 seconds wait...
+[ INFO] [1627982557.071278589, 2126.631000000]: Ready to take commands for planning group arm.
+<class 'moveo_commander.MoveoCommander'>
+launch the init function of the Parent Class robot_gazebo_env_goal.RobotGazeboEnv.....
+Entered Gazebo Env
+False
+launch the init function of the Parent Class robot_gazebo_env_goal.RobotGazeboEnv.....END
+Entered Moveo Env END
+Entered reset
+0.0
+0.0
+0.0
+0.0
+0.0
+Entered step
+Unpause sim
+Set action
+Action:
+[ 2.2910173   2.745238   -1.3378886  -0.05735877 -1.7083882 ]
+2.2910173
+2.745238
+-1.3378886
+-0.057358768
+-1.7083882
+No registered converter was able to produce a C++ rvalue of type double from this Python object of type numpy.float32
+Get Obs
+Is done
+>>>>>>>>>>>>>>>>done_fail=True,done_sucess=False
+Distanze zum Ziel= 0.5669955906400772
+Entered reset
+0.0
+0.0
+0.0
+0.0
+0.0
+Replay Buffer:
+Trajectory(
+{'action': array([ 2.2910173 ,  2.745238  , -1.3378886 , -0.05735877, -1.7083882 ],
+      dtype=float32),
+ 'discount': array(0., dtype=float32),
+ 'next_step_type': array(2, dtype=int32),
+ 'observation': array([0.56699556], dtype=float32),
+ 'policy_info': (),
+ 'reward': array(-100., dtype=float32),
+ 'step_type': array(0, dtype=int32)})
+Trajectory(
+{'action': array([-0.5804774 , -0.01223529, -2.586124  ,  1.8795433 , -2.5981717 ],
+      dtype=float32),
+ 'discount': array(1., dtype=float32),
+ 'next_step_type': array(0, dtype=int32),
+ 'observation': array([0.56699556], dtype=float32),
+ 'policy_info': (),
+ 'reward': array(0., dtype=float32),
+ 'step_type': array(2, dtype=int32)})
+Average Return:  -100.0

@@ -1,0 +1,215 @@
+Start Agent init....
+Entered InverseKinematics Env
+Entered Moveo Env
+[ INFO] [1627980378.842499149]: Loading robot model 'moveo_description'...
+[ INFO] [1627980378.843897250]: No root/virtual joint specified in SRDF. Assuming fixed joint
+###### Setting Group Moveit with 30 seconds wait...
+[ INFO] [1627980380.527589067, 24.457000000]: Ready to take commands for planning group arm.
+<class 'moveo_commander.MoveoCommander'>
+launch the init function of the Parent Class robot_gazebo_env_goal.RobotGazeboEnv.....
+Entered Gazebo Env
+False
+launch the init function of the Parent Class robot_gazebo_env_goal.RobotGazeboEnv.....END
+Entered Moveo Env END
+START Actor init
+END Actor init....
+NUMBER OF WORKERS=CPUs available for this training=1
+END Agent init....
+Entered InverseKinematics Env
+Entered Moveo Env
+###### Setting Group Moveit with 30 seconds wait...
+[ INFO] [1627980381.185822695, 25.031000000]: Ready to take commands for planning group arm.
+<class 'moveo_commander.MoveoCommander'>
+launch the init function of the Parent Class robot_gazebo_env_goal.RobotGazeboEnv.....
+Entered Gazebo Env
+False
+launch the init function of the Parent Class robot_gazebo_env_goal.RobotGazeboEnv.....END
+Entered Moveo Env END
+Start Worker Agent init....
+START Actor init
+END Actor init....
+END Worker Agent init....
+####################### START Train
+####################### START AC3
+EP0 EpisodeReward=0
+Entered reset
+0.0
+0.0
+0.0
+0.0
+0.0
+[31m[ERROR] [1627980380.579428, 24.497000]: NOT Initialising Simulation Physics Parameters
+[33m[WARN] [1627980380.592532, 24.510000]: Start Init ControllersConnection
+[33m[WARN] [1627980380.594510, 24.510000]: END Init ControllersConnection
+/home/nils/anaconda3/envs/moveo_training/lib/python3.9/site-packages/gym/logger.py:30: UserWarning: [33mWARN: Box bound precision lowered by casting to float32
+  warnings.warn(colorize('%s: %s'%('WARN', msg % args), 'yellow'))
+2021-08-03 10:46:20.847040: I tensorflow/compiler/jit/xla_cpu_device.cc:41] Not creating XLA devices, tf_xla_enable_xla_devices not set
+2021-08-03 10:46:20.847362: I tensorflow/core/platform/cpu_feature_guard.cc:142] This TensorFlow binary is optimized with oneAPI Deep Neural Network Library (oneDNN) to use the following CPU instructions in performance-critical operations:  SSE4.1 SSE4.2 AVX AVX2 FMA
+To enable them in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2021-08-03 10:46:20.848371: I tensorflow/core/common_runtime/process_util.cc:146] Creating new thread pool with default inter op setting: 2. Tune using inter_op_parallelism_threads for best performance.
+[31m[ERROR] [1627980381.220248, 25.056000]: NOT Initialising Simulation Physics Parameters
+[33m[WARN] [1627980381.247543, 25.073000]: Start Init ControllersConnection
+[33m[WARN] [1627980381.249835, 25.074000]: END Init ControllersConnection
+2021-08-03 10:46:22.488486: I tensorflow/compiler/mlir/mlir_graph_optimization_pass.cc:116] None of the MLIR optimization passes are enabled (registered 2)
+2021-08-03 10:46:22.512035: I tensorflow/core/platform/profile_utils/cpu_utils.cc:112] CPU Frequency: 3192525000 Hz
+Entered step
+Unpause sim
+Set action
+Action:
+[-0.83400867 -0.35073783  0.32210705 -0.52072784 -1.47449205]
+-0.8340086664605559
+-0.35073782933751985
+0.3221070516909395
+-0.5207278374972603
+-1.4744920531612342
+Get Obs
+Is done
+>>>>>>>>>>>>>>>>done_fail=False,done_sucess=False
+Distanze zum Ziel= 0.49845330586799563
+EP0 EpisodeReward=2.0062059740152027
+[33m[ WARN] [1627980388.516989109, 31.839000000]: Fail: ABORTED: No motion plan found. No execution attempted.
+Entered step
+Unpause sim
+Set action
+Action:
+[ 1.00213611 -0.13634792 -0.90544915  0.77866036 -2.00507434]
+1.0021361052550004
+-0.13634791896132825
+-0.9054491472644665
+0.7786603628813975
+-2.0050743448628303
+[ INFO] [1627980388.735101616, 32.047000000]: ABORTED: No motion plan found. No execution attempted.
+Get Obs
+Is done
+>>>>>>>>>>>>>>>>done_fail=False,done_sucess=False
+Distanze zum Ziel= 0.4984533058679954
+EP0 EpisodeReward=4.012411948030406
+Entered step
+Unpause sim
+Set action
+Action:
+[ 0.35510521 -0.38503372  0.16709446 -1.11511107 -0.51211989]
+0.35510520804313345
+-0.38503371902675926
+0.16709445648522625
+-1.1151110724171036
+-0.5121198909116373
+Get Obs
+Is done
+>>>>>>>>>>>>>>>>done_fail=False,done_sucess=False
+Distanze zum Ziel= 0.5259003043561893
+EP0 EpisodeReward=5.913913034294668
+Entered step
+Unpause sim
+Set action
+Action:
+[-0.24819015  1.11798273 -0.95143359 -0.23746988 -0.68382553]
+-0.24819015412270953
+1.1179827289631672
+-0.9514335907053398
+-0.2374698810061431
+-0.6838255333212762
+Get Obs
+Is done
+>>>>>>>>>>>>>>>>done_fail=False,done_sucess=False
+Distanze zum Ziel= 0.6850003224102458
+EP0 EpisodeReward=7.373766361781281
+Entered step
+Unpause sim
+Set action
+Action:
+[ 1.04043255  1.05360287  0.09983373 -0.22017692 -0.22210223]
+1.0404325469668196
+1.053602869138565
+0.0998337256382771
+-0.2201769228052624
+-0.2221022313469581
+[ INFO] [1627980405.135339628, 47.911000000]: ABORTED: Solution found but controller failed during execution
+Get Obs
+Is done
+>>>>>>>>>>>>>>>>done_fail=False,done_sucess=False
+Distanze zum Ziel= 0.5189050423625197
+Original Shape==(25,)
+Morfed Shape==(5, 5)
+EP0 EpisodeReward=9.300901229168783
+Entered step
+Unpause sim
+Set action
+Action:
+[ 0.14813922 -0.48888517 -0.9292249   0.02422728 -0.09688197]
+0.14813922272599075
+-0.4888851666234897
+-0.9292248982325025
+0.024227276333518614
+-0.09688196968055279
+Get Obs
+Is done
+>>>>>>>>>>>>>>>>done_fail=False,done_sucess=False
+Distanze zum Ziel= 0.3840015577594194
+EP0 EpisodeReward=11.905057331646132
+Entered step
+Unpause sim
+Set action
+Action:
+[-1.37962307 -0.27669341  0.3826711  -0.32110231  0.30428884]
+-1.3796230724940897
+-0.2766934122257235
+0.38267109976124003
+-0.3211023093931542
+0.3042888362692146
+Get Obs
+Is done
+>>>>>>>>>>>>>>>>done_fail=False,done_sucess=False
+Distanze zum Ziel= 0.538276243611183
+EP0 EpisodeReward=13.762839486940983
+Entered step
+Unpause sim
+Set action
+Action:
+[0.16051194 0.22047775 0.01191462 0.11896741 0.52927875]
+0.16051193879971362
+0.22047775043382206
+0.011914619555228975
+0.11896740690991267
+0.5292787525397911
+Get Obs
+Is done
+>>>>>>>>>>>>>>>>done_fail=False,done_sucess=False
+Distanze zum Ziel= 0.6102878466680806
+EP0 EpisodeReward=15.401410540681585
+Entered step
+Unpause sim
+Set action
+Action:
+[-0.51634608 -0.5238264  -0.7293448  -0.49206745 -0.19437681]
+-0.5163460771077089
+-0.5238263955072934
+-0.7293447974237521
+-0.4920674485058689
+-0.19437680795544232
+Exception in thread Thread-23:
+Traceback (most recent call last):
+  File "/home/nils/anaconda3/envs/moveo_training/lib/python3.9/threading.py", line 954, in _bootstrap_inner
+    self.run()
+  File "/home/nils/Documents/Studium/Bachelorarbeit/praktischer_Teil/moveo_DRL/src/moveo_training/scripts/A3C_moveo_ik.py", line 256, in run
+    self.train()
+  File "/home/nils/Documents/Studium/Bachelorarbeit/praktischer_Teil/moveo_DRL/src/moveo_training/scripts/A3C_moveo_ik.py", line 209, in train
+    next_state, reward, done, _ = self.env.step(action)
+  File "/home/nils/anaconda3/envs/moveo_training/lib/python3.9/site-packages/gym/wrappers/time_limit.py", line 16, in step
+    observation, reward, done, info = self.env.step(action)
+  File "/home/nils/Documents/Studium/Bachelorarbeit/praktischer_Teil/moveo_DRL/src/openai_ros/openai_ros/src/openai_ros/robot_gazebo_env_goal.py", line 51, in step
+    obs = self._get_obs()
+  File "/home/nils/Documents/Studium/Bachelorarbeit/praktischer_Teil/moveo_DRL/src/moveo_training/scripts/moveo_inverse_kinematic.py", line 154, in _get_obs
+    self.gazebo.unpauseSim()
+  File "/home/nils/Documents/Studium/Bachelorarbeit/praktischer_Teil/moveo_DRL/src/openai_ros/openai_ros/src/openai_ros/gazebo_connection.py", line 58, in unpauseSim
+    rospy.wait_for_service('/gazebo/unpause_physics')
+  File "/opt/ros/noetic/lib/python3/dist-packages/rospy/impl/tcpros_service.py", line 166, in wait_for_service
+    raise ROSInterruptException("rospy shutdown")
+rospy.exceptions.ROSInterruptException: rospy shutdown
+Traceback (most recent call last):
+  File "/home/nils/Documents/Studium/Bachelorarbeit/praktischer_Teil/moveo_DRL/src/moveo_training/scripts/A3C_moveo_ik.py", line 286, in <module>
+    main()
+  File "/home/nils/Documents/Studium/Bachelorarbeit/praktischer_Teil/moveo_DRL/src/moveo_training/scripts/A3C_moveo_ik.py", line 264, in main
+    env = suite_gym.load(env_name)
+NameError: name 'suite_gym' is not defined
+Get Obs

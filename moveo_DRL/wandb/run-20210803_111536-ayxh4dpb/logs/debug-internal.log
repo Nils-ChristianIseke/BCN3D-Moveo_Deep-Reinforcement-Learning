@@ -1,0 +1,145 @@
+2021-08-03 11:15:37,335 INFO    MainThread:106974 [internal.py:wandb_internal():88] W&B internal server running at pid: 106974, started at: 2021-08-03 11:15:37.334663
+2021-08-03 11:15:37,355 INFO    WriterThread:106974 [datastore.py:open_for_write():80] open: /home/nils/Documents/Studium/Bachelorarbeit/praktischer_Teil/moveo_DRL/wandb/run-20210803_111536-ayxh4dpb/run-ayxh4dpb.wandb
+2021-08-03 11:15:37,355 DEBUG   SenderThread:106974 [sender.py:send():179] send: header
+2021-08-03 11:15:37,356 DEBUG   HandlerThread:106974 [handler.py:handle_request():124] handle_request: check_version
+2021-08-03 11:15:37,356 DEBUG   SenderThread:106974 [sender.py:send_request():193] send_request: check_version
+2021-08-03 11:15:37,482 DEBUG   SenderThread:106974 [sender.py:send():179] send: run
+2021-08-03 11:15:37,738 DEBUG   HandlerThread:106974 [handler.py:handle_request():124] handle_request: run_start
+2021-08-03 11:15:38,009 INFO    SenderThread:106974 [dir_watcher.py:__init__():168] watching files in: /home/nils/Documents/Studium/Bachelorarbeit/praktischer_Teil/moveo_DRL/wandb/run-20210803_111536-ayxh4dpb/files
+2021-08-03 11:15:38,009 INFO    SenderThread:106974 [sender.py:_start_run_threads():716] run started: ayxh4dpb with start time 1627982136
+2021-08-03 11:15:38,009 DEBUG   SenderThread:106974 [sender.py:send():179] send: summary
+2021-08-03 11:15:38,009 INFO    SenderThread:106974 [sender.py:_save_file():841] saving file wandb-summary.json with policy end
+2021-08-03 11:15:39,002 INFO    Thread-8  :106974 [dir_watcher.py:_on_file_created():216] file/dir created: /home/nils/Documents/Studium/Bachelorarbeit/praktischer_Teil/moveo_DRL/wandb/run-20210803_111536-ayxh4dpb/files/wandb-summary.json
+2021-08-03 11:15:39,024 DEBUG   HandlerThread:106974 [meta.py:__init__():39] meta init
+2021-08-03 11:15:39,024 DEBUG   HandlerThread:106974 [meta.py:__init__():53] meta init done
+2021-08-03 11:15:39,024 DEBUG   HandlerThread:106974 [meta.py:probe():210] probe
+2021-08-03 11:15:39,031 DEBUG   HandlerThread:106974 [meta.py:_setup_git():200] setup git
+2021-08-03 11:15:39,058 DEBUG   HandlerThread:106974 [meta.py:_setup_git():207] setup git done
+2021-08-03 11:15:39,058 DEBUG   HandlerThread:106974 [meta.py:_save_pip():57] save pip
+2021-08-03 11:15:39,059 DEBUG   HandlerThread:106974 [meta.py:_save_pip():71] save pip done
+2021-08-03 11:15:39,059 DEBUG   HandlerThread:106974 [meta.py:_save_conda():78] save conda
+2021-08-03 11:15:39,999 INFO    Thread-8  :106974 [dir_watcher.py:_on_file_created():216] file/dir created: /home/nils/Documents/Studium/Bachelorarbeit/praktischer_Teil/moveo_DRL/wandb/run-20210803_111536-ayxh4dpb/files/requirements.txt
+2021-08-03 11:15:39,999 INFO    Thread-8  :106974 [dir_watcher.py:_on_file_created():216] file/dir created: /home/nils/Documents/Studium/Bachelorarbeit/praktischer_Teil/moveo_DRL/wandb/run-20210803_111536-ayxh4dpb/files/conda-environment.yaml
+2021-08-03 11:15:41,999 INFO    Thread-8  :106974 [dir_watcher.py:_on_file_modified():229] file/dir modified: /home/nils/Documents/Studium/Bachelorarbeit/praktischer_Teil/moveo_DRL/wandb/run-20210803_111536-ayxh4dpb/files/conda-environment.yaml
+2021-08-03 11:15:42,034 DEBUG   HandlerThread:106974 [meta.py:_save_conda():86] save conda done
+2021-08-03 11:15:42,034 DEBUG   HandlerThread:106974 [meta.py:probe():252] probe done
+2021-08-03 11:15:42,040 DEBUG   SenderThread:106974 [sender.py:send():179] send: files
+2021-08-03 11:15:42,040 INFO    SenderThread:106974 [sender.py:_save_file():841] saving file wandb-metadata.json with policy now
+2021-08-03 11:15:42,056 DEBUG   HandlerThread:106974 [handler.py:handle_request():124] handle_request: stop_status
+2021-08-03 11:15:42,056 DEBUG   SenderThread:106974 [sender.py:send_request():193] send_request: stop_status
+2021-08-03 11:15:42,704 INFO    Thread-11 :106974 [upload_job.py:push():137] Uploaded file /tmp/tmpzqmbs9u_wandb/318ekjzg-wandb-metadata.json
+2021-08-03 11:15:43,000 INFO    Thread-8  :106974 [dir_watcher.py:_on_file_created():216] file/dir created: /home/nils/Documents/Studium/Bachelorarbeit/praktischer_Teil/moveo_DRL/wandb/run-20210803_111536-ayxh4dpb/files/output.log
+2021-08-03 11:15:43,001 INFO    Thread-8  :106974 [dir_watcher.py:_on_file_created():216] file/dir created: /home/nils/Documents/Studium/Bachelorarbeit/praktischer_Teil/moveo_DRL/wandb/run-20210803_111536-ayxh4dpb/files/wandb-metadata.json
+2021-08-03 11:15:45,001 INFO    Thread-8  :106974 [dir_watcher.py:_on_file_modified():229] file/dir modified: /home/nils/Documents/Studium/Bachelorarbeit/praktischer_Teil/moveo_DRL/wandb/run-20210803_111536-ayxh4dpb/files/output.log
+2021-08-03 11:15:47,001 INFO    Thread-8  :106974 [dir_watcher.py:_on_file_modified():229] file/dir modified: /home/nils/Documents/Studium/Bachelorarbeit/praktischer_Teil/moveo_DRL/wandb/run-20210803_111536-ayxh4dpb/files/output.log
+2021-08-03 11:15:47,994 DEBUG   SenderThread:106974 [sender.py:send():179] send: telemetry
+2021-08-03 11:15:47,995 DEBUG   SenderThread:106974 [sender.py:send():179] send: exit
+2021-08-03 11:15:47,995 INFO    SenderThread:106974 [sender.py:send_exit():287] handling exit code: 1
+2021-08-03 11:15:47,996 INFO    SenderThread:106974 [sender.py:send_exit():295] send defer
+2021-08-03 11:15:47,997 DEBUG   HandlerThread:106974 [handler.py:handle_request():124] handle_request: poll_exit
+2021-08-03 11:15:47,997 DEBUG   SenderThread:106974 [sender.py:send_request():193] send_request: poll_exit
+2021-08-03 11:15:47,997 DEBUG   HandlerThread:106974 [handler.py:handle_request():124] handle_request: defer
+2021-08-03 11:15:47,998 INFO    HandlerThread:106974 [handler.py:handle_request_defer():141] handle defer: 0
+2021-08-03 11:15:47,998 DEBUG   SenderThread:106974 [sender.py:send_request():193] send_request: defer
+2021-08-03 11:15:47,998 INFO    SenderThread:106974 [sender.py:send_request_defer():304] handle sender defer: 0
+2021-08-03 11:15:47,998 INFO    SenderThread:106974 [sender.py:transition_state():308] send defer: 1
+2021-08-03 11:15:47,998 DEBUG   HandlerThread:106974 [handler.py:handle_request():124] handle_request: defer
+2021-08-03 11:15:47,998 INFO    HandlerThread:106974 [handler.py:handle_request_defer():141] handle defer: 1
+2021-08-03 11:15:48,002 INFO    Thread-8  :106974 [dir_watcher.py:_on_file_modified():229] file/dir modified: /home/nils/Documents/Studium/Bachelorarbeit/praktischer_Teil/moveo_DRL/wandb/run-20210803_111536-ayxh4dpb/files/output.log
+2021-08-03 11:15:48,061 DEBUG   SenderThread:106974 [sender.py:send_request():193] send_request: defer
+2021-08-03 11:15:48,061 INFO    SenderThread:106974 [sender.py:send_request_defer():304] handle sender defer: 1
+2021-08-03 11:15:48,061 INFO    SenderThread:106974 [sender.py:transition_state():308] send defer: 2
+2021-08-03 11:15:48,061 DEBUG   SenderThread:106974 [sender.py:send():179] send: stats
+2021-08-03 11:15:48,061 DEBUG   HandlerThread:106974 [handler.py:handle_request():124] handle_request: defer
+2021-08-03 11:15:48,061 INFO    HandlerThread:106974 [handler.py:handle_request_defer():141] handle defer: 2
+2021-08-03 11:15:48,062 DEBUG   SenderThread:106974 [sender.py:send_request():193] send_request: defer
+2021-08-03 11:15:48,062 INFO    SenderThread:106974 [sender.py:send_request_defer():304] handle sender defer: 2
+2021-08-03 11:15:48,062 INFO    SenderThread:106974 [sender.py:transition_state():308] send defer: 3
+2021-08-03 11:15:48,063 DEBUG   HandlerThread:106974 [handler.py:handle_request():124] handle_request: defer
+2021-08-03 11:15:48,063 INFO    HandlerThread:106974 [handler.py:handle_request_defer():141] handle defer: 3
+2021-08-03 11:15:48,063 DEBUG   SenderThread:106974 [sender.py:send():179] send: summary
+2021-08-03 11:15:48,063 INFO    SenderThread:106974 [sender.py:_save_file():841] saving file wandb-summary.json with policy end
+2021-08-03 11:15:48,063 DEBUG   SenderThread:106974 [sender.py:send_request():193] send_request: defer
+2021-08-03 11:15:48,063 INFO    SenderThread:106974 [sender.py:send_request_defer():304] handle sender defer: 3
+2021-08-03 11:15:48,063 INFO    SenderThread:106974 [sender.py:transition_state():308] send defer: 4
+2021-08-03 11:15:48,064 DEBUG   HandlerThread:106974 [handler.py:handle_request():124] handle_request: defer
+2021-08-03 11:15:48,064 INFO    HandlerThread:106974 [handler.py:handle_request_defer():141] handle defer: 4
+2021-08-03 11:15:48,065 DEBUG   SenderThread:106974 [sender.py:send_request():193] send_request: defer
+2021-08-03 11:15:48,065 INFO    SenderThread:106974 [sender.py:send_request_defer():304] handle sender defer: 4
+2021-08-03 11:15:48,099 DEBUG   HandlerThread:106974 [handler.py:handle_request():124] handle_request: poll_exit
+2021-08-03 11:15:48,310 INFO    SenderThread:106974 [sender.py:transition_state():308] send defer: 5
+2021-08-03 11:15:48,311 DEBUG   SenderThread:106974 [sender.py:send_request():193] send_request: poll_exit
+2021-08-03 11:15:48,311 DEBUG   HandlerThread:106974 [handler.py:handle_request():124] handle_request: defer
+2021-08-03 11:15:48,311 INFO    HandlerThread:106974 [handler.py:handle_request_defer():141] handle defer: 5
+2021-08-03 11:15:48,311 DEBUG   SenderThread:106974 [sender.py:send_request():193] send_request: defer
+2021-08-03 11:15:48,311 INFO    SenderThread:106974 [sender.py:send_request_defer():304] handle sender defer: 5
+2021-08-03 11:15:48,311 INFO    SenderThread:106974 [dir_watcher.py:finish():282] shutting down directory watcher
+2021-08-03 11:15:48,413 DEBUG   HandlerThread:106974 [handler.py:handle_request():124] handle_request: poll_exit
+2021-08-03 11:15:49,002 INFO    Thread-8  :106974 [dir_watcher.py:_on_file_modified():229] file/dir modified: /home/nils/Documents/Studium/Bachelorarbeit/praktischer_Teil/moveo_DRL/wandb/run-20210803_111536-ayxh4dpb/files/config.yaml
+2021-08-03 11:15:49,003 INFO    SenderThread:106974 [dir_watcher.py:_on_file_modified():229] file/dir modified: /home/nils/Documents/Studium/Bachelorarbeit/praktischer_Teil/moveo_DRL/wandb/run-20210803_111536-ayxh4dpb/files/wandb-summary.json
+2021-08-03 11:15:49,003 INFO    SenderThread:106974 [dir_watcher.py:finish():312] scan: /home/nils/Documents/Studium/Bachelorarbeit/praktischer_Teil/moveo_DRL/wandb/run-20210803_111536-ayxh4dpb/files
+2021-08-03 11:15:49,004 INFO    SenderThread:106974 [dir_watcher.py:finish():318] scan save: /home/nils/Documents/Studium/Bachelorarbeit/praktischer_Teil/moveo_DRL/wandb/run-20210803_111536-ayxh4dpb/files/wandb-summary.json wandb-summary.json
+2021-08-03 11:15:49,004 INFO    SenderThread:106974 [dir_watcher.py:finish():318] scan save: /home/nils/Documents/Studium/Bachelorarbeit/praktischer_Teil/moveo_DRL/wandb/run-20210803_111536-ayxh4dpb/files/config.yaml config.yaml
+2021-08-03 11:15:49,004 INFO    SenderThread:106974 [dir_watcher.py:finish():318] scan save: /home/nils/Documents/Studium/Bachelorarbeit/praktischer_Teil/moveo_DRL/wandb/run-20210803_111536-ayxh4dpb/files/output.log output.log
+2021-08-03 11:15:49,007 INFO    SenderThread:106974 [dir_watcher.py:finish():318] scan save: /home/nils/Documents/Studium/Bachelorarbeit/praktischer_Teil/moveo_DRL/wandb/run-20210803_111536-ayxh4dpb/files/conda-environment.yaml conda-environment.yaml
+2021-08-03 11:15:49,007 INFO    SenderThread:106974 [dir_watcher.py:finish():318] scan save: /home/nils/Documents/Studium/Bachelorarbeit/praktischer_Teil/moveo_DRL/wandb/run-20210803_111536-ayxh4dpb/files/requirements.txt requirements.txt
+2021-08-03 11:15:49,008 INFO    SenderThread:106974 [dir_watcher.py:finish():318] scan save: /home/nils/Documents/Studium/Bachelorarbeit/praktischer_Teil/moveo_DRL/wandb/run-20210803_111536-ayxh4dpb/files/wandb-metadata.json wandb-metadata.json
+2021-08-03 11:15:49,008 INFO    SenderThread:106974 [sender.py:transition_state():308] send defer: 6
+2021-08-03 11:15:49,008 DEBUG   SenderThread:106974 [sender.py:send_request():193] send_request: poll_exit
+2021-08-03 11:15:49,009 DEBUG   HandlerThread:106974 [handler.py:handle_request():124] handle_request: defer
+2021-08-03 11:15:49,009 INFO    HandlerThread:106974 [handler.py:handle_request_defer():141] handle defer: 6
+2021-08-03 11:15:49,011 DEBUG   SenderThread:106974 [sender.py:send_request():193] send_request: defer
+2021-08-03 11:15:49,011 INFO    SenderThread:106974 [sender.py:send_request_defer():304] handle sender defer: 6
+2021-08-03 11:15:49,011 INFO    SenderThread:106974 [file_pusher.py:finish():177] shutting down file pusher
+2021-08-03 11:15:49,110 DEBUG   HandlerThread:106974 [handler.py:handle_request():124] handle_request: poll_exit
+2021-08-03 11:15:49,110 DEBUG   SenderThread:106974 [sender.py:send_request():193] send_request: poll_exit
+2021-08-03 11:15:49,212 DEBUG   HandlerThread:106974 [handler.py:handle_request():124] handle_request: poll_exit
+2021-08-03 11:15:49,213 DEBUG   SenderThread:106974 [sender.py:send_request():193] send_request: poll_exit
+2021-08-03 11:15:49,315 DEBUG   HandlerThread:106974 [handler.py:handle_request():124] handle_request: poll_exit
+2021-08-03 11:15:49,315 DEBUG   SenderThread:106974 [sender.py:send_request():193] send_request: poll_exit
+2021-08-03 11:15:49,416 DEBUG   HandlerThread:106974 [handler.py:handle_request():124] handle_request: poll_exit
+2021-08-03 11:15:49,417 DEBUG   SenderThread:106974 [sender.py:send_request():193] send_request: poll_exit
+2021-08-03 11:15:49,518 DEBUG   HandlerThread:106974 [handler.py:handle_request():124] handle_request: poll_exit
+2021-08-03 11:15:49,518 DEBUG   SenderThread:106974 [sender.py:send_request():193] send_request: poll_exit
+2021-08-03 11:15:49,604 INFO    Thread-13 :106974 [upload_job.py:push():137] Uploaded file /home/nils/Documents/Studium/Bachelorarbeit/praktischer_Teil/moveo_DRL/wandb/run-20210803_111536-ayxh4dpb/files/config.yaml
+2021-08-03 11:15:49,617 INFO    Thread-12 :106974 [upload_job.py:push():137] Uploaded file /home/nils/Documents/Studium/Bachelorarbeit/praktischer_Teil/moveo_DRL/wandb/run-20210803_111536-ayxh4dpb/files/wandb-summary.json
+2021-08-03 11:15:49,620 DEBUG   HandlerThread:106974 [handler.py:handle_request():124] handle_request: poll_exit
+2021-08-03 11:15:49,620 INFO    Thread-15 :106974 [upload_job.py:push():137] Uploaded file /home/nils/Documents/Studium/Bachelorarbeit/praktischer_Teil/moveo_DRL/wandb/run-20210803_111536-ayxh4dpb/files/conda-environment.yaml
+2021-08-03 11:15:49,621 DEBUG   SenderThread:106974 [sender.py:send_request():193] send_request: poll_exit
+2021-08-03 11:15:49,623 INFO    Thread-16 :106974 [upload_job.py:push():137] Uploaded file /home/nils/Documents/Studium/Bachelorarbeit/praktischer_Teil/moveo_DRL/wandb/run-20210803_111536-ayxh4dpb/files/requirements.txt
+2021-08-03 11:15:49,678 INFO    Thread-14 :106974 [upload_job.py:push():137] Uploaded file /home/nils/Documents/Studium/Bachelorarbeit/praktischer_Teil/moveo_DRL/wandb/run-20210803_111536-ayxh4dpb/files/output.log
+2021-08-03 11:15:49,722 DEBUG   HandlerThread:106974 [handler.py:handle_request():124] handle_request: poll_exit
+2021-08-03 11:15:49,722 DEBUG   SenderThread:106974 [sender.py:send_request():193] send_request: poll_exit
+2021-08-03 11:15:49,824 DEBUG   HandlerThread:106974 [handler.py:handle_request():124] handle_request: poll_exit
+2021-08-03 11:15:49,824 DEBUG   SenderThread:106974 [sender.py:send_request():193] send_request: poll_exit
+2021-08-03 11:15:49,879 INFO    Thread-7  :106974 [sender.py:transition_state():308] send defer: 7
+2021-08-03 11:15:49,880 DEBUG   HandlerThread:106974 [handler.py:handle_request():124] handle_request: defer
+2021-08-03 11:15:49,880 INFO    HandlerThread:106974 [handler.py:handle_request_defer():141] handle defer: 7
+2021-08-03 11:15:49,880 DEBUG   SenderThread:106974 [sender.py:send_request():193] send_request: defer
+2021-08-03 11:15:49,880 INFO    SenderThread:106974 [sender.py:send_request_defer():304] handle sender defer: 7
+2021-08-03 11:15:49,925 DEBUG   HandlerThread:106974 [handler.py:handle_request():124] handle_request: poll_exit
+2021-08-03 11:15:50,026 INFO    SenderThread:106974 [sender.py:transition_state():308] send defer: 8
+2021-08-03 11:15:50,026 DEBUG   SenderThread:106974 [sender.py:send_request():193] send_request: poll_exit
+2021-08-03 11:15:50,026 DEBUG   HandlerThread:106974 [handler.py:handle_request():124] handle_request: defer
+2021-08-03 11:15:50,027 INFO    HandlerThread:106974 [handler.py:handle_request_defer():141] handle defer: 8
+2021-08-03 11:15:50,027 DEBUG   SenderThread:106974 [sender.py:send_request():193] send_request: defer
+2021-08-03 11:15:50,027 INFO    SenderThread:106974 [sender.py:send_request_defer():304] handle sender defer: 8
+2021-08-03 11:15:50,027 INFO    SenderThread:106974 [sender.py:transition_state():308] send defer: 9
+2021-08-03 11:15:50,028 DEBUG   HandlerThread:106974 [handler.py:handle_request():124] handle_request: defer
+2021-08-03 11:15:50,029 INFO    HandlerThread:106974 [handler.py:handle_request_defer():141] handle defer: 9
+2021-08-03 11:15:50,029 DEBUG   SenderThread:106974 [sender.py:send():179] send: final
+2021-08-03 11:15:50,029 DEBUG   SenderThread:106974 [sender.py:send():179] send: footer
+2021-08-03 11:15:50,029 DEBUG   SenderThread:106974 [sender.py:send_request():193] send_request: defer
+2021-08-03 11:15:50,029 INFO    SenderThread:106974 [sender.py:send_request_defer():304] handle sender defer: 9
+2021-08-03 11:15:50,127 DEBUG   HandlerThread:106974 [handler.py:handle_request():124] handle_request: poll_exit
+2021-08-03 11:15:50,128 DEBUG   SenderThread:106974 [sender.py:send_request():193] send_request: poll_exit
+2021-08-03 11:15:50,128 INFO    SenderThread:106974 [file_pusher.py:join():182] waiting for file pusher
+2021-08-03 11:15:50,130 DEBUG   HandlerThread:106974 [handler.py:handle_request():124] handle_request: get_summary
+2021-08-03 11:15:50,131 DEBUG   HandlerThread:106974 [handler.py:handle_request():124] handle_request: sampled_history
+2021-08-03 11:15:50,131 DEBUG   HandlerThread:106974 [handler.py:handle_request():124] handle_request: shutdown
+2021-08-03 11:15:50,131 INFO    HandlerThread:106974 [handler.py:finish():658] shutting down handler
+2021-08-03 11:15:51,029 INFO    WriterThread:106974 [datastore.py:close():288] close: /home/nils/Documents/Studium/Bachelorarbeit/praktischer_Teil/moveo_DRL/wandb/run-20210803_111536-ayxh4dpb/run-ayxh4dpb.wandb
+2021-08-03 11:15:51,128 INFO    SenderThread:106974 [sender.py:finish():947] shutting down sender
+2021-08-03 11:15:51,128 INFO    SenderThread:106974 [file_pusher.py:finish():177] shutting down file pusher
+2021-08-03 11:15:51,128 INFO    SenderThread:106974 [file_pusher.py:join():182] waiting for file pusher
+2021-08-03 11:15:51,130 INFO    MainThread:106974 [internal.py:handle_exit():78] Internal process exited

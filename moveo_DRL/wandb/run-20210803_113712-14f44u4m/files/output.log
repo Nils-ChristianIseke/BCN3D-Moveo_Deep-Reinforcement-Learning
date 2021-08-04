@@ -1,0 +1,265 @@
+Start Agent init....
+Entered InverseKinematics Env
+Entered Moveo Env
+[ INFO] [1627983437.763454353]: Loading robot model 'moveo_description'...
+[ INFO] [1627983437.764443968]: No root/virtual joint specified in SRDF. Assuming fixed joint
+[31m[ERROR] [1627983439.604066, 2976.226000]: NOT Initialising Simulation Physics Parameters
+[33m[WARN] [1627983439.624310, 2976.242000]: Start Init ControllersConnection
+[33m[WARN] [1627983439.626278, 2976.242000]: END Init ControllersConnection
+/home/nils/anaconda3/envs/moveo_training/lib/python3.9/site-packages/gym/logger.py:30: UserWarning: [33mWARN: Box bound precision lowered by casting to float32
+  warnings.warn(colorize('%s: %s'%('WARN', msg % args), 'yellow'))
+2021-08-03 11:37:19.801329: I tensorflow/compiler/jit/xla_cpu_device.cc:41] Not creating XLA devices, tf_xla_enable_xla_devices not set
+2021-08-03 11:37:19.801559: I tensorflow/core/platform/cpu_feature_guard.cc:142] This TensorFlow binary is optimized with oneAPI Deep Neural Network Library (oneDNN) to use the following CPU instructions in performance-critical operations:  SSE4.1 SSE4.2 AVX AVX2 FMA
+To enable them in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2021-08-03 11:37:19.802294: I tensorflow/core/common_runtime/process_util.cc:146] Creating new thread pool with default inter op setting: 2. Tune using inter_op_parallelism_threads for best performance.
+[31m[ERROR] [1627983440.325960, 2976.870000]: NOT Initialising Simulation Physics Parameters
+[33m[WARN] [1627983440.341956, 2976.879000]: Start Init ControllersConnection
+[33m[WARN] [1627983440.343565, 2976.879000]: END Init ControllersConnection
+###### Setting Group Moveit with 30 seconds wait...
+[ INFO] [1627983439.562604031, 2976.197000000]: Ready to take commands for planning group arm.
+<class 'moveo_commander.MoveoCommander'>
+launch the init function of the Parent Class robot_gazebo_env_goal.RobotGazeboEnv.....
+Entered Gazebo Env
+False
+launch the init function of the Parent Class robot_gazebo_env_goal.RobotGazeboEnv.....END
+Entered Moveo Env END
+START Actor init
+END Actor init....
+NUMBER OF WORKERS=CPUs available for this training=1
+END Agent init....
+Entered InverseKinematics Env
+Entered Moveo Env
+###### Setting Group Moveit with 30 seconds wait...
+[ INFO] [1627983440.282501051, 2976.831000000]: Ready to take commands for planning group arm.
+<class 'moveo_commander.MoveoCommander'>
+launch the init function of the Parent Class robot_gazebo_env_goal.RobotGazeboEnv.....
+Entered Gazebo Env
+False
+launch the init function of the Parent Class robot_gazebo_env_goal.RobotGazeboEnv.....END
+Entered Moveo Env END
+ActionSpec= <dtype: 'float32'>
+Entered reset
+0.0
+0.0
+0.0
+0.0
+0.0
+2021-08-03 11:37:21.931851: I tensorflow/compiler/mlir/mlir_graph_optimization_pass.cc:116] None of the MLIR optimization passes are enabled (registered 2)
+2021-08-03 11:37:21.952038: I tensorflow/core/platform/profile_utils/cpu_utils.cc:112] CPU Frequency: 3192525000 Hz
+Entered step
+Unpause sim
+Set action
+Action:
+[-0.59081125  1.0360098   2.587688   -2.6284971   2.3725557 ]
+-0.59081125
+1.0360098
+2.587688
+-2.6284971
+2.3725557
+No registered converter was able to produce a C++ rvalue of type double from this Python object of type numpy.float32
+Get Obs
+Is done
+>>>>>>>>>>>>>>>>done_fail=True,done_sucess=False
+Distanze zum Ziel= 0.5669955906400772
+Entered reset
+0.0
+0.0
+0.0
+0.0
+0.0
+Entered step
+Unpause sim
+Set action
+Action:
+[-0.32161355  1.1944332  -2.8460317   1.6466718  -0.9052727 ]
+-0.32161355
+1.1944332
+-2.8460317
+1.6466718
+-0.9052727
+No registered converter was able to produce a C++ rvalue of type double from this Python object of type numpy.float32
+Get Obs
+Is done
+>>>>>>>>>>>>>>>>done_fail=True,done_sucess=False
+Distanze zum Ziel= 0.5669955906415658
+Entered reset
+0.0
+0.0
+0.0
+0.0
+0.0
+Entered step
+Unpause sim
+Set action
+Action:
+[-0.9032638  -1.4742577  -0.79906774 -1.5897489  -0.8525405 ]
+-0.9032638
+-1.4742577
+-0.79906774
+-1.5897489
+-0.8525405
+No registered converter was able to produce a C++ rvalue of type double from this Python object of type numpy.float32
+Get Obs
+Is done
+>>>>>>>>>>>>>>>>done_fail=True,done_sucess=False
+Distanze zum Ziel= 0.5669955906415703
+Entered reset
+0.0
+0.0
+0.0
+0.0
+0.0
+Entered step
+Unpause sim
+Set action
+Action:
+[-1.4017158  2.9687014  2.1402283 -2.139977   2.0330744]
+-1.4017158
+2.9687014
+2.1402283
+-2.139977
+2.0330744
+No registered converter was able to produce a C++ rvalue of type double from this Python object of type numpy.float32
+Get Obs
+Is done
+>>>>>>>>>>>>>>>>done_fail=True,done_sucess=False
+Distanze zum Ziel= 0.5669955906415656
+Entered reset
+0.0
+0.0
+0.0
+0.0
+0.0
+Entered step
+Unpause sim
+Set action
+Action:
+[-3.0721319  2.134426  -1.6189761 -0.9046719 -1.3646126]
+-3.0721319
+2.134426
+-1.6189761
+-0.9046719
+-1.3646126
+No registered converter was able to produce a C++ rvalue of type double from this Python object of type numpy.float32
+Get Obs
+Is done
+>>>>>>>>>>>>>>>>done_fail=True,done_sucess=False
+Distanze zum Ziel= 0.5669955907022404
+Entered reset
+0.0
+0.0
+0.0
+0.0
+0.0
+Entered step
+Unpause sim
+Set action
+Action:
+[-0.38865924 -2.0077739  -1.6961762  -2.3516843   2.3576927 ]
+-0.38865924
+-2.0077739
+-1.6961762
+-2.3516843
+2.3576927
+No registered converter was able to produce a C++ rvalue of type double from this Python object of type numpy.float32
+Get Obs
+Is done
+>>>>>>>>>>>>>>>>done_fail=True,done_sucess=False
+Distanze zum Ziel= 0.5669955906415703
+Entered reset
+0.0
+0.0
+0.0
+0.0
+0.0
+Entered step
+Unpause sim
+Set action
+Action:
+[ 0.54571843 -1.0805058   1.702477    2.0474844  -0.21452713]
+0.54571843
+-1.0805058
+1.702477
+2.0474844
+-0.21452713
+No registered converter was able to produce a C++ rvalue of type double from this Python object of type numpy.float32
+Get Obs
+Is done
+>>>>>>>>>>>>>>>>done_fail=True,done_sucess=False
+Distanze zum Ziel= 0.5669955906415658
+Entered reset
+0.0
+0.0
+0.0
+0.0
+0.0
+Entered step
+Unpause sim
+Set action
+Action:
+[-1.680041   2.534564   1.2447519 -1.5455691  1.8322091]
+-1.680041
+2.534564
+1.2447519
+-1.5455691
+1.8322091
+No registered converter was able to produce a C++ rvalue of type double from this Python object of type numpy.float32
+Get Obs
+Is done
+>>>>>>>>>>>>>>>>done_fail=True,done_sucess=False
+Distanze zum Ziel= 0.5669955907022581
+Entered reset
+0.0
+0.0
+0.0
+0.0
+0.0
+Entered step
+Unpause sim
+Set action
+Action:
+[ 2.808085    0.40520358 -2.3888113  -1.1939267  -2.7685926 ]
+2.808085
+0.40520358
+-2.3888113
+-1.1939267
+-2.7685926
+No registered converter was able to produce a C++ rvalue of type double from this Python object of type numpy.float32
+Get Obs
+Is done
+>>>>>>>>>>>>>>>>done_fail=True,done_sucess=False
+Distanze zum Ziel= 0.5669955906400772
+Entered reset
+0.0
+0.0
+0.0
+0.0
+0.0
+Entered step
+Unpause sim
+Set action
+Action:
+[-1.392422   -3.1252594   2.2607021   2.2412663  -0.16548038]
+-1.392422
+-3.1252594
+2.2607021
+2.2412663
+-0.16548038
+No registered converter was able to produce a C++ rvalue of type double from this Python object of type numpy.float32
+Get Obs
+Is done
+>>>>>>>>>>>>>>>>done_fail=True,done_sucess=False
+Distanze zum Ziel= 0.5669955907022406
+Entered reset
+0.0
+0.0
+0.0
+0.0
+0.0
+final_time_step TimeStep(
+{'discount': <tf.Tensor: shape=(1,), dtype=float32, numpy=array([1.], dtype=float32)>,
+ 'observation': <tf.Tensor: shape=(1, 1), dtype=float32, numpy=array([[0.56699556]], dtype=float32)>,
+ 'reward': <tf.Tensor: shape=(1,), dtype=float32, numpy=array([0.], dtype=float32)>,
+ 'step_type': <tf.Tensor: shape=(1,), dtype=int32, numpy=array([0], dtype=int32)>})
+Number of Steps:  10
+Number of Episodes:  10

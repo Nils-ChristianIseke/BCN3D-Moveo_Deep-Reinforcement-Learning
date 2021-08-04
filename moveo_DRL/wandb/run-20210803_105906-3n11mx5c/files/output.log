@@ -1,0 +1,413 @@
+Start Agent init....
+Entered InverseKinematics Env
+Entered Moveo Env
+[ INFO] [1627981151.933551138]: Loading robot model 'moveo_description'...
+[ INFO] [1627981151.934671292]: No root/virtual joint specified in SRDF. Assuming fixed joint
+###### Setting Group Moveit with 30 seconds wait...
+[ INFO] [1627981153.682437428, 773.897000000]: Ready to take commands for planning group arm.
+<class 'moveo_commander.MoveoCommander'>
+launch the init function of the Parent Class robot_gazebo_env_goal.RobotGazeboEnv.....
+Entered Gazebo Env
+False
+launch the init function of the Parent Class robot_gazebo_env_goal.RobotGazeboEnv.....END
+Entered Moveo Env END
+START Actor init
+END Actor init....
+NUMBER OF WORKERS=CPUs available for this training=1
+END Agent init....
+Entered InverseKinematics Env
+Entered Moveo Env
+###### Setting Group Moveit with 30 seconds wait...
+[ INFO] [1627981154.499735133, 774.631000000]: Ready to take commands for planning group arm.
+<class 'moveo_commander.MoveoCommander'>
+launch the init function of the Parent Class robot_gazebo_env_goal.RobotGazeboEnv.....
+Entered Gazebo Env
+False
+launch the init function of the Parent Class robot_gazebo_env_goal.RobotGazeboEnv.....END
+Entered Moveo Env END
+action_spec: BoundedArraySpec(shape=(5,), dtype=dtype('float32'), name='action', minimum=-3.141590118408203, maximum=3.141590118408203)
+time_step_spec.observation: BoundedArraySpec(shape=(1,), dtype=dtype('float32'), name='observation', minimum=0.0, maximum=3.0)
+time_step_spec.step_type: ArraySpec(shape=(), dtype=dtype('int32'), name='step_type')
+time_step_spec.discount: BoundedArraySpec(shape=(), dtype=dtype('float32'), name='discount', minimum=0.0, maximum=1.0)
+time_step_spec.reward: ArraySpec(shape=(), dtype=dtype('float32'), name='reward')
+Entered reset
+0.0
+0.0
+0.0
+0.0
+0.0
+TimeStep(
+{'discount': array(1., dtype=float32),
+ 'observation': array([0.566971], dtype=float32),
+ 'reward': array(0., dtype=float32),
+ 'step_type': array(0, dtype=int32)})
+Entered step
+Unpause sim
+Set action
+Action:
+[0, 0, 0, 0, 0]
+0
+0
+0
+0
+0
+[31m[ERROR] [1627981153.719028, 773.923000]: NOT Initialising Simulation Physics Parameters
+[33m[WARN] [1627981153.727418, 773.930000]: Start Init ControllersConnection
+[33m[WARN] [1627981153.728865, 773.930000]: END Init ControllersConnection
+/home/nils/anaconda3/envs/moveo_training/lib/python3.9/site-packages/gym/logger.py:30: UserWarning: [33mWARN: Box bound precision lowered by casting to float32
+  warnings.warn(colorize('%s: %s'%('WARN', msg % args), 'yellow'))
+2021-08-03 10:59:13.922616: I tensorflow/compiler/jit/xla_cpu_device.cc:41] Not creating XLA devices, tf_xla_enable_xla_devices not set
+2021-08-03 10:59:13.922920: I tensorflow/core/platform/cpu_feature_guard.cc:142] This TensorFlow binary is optimized with oneAPI Deep Neural Network Library (oneDNN) to use the following CPU instructions in performance-critical operations:  SSE4.1 SSE4.2 AVX AVX2 FMA
+To enable them in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2021-08-03 10:59:13.925836: I tensorflow/core/common_runtime/process_util.cc:146] Creating new thread pool with default inter op setting: 2. Tune using inter_op_parallelism_threads for best performance.
+[31m[ERROR] [1627981154.516264, 774.644000]: NOT Initialising Simulation Physics Parameters
+[33m[WARN] [1627981154.553519, 774.666000]: Start Init ControllersConnection
+[33m[WARN] [1627981154.555652, 774.666000]: END Init ControllersConnection
+Get Obs
+Is done
+>>>>>>>>>>>>>>>>done_fail=False,done_sucess=False
+Distanze zum Ziel= 0.5669709828784121
+TimeStep(
+{'discount': array(1., dtype=float32),
+ 'observation': array([0.566971], dtype=float32),
+ 'reward': array(1.7637587, dtype=float32),
+ 'step_type': array(1, dtype=int32)})
+Entered step
+Unpause sim
+Set action
+Action:
+[0, 0, 0, 0, 0]
+0
+0
+0
+0
+0
+Get Obs
+Is done
+>>>>>>>>>>>>>>>>done_fail=False,done_sucess=False
+Distanze zum Ziel= 0.5669709828799024
+TimeStep(
+{'discount': array(1., dtype=float32),
+ 'observation': array([0.566971], dtype=float32),
+ 'reward': array(1.7637587, dtype=float32),
+ 'step_type': array(1, dtype=int32)})
+Entered step
+Unpause sim
+Set action
+Action:
+[0, 0, 0, 0, 0]
+0
+0
+0
+0
+0
+Get Obs
+Is done
+>>>>>>>>>>>>>>>>done_fail=False,done_sucess=False
+Distanze zum Ziel= 0.5669709828799022
+TimeStep(
+{'discount': array(1., dtype=float32),
+ 'observation': array([0.566971], dtype=float32),
+ 'reward': array(1.7637587, dtype=float32),
+ 'step_type': array(1, dtype=int32)})
+Entered step
+Unpause sim
+Set action
+Action:
+[0, 0, 0, 0, 0]
+0
+0
+0
+0
+0
+Get Obs
+Is done
+>>>>>>>>>>>>>>>>done_fail=False,done_sucess=False
+Distanze zum Ziel= 0.5669709828799024
+TimeStep(
+{'discount': array(1., dtype=float32),
+ 'observation': array([0.566971], dtype=float32),
+ 'reward': array(1.7637587, dtype=float32),
+ 'step_type': array(1, dtype=int32)})
+Entered step
+Unpause sim
+Set action
+Action:
+[0, 0, 0, 0, 0]
+0
+0
+0
+0
+0
+Get Obs
+Is done
+>>>>>>>>>>>>>>>>done_fail=False,done_sucess=False
+Distanze zum Ziel= 0.5669709828799024
+TimeStep(
+{'discount': array(1., dtype=float32),
+ 'observation': array([0.566971], dtype=float32),
+ 'reward': array(1.7637587, dtype=float32),
+ 'step_type': array(1, dtype=int32)})
+Entered step
+Unpause sim
+Set action
+Action:
+[0, 0, 0, 0, 0]
+0
+0
+0
+0
+0
+Get Obs
+Is done
+>>>>>>>>>>>>>>>>done_fail=False,done_sucess=False
+Distanze zum Ziel= 0.5669709828784116
+TimeStep(
+{'discount': array(1., dtype=float32),
+ 'observation': array([0.566971], dtype=float32),
+ 'reward': array(1.7637587, dtype=float32),
+ 'step_type': array(1, dtype=int32)})
+Entered step
+Unpause sim
+Set action
+Action:
+[0, 0, 0, 0, 0]
+0
+0
+0
+0
+0
+Get Obs
+Is done
+>>>>>>>>>>>>>>>>done_fail=False,done_sucess=False
+Distanze zum Ziel= 0.5669709828784116
+TimeStep(
+{'discount': array(1., dtype=float32),
+ 'observation': array([0.566971], dtype=float32),
+ 'reward': array(1.7637587, dtype=float32),
+ 'step_type': array(1, dtype=int32)})
+Entered step
+Unpause sim
+Set action
+Action:
+[0, 0, 0, 0, 0]
+0
+0
+0
+0
+0
+Get Obs
+Is done
+>>>>>>>>>>>>>>>>done_fail=False,done_sucess=False
+Distanze zum Ziel= 0.5669709828799027
+TimeStep(
+{'discount': array(1., dtype=float32),
+ 'observation': array([0.566971], dtype=float32),
+ 'reward': array(1.7637587, dtype=float32),
+ 'step_type': array(1, dtype=int32)})
+Entered step
+Unpause sim
+Set action
+Action:
+[0, 0, 0, 0, 0]
+0
+0
+0
+0
+0
+Get Obs
+Is done
+>>>>>>>>>>>>>>>>done_fail=False,done_sucess=False
+Distanze zum Ziel= 0.5669709828799028
+TimeStep(
+{'discount': array(1., dtype=float32),
+ 'observation': array([0.566971], dtype=float32),
+ 'reward': array(1.7637587, dtype=float32),
+ 'step_type': array(1, dtype=int32)})
+Entered step
+Unpause sim
+Set action
+Action:
+[0, 0, 0, 0, 0]
+0
+0
+0
+0
+0
+Get Obs
+Is done
+>>>>>>>>>>>>>>>>done_fail=False,done_sucess=False
+Distanze zum Ziel= 0.5669709828799027
+TimeStep(
+{'discount': array(1., dtype=float32),
+ 'observation': array([0.566971], dtype=float32),
+ 'reward': array(1.7637587, dtype=float32),
+ 'step_type': array(1, dtype=int32)})
+Entered step
+Unpause sim
+Set action
+Action:
+[0, 0, 0, 0, 0]
+0
+0
+0
+0
+0
+Get Obs
+Is done
+>>>>>>>>>>>>>>>>done_fail=False,done_sucess=False
+Distanze zum Ziel= 0.5669709828799026
+TimeStep(
+{'discount': array(1., dtype=float32),
+ 'observation': array([0.566971], dtype=float32),
+ 'reward': array(1.7637587, dtype=float32),
+ 'step_type': array(1, dtype=int32)})
+Entered step
+Unpause sim
+Set action
+Action:
+[0, 0, 0, 0, 0]
+0
+0
+0
+0
+0
+Get Obs
+Is done
+>>>>>>>>>>>>>>>>done_fail=False,done_sucess=False
+Distanze zum Ziel= 0.5669709828799022
+TimeStep(
+{'discount': array(1., dtype=float32),
+ 'observation': array([0.566971], dtype=float32),
+ 'reward': array(1.7637587, dtype=float32),
+ 'step_type': array(1, dtype=int32)})
+Entered step
+Unpause sim
+Set action
+Action:
+[0, 0, 0, 0, 0]
+0
+0
+0
+0
+0
+Get Obs
+Is done
+>>>>>>>>>>>>>>>>done_fail=False,done_sucess=False
+Distanze zum Ziel= 0.5669709828784116
+TimeStep(
+{'discount': array(1., dtype=float32),
+ 'observation': array([0.566971], dtype=float32),
+ 'reward': array(1.7637587, dtype=float32),
+ 'step_type': array(1, dtype=int32)})
+Entered step
+Unpause sim
+Set action
+Action:
+[0, 0, 0, 0, 0]
+0
+0
+0
+0
+0
+Get Obs
+Is done
+>>>>>>>>>>>>>>>>done_fail=False,done_sucess=False
+Distanze zum Ziel= 0.5669709828798977
+TimeStep(
+{'discount': array(1., dtype=float32),
+ 'observation': array([0.566971], dtype=float32),
+ 'reward': array(1.7637587, dtype=float32),
+ 'step_type': array(1, dtype=int32)})
+Entered step
+Unpause sim
+Set action
+Action:
+[0, 0, 0, 0, 0]
+0
+0
+0
+0
+0
+Get Obs
+Is done
+>>>>>>>>>>>>>>>>done_fail=False,done_sucess=False
+Distanze zum Ziel= 0.5669709828798974
+TimeStep(
+{'discount': array(1., dtype=float32),
+ 'observation': array([0.566971], dtype=float32),
+ 'reward': array(1.7637587, dtype=float32),
+ 'step_type': array(1, dtype=int32)})
+Entered step
+Unpause sim
+Set action
+Action:
+[0, 0, 0, 0, 0]
+0
+0
+0
+0
+0
+Get Obs
+Is done
+>>>>>>>>>>>>>>>>done_fail=False,done_sucess=False
+Distanze zum Ziel= 0.5669709828799027
+TimeStep(
+{'discount': array(1., dtype=float32),
+ 'observation': array([0.566971], dtype=float32),
+ 'reward': array(1.7637587, dtype=float32),
+ 'step_type': array(1, dtype=int32)})
+Entered step
+Unpause sim
+Set action
+Action:
+[0, 0, 0, 0, 0]
+0
+0
+0
+0
+0
+Get Obs
+Is done
+>>>>>>>>>>>>>>>>done_fail=False,done_sucess=False
+Distanze zum Ziel= 0.5669709828799027
+TimeStep(
+{'discount': array(1., dtype=float32),
+ 'observation': array([0.566971], dtype=float32),
+ 'reward': array(1.7637587, dtype=float32),
+ 'step_type': array(1, dtype=int32)})
+Entered step
+Unpause sim
+Set action
+Action:
+[0, 0, 0, 0, 0]
+0
+0
+0
+0
+0
+Traceback (most recent call last):
+  File "/home/nils/Documents/Studium/Bachelorarbeit/praktischer_Teil/moveo_DRL/src/moveo_training/scripts/A3C_moveo_ik.py", line 298, in <module>
+    main()
+  File "/home/nils/Documents/Studium/Bachelorarbeit/praktischer_Teil/moveo_DRL/src/moveo_training/scripts/A3C_moveo_ik.py", line 294, in main
+    time_step = env.step(action)
+  File "/home/nils/anaconda3/envs/moveo_training/lib/python3.9/site-packages/tf_agents/environments/py_environment.py", line 203, in step
+    self._current_time_step = self._step(action)
+  File "/home/nils/anaconda3/envs/moveo_training/lib/python3.9/site-packages/tf_agents/environments/wrappers.py", line 117, in _step
+    time_step = self._env.step(action)
+  File "/home/nils/anaconda3/envs/moveo_training/lib/python3.9/site-packages/tf_agents/environments/py_environment.py", line 203, in step
+    self._current_time_step = self._step(action)
+  File "/home/nils/anaconda3/envs/moveo_training/lib/python3.9/site-packages/tf_agents/environments/gym_wrapper.py", line 217, in _step
+    observation, reward, self._done, self._info = self._gym_env.step(action)
+  File "/home/nils/Documents/Studium/Bachelorarbeit/praktischer_Teil/moveo_DRL/src/openai_ros/openai_ros/src/openai_ros/robot_gazebo_env_goal.py", line 51, in step
+    obs = self._get_obs()
+  File "/home/nils/Documents/Studium/Bachelorarbeit/praktischer_Teil/moveo_DRL/src/moveo_training/scripts/moveo_inverse_kinematic.py", line 160, in _get_obs
+    object_data = self.obj_positions.get_states()
+  File "/home/nils/Documents/Studium/Bachelorarbeit/praktischer_Teil/moveo_DRL/src/moveo_training/scripts/cube_positions.py", line 29, in get_states
+    data = self.get_model_state(
+  File "/opt/ros/noetic/lib/python3/dist-packages/rospy/impl/tcpros_service.py", line 442, in __call__
+    return self.call(*args, **kwds)
+  File "/opt/ros/noetic/lib/python3/dist-packages/rospy/impl/tcpros_service.py", line 524, in call
+    raise ServiceException("service [%s] returned no response"%self.resolved_name)
+rospy.service.ServiceException: service [/gazebo/get_model_state] returned no response
+Get Obs

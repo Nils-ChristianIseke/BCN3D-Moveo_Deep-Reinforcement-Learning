@@ -1,0 +1,85 @@
+Start Agent init....
+Entered InverseKinematics Env
+Entered Moveo Env
+[ INFO] [1627981644.093603982]: Loading robot model 'moveo_description'...
+[ INFO] [1627981644.097075924]: No root/virtual joint specified in SRDF. Assuming fixed joint
+[31m[ERROR] [1627981645.668717, 1251.888000]: NOT Initialising Simulation Physics Parameters
+[33m[WARN] [1627981645.692631, 1251.894000]: Start Init ControllersConnection
+[33m[WARN] [1627981645.695008, 1251.894000]: END Init ControllersConnection
+/home/nils/anaconda3/envs/moveo_training/lib/python3.9/site-packages/gym/logger.py:30: UserWarning: [33mWARN: Box bound precision lowered by casting to float32
+  warnings.warn(colorize('%s: %s'%('WARN', msg % args), 'yellow'))
+2021-08-03 11:07:25.875505: I tensorflow/compiler/jit/xla_cpu_device.cc:41] Not creating XLA devices, tf_xla_enable_xla_devices not set
+2021-08-03 11:07:25.875755: I tensorflow/core/platform/cpu_feature_guard.cc:142] This TensorFlow binary is optimized with oneAPI Deep Neural Network Library (oneDNN) to use the following CPU instructions in performance-critical operations:  SSE4.1 SSE4.2 AVX AVX2 FMA
+To enable them in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2021-08-03 11:07:25.877021: I tensorflow/core/common_runtime/process_util.cc:146] Creating new thread pool with default inter op setting: 2. Tune using inter_op_parallelism_threads for best performance.
+[31m[ERROR] [1627981646.321747, 1252.463000]: NOT Initialising Simulation Physics Parameters
+[33m[WARN] [1627981646.348069, 1252.488000]: Start Init ControllersConnection
+[33m[WARN] [1627981646.352725, 1252.488000]: END Init ControllersConnection
+###### Setting Group Moveit with 30 seconds wait...
+[ INFO] [1627981645.643335368, 1251.868000000]: Ready to take commands for planning group arm.
+<class 'moveo_commander.MoveoCommander'>
+launch the init function of the Parent Class robot_gazebo_env_goal.RobotGazeboEnv.....
+Entered Gazebo Env
+False
+launch the init function of the Parent Class robot_gazebo_env_goal.RobotGazeboEnv.....END
+Entered Moveo Env END
+START Actor init
+END Actor init....
+NUMBER OF WORKERS=CPUs available for this training=1
+END Agent init....
+Entered InverseKinematics Env
+Entered Moveo Env
+###### Setting Group Moveit with 30 seconds wait...
+[ INFO] [1627981646.278379188, 1252.431000000]: Ready to take commands for planning group arm.
+<class 'moveo_commander.MoveoCommander'>
+launch the init function of the Parent Class robot_gazebo_env_goal.RobotGazeboEnv.....
+Entered Gazebo Env
+False
+launch the init function of the Parent Class robot_gazebo_env_goal.RobotGazeboEnv.....END
+Entered Moveo Env END
+action_spec: BoundedTensorSpec(shape=(5,), dtype=tf.float32, name='action', minimum=array(-3.14159, dtype=float32), maximum=array(3.14159, dtype=float32))
+time_step_spec.observation: BoundedTensorSpec(shape=(1,), dtype=tf.float32, name='observation', minimum=array(0., dtype=float32), maximum=array(3., dtype=float32))
+time_step_spec.step_type: TensorSpec(shape=(), dtype=tf.int32, name='step_type')
+time_step_spec.discount: BoundedTensorSpec(shape=(), dtype=tf.float32, name='discount', minimum=array(0., dtype=float32), maximum=array(1., dtype=float32))
+time_step_spec.reward: TensorSpec(shape=(), dtype=tf.float32, name='reward')
+Entered reset
+0.0
+0.0
+0.0
+0.0
+0.0
+TimeStep(
+{'discount': <tf.Tensor: shape=(1,), dtype=float32, numpy=array([1.], dtype=float32)>,
+ 'observation': <tf.Tensor: shape=(1, 1), dtype=float32, numpy=array([[0.56699556]], dtype=float32)>,
+ 'reward': <tf.Tensor: shape=(1,), dtype=float32, numpy=array([0.], dtype=float32)>,
+ 'step_type': <tf.Tensor: shape=(1,), dtype=int32, numpy=array([0], dtype=int32)>})
+Traceback (most recent call last):
+  File "/home/nils/Documents/Studium/Bachelorarbeit/praktischer_Teil/moveo_DRL/src/moveo_training/scripts/A3C_moveo_ik.py", line 301, in <module>
+    main()
+  File "/home/nils/Documents/Studium/Bachelorarbeit/praktischer_Teil/moveo_DRL/src/moveo_training/scripts/A3C_moveo_ik.py", line 297, in main
+    time_step = tf_env.step(action)
+  File "/home/nils/anaconda3/envs/moveo_training/lib/python3.9/site-packages/tf_agents/environments/tf_environment.py", line 241, in step
+    return self._step(action)
+  File "/home/nils/anaconda3/envs/moveo_training/lib/python3.9/site-packages/tf_agents/environments/tf_py_environment.py", line 316, in _step
+    outputs = tf.numpy_function(
+  File "/home/nils/anaconda3/envs/moveo_training/lib/python3.9/site-packages/tensorflow/python/util/dispatch.py", line 201, in wrapper
+    return target(*args, **kwargs)
+  File "/home/nils/anaconda3/envs/moveo_training/lib/python3.9/site-packages/tensorflow/python/ops/script_ops.py", line 686, in numpy_function
+    return py_func_common(func, inp, Tout, stateful=True, name=name)
+  File "/home/nils/anaconda3/envs/moveo_training/lib/python3.9/site-packages/tensorflow/python/ops/script_ops.py", line 573, in py_func_common
+    result = func(*[np.array(x) for x in inp])
+  File "/home/nils/anaconda3/envs/moveo_training/lib/python3.9/site-packages/tf_agents/environments/tf_py_environment.py", line 303, in _isolated_step_py
+    return self._execute(_step_py, *flattened_actions)
+  File "/home/nils/anaconda3/envs/moveo_training/lib/python3.9/site-packages/tf_agents/environments/tf_py_environment.py", line 212, in _execute
+    return fn(*args, **kwargs)
+  File "/home/nils/anaconda3/envs/moveo_training/lib/python3.9/site-packages/tf_agents/environments/tf_py_environment.py", line 297, in _step_py
+    packed = tf.nest.pack_sequence_as(
+  File "/home/nils/anaconda3/envs/moveo_training/lib/python3.9/site-packages/tensorflow/python/util/nest.py", line 579, in pack_sequence_as
+    return _pack_sequence_as(structure, flat_sequence, expand_composites)
+  File "/home/nils/anaconda3/envs/moveo_training/lib/python3.9/site-packages/tensorflow/python/util/nest.py", line 522, in _pack_sequence_as
+    raise ValueError(
+ValueError: The target structure is of type `<class 'tensorflow.python.framework.tensor_spec.BoundedTensorSpec'>`
+  BoundedTensorSpec(shape=(5,), dtype=tf.float32, name='action', minimum=array(-3.14159, dtype=float32...
+However the input structure is a sequence (<class 'tuple'>) of length 5.
+  (array(1, dtype=int32), array(0, dtype=int32), array(0, dtype=int32), array(0, dtype=int32), array(0...
+nest cannot guarantee that it is safe to map one to the other.

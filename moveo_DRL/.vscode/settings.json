@@ -1,0 +1,5 @@
+{
+    "jupyter.jupyterServerType": "local",
+  
+    "jupyter.notebookFileRoot": "${fileDirname}"
+}

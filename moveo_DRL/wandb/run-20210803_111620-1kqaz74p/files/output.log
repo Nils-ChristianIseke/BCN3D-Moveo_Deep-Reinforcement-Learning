@@ -1,0 +1,96 @@
+Start Agent init....
+Entered InverseKinematics Env
+Entered Moveo Env
+[ INFO] [1627982185.519735038]: Loading robot model 'moveo_description'...
+[ INFO] [1627982185.531598940]: No root/virtual joint specified in SRDF. Assuming fixed joint
+###### Setting Group Moveit with 30 seconds wait...
+[ INFO] [1627982187.106219391, 1770.708000000]: Ready to take commands for planning group arm.
+<class 'moveo_commander.MoveoCommander'>
+launch the init function of the Parent Class robot_gazebo_env_goal.RobotGazeboEnv.....
+Entered Gazebo Env
+False
+launch the init function of the Parent Class robot_gazebo_env_goal.RobotGazeboEnv.....END
+Entered Moveo Env END
+START Actor init
+END Actor init....
+NUMBER OF WORKERS=CPUs available for this training=1
+END Agent init....
+Entered InverseKinematics Env
+Entered Moveo Env
+###### Setting Group Moveit with 30 seconds wait...
+[ INFO] [1627982187.911149447, 1771.431000000]: Ready to take commands for planning group arm.
+<class 'moveo_commander.MoveoCommander'>
+launch the init function of the Parent Class robot_gazebo_env_goal.RobotGazeboEnv.....
+Entered Gazebo Env
+False
+launch the init function of the Parent Class robot_gazebo_env_goal.RobotGazeboEnv.....END
+Entered Moveo Env END
+Entered reset
+0.0
+0.0
+0.0
+0.0
+0.0
+[31m[ERROR] [1627982187.126000, 1770.714000]: NOT Initialising Simulation Physics Parameters
+[33m[WARN] [1627982187.155678, 1770.736000]: Start Init ControllersConnection
+[33m[WARN] [1627982187.158021, 1770.736000]: END Init ControllersConnection
+/home/nils/anaconda3/envs/moveo_training/lib/python3.9/site-packages/gym/logger.py:30: UserWarning: [33mWARN: Box bound precision lowered by casting to float32
+  warnings.warn(colorize('%s: %s'%('WARN', msg % args), 'yellow'))
+2021-08-03 11:16:27.354653: I tensorflow/compiler/jit/xla_cpu_device.cc:41] Not creating XLA devices, tf_xla_enable_xla_devices not set
+2021-08-03 11:16:27.354885: I tensorflow/core/platform/cpu_feature_guard.cc:142] This TensorFlow binary is optimized with oneAPI Deep Neural Network Library (oneDNN) to use the following CPU instructions in performance-critical operations:  SSE4.1 SSE4.2 AVX AVX2 FMA
+To enable them in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2021-08-03 11:16:27.355578: I tensorflow/core/common_runtime/process_util.cc:146] Creating new thread pool with default inter op setting: 2. Tune using inter_op_parallelism_threads for best performance.
+[33m[WARN] [1627982187.390679, 1770.945000]: Could not process inbound connection: [/train_moveo_her] is not a publisher of [/pickup/goal]. Topics are [['/rosout', 'rosgraph_msgs/Log'], ['/collision_object', 'moveit_msgs/CollisionObject'], ['/attached_collision_object', 'moveit_msgs/AttachedCollisionObject'], ['/openai/reward', 'theconstruct_msgs/RLExperimentInfo']]{'callerid': '/move_group', 'md5sum': '83bb430d120a16fadf2ea3aad239f1d1', 'tcp_nodelay': '0', 'topic': '/pickup/goal', 'type': 'moveit_msgs/PickupActionGoal'}
+[33m[WARN] [1627982187.392658, 1770.945000]: Could not process inbound connection: [/train_moveo_her] is not a publisher of [/execute_trajectory/cancel]. Topics are [['/rosout', 'rosgraph_msgs/Log'], ['/collision_object', 'moveit_msgs/CollisionObject'], ['/attached_collision_object', 'moveit_msgs/AttachedCollisionObject'], ['/openai/reward', 'theconstruct_msgs/RLExperimentInfo']]{'callerid': '/move_group', 'md5sum': '302881f31927c1df708a2dbab0e80ee8', 'tcp_nodelay': '0', 'topic': '/execute_trajectory/cancel', 'type': 'actionlib_msgs/GoalID'}
+[33m[WARN] [1627982187.397607, 1770.950000]: Could not process inbound connection: [/train_moveo_her] is not a publisher of [/execute_trajectory/goal]. Topics are [['/rosout', 'rosgraph_msgs/Log'], ['/collision_object', 'moveit_msgs/CollisionObject'], ['/attached_collision_object', 'moveit_msgs/AttachedCollisionObject'], ['/openai/reward', 'theconstruct_msgs/RLExperimentInfo']]{'callerid': '/move_group', 'md5sum': '36f350977c67bc94e8cd408452bad0f0', 'tcp_nodelay': '0', 'topic': '/execute_trajectory/goal', 'type': 'moveit_msgs/ExecuteTrajectoryActionGoal'}
+[33m[WARN] [1627982187.403295, 1770.955000]: Could not process inbound connection: [/train_moveo_her] is not a publisher of [/place/cancel]. Topics are [['/rosout', 'rosgraph_msgs/Log'], ['/collision_object', 'moveit_msgs/CollisionObject'], ['/attached_collision_object', 'moveit_msgs/AttachedCollisionObject'], ['/openai/reward', 'theconstruct_msgs/RLExperimentInfo']]{'callerid': '/move_group', 'md5sum': '302881f31927c1df708a2dbab0e80ee8', 'tcp_nodelay': '0', 'topic': '/place/cancel', 'type': 'actionlib_msgs/GoalID'}
+[33m[WARN] [1627982187.405471, 1770.957000]: Could not process inbound connection: [/train_moveo_her] is not a publisher of [/move_group/goal]. Topics are [['/rosout', 'rosgraph_msgs/Log'], ['/collision_object', 'moveit_msgs/CollisionObject'], ['/attached_collision_object', 'moveit_msgs/AttachedCollisionObject'], ['/openai/reward', 'theconstruct_msgs/RLExperimentInfo']]{'callerid': '/move_group', 'md5sum': '152e336e337dce7cbe639f1bd9c65def', 'tcp_nodelay': '0', 'topic': '/move_group/goal', 'type': 'moveit_msgs/MoveGroupActionGoal'}
+[33m[WARN] [1627982187.407342, 1770.958000]: Could not process inbound connection: [/train_moveo_her] is not a publisher of [/trajectory_execution_event]. Topics are [['/rosout', 'rosgraph_msgs/Log'], ['/collision_object', 'moveit_msgs/CollisionObject'], ['/attached_collision_object', 'moveit_msgs/AttachedCollisionObject'], ['/openai/reward', 'theconstruct_msgs/RLExperimentInfo']]{'callerid': '/move_group', 'md5sum': '992ce8a1687cec8c8bd883ec73ca41d1', 'tcp_nodelay': '0', 'topic': '/trajectory_execution_event', 'type': 'std_msgs/String'}
+[31m[ERROR] [1627982187.962226, 1771.459000]: NOT Initialising Simulation Physics Parameters
+[33m[WARN] [1627982187.974432, 1771.463000]: Start Init ControllersConnection
+[33m[WARN] [1627982187.975888, 1771.463000]: END Init ControllersConnection
+[33m[WARN] [1627982188.416411, 1771.873000]: Could not process inbound connection: [/train_moveo_her] is not a publisher of [/place/goal]. Topics are [['/rosout', 'rosgraph_msgs/Log'], ['/collision_object', 'moveit_msgs/CollisionObject'], ['/attached_collision_object', 'moveit_msgs/AttachedCollisionObject'], ['/openai/reward', 'theconstruct_msgs/RLExperimentInfo']]{'callerid': '/move_group', 'md5sum': '3f3419319ea8d2af4e18a600962d0cf5', 'tcp_nodelay': '0', 'topic': '/place/goal', 'type': 'moveit_msgs/PlaceActionGoal'}
+[33m[WARN] [1627982188.418306, 1771.875000]: Could not process inbound connection: [/train_moveo_her] is not a publisher of [/planning_scene]. Topics are [['/rosout', 'rosgraph_msgs/Log'], ['/collision_object', 'moveit_msgs/CollisionObject'], ['/attached_collision_object', 'moveit_msgs/AttachedCollisionObject'], ['/openai/reward', 'theconstruct_msgs/RLExperimentInfo']]{'callerid': '/move_group', 'md5sum': 'acfc50bcfd6c7b978066bfa7c786002c', 'tcp_nodelay': '0', 'topic': '/planning_scene', 'type': 'moveit_msgs/PlanningScene'}
+Entered step
+Unpause sim
+Set action
+Action:
+[[[[0]]]]
+Traceback (most recent call last):
+  File "/home/nils/Documents/Studium/Bachelorarbeit/praktischer_Teil/moveo_DRL/src/moveo_training/scripts/A3C_moveo_ik.py", line 313, in <module>
+    main()
+  File "/home/nils/Documents/Studium/Bachelorarbeit/praktischer_Teil/moveo_DRL/src/moveo_training/scripts/A3C_moveo_ik.py", line 296, in main
+    time_step = tf_env.step(action)
+  File "/home/nils/anaconda3/envs/moveo_training/lib/python3.9/site-packages/tf_agents/environments/tf_environment.py", line 241, in step
+    return self._step(action)
+  File "/home/nils/anaconda3/envs/moveo_training/lib/python3.9/site-packages/tf_agents/environments/tf_py_environment.py", line 316, in _step
+    outputs = tf.numpy_function(
+  File "/home/nils/anaconda3/envs/moveo_training/lib/python3.9/site-packages/tensorflow/python/util/dispatch.py", line 201, in wrapper
+    return target(*args, **kwargs)
+  File "/home/nils/anaconda3/envs/moveo_training/lib/python3.9/site-packages/tensorflow/python/ops/script_ops.py", line 686, in numpy_function
+    return py_func_common(func, inp, Tout, stateful=True, name=name)
+  File "/home/nils/anaconda3/envs/moveo_training/lib/python3.9/site-packages/tensorflow/python/ops/script_ops.py", line 573, in py_func_common
+    result = func(*[np.array(x) for x in inp])
+  File "/home/nils/anaconda3/envs/moveo_training/lib/python3.9/site-packages/tf_agents/environments/tf_py_environment.py", line 303, in _isolated_step_py
+    return self._execute(_step_py, *flattened_actions)
+  File "/home/nils/anaconda3/envs/moveo_training/lib/python3.9/site-packages/tf_agents/environments/tf_py_environment.py", line 212, in _execute
+    return fn(*args, **kwargs)
+  File "/home/nils/anaconda3/envs/moveo_training/lib/python3.9/site-packages/tf_agents/environments/tf_py_environment.py", line 299, in _step_py
+    self._time_step = self._env.step(packed)
+  File "/home/nils/anaconda3/envs/moveo_training/lib/python3.9/site-packages/tf_agents/environments/py_environment.py", line 203, in step
+    self._current_time_step = self._step(action)
+  File "/home/nils/anaconda3/envs/moveo_training/lib/python3.9/site-packages/tf_agents/environments/batched_py_environment.py", line 166, in _step
+    time_steps = self._envs[0].step(actions)
+  File "/home/nils/anaconda3/envs/moveo_training/lib/python3.9/site-packages/tf_agents/environments/py_environment.py", line 203, in step
+    self._current_time_step = self._step(action)
+  File "/home/nils/anaconda3/envs/moveo_training/lib/python3.9/site-packages/tf_agents/environments/wrappers.py", line 117, in _step
+    time_step = self._env.step(action)
+  File "/home/nils/anaconda3/envs/moveo_training/lib/python3.9/site-packages/tf_agents/environments/py_environment.py", line 203, in step
+    self._current_time_step = self._step(action)
+  File "/home/nils/anaconda3/envs/moveo_training/lib/python3.9/site-packages/tf_agents/environments/gym_wrapper.py", line 217, in _step
+    observation, reward, self._done, self._info = self._gym_env.step(action)
+  File "/home/nils/Documents/Studium/Bachelorarbeit/praktischer_Teil/moveo_DRL/src/openai_ros/openai_ros/src/openai_ros/robot_gazebo_env_goal.py", line 49, in step
+    self._set_action(action)
+  File "/home/nils/Documents/Studium/Bachelorarbeit/praktischer_Teil/moveo_DRL/src/moveo_training/scripts/moveo_inverse_kinematic.py", line 139, in _set_action
+    "Joint_2": action[1],
+IndexError: index 1 is out of bounds for axis 0 with size 1

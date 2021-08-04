@@ -2,7 +2,7 @@
 
 import numpy
 import rospy
-from openai_ros import robot_gazebo_env_goal
+from src.openai_ros.openai_ros.src.openai_ros import robot_gazebo_env_goal
 from std_msgs.msg import Float64
 from sensor_msgs.msg import JointState
 from nav_msgs.msg import Odometry
@@ -15,7 +15,7 @@ class MoveoEnv(robot_gazebo_env_goal.RobotGazeboEnv):
     """
 
     def __init__(self):
-        print ("Entered Moveo Env")
+        # print ("Entered Moveo Env")
         """Initializes a new Moveo environment.
 
         Args:
@@ -41,7 +41,7 @@ class MoveoEnv(robot_gazebo_env_goal.RobotGazeboEnv):
         
         # We start the moveo commander object
         self.moveo_commander_obj = MoveoCommander()
-        print(type(self.moveo_commander_obj))
+        # print(type(self.moveo_commander_obj))
         # Variables that we give through the constructor.
 
         self.controllers_list = []
@@ -49,13 +49,13 @@ class MoveoEnv(robot_gazebo_env_goal.RobotGazeboEnv):
         self.robot_name_space = ""
         
         # We launch the init function of the Parent Class robot_gazebo_env_goal.RobotGazeboEnv
-        print ("launch the init function of the Parent Class robot_gazebo_env_goal.RobotGazeboEnv.....")
+        # print ("launch the init function of the Parent Class robot_gazebo_env_goal.RobotGazeboEnv.....")
         super().__init__(controllers_list=self.controllers_list,
                                                 robot_name_space=self.robot_name_space,
                                                 reset_controls=False)
-        print ("launch the init function of the Parent Class robot_gazebo_env_goal.RobotGazeboEnv.....END")
+        # print ("launch the init function of the Parent Class robot_gazebo_env_goal.RobotGazeboEnv.....END")
         
-        print ("Entered Moveo Env END")
+        # print ("Entered Moveo Env END")
 
 
 
@@ -77,14 +77,14 @@ class MoveoEnv(robot_gazebo_env_goal.RobotGazeboEnv):
     def _check_all_sensors_ready(self):
         self._check_joint_states_ready()
         
-        rospy.logdebug("ALL SENSORS READY")
+        # rospy.logdebug("ALL SENSORS READY")
 
     def _check_joint_states_ready(self):
         self.joints = None
         while self.joints is None and not rospy.is_shutdown():
             try:
                 self.joints = rospy.wait_for_message("/joint_states", JointState, timeout=1.0)
-                rospy.logdebug("Current /joint_states READY=>" + str(self.joints))
+                # rospy.logdebug("Current /joint_states READY=>" + str(self.joints))
 
             except:
                 rospy.logerr("Current /joint_states not ready yet, retrying for getting joint_states")
@@ -121,11 +121,11 @@ class MoveoEnv(robot_gazebo_env_goal.RobotGazeboEnv):
         """
 
         position = [None] * 5
-        print(initial_qpos["Joint_1"])
-        print(initial_qpos["Joint_2"])
-        print(initial_qpos["Joint_3"])
-        print(initial_qpos["Joint_4"])
-        print(initial_qpos["Joint_5"])
+        # print(initial_qpos["Joint_1"])
+        # print(initial_qpos["Joint_2"])
+        # print(initial_qpos["Joint_3"])
+        # print(initial_qpos["Joint_4"])
+        # print(initial_qpos["Joint_5"])
         position[0] = initial_qpos["Joint_1"]
         position[1] = initial_qpos["Joint_2"]
         position[2] = initial_qpos["Joint_3"]
@@ -137,7 +137,7 @@ class MoveoEnv(robot_gazebo_env_goal.RobotGazeboEnv):
             self.moveo_commander_obj.move_joints_traj(position)
             result = True
         except Exception as ex:
-            print(ex)
+            # print(ex)
             result = False
 
         return result

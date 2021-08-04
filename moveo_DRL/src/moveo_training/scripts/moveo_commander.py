@@ -16,7 +16,7 @@ class MoveoCommander(object):
 
         self.robot = moveit_commander.RobotCommander()
         self.scene = moveit_commander.PlanningSceneInterface()
-        print("###### Setting Group Moveit with 30 seconds wait...")
+        # print("###### Setting Group Moveit with 30 seconds wait...")
         self.group = moveit_commander.MoveGroupCommander("arm", wait_for_servers=30.0)
 
         self.pose_target = geometry_msgs.msg.Pose()
@@ -68,12 +68,12 @@ class MoveoCommander(object):
 
 def test_movements():
 
-    print("All Zeros joints Pose")
+    # print("All Zeros joints Pose")
     position=[ 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
     #position=[ 1.3200097856338848, 1.399990714155538, -0.19990423826440207, 1.7199628687377988, 5.368386582382811e-06, 1.66000908212966, -6.523043055040034e-06]
     traj_serv_object.move_joints_traj(position)
 
-    print("Tuck ee Pose")
+    # print("Tuck ee Pose")
     ee_pose = geometry_msgs.msg.Pose()
 
     ee_pose.position.x = 0.0533894092376196
@@ -92,7 +92,7 @@ if __name__ == "__main__":
     rospy.init_node('move_group_python_interface_tutorial', anonymous=True)
     traj_serv_object = MoveoCommander()
 
-    print("All Zeros ee Pose")
+    # print("All Zeros ee Pose")
     ee_pose = geometry_msgs.msg.Pose()
 
     ee_pose.position.x = 0.9616499977481227
@@ -105,12 +105,12 @@ if __name__ == "__main__":
 
     traj_serv_object.move_ee_to_pose(ee_pose)
 
-    print(str(traj_serv_object.get_ee_pose()))
-    print(str(traj_serv_object.get_ee_rpy()))
+    # print(str(traj_serv_object.get_ee_pose()))
+    # print(str(traj_serv_object.get_ee_rpy()))
 
-    print("All Zeros ee Pose - delta")
+    # print("All Zeros ee Pose - delta")
     ee_pose.position.x -= 0.1
     traj_serv_object.move_ee_to_pose(ee_pose)
 
-    print(str(traj_serv_object.get_ee_pose()))
-    print(str(traj_serv_object.get_ee_rpy()))
+    # print(str(traj_serv_object.get_ee_pose()))
+    # print(str(traj_serv_object.get_ee_rpy()))

@@ -45,5 +45,5 @@ if __name__ == "__main__":
     r = rospy.Rate(5.0)
     while not rospy.is_shutdown():
         st = obj_positions.get_states()
-        print(st)
+        # print(st)
         r.sleep()

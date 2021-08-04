@@ -29,7 +29,7 @@ import moveo_env
 from gym.envs.registration import register
 import numpy as np
 
-max_episode_steps = 1000 # Can be any Value
+max_episode_steps = 100 # Can be any Value
 
 register(
         id='MoveoIK-v0',
@@ -41,7 +41,7 @@ register(
 class MoveoIKEnv(moveo_env.MoveoEnv, utils.EzPickle):
     def __init__(self):
         
-        print ("Entered InverseKinematics Env")
+        # print ("Entered InverseKinematics Env")
         self.obj_positions = Obj_Pos(object_name="goalPoint")
 
         self.get_params()
@@ -130,8 +130,8 @@ class MoveoIKEnv(moveo_env.MoveoEnv, utils.EzPickle):
         Inits variables needed to be initialised each time we reset at the start
         :return:
         """
-        rospy.logdebug("Init Env Variables...")
-        rospy.logdebug("Init Env Variables...END")
+        # rospy.logdebug("Init Env Variables...")
+        # rospy.logdebug("Init Env Variables...END")
 
     def _set_action(self, action):
 
@@ -206,7 +206,7 @@ class MoveoIKEnv(moveo_env.MoveoEnv, utils.EzPickle):
 
         done_sucess = distance <= self.max_distance_to_Goal
 
-        print(">>>>>>>>>>>>>>>>done_fail="+str(done_fail)+",done_sucess="+str(done_sucess))
+        # print(">>>>>>>>>>>>>>>>done_fail="+str(done_fail)+",done_sucess="+str(done_sucess))
         # If it moved or the arm couldnt reach a position asced for it stops
         done = done_fail or done_sucess
 
@@ -225,15 +225,18 @@ class MoveoIKEnv(moveo_env.MoveoEnv, utils.EzPickle):
         done_fail = not(self.movement_result)
 
         done_sucess = distance <= self.max_distance_to_Goal
-        print("Distanze zum Ziel= "+ str(distance))
+        # print("Distanz zum Ziel= "+ str(distance))
         if done_fail:
             # We punish that it tries sto move where moveit cant reach
             reward = self.impossible_movement_punishement
+            # print("Bestrafung für unmögliche Kombination an Gelenkwinkel! Reward= ", reward)
         else:
             if done_sucess:
                 #It reached the goal
                 reward = -1*self.impossible_movement_punishement
+                # print("Ziel wurde erreicht Reward= ", reward)
             else:
+                # print("Ziel wurde nicht erreicht, Reward= ", reward)
                reward = 1.0 / distance
 
         return reward

@@ -3,7 +3,7 @@
 <!-- https://bitbucket.org/theconstructcore/my-robotic-manipulator/src/master/urdf/links_joints.xacro -->
 
   
-  <xacro:macro name="m_joint" params="name type axis_xyz origin_rpy origin_xyz parent child limit_e limit_l limit_u limit_v mimic_joint:='' mimic_multiplier:=1 mimic_offset:=0 ">
+  <xacro:macro name="m_joint" params="name type axis_xyz origin_rpy origin_xyz parent child limit_e limit_l limit_u limit_v mimic_joint:='' mimic_multiplier:=1 mimic_offset:=0  passive_joint:=''">
     <joint name="${name}" type="${type}">
       <axis xyz="${axis_xyz}" />
       <limit effort="${limit_e}" lower="${limit_l}" upper="${limit_u}" velocity="${limit_v}" />
@@ -14,6 +14,7 @@
       <mimic joint="${mimic_joint}" multiplier="${mimic_multiplier}" offset="${mimic_offset}" />
       </xacro:if>
     </joint>
+    <xacro:unless value ="${passive_joint == 'passive'}">
     <transmission name="trans_${name}">
       <type>hardware_interface/PositionJointInterface</type>
       <joint name="${name}">
@@ -24,9 +25,10 @@
         <mechanicalReduction>1</mechanicalReduction>
       </actuator>
     </transmission>
+    </xacro:unless>
   </xacro:macro>
 
-<xacro:macro name="m_joint_passive" params="name type axis_xyz origin_rpy origin_xyz parent child limit_e limit_l limit_u limit_v mimic_joint:='' mimic_multiplier:=1 mimic_offset:=0 ">
+<!-- <xacro:macro name="m_joint_p" params="name type axis_xyz origin_rpy origin_xyz parent child limit_e limit_l limit_u limit_v mimic_joint:='' mimic_multiplier:=1 mimic_offset:=0  passive_joint:=''">
     <joint name="${name}" type="${type}">
       <axis xyz="${axis_xyz}" />
       <limit effort="${limit_e}" lower="${limit_l}" upper="${limit_u}" velocity="${limit_v}" />
@@ -37,7 +39,21 @@
       <mimic joint="${mimic_joint}" multiplier="${mimic_multiplier}" offset="${mimic_offset}" />
       </xacro:if>
     </joint>
-  </xacro:macro>
+    
+  </xacro:macro> -->
+
+<!-- <xacro:macro name="m_joint_passive" params="name type axis_xyz origin_rpy origin_xyz parent child limit_e limit_l limit_u limit_v mimic_joint:='' mimic_multiplier:=1 mimic_offset:=0 ">
+    <joint name="${name}" type="${type}">
+      <axis xyz="${axis_xyz}" />
+      <limit effort="${limit_e}" lower="${limit_l}" upper="${limit_u}" velocity="${limit_v}" />
+      <origin rpy="${origin_rpy}" xyz="${origin_xyz}" />
+      <parent link="${parent}" />
+      <child link="${child}" />
+      <xacro:if value ="${mimic_joint !=''}">
+      <mimic joint="${mimic_joint}" multiplier="${mimic_multiplier}" offset="${mimic_offset}" />
+      </xacro:if>
+    </joint>
+  </xacro:macro> -->
 
 <xacro:macro name="m_joint_fixed" params="name origin_rpy origin_xyz parent child ">
     <joint name="${name}" type="fixed">
@@ -73,6 +89,25 @@
       </visual>
     </link>
   </xacro:macro>
+
+
+  <xacro:macro name="mimic_joint_plugin_gazebo" params="name_prefix parent_joint mimic_joint has_pid:=false multiplier:=1.0 offset:=0 sensitiveness:=0.0 max_effort:=1.0 robot_namespace:=''">
+    <gazebo>
+      <plugin name="MimicJointPlugin" filename="libroboticsgroup_upatras_gazebo_mimic_joint_plugin.so">
+        <joint>${parent_joint}</joint>
+        <mimicJoint>${mimic_joint}</mimicJoint>
+        <xacro:if value="${has_pid}">                     
+        </xacro:if>
+        <multiplier>${multiplier}</multiplier>
+        <offset>${offset}</offset>
+        <sensitiveness>${sensitiveness}</sensitiveness>   
+        <maxEffort>${max_effort}</maxEffort>             
+        <xacro:unless value="${robot_namespace == ''}">
+          <robotNamespace>${robot_namespace}</robotNamespace>
+        </xacro:unless>
+      </plugin>
+    </gazebo>
+  </xacro:macro> 
 
 <!--
 <xacro:macro name="m_link_cylinder" params="name origin_xyz origin_rpy radius length mass ixx ixy ixz iyy iyz izz">

@@ -14,8 +14,13 @@ hardware_interface:
     - Joint_3
     - Joint_4
     - Joint_5
-    - Gripper_Idol_Gear_Joint
     - Gripper_Servo_Gear_Joint
+    # - Tip_Gripper_Servo_Joint
+    # - Gripper_Idol_Gear_Joint
+    # - Tip_Gripper_Idol_Joint
+    
+    # - Pivot_Arm_Gripper_Idol_Joint
+    # - Pivot_Arm_Gripper_Servo_Joint
   sim_control_mode: 1  # 0: position, 1: velocity
 arm_controller:
   type: position_controllers/JointTrajectoryController
@@ -25,6 +30,16 @@ arm_controller:
     - Joint_3
     - Joint_4
     - Joint_5
+gripper_controller:
+  type: position_controllers/JointTrajectoryController
+  joints: 
+    - Gripper_Servo_Gear_Joint
+    # - Tip_Gripper_Servo_Joint
+    # - Gripper_Idol_Gear_Joint
+    # - Tip_Gripper_Idol_Joint
+    # - Tip_Gripper_Servo_Joint
+    # - Pivot_Arm_Gripper_Idol_Joint
+    # - Pivot_Arm_Gripper_Servo_Joint
 # Publish all joint states
 # Creates the /joint_states topic necessary in ROS
 joint_state_controller:
@@ -46,8 +61,32 @@ controller_list:
     default: True
     type: FollowJointTrajectory
     joints:
-      - Gripper_Idol_Gear_Joint
       - Gripper_Servo_Gear_Joint
+      # - Tip_Gripper_Servo_Joint
+      # - Gripper_Idol_Gear_Joint
+      # - Tip_Gripper_Idol_Joint
+      # - Tip_Gripper_Servo_Joint
+      # - Pivot_Arm_Gripper_Idol_Joint
+      # - Pivot_Arm_Gripper_Servo_Joint
+
+# gazebo_ros_control:
+#   pid_gains:
+#     # these gains are used by the gazebo_ros_control plugin
+#     Tip_Gripper_Servo_Joint:
+#       p: 20.0
+#       i: 0.1
+#       d: 0.0
+#       i_clamp: 0.2
+#       antiwindup: false
+#       publish_state: true
+#     # the following gains are used by the gazebo_mimic_joint plugin
+#     Gripper_Servo_Gear_Joint:
+#       p: 20.0
+#       i: 0.1
+#       d: 0.0
+#       i_clamp: 0.2
+#       antiwindup: false
+#       publish_state: true
 # gazebo_ros_control:
 #   pid_gains:
 #     Joint_1:

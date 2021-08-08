@@ -136,6 +136,7 @@ if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   include("/home/nils/Documents/Studium/Bachelorarbeit/praktischer_Teil/moveo_DRL/build/moveo_training/cmake_install.cmake")
   include("/home/nils/Documents/Studium/Bachelorarbeit/praktischer_Teil/moveo_DRL/build/theconstruct_msgs/cmake_install.cmake")
   include("/home/nils/Documents/Studium/Bachelorarbeit/praktischer_Teil/moveo_DRL/build/openai_ros/openai_ros/cmake_install.cmake")
+  include("/home/nils/Documents/Studium/Bachelorarbeit/praktischer_Teil/moveo_DRL/build/roboticsgroup_upatras_gazebo_plugins/cmake_install.cmake")
 
 endif()
 

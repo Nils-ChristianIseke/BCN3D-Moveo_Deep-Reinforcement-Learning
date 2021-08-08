@@ -237,12 +237,12 @@
         meshfile_collision= "${path_to_meshes}/Gripper_Right.stl"
         mass="0.008"
         origin_xyz_inertia ="-0.005681 0.000349 0.021391"
-        ixx="0.003081"
-        ixy="-0.000006"
-        ixz="0.000535"
-        iyy="0.002997"
-        iyz="0.000033"
-        izz="0.000457"
+        ixx="0.000003081"
+        ixy="-0.000000006"
+        ixz="0.000000535"
+        iyy="0.000002997"
+        iyz="0.000000033"
+        izz="0.000000457"
     />
     
     
@@ -258,13 +258,18 @@
         limit_u="1.3"
         limit_v="5"
         limit_e="5"
+        passive_joint="passive"
         mimic_joint="Gripper_Servo_Gear_Joint" 
-        mimic_multiplier="1" 
+        mimic_multiplier="-1" 
         mimic_offset="0"
-    />
+            />
+            
+      <xacro:mimic_joint_plugin_gazebo name_prefix="Tip_Gripper_Servo_Joint"
+        parent_joint= "Gripper_Servo_Gear_Joint" mimic_joint="Tip_Gripper_Servo_Joint"
+        has_pid="false" multiplier="-1.0" max_effort="10000.0" />   
 
 
-    <xacro:m_link_mesh name="Gripper_Idol_Gear"
+  <xacro:m_link_mesh name="Gripper_Idol_Gear"
         origin_xyz="0 0 0"
         origin_rpy="0 0 0"
         meshfile_visual= "${path_to_meshes}/Idol_Gear.stl"
@@ -279,21 +284,28 @@
         izz="0.112495"
     /> 
      
-       <xacro:m_joint name= "Gripper_Idol_Gear_Joint"
+        <xacro:m_joint name= "Gripper_Idol_Gear_Joint"
         type="revolute"
         origin_xyz= "-0.014 0 0.024"
         origin_rpy="0 0 0"
         axis_xyz="0 1 0"
         parent="Endeffector_Base"
         child="Gripper_Idol_Gear" 
-        limit_l="0"
-        limit_u="0"
+        limit_l="-1.5707"
+        limit_u="1.5707"
         limit_v="5"
         limit_e="5"
+         mimic_joint="Gripper_Servo_Gear_Joint" 
+        mimic_multiplier="-1" 
+        mimic_offset="0"
+        passive_joint="passive"
         
     />
-
-     <xacro:m_link_mesh name="Tip_Gripper_Idol"
+      <xacro:mimic_joint_plugin_gazebo name_prefix="Gripper_Idol_Gear_Joint"
+        parent_joint="Gripper_Servo_Gear_Joint" mimic_joint="Gripper_Idol_Gear_Joint"
+        has_pid="false" multiplier="-1.0" max_effort="10000.0" />  
+        
+      <xacro:m_link_mesh name="Tip_Gripper_Idol"
         origin_xyz="0 0 0"
         origin_rpy="0 0 0"
         meshfile_visual= "${path_to_meshes}/Gripper_Left.stl"
@@ -309,24 +321,27 @@
     />
    
 
-   <xacro:m_joint name= "Tip_Gripper_Idol_Joint"
+  <xacro:m_joint name= "Tip_Gripper_Idol_Joint"
         type="revolute"
         origin_xyz="0 0 0.04"
         origin_rpy="0 0 0"
         axis_xyz="0 1 0"
         parent="Gripper_Idol_Gear"
         child="Tip_Gripper_Idol"
-        limit_l="-1.5"
-        limit_u="0"
+        limit_l="-1.5707"
+        limit_u="1.5707"
         limit_v="5"
         limit_e="5"
-        mimic_joint="Gripper_Idol_Gear_Joint"
-        mimic_multiplier="-1"
+        mimic_joint="Gripper_Servo_Gear_Joint"
+        mimic_multiplier="1"
         mimic_offset="0"
+        passive_joint="passive"
     />
+   <xacro:mimic_joint_plugin_gazebo name_prefix="Tip_Gripper_Idol_Joint"
+    parent_joint="Gripper_Servo_Gear_Joint" mimic_joint="Tip_Gripper_Idol_Joint"
+    has_pid="false" multiplier="1.0" max_effort="10000.0" />    
   
-  
-     <xacro:m_link_mesh name="Pivot_Arm_Gripper_Servo"
+   <!-- <xacro:m_link_mesh name="Pivot_Arm_Gripper_Servo"
         origin_xyz="0 0 0"
         origin_rpy="0 0 0"
         meshfile_visual= "${path_to_meshes}/Pivot_Arm.stl"
@@ -341,7 +356,7 @@
         izz="0.010301"
     />
   
-
+ 
   <xacro:m_joint name= "Pivot_Arm_Gripper_Servo_Joint"
         type="revolute"
         origin_xyz="0.007 0 0.044"
@@ -356,12 +371,15 @@
         mimic_joint="Gripper_Servo_Gear_Joint"
         mimic_multiplier="1"
         mimic_offset="0"
+        passive_joint="passive"
     />
-
+     <xacro:mimic_joint_plugin_gazebo name_prefix="Mimic"
+    parent_joint="Gripper_Servo_Gear_Joint" mimic_joint="Pivot_Arm_Gripper_Servo_Joint"
+    has_pid="false" multiplier="1.0" max_effort="10000.0" />   
    
+     -->
     
-    
-     <xacro:m_link_mesh name="Pivot_Arm_Gripper_Idol"
+      <xacro:m_link_mesh name="Pivot_Arm_Gripper_Idol"
         origin_xyz="0 0 0"
         origin_rpy="0 0 0"
         meshfile_visual= "${path_to_meshes}/Pivot_Arm.stl"
@@ -388,12 +406,18 @@
         limit_u="1.5707"
         limit_v="5"
         limit_e="5"
-        mimic_joint="Gripper_Idol_Gear_Joint"
-        mimic_multiplier="1"
+        mimic_joint="Gripper_Servo_Gear_Joint"
+        mimic_multiplier="-1"
         mimic_offset="0"
-    />   
+        passive_joint="passive"
+    />     
+     <xacro:mimic_joint_plugin_gazebo name_prefix="Mimic"
+    parent_joint="Gripper_Servo_Gear_Joint" mimic_joint="Pivot_Arm_Gripper_Idol_Joint"
+    has_pid="false" multiplier="-1.0" max_effort="10000.0" />   
   
     <gazebo>
         <plugin name="gazebo_ros_control" filename="libgazebo_ros_control.so"/>
+       <!-- <plugin name="MimicJointPlugin" filename="libroboticsgroup_upatras_gazebo_mimic_joint_plugin.so"/>  -->
+
     </gazebo>   
 </robot>

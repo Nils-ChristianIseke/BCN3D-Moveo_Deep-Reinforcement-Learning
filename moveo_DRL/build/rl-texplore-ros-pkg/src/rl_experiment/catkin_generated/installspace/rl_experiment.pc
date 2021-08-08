@@ -1,0 +1,8 @@
+prefix=/home/nils/Documents/Studium/Bachelorarbeit/praktischer_Teil/moveo_DRL/install
+
+Name: rl_experiment
+Description: Description of rl_experiment
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: message_runtime

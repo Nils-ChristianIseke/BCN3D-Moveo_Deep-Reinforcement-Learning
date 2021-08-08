@@ -24,7 +24,11 @@ list(APPEND CATKIN_ORDERED_PACKAGES "openai_ros")
 list(APPEND CATKIN_ORDERED_PACKAGE_PATHS "openai_ros/openai_ros")
 list(APPEND CATKIN_ORDERED_PACKAGES_IS_META "False")
 list(APPEND CATKIN_ORDERED_PACKAGES_BUILD_TYPE "catkin")
+list(APPEND CATKIN_ORDERED_PACKAGES "roboticsgroup_upatras_gazebo_plugins")
+list(APPEND CATKIN_ORDERED_PACKAGE_PATHS "roboticsgroup_upatras_gazebo_plugins")
+list(APPEND CATKIN_ORDERED_PACKAGES_IS_META "False")
+list(APPEND CATKIN_ORDERED_PACKAGES_BUILD_TYPE "catkin")
 
 set(CATKIN_MESSAGE_GENERATORS )
 
-set(CATKIN_METAPACKAGE_CMAKE_TEMPLATE "/home/nils/anaconda3/lib/python3.8/site-packages/catkin_pkg/templates/metapackage.cmake.in")
+set(CATKIN_METAPACKAGE_CMAKE_TEMPLATE "/home/nils/.local/lib/python3.8/site-packages/catkin_pkg/templates/metapackage.cmake.in")

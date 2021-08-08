@@ -11,7 +11,7 @@ controller_list:
     type: $(arg execution_type)
     joints:
       - Gripper_Idol_Gear_Joint
-      - Gripper_Servo_Gear_Joint
+      
 initial:  # Define initial robot poses.
   - group: arm
     pose: home

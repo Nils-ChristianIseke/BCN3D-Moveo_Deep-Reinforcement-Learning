@@ -1,0 +1,40 @@
+
+Start Agent init....
+Traceback (most recent call last):
+  File "/home/nils/.local/lib/python3.8/site-packages/gym/envs/registration.py", line 121, in spec
+    return self.env_specs[id]
+KeyError: 'MoveoIK-v0'
+During handling of the above exception, another exception occurred:
+Traceback (most recent call last):
+  File "/home/nils/Documents/Studium/Bachelorarbeit/praktischer_Teil/moveo_DRL/src/moveo_training/scripts/A3C_Continuous_moveo.py", line 299, in <module>
+    main()
+  File "/home/nils/Documents/Studium/Bachelorarbeit/praktischer_Teil/moveo_DRL/src/moveo_training/scripts/A3C_Continuous_moveo.py", line 292, in main
+    agent = Agent(env_name)
+  File "/home/nils/Documents/Studium/Bachelorarbeit/praktischer_Teil/moveo_DRL/src/moveo_training/scripts/A3C_Continuous_moveo.py", line 144, in __init__
+    env = gym.make(env_name)
+  File "/home/nils/.local/lib/python3.8/site-packages/gym/envs/registration.py", line 145, in make
+    return registry.make(id, **kwargs)
+  File "/home/nils/.local/lib/python3.8/site-packages/gym/envs/registration.py", line 89, in make
+    spec = self.spec(path)
+  File "/home/nils/.local/lib/python3.8/site-packages/gym/envs/registration.py", line 131, in spec
+    raise error.UnregisteredEnv('No registered env with id: {}'.format(id))
+gym.error.UnregisteredEnv: No registered env with id: MoveoIK-v0
+Traceback (most recent call last):
+  File "/home/nils/.local/lib/python3.8/site-packages/gym/envs/registration.py", line 121, in spec
+    return self.env_specs[id]
+KeyError: 'MoveoIK-v0'
+During handling of the above exception, another exception occurred:
+Traceback (most recent call last):
+  File "/home/nils/Documents/Studium/Bachelorarbeit/praktischer_Teil/moveo_DRL/src/moveo_training/scripts/A3C_Continuous_moveo.py", line 299, in <module>
+    main()
+  File "/home/nils/Documents/Studium/Bachelorarbeit/praktischer_Teil/moveo_DRL/src/moveo_training/scripts/A3C_Continuous_moveo.py", line 292, in main
+    agent = Agent(env_name)
+  File "/home/nils/Documents/Studium/Bachelorarbeit/praktischer_Teil/moveo_DRL/src/moveo_training/scripts/A3C_Continuous_moveo.py", line 144, in __init__
+    env = gym.make(env_name)
+  File "/home/nils/.local/lib/python3.8/site-packages/gym/envs/registration.py", line 145, in make
+    return registry.make(id, **kwargs)
+  File "/home/nils/.local/lib/python3.8/site-packages/gym/envs/registration.py", line 89, in make
+    spec = self.spec(path)
+  File "/home/nils/.local/lib/python3.8/site-packages/gym/envs/registration.py", line 131, in spec
+    raise error.UnregisteredEnv('No registered env with id: {}'.format(id))
+gym.error.UnregisteredEnv: No registered env with id: MoveoIK-v0

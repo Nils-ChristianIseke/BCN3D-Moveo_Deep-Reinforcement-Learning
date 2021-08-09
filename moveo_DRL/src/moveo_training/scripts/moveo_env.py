@@ -2,7 +2,7 @@
 
 import numpy
 import rospy
-from src.openai_ros.openai_ros.src.openai_ros import robot_gazebo_env_goal
+from openai_ros import robot_gazebo_env_goal
 from std_msgs.msg import Float64
 from sensor_msgs.msg import JointState
 from nav_msgs.msg import Odometry

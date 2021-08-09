@@ -1,0 +1,50 @@
+
+Start Agent init....
+[ INFO] [1628501533.810001342]: Loading robot model 'moveo_description'...
+[ INFO] [1628501533.812064065]: No root/virtual joint specified in SRDF. Assuming fixed joint
+[ INFO] [1628501535.833428264, 719.585000000]: Ready to take commands for planning group arm.
+START Actor init
+END Actor init....
+NUMBER OF WORKERS=CPUs available for this training=1
+END Agent init....
+[ INFO] [1628501536.996502248, 720.545000000]: Ready to take commands for planning group arm.
+ActionSpec= <dtype: 'float32'>
+[31m[ERROR] [1628501535.898712, 719.650000]: NOT Initialising Simulation Physics Parameters
+[33m[WARN] [1628501535.913480, 719.665000]: Start Init ControllersConnection
+[33m[WARN] [1628501535.914661, 719.665000]: END Init ControllersConnection
+/home/nils/.local/lib/python3.8/site-packages/gym/logger.py:30: UserWarning: [33mWARN: Box bound precision lowered by casting to float32
+  warnings.warn(colorize('%s: %s'%('WARN', msg % args), 'yellow'))
+2021-08-09 11:32:16.204886: I tensorflow/stream_executor/platform/default/dso_loader.cc:53] Successfully opened dynamic library libcuda.so.1
+2021-08-09 11:32:16.257110: I tensorflow/stream_executor/cuda/cuda_gpu_executor.cc:937] successful NUMA node read from SysFS had negative value (-1), but there must be at least one NUMA node, so returning NUMA node zero
+2021-08-09 11:32:16.262498: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1733] Found device 0 with properties:
+pciBusID: 0000:01:00.0 name: GeForce GTX 970 computeCapability: 5.2
+coreClock: 1.2155GHz coreCount: 13 deviceMemorySize: 3.94GiB deviceMemoryBandwidth: 208.91GiB/s
+2021-08-09 11:32:16.262716: W tensorflow/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'libcudart.so.11.0'; dlerror: libcudart.so.11.0: cannot open shared object file: No such file or directory; LD_LIBRARY_PATH: /home/nils/Documents/Studium/Bachelorarbeit/praktischer_Teil/moveo_DRL/devel/lib:/opt/ros/noetic/lib:/opt/ros/noetic/lib/x86_64-linux-gnu
+2021-08-09 11:32:16.262847: W tensorflow/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'libcublas.so.11'; dlerror: libcublas.so.11: cannot open shared object file: No such file or directory; LD_LIBRARY_PATH: /home/nils/Documents/Studium/Bachelorarbeit/praktischer_Teil/moveo_DRL/devel/lib:/opt/ros/noetic/lib:/opt/ros/noetic/lib/x86_64-linux-gnu
+2021-08-09 11:32:16.262940: W tensorflow/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'libcublasLt.so.11'; dlerror: libcublasLt.so.11: cannot open shared object file: No such file or directory; LD_LIBRARY_PATH: /home/nils/Documents/Studium/Bachelorarbeit/praktischer_Teil/moveo_DRL/devel/lib:/opt/ros/noetic/lib:/opt/ros/noetic/lib/x86_64-linux-gnu
+2021-08-09 11:32:16.263035: W tensorflow/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'libcufft.so.10'; dlerror: libcufft.so.10: cannot open shared object file: No such file or directory; LD_LIBRARY_PATH: /home/nils/Documents/Studium/Bachelorarbeit/praktischer_Teil/moveo_DRL/devel/lib:/opt/ros/noetic/lib:/opt/ros/noetic/lib/x86_64-linux-gnu
+2021-08-09 11:32:16.263125: W tensorflow/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'libcurand.so.10'; dlerror: libcurand.so.10: cannot open shared object file: No such file or directory; LD_LIBRARY_PATH: /home/nils/Documents/Studium/Bachelorarbeit/praktischer_Teil/moveo_DRL/devel/lib:/opt/ros/noetic/lib:/opt/ros/noetic/lib/x86_64-linux-gnu
+2021-08-09 11:32:16.263213: W tensorflow/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'libcusolver.so.11'; dlerror: libcusolver.so.11: cannot open shared object file: No such file or directory; LD_LIBRARY_PATH: /home/nils/Documents/Studium/Bachelorarbeit/praktischer_Teil/moveo_DRL/devel/lib:/opt/ros/noetic/lib:/opt/ros/noetic/lib/x86_64-linux-gnu
+2021-08-09 11:32:16.263300: W tensorflow/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'libcusparse.so.11'; dlerror: libcusparse.so.11: cannot open shared object file: No such file or directory; LD_LIBRARY_PATH: /home/nils/Documents/Studium/Bachelorarbeit/praktischer_Teil/moveo_DRL/devel/lib:/opt/ros/noetic/lib:/opt/ros/noetic/lib/x86_64-linux-gnu
+2021-08-09 11:32:16.263389: W tensorflow/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'libcudnn.so.8'; dlerror: libcudnn.so.8: cannot open shared object file: No such file or directory; LD_LIBRARY_PATH: /home/nils/Documents/Studium/Bachelorarbeit/praktischer_Teil/moveo_DRL/devel/lib:/opt/ros/noetic/lib:/opt/ros/noetic/lib/x86_64-linux-gnu
+2021-08-09 11:32:16.263401: W tensorflow/core/common_runtime/gpu/gpu_device.cc:1766] Cannot dlopen some GPU libraries. Please make sure the missing libraries mentioned above are installed properly if you would like to use GPU. Follow the guide at https://www.tensorflow.org/install/gpu for how to download and setup the required libraries for your platform.
+Skipping registering GPU devices...
+2021-08-09 11:32:16.264612: I tensorflow/core/platform/cpu_feature_guard.cc:142] This TensorFlow binary is optimized with oneAPI Deep Neural Network Library (oneDNN) to use the following CPU instructions in performance-critical operations:  AVX2 FMA
+To enable them in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2021-08-09 11:32:16.264790: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1258] Device interconnect StreamExecutor with strength 1 edge matrix:
+2021-08-09 11:32:16.264803: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1264]
+WARNING:tensorflow:Please add `keras.layers.InputLayer` instead of `keras.Input` to Sequential model. `keras.Input` is intended to be used by Functional model.
+[31m[ERROR] [1628501537.028807, 720.562000]: NOT Initialising Simulation Physics Parameters
+[33m[WARN] [1628501537.067578, 720.583000]: Start Init ControllersConnection
+[33m[WARN] [1628501537.068891, 720.583000]: END Init ControllersConnection
+[ INFO] [1628501542.800252390, 725.446000000]: ABORTED: No motion plan found. No execution attempted.
+2021-08-09 11:32:21.743118: I tensorflow/compiler/mlir/mlir_graph_optimization_pass.cc:176] None of the MLIR Optimization Passes are enabled (registered 2)
+2021-08-09 11:32:21.770227: I tensorflow/core/platform/profile_utils/cpu_utils.cc:114] CPU Frequency: 3192640000 Hz
+[33m[ WARN] [1628501542.689729497, 725.369000000]: Fail: ABORTED: No motion plan found. No execution attempted.
+final_time_step TimeStep(
+{'discount': <tf.Tensor: shape=(1,), dtype=float32, numpy=array([1.], dtype=float32)>,
+ 'observation': <tf.Tensor: shape=(1, 1), dtype=float32, numpy=array([[0.5669768]], dtype=float32)>,
+ 'reward': <tf.Tensor: shape=(1,), dtype=float32, numpy=array([0.], dtype=float32)>,
+ 'step_type': <tf.Tensor: shape=(1,), dtype=int32, numpy=array([0], dtype=int32)>})
+Number of Steps:  14
+Number of Episodes:  10

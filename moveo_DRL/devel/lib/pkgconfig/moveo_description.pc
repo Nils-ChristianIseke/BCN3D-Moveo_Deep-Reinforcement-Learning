@@ -1,8 +1,0 @@
-prefix=/home/nils/Documents/Studium/Bachelorarbeit/praktischer_Teil/moveo_DRL/devel
-
-Name: moveo_description
-Description: Description of moveo_description
-Version: 0.0.0
-Cflags: 
-Libs: -L${prefix}/lib 
-Requires: 

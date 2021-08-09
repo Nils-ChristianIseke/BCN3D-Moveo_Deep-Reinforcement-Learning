@@ -1,8 +1,0 @@
-prefix=/home/nils/Documents/Studium/Bachelorarbeit/praktischer_Teil/moveo_DRL/devel
-
-Name: rl_common
-Description: Description of rl_common
-Version: 0.0.0
-Cflags: -I/home/nils/Documents/Studium/Bachelorarbeit/praktischer_Teil/moveo_DRL/src/rl-texplore-ros-pkg/src/rl_common/include
-Libs: -L${prefix}/lib 
-Requires: message_runtime

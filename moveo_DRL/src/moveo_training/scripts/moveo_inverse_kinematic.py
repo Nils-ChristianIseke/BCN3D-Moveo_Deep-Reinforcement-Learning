@@ -23,19 +23,19 @@ tf.compat.v1.enable_v2_behavior()
 from gym import utils
 import math
 import rospy
-from cube_positions import Obj_Pos
+from moveo_training.scripts.cube_positions import Obj_Pos
 from gym import spaces
-import moveo_env
+from moveo_training.scripts import moveo_env
 from gym.envs.registration import register
 import numpy as np
 
 max_episode_steps = 100 # Can be any Value
 
-register(
-        id='MoveoIK-v0',
-        entry_point='moveo_inverse_kinematic:MoveoIKEnv',
-        max_episode_steps=max_episode_steps,
-    )
+# register(
+#         id='MoveoIK-v0',
+#         entry_point='moveo_inverse_kinematic:MoveoIKEnv',
+#         max_episode_steps=max_episode_steps,
+#     )
 
 
 class MoveoIKEnv(moveo_env.MoveoEnv, utils.EzPickle):

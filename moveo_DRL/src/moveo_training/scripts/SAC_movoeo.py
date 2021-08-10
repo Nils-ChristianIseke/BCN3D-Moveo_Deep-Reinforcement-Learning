@@ -1,4 +1,9 @@
 #!/usr/bin/env python3
+import sys
+print("Affffffffffffffffffffffffffffffffffff")
+print(sys.getcwd())
+
+
 import base64
 import imageio
 import IPython

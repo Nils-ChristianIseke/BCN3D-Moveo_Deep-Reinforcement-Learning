@@ -33,14 +33,13 @@ class MoveoCommander(object):
         return True, "Everything went OK"
 
     def move_joints_traj(self, joint_positions):
-
+        
         self.group_variable_values = self.group.get_current_joint_values()
         self.group_variable_values[0] = joint_positions[0]
         self.group_variable_values[1] = joint_positions[1]
         self.group_variable_values[2] = joint_positions[2]
         self.group_variable_values[3] = joint_positions[3]
         self.group_variable_values[4] = joint_positions[4]
-        self.group_variable_values[5] = joint_positions[5]
         self.group.set_joint_value_target(self.group_variable_values)
         self.execute_trajectory()
 

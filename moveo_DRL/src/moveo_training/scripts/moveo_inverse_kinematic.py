@@ -29,7 +29,7 @@ from moveo_training.scripts import moveo_env
 from gym.envs.registration import register
 import numpy as np
 
-max_episode_steps = 100 # Can be any Value
+max_episode_steps = 1 # Can be any Value
 
 # register(
 #         id='MoveoIK-v0',
@@ -61,11 +61,11 @@ class MoveoIKEnv(moveo_env.MoveoEnv, utils.EzPickle):
         observations_high_dist = np.array([self.max_distance])
         observations_low_dist = np.array([0.0])
 
-        observations_high_speed = np.array([self.max_speed])
-        observations_low_speed = np.array([0.0])
+        # observations_high_speed = np.array([self.max_speed])
+        # observations_low_speed = np.array([0.0])
 
-        observations_ee_z_max = np.array([self.ee_z_max])
-        observations_ee_z_min = np.array([self.ee_z_min])
+        # observations_ee_z_max = np.array([self.ee_z_max])
+        # observations_ee_z_min = np.array([self.ee_z_min])
 
         high = np.concatenate([observations_high_dist])
         low = np.concatenate([observations_low_dist])
@@ -85,8 +85,8 @@ class MoveoIKEnv(moveo_env.MoveoEnv, utils.EzPickle):
         self.n_observations = 1
         self.position_ee_max = 10.0
         self.position_ee_min = -10.0
-        self.position_joints_max = 3.14159
-        self.position_joints_min = -3.14159
+        self.position_joints_max = 2.356
+        self.position_joints_min = -2.356
 
         self.init_pos = {"Joint_1": 0.0,
                 "Joint_2": 0.0,
@@ -107,7 +107,7 @@ class MoveoIKEnv(moveo_env.MoveoEnv, utils.EzPickle):
         self.goal_reached = 100
         self.reached_goal_reward = 100
 
-        self.max_distance_to_Goal= 0.3
+        self.max_distance_to_Goal= 0.05
         self.max_distance = 3.0
         self.max_speed = 1.0
         self.ee_z_max = 1.0

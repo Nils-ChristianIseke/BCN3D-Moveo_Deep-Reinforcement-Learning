@@ -27,7 +27,7 @@
     <visual>
       <origin xyz="0 0 0"/>
       <geometry>
-        <sphere radius="0.3" />
+        <sphere radius="0.05" />
       </geometry>
     </visual>
      <!-- <collision>
@@ -38,7 +38,7 @@
     </collision> -->
   </link>
   <gazebo reference="my_box">
-      <material>Gazebo/Blue</material> 
+      <material>Gazebo/Red</material> 
      <turnGravityOff>true</turnGravityOff>
   </gazebo>
 </robot>

@@ -17,7 +17,7 @@
     
   </gazebo>
 </robot> -->
-<robot name="demo_cube">
+<robot name="goalPoint">
   <link name="my_box">
     <inertial>
       <origin xyz="0 0 0" />

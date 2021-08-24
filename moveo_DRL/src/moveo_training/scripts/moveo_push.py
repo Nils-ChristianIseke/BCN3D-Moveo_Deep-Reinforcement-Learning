@@ -1,9 +1,10 @@
 #! /usr/bin/env python
 
+from re import S
 from gym import utils
 import math
 import rospy
-from cube_positions import Obj_Pos
+from goal_position import Obj_Pos
 from gym import spaces
 import moveo_env
 from gym.envs.registration import register
@@ -22,7 +23,7 @@ class MoveoPushEnv(moveo_env.MoveoEnv, utils.EzPickle):
     def __init__(self):
         
         print ("Entered Push Env")
-        self.obj_positions = Obj_Pos(object_name="demo_cube")
+        self.obj_positions = Obj_Pos(object_name="goalPoint")
 
         self.get_params()
 
@@ -92,6 +93,7 @@ class MoveoPushEnv(moveo_env.MoveoEnv, utils.EzPickle):
         # Normal z pos of cube minus its height/2
         self.ee_z_min = 0.3
 
+        self.steps_in_current_episode =0
 
 
     def _set_init_pose(self):
@@ -223,7 +225,8 @@ class MoveoPushEnv(moveo_env.MoveoEnv, utils.EzPickle):
                     reward = self.impossible_movement_punishement / 4.0
                 else:
                     # It didnt move the cube. We reward it by getting closser
-                    print("Reward for getting closser")
-                    reward = 1.0 / distance
+                    print("Reward for getting closser") 
+                    self.steps_in_current_episode+=1
+                    reward = 1.0 / distance *(-1)*self.steps_in_current_episode/10
 
         return reward

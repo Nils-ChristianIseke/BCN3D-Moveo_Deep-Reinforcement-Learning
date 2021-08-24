@@ -5,7 +5,7 @@ import rospy
 from gazebo_msgs.srv import GetWorldProperties, GetModelState, SetModelState
 import sys
 import random
-from gazebo_msgs.msg import ModelState 
+from gazebo_msgs.msg import ModelState
 import math
 class Obj_Pos(object):
     """
@@ -15,13 +15,15 @@ class Obj_Pos(object):
 
     def __init__(self, object_name):
         self._object_name = object_name
+        
         world_specs = rospy.ServiceProxy(
             '/gazebo/get_world_properties', GetWorldProperties)()
+
         self.time = 0
         self.model_names = world_specs.model_names
         self.get_model_state = rospy.ServiceProxy(
-            '/gazebo/get_model_state', GetModelState)
-        self.set_model_state = rospy.ServiceProxy('/gazebo/set_model_state',SetModelState)
+             '/gazebo/get_model_state', GetModelState)
+        # self.set_model_state = rospy.ServiceProxy('/gazebo/get_model_state',SetModelState)
         # self.set_states()
     def get_states(self):
         """
@@ -40,7 +42,6 @@ class Obj_Pos(object):
                     data.twist.linear.z
                 ])
     def set_states(self):
-        # rospy.init_node('set_pose')
         for model_name in self.model_names:
             if model_name == self._object_name:
                 state_msg = ModelState()
@@ -57,9 +58,10 @@ class Obj_Pos(object):
                 state_msg.pose.orientation.z = 0
                 state_msg.pose.orientation.w = 0
                 rospy.wait_for_service('/gazebo/set_model_state')
+                set_state = rospy.ServiceProxy('/gazebo/set_model_state', SetModelState)
                 try:
-                    set_state = rospy.ServiceProxy('/gazebo/set_model_state', SetModelState)
-                    resp = set_state( state_msg )
+                    resp = set_state(state_msg )
+                    rospy.logwarn("setting new goalpoint")
                 except rospy.ServiceException as e:
                     print("Service call failed: %s" % e)
 if __name__ == "__main__":

@@ -23,17 +23,17 @@ tf.compat.v1.enable_v2_behavior()
 from gym import utils
 import math
 import rospy
-from moveo_training.scripts.cube_positions import Obj_Pos
+from moveo_training.scripts.goal_position import Obj_Pos
 from gym import spaces
 from moveo_training.scripts import moveo_env
 from gym.envs.registration import register
 import numpy as np
 
-max_episode_steps = 1 # Can be any Value
+max_episode_steps = 100 # Can be any Value
 
 register(
         id='MoveoIK-v0',
-        entry_point='moveo_inverse_kinematic:MoveoIKEnv',
+        entry_point='moveo_inverse_kinematic_2:MoveoIKEnv',
         max_episode_steps=max_episode_steps,
     )
 
@@ -57,37 +57,35 @@ class MoveoIKEnv(moveo_env.MoveoEnv, utils.EzPickle):
             high=self.position_joints_max, shape=(self.n_actions,),
             dtype=np.float32
         )
-        
-        # observations_high_dist_x = np.array([self.max_distance])
-        # observations_low_dist_x = np.array([0.0])
-        # observations_high_dist_y = np.array([self.max_distance])
-        # observations_low_dist_y = np.array([0.0])
-        # observations_high_dist_z = np.array([self.max_distance])
-        # observations_low_dist_z = np.array([0.0])
-        observation_max_dist = np.array([2])
-        observation_min_dist = np.array([0])
-        
 
+        observations_high_dist_x = np.array([self.max_distance])
+        observations_low_dist_x = np.array([0.0])
+        observations_high_dist_y = np.array([self.max_distance])
+        observations_low_dist_y = np.array([0.0])
+        observations_high_dist_z = np.array([self.max_distance])
+        observations_low_dist_z = np.array([0.0])
+        
         observations_max_cube_x =np.array([1.0])
         observations_max_cube_y =np.array([1.0])
         observations_max_cube_z =np.array([1.0])
         observations_min_cube_x =np.array([-1.0])
         observations_min_cube_y =np.array([-1.0])
         observations_min_cube_z =np.array([-1.0])
-        
         # observations_high_speed = np.array([self.max_speed])
         # observations_low_speed = np.array([0.0])
 
-        # observations_ee_max = np.array([1])
-        # observations_ee_min = np.array([-1])
+        # observations_ee_z_max = np.array([self.ee_z_max])
+        # observations_ee_z_min = np.array([self.ee_z_min])
 
-        # high = np.concatenate([observations_max_cube_x,observations_max_cube_y,observations_max_cube_z,observation__max_dist,observations_ee_max,observations_ee_max,observations_ee_max])
-        # low = np.concatenate([observations_min_cube_x,observations_min_cube_y,observations_min_cube_z,observation_min_dist,observations_ee_min,observations_ee_min,observations_ee_min])
+        high = np.concatenate([observations_max_cube_x,observations_max_cube_y,observations_max_cube_z])
+        low = np.concatenate([observations_min_cube_x,observations_min_cube_y,observations_min_cube_z])
 
-        high = np.concatenate([ observation_max_dist,observations_max_cube_x,observations_max_cube_y,observations_max_cube_z])
-        low = np.concatenate([observation_min_dist, observations_min_cube_x,observations_min_cube_y,observations_min_cube_z])
+
 
         self.observation_space = spaces.Box(low, high)
+
+        obs = self._get_obs()
+        
 
     def get_params(self):
         """
@@ -97,25 +95,46 @@ class MoveoIKEnv(moveo_env.MoveoEnv, utils.EzPickle):
         self.sim_time = rospy.get_time()
         self.n_actions = 5
         self.n_observations = 3
-        self.position_joints_max = 2.356
-        self.position_joints_min = -2.356
+        self.position_ee_max = 10.0
+        self.position_ee_min = -10.0
+        self.position_joints_max = 3.14
+        self.position_joints_min = -3.14
 
-        self.init_pos = {
-                "Joint_1": 0.0,
+        self.init_pos = {"Joint_1": 0.0,
                 "Joint_2": 0.0,
                 "Joint_3": 0.0,
                 "Joint_4": 0.0,
                 "Joint_5": 0.0,
                 }
         
-        self.setup_ee_pos = {"x": 0,
-                            "y": 0,
-                            "z": 0}
+        self.setup_ee_pos = {"x": 0.598,
+                            "y": 0.005,
+                            "z": 0.9}
+
+
+        self.position_delta = 0.1
+        self.step_punishment = -1
+        self.closer_reward = 10
         self.impossible_movement_punishement = -1000
+        self.goal_reached = 100
+        self.reached_goal_reward = 100
+
         self.max_distance_to_Goal= 0.05
-   
+        self.max_distance = 3.0
+        self.max_speed = 1.0
+        self.ee_z_max = 1.0
+        # Normal z pos of cube minus its height/2
+        self.ee_z_min = 0.3
+        self.episode_step =0
+
 
     def _set_init_pose(self):
+        """
+        Sets the Robot in its init pose
+        The Simulation will be unpaused for this purpose.
+        """
+        self.episode_step =0
+        self.obj_positions.set_states()
         self.gazebo.unpauseSim()
         if not self.set_trajectory_joints(self.init_pos):
             assert False, "Initialisation is failed...."
@@ -125,13 +144,13 @@ class MoveoIKEnv(moveo_env.MoveoEnv, utils.EzPickle):
         Inits variables needed to be initialised each time we reset at the start
         :return:
         """
+        
         # rospy.logdebug("Init Env Variables...")
         # rospy.logdebug("Init Env Variables...END")
 
     def _set_action(self, action):
 
-        self.new_pos = {
-                "Joint_1": float(action[0]),
+        self.new_pos = {"Joint_1": float(action[0]),
                 "Joint_2": float(action[1]),
                 "Joint_3": float(action[2]),
                 "Joint_4": float(action[3]),
@@ -148,27 +167,36 @@ class MoveoIKEnv(moveo_env.MoveoEnv, utils.EzPickle):
         Orientation for the moment is not considered
         """
         self.gazebo.unpauseSim()
-        grip_pose = self.get_ee_pose()
-        ee_array_pose = [grip_pose.position.x, grip_pose.position.y, grip_pose.position.z]
 
-      
-        # the pose of the goalPoint 
+        # the pose of the cube/box on a table        
         object_data = self.obj_positions.get_states()
 
-        # position GoalPoint
+        # position Cube
         object_pos = object_data[:3]
-        distance_from_goal = self.calc_dist(object_pos,ee_array_pose)
 
-        # We state as observations the distance form goal, the speed of goal and the z postion of the end effectors
-        # observations_obj = np.array([object_pos[0],object_pos[1],object_pos[2],distance_from_goal,ee_array_pose[0],ee_array_pose[1],ee_array_pose[2]])
-        observations_obj = np.array([distance_from_goal,object_pos[0],object_pos[1],object_pos[2]])
+        
+
+
+        # We state as observations the distance form cube, the speed of cube and the z postion of the end effectors
+        observations_obj = np.array([object_pos[0],object_pos[1],object_pos[2]])
+
         return  observations_obj
     
-    def calc_dist(self,p1,p2):
+    def calc_dist(self):
         """
         d = ((2 - 1)2 + (1 - 1)2 + (2 - 0)2)1/2
         """
-       
+        grip_pose = self.get_ee_pose()
+        ee_array_pose = [grip_pose.position.x, grip_pose.position.y, grip_pose.position.z]
+
+        # the pose of the cube/box on a table        
+        object_data = self.obj_positions.get_states()
+
+        # position Cube
+        object_pos = object_data[:3]
+        
+        p1 = object_pos
+        p2 = ee_array_pose
         x_d = math.pow(p1[0] - p2[0],2)
         y_d = math.pow(p1[1] - p2[1],2)
         z_d = math.pow(p1[2] - p2[2],2)
@@ -195,7 +223,7 @@ class MoveoIKEnv(moveo_env.MoveoEnv, utils.EzPickle):
 
        
         # distance = observations[0]
-        distance = observations[0]
+        distance = self.calc_dist()
         # Did the movement fail in set action?
         done_fail = not(self.movement_result)
 
@@ -204,16 +232,17 @@ class MoveoIKEnv(moveo_env.MoveoEnv, utils.EzPickle):
         # print(">>>>>>>>>>>>>>>>done_fail="+str(done_fail)+",done_sucess="+str(done_sucess))
         # If it moved or the arm couldnt reach a position asced for it stops
         done = done_fail or done_sucess
-
+        # if (done):
+        #     self.obj_positions.set_states()
         return done
 
-    def _compute_reward(self, observations, done):
+    def _compute_reward(self,observations, done):
         """
         Reward moving the cube
         Punish movint to unreachable positions
         Calculate the reward: binary => 1 for success, 0 for failure
         """
-        distance =  observations[0]
+        distance =  self.calc_dist()
 
 
         # Did the movement fail in set action?
@@ -229,8 +258,10 @@ class MoveoIKEnv(moveo_env.MoveoEnv, utils.EzPickle):
             if done_sucess:
                 #It reached the goal
                 reward = -1*self.impossible_movement_punishement
-                print("Ziel wurde erreicht Reward= ", reward)
+                # print("Ziel wurde erreicht Reward= ", reward)
             else:
-                reward = -distance*10
                 # print("Ziel wurde nicht erreicht, Reward= ", reward)
+                self.episode_step+=1
+                reward = min(1.0 / distance,10)-self.episode_step/10
+
         return reward

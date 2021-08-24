@@ -69,7 +69,7 @@
       <inertial>
         <mass value="${mass}" />
         <origin rpy="${origin_rpy_inertia}" xyz="${origin_xyz_inertia}" />
-        <inertia  ixx="${ixx}" ixy="${ixy}" ixz="${ixz}" iyy="${iyy}" iyz="${iyz}" izz="${izz}" />
+        <inertia  ixx="${0.01*ixx}" ixy="${0.01*ixy}" ixz="${0.01*ixz}" iyy="${0.01*iyy}" iyz="${0.01*iyz}" izz="${0.01*izz}" />
       </inertial>
       <collision>
         <origin rpy="${origin_rpy}" xyz="${origin_xyz}" />

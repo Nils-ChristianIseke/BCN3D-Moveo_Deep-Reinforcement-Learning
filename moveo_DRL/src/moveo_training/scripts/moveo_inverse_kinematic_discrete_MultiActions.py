@@ -32,8 +32,8 @@ import numpy as np
 max_episode_steps = 1 # Can be any Value
 
 register(
-        id='MoveoIK-v0',
-        entry_point='moveo_inverse_kinematic:MoveoIKEnv',
+        id='MoveoIK_discrete_MultiActions-v0',
+        entry_point='moveo_inverse_kinematic_discrete_MultiActions:MoveoIKEnv',
         max_episode_steps=max_episode_steps,
     )
 
@@ -51,12 +51,13 @@ class MoveoIKEnv(moveo_env.MoveoEnv, utils.EzPickle):
 
         self.gazebo.unpauseSim()
 
-        # self.action_space = spaces.Discrete(self.n_actions)
-        self.action_space = spaces.Box(
-            low=self.position_joints_min,
-            high=self.position_joints_max, shape=(self.n_actions,),
-            dtype=np.float32
-        )
+       
+        self.action_space = spaces.MultiDiscrete((270,270,270,270,270))
+        # self.action_space = spaces.Box(
+        #     low=self.position_joints_min,
+        #     high=self.position_joints_max, shape=(self.n_actions,),
+        #     dtype=np.float32
+        # )
         
         # observations_high_dist_x = np.array([self.max_distance])
         # observations_low_dist_x = np.array([0.0])
@@ -86,7 +87,6 @@ class MoveoIKEnv(moveo_env.MoveoEnv, utils.EzPickle):
 
         high = np.concatenate([ observation_max_dist,observations_max_cube_x,observations_max_cube_y,observations_max_cube_z])
         low = np.concatenate([observation_min_dist, observations_min_cube_x,observations_min_cube_y,observations_min_cube_z])
-
         self.observation_space = spaces.Box(low, high)
 
     def get_params(self):
@@ -95,7 +95,7 @@ class MoveoIKEnv(moveo_env.MoveoEnv, utils.EzPickle):
 
         """
         self.sim_time = rospy.get_time()
-        self.n_actions = 5
+        self.n_actions = 1
         self.n_observations = 3
         self.position_joints_max = 2.356
         self.position_joints_min = -2.356
@@ -129,13 +129,14 @@ class MoveoIKEnv(moveo_env.MoveoEnv, utils.EzPickle):
         # rospy.logdebug("Init Env Variables...END")
 
     def _set_action(self, action):
-
+       
         self.new_pos = {
-                "Joint_1": float(action[0]),
-                "Joint_2": float(action[1]),
-                "Joint_3": float(action[2]),
-                "Joint_4": float(action[3]),
-                "Joint_5": float(action[4])}
+                "Joint_1": float((action[0]-135)/180*math.pi),
+                "Joint_2": float((action[1]-135)/180*math.pi),
+                "Joint_3": float((action[2]-135)/180*math.pi),
+                "Joint_4": float((action[3]-135)/180*math.pi),
+                "Joint_5": float((action[4]-135)/180*math.pi),
+                }
 
 
         self.movement_result = self.set_trajectory_joints(self.new_pos)

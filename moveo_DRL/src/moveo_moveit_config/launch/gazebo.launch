@@ -5,8 +5,8 @@
   
 
   <!-- startup simulated world -->
-  <include file="$(find gazebo_ros)/launch/empty_world.launch">
-    <arg name="world_name" default="worlds/empty.world"/>
+  <include file="$(find moveo_moveit_config)/launch/empty_world.launch">
+    <arg name="world_name" default="$(find moveo_moveit_config)/worlds/moveo_IK_world.world"/>
     <arg name="paused" value="$(arg paused)"/>
     <arg name="gui" value="$(arg gazebo_gui)"/>
   </include>

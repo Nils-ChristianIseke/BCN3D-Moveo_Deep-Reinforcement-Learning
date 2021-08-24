@@ -137,7 +137,7 @@ class MoveoEnv(robot_gazebo_env_goal.RobotGazeboEnv):
             self.moveo_commander_obj.move_joints_traj(position)
             result = True
         except Exception as ex:
-            # print(ex)
+            print(ex)
             result = False
 
         return result

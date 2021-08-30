@@ -96,7 +96,7 @@ void arm_cb2(const sensor_msgs::JointState& arm_steps){
   long positions[5];  // Array of desired stepper positions must be long
   positions[0] = (int)(arm_steps.position[0]); // negated since the real robot rotates in the opposite direction as ROS
   positions[1] = (int)(arm_steps.position[1]);
-  positions[2] = (int)(arm_steps.position[2]);
+  positions[2] = -(int)(arm_steps.position[2]);
   positions[3] = (int)(arm_steps.position[3]);
   positions[4] = (int)(arm_steps.position[4]);
     

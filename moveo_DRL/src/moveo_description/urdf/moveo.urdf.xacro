@@ -56,8 +56,8 @@
         axis_xyz="0 0 1"
         parent="base_link"
         child="Link_1"
-        limit_l="-2"
-        limit_u="2"
+        limit_l="-2.35619"
+        limit_u="2.35619"
         limit_v="5"
         limit_e="5"
     />
@@ -136,14 +136,14 @@
     />
 
     <xacro:m_joint name= "Joint_4"
-        type="continuous"
+        type="revolute"
         origin_xyz= "0 0 0.1275"
         origin_rpy="0 0 0"
         axis_xyz="0 0 1"
         parent="Link_3"
         child="Link_4"
-        limit_l="-1.5707"
-        limit_u="1.5707"
+        limit_l="-3.14"
+        limit_u="3.14"
         limit_v="5"
         limit_e="5"
     />

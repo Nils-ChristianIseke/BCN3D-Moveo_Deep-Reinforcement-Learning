@@ -29,7 +29,7 @@ from moveo_training.scripts import moveo_env
 from gym.envs.registration import register
 import numpy as np
 
-max_episode_steps = 1 # Can be any Value
+max_episode_steps = 100 # Can be any Value
 
 register(
         id='MoveoIK-v0',
@@ -111,7 +111,7 @@ class MoveoIKEnv(moveo_env.MoveoEnv, utils.EzPickle):
         self.setup_ee_pos = {"x": 0,
                             "y": 0,
                             "z": 0}
-        self.impossible_movement_punishement = -1000
+        self.impossible_movement_punishement = -100
         self.max_distance_to_Goal= 0.05
    
 
@@ -231,6 +231,6 @@ class MoveoIKEnv(moveo_env.MoveoEnv, utils.EzPickle):
                 reward = -1*self.impossible_movement_punishement
                 print("Ziel wurde erreicht Reward= ", reward)
             else:
-                reward = -distance*10
+                reward = 1/distance
                 # print("Ziel wurde nicht erreicht, Reward= ", reward)
         return reward

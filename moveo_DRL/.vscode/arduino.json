@@ -1,6 +1,4 @@
 {
     "port": "/dev/ttyACM0",
-    "configuration": "cpu=atmega2560",
-    "board": "arduino:avr:mega",
-    "sketch": "src/moveo_moveit/moveo_moveit_arduino/moveo_moveit_arduino.ino"
+    "board": "arduino:avr:mega"
 }

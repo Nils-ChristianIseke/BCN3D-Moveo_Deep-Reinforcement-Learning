@@ -23,17 +23,17 @@ tf.compat.v1.enable_v2_behavior()
 from gym import utils
 import math
 import rospy
-from moveo_training.scripts.cube_positions import Obj_Pos
+from src.moveo_training.src.moveo_training.cube_positions import Obj_Pos
 from gym import spaces
-from moveo_training.scripts import moveo_env
+from src.moveo_training.src.moveo_training import moveo_env
 from gym.envs.registration import register
 import numpy as np
 
-max_episode_steps = 100 # Can be any Value
+max_episode_steps = 1 # Can be any Value
 
 register(
         id='MoveoIK-v0',
-        entry_point='moveo_inverse_kinematic:MoveoIKEnv',
+        entry_point='src.moveo_training.src.moveo_training.moveo_inverse_kinematic:MoveoIKEnv',
         max_episode_steps=max_episode_steps,
     )
 
@@ -231,6 +231,6 @@ class MoveoIKEnv(moveo_env.MoveoEnv, utils.EzPickle):
                 reward = -1*self.impossible_movement_punishement
                 print("Ziel wurde erreicht Reward= ", reward)
             else:
-                reward = 1/distance
+                reward = -distance*10
                 # print("Ziel wurde nicht erreicht, Reward= ", reward)
         return reward

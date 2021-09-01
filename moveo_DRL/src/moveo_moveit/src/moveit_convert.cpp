@@ -64,11 +64,11 @@ void cmd_cb(const sensor_msgs::JointState& cmd_arm)
   //ROS_INFO_NAMED("test", "arm_steps.position5 #1: %f", (cmd_arm.position[4]-prev_angle[4])*stepsPerRevolution[4]/M_PI);
   arm_steps.position.resize(6);
   
-  arm_steps.position[0] = (int)((cmd_arm.position[1]-prev_angle[1])*stepsPerRevolution[0]/(2*M_PI));
-  arm_steps.position[1] = (int)((cmd_arm.position[2]-prev_angle[2])*stepsPerRevolution[1]/(2*M_PI));
-  arm_steps.position[2] = (int)((cmd_arm.position[3]-prev_angle[3])*stepsPerRevolution[2]/(2*M_PI));
-  arm_steps.position[3] = (int)((cmd_arm.position[4]-prev_angle[4])*stepsPerRevolution[3]/(2*M_PI));
-  arm_steps.position[4] = (int)((cmd_arm.position[5]-prev_angle[5])*stepsPerRevolution[4]/(2*M_PI));
+  arm_steps.position[0] = (int)((cmd_arm.position[0]-prev_angle[0])*stepsPerRevolution[0]/(2*M_PI));
+  arm_steps.position[1] = (int)((cmd_arm.position[1]-prev_angle[1])*stepsPerRevolution[1]/(2*M_PI));
+  arm_steps.position[2] = (int)((cmd_arm.position[2]-prev_angle[2])*stepsPerRevolution[2]/(2*M_PI));
+  arm_steps.position[3] = (int)((cmd_arm.position[3]-prev_angle[3])*stepsPerRevolution[3]/(2*M_PI));
+  arm_steps.position[4] = (int)((cmd_arm.position[4]-prev_angle[4])*stepsPerRevolution[4]/(2*M_PI));
   // arm_steps.position[5] = (int)((cmd_arm.position[5]-prev_angle[5])*stepsPerRevolution[5]/(2*M_PI));
 
   // ROS_INFO_NAMED("test", "Joint_1: %f", cmd_arm.position[1]);

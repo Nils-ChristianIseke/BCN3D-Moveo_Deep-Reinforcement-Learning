@@ -23,9 +23,9 @@ tf.compat.v1.enable_v2_behavior()
 from gym import utils
 import math
 import rospy
-from moveo_training.scripts.cube_positions import Obj_Pos
+from src.moveo_training.src.moveo_training.cube_positions import Obj_Pos
 from gym import spaces
-from moveo_training.scripts import moveo_env
+from src.moveo_training.src.moveo_training import moveo_env
 from gym.envs.registration import register
 import numpy as np
 
@@ -33,7 +33,7 @@ max_episode_steps = 1 # Can be any Value
 
 register(
         id='MoveoIK_discrete_MultiActions-v0',
-        entry_point='moveo_inverse_kinematic_discrete_MultiActions:MoveoIKEnv',
+        entry_point='src.moveo_training.src.moveo_training.moveo_inverse_kinematic_discrete_MultiActions:MoveoIKEnv',
         max_episode_steps=max_episode_steps,
     )
 

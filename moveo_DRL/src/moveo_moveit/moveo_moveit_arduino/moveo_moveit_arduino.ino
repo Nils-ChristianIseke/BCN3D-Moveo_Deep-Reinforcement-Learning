@@ -86,24 +86,17 @@ ros::NodeHandle nh;
 //   joint_step[4] = arm_steps.position5;
 //   joint_step[5] = arm_steps.position6; //gripper position <0-180>
 // }
-void arm_cb2(const sensor_msgs::JointState& arm_steps){
-  
-  // joint_step[0] += -10;
-  // joint_step[1] = 0;
-  // joint_step[2] = 0;
-  // joint_step[3] = 0;
-  // joint_step[4] = 0;
+void arm_cb(const sensor_msgs::JointState& arm_steps){
+  joint_status =1;
   long positions[5];  // Array of desired stepper positions must be long
-  positions[0] = (int)(arm_steps.position[0]); // negated since the real robot rotates in the opposite direction as ROS
-  positions[1] = (int)(arm_steps.position[1]);
-  positions[2] = -(int)(arm_steps.position[2]);
-  positions[3] = (int)(arm_steps.position[3]);
-  positions[4] = (int)(arm_steps.position[4]);
+  joint_step[0] = (int)(arm_steps.position[0]); // negated since the real robot rotates in the opposite direction as ROS
+  joint_step[1] = (int)(arm_steps.position[1]);
+  joint_step[2] = -(int)(arm_steps.position[2]);
+  joint_step[3] = (int)(arm_steps.position[3]);
+  joint_step[4] = (int)(arm_steps.position[4]);
     
 
-    steppers.moveTo(positions);
-    nh.spinOnce();
-    steppers.runSpeedToPosition(); // 
+    
   // joint_step[5] = arm_steps.position[6]; //gripper position <0-180>
 }
 void easy_cb(const std_msgs::Int16& hello){
@@ -133,14 +126,14 @@ void easy_cb(const std_msgs::Int16& hello){
 
 //instantiate subscribers
 // ros::Subscriber<moveo_moveit::ArmJointState> arm_sub("joint_steps",arm_cb); //subscribes to joint_steps on arm
-ros::Subscriber<sensor_msgs::JointState> arm_sub2("joint_steps",arm_cb2); //subscribes to joint_steps on arm
+ros::Subscriber<sensor_msgs::JointState> arm_sub("joint_steps",arm_cb); //subscribes to joint_steps on arm
 ros::Subscriber<std_msgs::Int16> ledsub("led",easy_cb);
 // ros::Subscriber<std_msgs::UInt16> gripper_sub("gripper_angle", gripper_cb); //subscribes to gripper position
 //to publish from terminal: rostopic pub gripper_angle std_msgs/UInt16 <0-180>
 
 void setup() {
   //put your setup code here, to run once:
-  //Serial.begin(57600);
+  // Serial.begin(57600);
 
   pinMode(13,OUTPUT);
   pinMode(E0_ENABLE_PIN,OUTPUT);
@@ -152,8 +145,8 @@ void setup() {
 
   nh.initNode();
   // nh.subscribe(arm_sub);
-  nh.subscribe(arm_sub2);
-  nh.subscribe(ledsub);
+  nh.subscribe(arm_sub);
+  // nh.subscribe(ledsub);
   // nh.subscribe(gripper_sub);
   // nh.advertise(steps);
 
@@ -180,16 +173,15 @@ void setup() {
 void loop() {
   if (joint_status == 1) // If command callback (arm_cb) is being called, execute stepper command
   { 
-    // long positions[5];  // Array of desired stepper positions must be long
-    // positions[0] = joint_step[0]; // negated since the real robot rotates in the opposite direction as ROS
-    // positions[1] = -joint_step[1]; 
-    // positions[2] = joint_step[2]; 
-    // positions[3] = joint_step[3]; 
-    // positions[4] = -joint_step[4]; 
-    
-
-    // steppers.moveTo(positions);
+    long positions[5];  // Array of desired stepper positions must be long
+    positions[0] = joint_step[0]; // negated since the real robot rotates in the opposite direction as ROS
+    positions[1] = -joint_step[1]; 
+    positions[2] = -joint_step[2]; 
+    positions[3] = joint_step[3]; 
+    positions[4] = -joint_step[4]; 
+    steppers.moveTo(positions);
     nh.spinOnce();
+    steppers.runSpeedToPosition(); // 
     // steppers.runSpeedToPosition(); // Blocks until all are in position
     // gripper.write(joint_step[5]);  // move gripper after manipulator reaches goal   
   }

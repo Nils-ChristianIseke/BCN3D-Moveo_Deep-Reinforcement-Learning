@@ -2,12 +2,13 @@
 
 import numpy
 import rospy
-from openai_ros.openai_ros.src.openai_ros import robot_gazebo_env_goal
+
 from std_msgs.msg import Float64
 from sensor_msgs.msg import JointState
 from nav_msgs.msg import Odometry
 import sys
-from moveo_training.moveo_commander.moveo_commander import MoveoCommander
+from src.moveo_training.src.moveo_training.moveo_commander import MoveoCommander
+from src.openai_ros.openai_ros.src.openai_ros import robot_gazebo_env_goal
 import geometry_msgs.msg
 
 class MoveoEnv(robot_gazebo_env_goal.RobotGazeboEnv):

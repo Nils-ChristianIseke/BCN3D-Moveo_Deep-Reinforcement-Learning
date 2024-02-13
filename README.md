@@ -1,4 +1,5 @@
-## Moveo_RL
+## BCN3D-Moveo, Deep Learning
+This repos aimed to enable deep learning for the open source-robotic arm BCN3D-Moveo.
 
 
 ### Prerequisites
